@@ -4,7 +4,7 @@ import { Button } from 'semantic-ui-react'
 function App() {
   return (
     <div>
-      <Button>Click Here</Button>
+      <Button primary>Click Here</Button>
     </div>
   );
 }

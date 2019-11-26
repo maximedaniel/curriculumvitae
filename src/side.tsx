@@ -8,7 +8,7 @@ interface State{
   hover: boolean
 }
 
-class Profil extends Component<Props, State> {
+class Side extends Component<Props, State> {
   constructor(props: any){
     super(props);
     this.state = {
@@ -22,7 +22,8 @@ class Profil extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment raised={this.state.hover} onMouseEnter={this.handleOnMouseOver} onMouseLeave={this.handleOnMouseOver}>
+      /*raised={this.state.hover} onMouseEnter={this.handleOnMouseOver} onMouseLeave={this.handleOnMouseOver}*/
+      <Segment>
         <Grid>
         <Grid.Row centered>
             <Grid.Column textAlign='center' width={16}>
@@ -68,4 +69,4 @@ class Profil extends Component<Props, State> {
   }
 }
 
-export default Profil;
+export default Side;

@@ -21,7 +21,7 @@ class App extends  Component<Props, State> {
       currentSegment: 'experience'
     }
   }
-  setCurrentSegment = (newSegment:any) => this.setState({currentSegment: newSegment}, () =>{
+  setCurrentSegment = (newSegment:any) => this.setState({currentSegment: newSegment}, () => {
     console.log('currentSegment', this.state.currentSegment)
   }) 
   render(){

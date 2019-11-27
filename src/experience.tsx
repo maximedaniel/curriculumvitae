@@ -1,5 +1,5 @@
-import React, { Component }  from 'react';
-import { Image, Grid, List, Icon, Label, Header, GridRow, Segment, Table } from 'semantic-ui-react'
+import React, { Component}  from 'react';
+import { Image, Grid, Header, Segment } from 'semantic-ui-react'
 
 interface Props{
 
@@ -23,7 +23,7 @@ class Experience extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment>
+      <Segment id='experience'>
             <Header as='h2'>Experience</Header>
                 <Grid padded>
                     <Grid.Row >

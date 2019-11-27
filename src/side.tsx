@@ -1,25 +1,22 @@
 import React, { Component }  from 'react';
-import { Image, Grid, List, Icon, Label, Header, GridRow, Segment } from 'semantic-ui-react'
+import { Image, Grid, List, Icon, Label, Header, Segment } from 'semantic-ui-react'
 
 interface Props{
-
+  currentSegment: String,
+  setCurrentSegment: Function
 }
+
 interface State{
-  hover: boolean
+
 }
 
 class Side extends Component<Props, State> {
   constructor(props: any){
     super(props);
-    this.state = {
-      hover:false
-    }
   }
 
-  handleOnMouseOver = (event: any) => {
-    this.setState({hover: !this.state.hover});
-  }
 
+  isActice = (key:String) => this.props.currentSegment === key;
   render = ()  => {
     return (
       /*raised={this.state.hover} onMouseEnter={this.handleOnMouseOver} onMouseLeave={this.handleOnMouseOver}*/
@@ -40,7 +37,7 @@ class Side extends Component<Props, State> {
             <Grid.Column textAlign='center' width={16}>
             <List>
                 <List.Item>
-                  <List.Icon name='inbox'   flipped='horizontally'/>
+                  <List.Icon name='inbox'  flipped='horizontally'/>
                   <List.Content>maxaxeldaniel[at]gmail.com</List.Content>
                 </List.Item>
                 <List.Item>
@@ -52,7 +49,6 @@ class Side extends Component<Props, State> {
                   <List.Content>Biarritz, France</List.Content>
                 </List.Item>
               </List>
-              
               <Label as='a' onClick= {() => window.open("https://github.com/maximedaniel", "_blank")}>
                 <Icon name='github' />
                 Github
@@ -61,6 +57,19 @@ class Side extends Component<Props, State> {
               <Icon name='youtube' />
               Youtube
             </Label>
+            </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+            <Grid.Column textAlign='left' width={16}>
+              <Header as='h5'>Sommaire</Header>
+              <List link>
+                <List.Item as='a' href="#experience"  active={this.isActice("experience")}  onClick={() => this.props.setCurrentSegment('experience')}>Experience</List.Item>
+                <List.Item as='a' href="#education"   active={this.isActice("education")}   onClick={() => this.props.setCurrentSegment('education')}>Education</List.Item>
+                <List.Item as='a' href="#teaching"    active={this.isActice("teaching")}    onClick={() => this.props.setCurrentSegment('teaching')}>Teaching</List.Item>
+                <List.Item as='a' href="#project"     active={this.isActice("project")}     onClick={() => this.props.setCurrentSegment('project')}>Projects</List.Item>
+                <List.Item as='a' href="#publication" active={this.isActice("publication")} onClick={() => this.props.setCurrentSegment('publication')}>Publications</List.Item>
+                <List.Item as='a' href="#methodology"   active={this.isActice("methodology")} onClick={() => this.props.setCurrentSegment('methodology')}>Workflow</List.Item>
+              </List>
             </Grid.Column>
         </Grid.Row>
         </Grid>

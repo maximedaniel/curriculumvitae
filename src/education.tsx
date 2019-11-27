@@ -1,5 +1,5 @@
-import React, { Component }  from 'react';
-import { Image, Grid, List, Icon, Label, Header, GridRow, Segment, Table } from 'semantic-ui-react'
+import React, { Component, createRef }  from 'react';
+import { Image, Grid, Header, Segment} from 'semantic-ui-react'
 
 interface Props{
 
@@ -7,15 +7,34 @@ interface Props{
 
 interface State{
   hover: boolean
+  log: Array<Object>,
+  logCount: number,
+  once: boolean,
+  contextRef: Object
 }
 
 class Education extends Component<Props, State> {
   constructor(props: any){
     super(props);
     this.state = {
-      hover:false
+      hover:false,
+      log: [],
+      logCount: 0,
+      once: true,
+      contextRef: createRef()
+
     }
   }
+    updateLog = (eventName:any) => () =>
+    this.setState((prevState) => ({
+      log: [
+        `${new Date().toLocaleTimeString()}: ${eventName}`,
+        ...prevState.log,
+      ].slice(0, 20),
+      logCount: prevState.logCount + 1,
+    }), () => {
+      console.log(`${new Date().toLocaleTimeString()}: ${eventName}`)
+    })
 
   handleOnMouseOver = (event: any) => {
     this.setState({hover: !this.state.hover});
@@ -23,7 +42,7 @@ class Education extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment>
+      <Segment id='education'>
             <Header as='h2'>Education</Header>
                 <Grid padded>
                     <Grid.Row >

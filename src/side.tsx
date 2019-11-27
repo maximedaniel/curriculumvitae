@@ -60,7 +60,7 @@ class Side extends Component<Props, State> {
             </Grid.Column>
         </Grid.Row>
         <Grid.Row>
-            <Grid.Column textAlign='left' width={16}>
+            <Grid.Column textAlign='center' width={16}>
               <Header as='h5'>Sommaire</Header>
               <List link>
                 <List.Item as='a' href="#experience"  active={this.isActice("experience")}  onClick={() => this.props.setCurrentSegment('experience')}>Experience</List.Item>

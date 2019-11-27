@@ -31,8 +31,9 @@ class Project extends Component<Props, State> {
             <Header as='h2'>Projects</Header>
                 <Grid padded>
                     <Grid.Row >
-                    <Grid.Column width={8} verticalAlign='top'>
-                    <Card raised centered>
+                    <Grid.Column width={16} verticalAlign='top'>
+                    <Card.Group>
+                    <Card>
                       <Embed id='wZ_3CtDllbA'  iframe={{allowFullScreen: true}} placeholder='/img/cairnform.jpg' source='youtube'/>
                       <Card.Content>
                         <Card.Header>CairnFORM</Card.Header>
@@ -45,9 +46,7 @@ class Project extends Component<Props, State> {
                         </Card.Description>
                         </Card.Content>
                     </Card>
-                    </Grid.Column>
-                    <Grid.Column width={8} verticalAlign='top'>
-                    <Card raised centered>
+                    <Card>
                       <Embed id='153599331'  iframe={{allowFullScreen: true}} placeholder='/img/eeg.png' source='vimeo'/>
                         <Card.Content>
                         <Card.Header>EEG EvTool</Card.Header>
@@ -60,6 +59,7 @@ class Project extends Component<Props, State> {
                         </Card.Description>
                         </Card.Content>
                     </Card>
+                    </Card.Group>
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>

@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Image, Grid,  Header, Segment} from 'semantic-ui-react'
+import { Image, Grid,  Header} from 'semantic-ui-react'
 
 interface Props{
 
@@ -23,7 +23,7 @@ class Teaching extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment id="teaching">
+      <div id="teaching">
             <Header as='h2'>Teaching</Header>
                 <Grid padded>
                     <Grid.Row >
@@ -106,7 +106,7 @@ class Teaching extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>
-      </Segment>
+      </div>
     );
   }
 }

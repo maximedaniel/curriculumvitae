@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Grid, Header, Segment} from 'semantic-ui-react'
+import { Grid, Header} from 'semantic-ui-react'
 
 interface Props{
 
@@ -23,11 +23,11 @@ class Methodology extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment id='methodology'>
+      <div id='methodology'>
             <Header as='h2'>Workflow</Header>
                 <Grid padded>
                     <Grid.Row >
-                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={16}>
+                    <Grid.Column textAlign='left' verticalAlign='middle'>
                     <Header as='h5'>
                         1. Understanding
                         <Header.Subheader>
@@ -37,7 +37,7 @@ class Methodology extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                     <Grid.Row >
-                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={16}>
+                    <Grid.Column textAlign='left' verticalAlign='middle'>
                     <Header as='h5'>
                         2. Designing
                         <Header.Subheader>
@@ -47,7 +47,7 @@ class Methodology extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                     <Grid.Row >
-                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={16}>
+                    <Grid.Column textAlign='left' verticalAlign='middle'>
                     <Header as='h5'>
                         3. Prototyping
                         <Header.Subheader>
@@ -56,7 +56,7 @@ class Methodology extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                     <Grid.Row >
-                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={16}>
+                    <Grid.Column textAlign='left' verticalAlign='middle'>
                     <Header as='h5'>
                         4. Experimenting
                         <Header.Subheader>
@@ -66,7 +66,7 @@ class Methodology extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                     <Grid.Row >
-                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={16}>
+                    <Grid.Column textAlign='left' verticalAlign='middle'>
                     <Header as='h5'>
                         5. Reporting
                         <Header.Subheader>
@@ -76,7 +76,7 @@ class Methodology extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>
-      </Segment>
+      </div>
     );
   }
 }

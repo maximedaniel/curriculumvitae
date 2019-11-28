@@ -6,7 +6,7 @@ import Teaching from './components/teaching';
 import Project from './components/project';
 import Publication from './components/publication';
 import Methodology from './components/methodology';
-import Profil from './components/profil';
+import Scrollspy from './components/scrollspy';
 
 interface Props{
 
@@ -64,8 +64,8 @@ class App extends  Component<Props, State> {
                   </Grid.Column>
               </Grid.Row>
               <Grid.Row centered>
-                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={16}>
-                      <Profil />
+                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={10} >
+                      <Scrollspy />
                   </Grid.Column>
               </Grid.Row>
               <Responsive as={Grid.Row} minWidth={768} >

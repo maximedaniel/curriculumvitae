@@ -14,14 +14,19 @@
     "react-scripts": "3.2.0",
     "react-scrollspy": "^3.4.2",
     "react-waypoint": "^9.0.2",
-    "semantic-ui": "^2.4.2",
     "semantic-ui-react": "^0.88.1",
+    "serve": "^11.2.0",
     "typescript": "3.7.2",
     "waypoints": "^4.0.1"
+  },
+  "comments": {
+    "semantic-ui": "^2.4.2",
+    "gulp":"3.9.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

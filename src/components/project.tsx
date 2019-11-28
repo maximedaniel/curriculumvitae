@@ -1,5 +1,5 @@
 import React, { Component }  from 'react';
-import { Grid, Header, Segment, Card, Embed} from 'semantic-ui-react'
+import { Grid, Header, Card, Embed} from 'semantic-ui-react'
 
 interface Props{
 
@@ -27,12 +27,12 @@ class Project extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment id='project'>
+      <div id='project'>
             <Header as='h2'>Projects</Header>
                 <Grid padded>
                     <Grid.Row >
                     <Grid.Column width={16} verticalAlign='top'>
-                    <Card.Group>
+                    <Card.Group centered>
                     <Card>
                       <Embed id='wZ_3CtDllbA'  iframe={{allowFullScreen: true}} placeholder='/img/cairnform.jpg' source='youtube'/>
                       <Card.Content>
@@ -63,7 +63,7 @@ class Project extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>
-      </Segment>
+      </div>
     );
   }
 }

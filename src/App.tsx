@@ -1,7 +1,12 @@
 import React, {createRef, Component, RefObject} from 'react';
-import {Grid, Sticky, Ref, Segment } from 'semantic-ui-react'
-import Side from './side'
-import Content from './content';
+import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility } from 'semantic-ui-react'
+import Experience from './components/experience';
+import Education from './components/education';
+import Teaching from './components/teaching';
+import Project from './components/project';
+import Publication from './components/publication';
+import Methodology from './components/methodology';
+import Profil from './components/profil';
 
 interface Props{
 
@@ -9,7 +14,9 @@ interface Props{
 interface State{
   hover: boolean,
   contextRef: RefObject<any>,
-  currentSegment: String
+  currentSegment: String,
+  stickyActive: boolean
+
 }
 
 class App extends  Component<Props, State> {
@@ -17,46 +24,141 @@ class App extends  Component<Props, State> {
     super(props);
     this.state = {
       hover:false,
+      stickyActive: false,
       contextRef: createRef(),
       currentSegment: 'experience'
     }
   }
-  setCurrentSegment = (newSegment:any) => this.setState({currentSegment: newSegment}, () => {
-    console.log('currentSegment', this.state.currentSegment)
-  }) 
+  setCurrentSegment = (newSegment:any) => this.setState({currentSegment: newSegment}); 
+
+  handleOnUpdate = (event:any, size:any) => {
+    this.setState({stickyActive: size.width > 767});
+  };
+
+  isSegmentActice = (key:String) => this.state.currentSegment === key;
+
+  handleSegmentActivation = (event: any, update:any) => {
+      let p = Math.round(update.calculations.percentagePassed *100);
+      let newSegment = update.children.key;
+      if(p > 0 && this.state.currentSegment!==newSegment){
+        this.setCurrentSegment(newSegment);
+      }
+  };
+
   render(){
       return (
-        <Grid columns={3} divided padded>
-          <Grid.Row stretched>
-            <Grid.Column width={16}>
-              <Segment>1</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>1</Segment>
-              <Segment>2</Segment>
-            </Grid.Column>
-            <Grid.Column>
-              <Segment>1</Segment>
-              <Segment>2</Segment>
-              <Segment>3</Segment>
-            </Grid.Column>
-          </Grid.Row>
-      {/*
-      <Grid padded>
+      <Grid padded stackable>
         <Grid.Row>
           <Grid.Column mobile={16} tablet={5} computer={4}>
-            <Sticky context={this.state.contextRef} offset={10}>
-              <Side currentSegment={this.state.currentSegment}  setCurrentSegment = {this.setCurrentSegment} />
-            </Sticky>
+            <Responsive fireOnMount as={Sticky}  active={this.state.stickyActive} context={this.state.contextRef} offset={10} onUpdate={this.handleOnUpdate}>
+            <Grid>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='center' width={16}>
+                    <Image circular src='/img/profil0.jpg' size='small' centered/>
+                  <Header as='h3'>
+                      <Header.Content>
+                        Maxime DANIEL
+                        <Header.Subheader>PhD in Computer Science</Header.Subheader>
+                      </Header.Content>
+                  </Header>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={16}>
+                      <Profil />
+                  </Grid.Column>
+              </Grid.Row>
+              <Responsive as={Grid.Row} minWidth={768} >
+                  <Grid.Column textAlign='center' width={16}>
+                    <Header as='h5'>Sommaire</Header>
+                    <List link>
+                      <List.Item as='a' href="#experience"  active={this.isSegmentActice("experience")}  onClick={() => this.setCurrentSegment('experience')}>Experience</List.Item>
+                      <List.Item as='a' href="#education"   active={this.isSegmentActice("education")}   onClick={() => this.setCurrentSegment('education')}>Education</List.Item>
+                      <List.Item as='a' href="#teaching"    active={this.isSegmentActice("teaching")}    onClick={() => this.setCurrentSegment('teaching')}>Teaching</List.Item>
+                      <List.Item as='a' href="#project"     active={this.isSegmentActice("project")}     onClick={() => this.setCurrentSegment('project')}>Projects</List.Item>
+                      <List.Item as='a' href="#publication" active={this.isSegmentActice("publication")} onClick={() => this.setCurrentSegment('publication')}>Publications</List.Item>
+                      <List.Item as='a' href="#methodology"   active={this.isSegmentActice("methodology")} onClick={() => this.setCurrentSegment('methodology')}>Workflow</List.Item>
+                    </List>
+                  </Grid.Column>
+              </Responsive>
+              </Grid>
+            </Responsive>
           </Grid.Column>
           <Grid.Column mobile={16} tablet={11} computer={12}>
             <Ref innerRef={this.state.contextRef}>
-              <Content currentSegment={this.state.currentSegment} setCurrentSegment = {this.setCurrentSegment}/>
+            <Grid>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Experience key='experience'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Education key='education'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Teaching key='teaching'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+            
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Project key='project'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Publication key='publication'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                      <Methodology key='methodology'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              </Grid>
             </Ref>
           </Grid.Column>
         </Grid.Row>
-      </Grid>*/}
-        </Grid>
+      </Grid>
     );
   }
 }

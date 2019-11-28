@@ -1,5 +1,5 @@
 import React, { Component}  from 'react';
-import { Image, Grid, Header, Segment } from 'semantic-ui-react'
+import { Image, Grid, Header} from 'semantic-ui-react'
 
 interface Props{
 
@@ -23,9 +23,9 @@ class Experience extends Component<Props, State> {
 
   render = ()  => {
     return (
-      <Segment id='experience'>
+      <div id='experience'>
             <Header as='h2'>Experience</Header>
-                <Grid padded>
+                <Grid padded stretched>
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/estia.jpg' size= 'tiny'/>
@@ -66,7 +66,7 @@ class Experience extends Component<Props, State> {
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>
-      </Segment>
+      </div>
     );
   }
 }

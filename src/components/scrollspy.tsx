@@ -9,7 +9,7 @@ interface State{
 
 }
 
-class Profil extends Component<Props, State> {
+class Scrollspy extends Component<Props, State> {
   render = ()  => {
     return (
       <div>
@@ -40,4 +40,4 @@ class Profil extends Component<Props, State> {
   }
 }
 
-export default Profil;
+export default Scrollspy;

@@ -1,5 +1,5 @@
 import React, {createRef, Component, RefObject} from 'react';
-import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility } from 'semantic-ui-react'
+import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility} from 'semantic-ui-react'
 import Experience from './components/experience';
 import Education from './components/education';
 import Teaching from './components/teaching';
@@ -64,7 +64,7 @@ class App extends  Component<Props, State> {
                   </Grid.Column>
               </Grid.Row>
               <Grid.Row centered>
-                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={10} >
+                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={14} widescreen={8}>
                       <Scrollspy />
                   </Grid.Column>
               </Grid.Row>

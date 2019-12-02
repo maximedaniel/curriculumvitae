@@ -49,7 +49,7 @@ class App extends  Component<Props, State> {
       return (
       <Grid padded stackable>
         <Grid.Row>
-          <Grid.Column mobile={16} tablet={5} computer={4}>
+          <Grid.Column mobile={16} tablet={5} computer={4} >
             <Responsive fireOnMount as={Sticky}  active={this.state.stickyActive} context={this.state.contextRef} offset={10} onUpdate={this.handleOnUpdate}>
             <Grid>
               <Grid.Row centered>

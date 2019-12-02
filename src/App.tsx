@@ -1,5 +1,5 @@
 import React, {createRef, Component, RefObject} from 'react';
-import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility } from 'semantic-ui-react'
+import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility} from 'semantic-ui-react'
 import Experience from './components/experience';
 import Education from './components/education';
 import Teaching from './components/teaching';
@@ -64,7 +64,7 @@ class App extends  Component<Props, State> {
                   </Grid.Column>
               </Grid.Row>
               <Grid.Row centered>
-                  <Grid.Column textAlign='center' mobile={7} tablet={14} computer={10} >
+                  <Grid.Column textAlign='center' mobile={14} tablet={14} computer={14} widescreen={8}>
                       <Scrollspy />
                   </Grid.Column>
               </Grid.Row>
@@ -75,10 +75,10 @@ class App extends  Component<Props, State> {
                       <List.Item as='a' href="#experience"  active={this.isSegmentActice("experience")}  onClick={() => this.setCurrentSegment('experience')}>Experience</List.Item>
                       <List.Item as='a' href="#education"   active={this.isSegmentActice("education")}   onClick={() => this.setCurrentSegment('education')}>Education</List.Item>
                       <List.Item as='a' href="#teaching"    active={this.isSegmentActice("teaching")}    onClick={() => this.setCurrentSegment('teaching')}>Teaching</List.Item>
-                      <List.Item as='a' href="#project"     active={this.isSegmentActice("project")}     onClick={() => this.setCurrentSegment('project')}>Projects</List.Item>
                       <List.Item as='a' href="#publication" active={this.isSegmentActice("publication")} onClick={() => this.setCurrentSegment('publication')}>Publications</List.Item>
                       <List.Item as='a' href="#methodology"   active={this.isSegmentActice("methodology")} onClick={() => this.setCurrentSegment('methodology')}>Workflow</List.Item>
-                    </List>
+                      <List.Item as='a' href="#project"     active={this.isSegmentActice("project")}     onClick={() => this.setCurrentSegment('project')}>Projects</List.Item>
+                       </List>
                   </Grid.Column>
               </Responsive>
               </Grid>
@@ -122,18 +122,6 @@ class App extends  Component<Props, State> {
               </Grid.Row>
               <Grid.Row centered>
                   <Grid.Column textAlign='left' width={16}>
-            
-                  <Visibility
-                      continuous={true}
-                      once={false}
-                      onUpdate={this.handleSegmentActivation}
-                  >
-                          <Project key='project'/>
-                  </Visibility>
-                  </Grid.Column>
-              </Grid.Row>
-              <Grid.Row centered>
-                  <Grid.Column textAlign='left' width={16}>
                   <Visibility
                       continuous={true}
                       once={false}
@@ -151,6 +139,18 @@ class App extends  Component<Props, State> {
                       onUpdate={this.handleSegmentActivation}
                   >
                       <Methodology key='methodology'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+            
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Project key='project'/>
                   </Visibility>
                   </Grid.Column>
               </Grid.Row>

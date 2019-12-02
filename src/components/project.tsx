@@ -41,7 +41,7 @@ class Project extends Component<Props, State> {
                             <span className='date'>Oct 2015 - Nov 2018</span>
                         </Card.Meta>
                         <Card.Description>
-                        <b>Keywords:</b> Programmable Matter, Shape-Changing Interfaces; Energy Demand Side-Management; Workplace.<br></br>
+                        <b>Keywords:</b> Programmable Matter; Shape-Changing Interfaces; Energy Demand Side-Management; Workplace.<br></br>
                         <b>Abstract:</b> CairnFORM is a stack of expandable illuminated rings for display that can change of cylindrical shape (e.g., cone, double cone, cylinder). We show that cylindrical shape change can be used (1) for informing users around the display through data physicalization, (2) for unobtrusively notifying users around the display through peripheral interaction, (3) for offering a greater user experience over time than a traditional flat display with no shape change.
                         </Card.Description>
                         </Card.Content>

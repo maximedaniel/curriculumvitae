@@ -47,7 +47,7 @@ class Education extends Component<Props, State> {
                 <Grid padded>
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
-                    <Image centered src='img/estia.jpg' size= 'tiny'/>
+                    <Image centered src='img/gouv.png' size= 'tiny'/>
                     </Grid.Column>
                     <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
                     <Header as='h5'>

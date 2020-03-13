@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component }  from 'react'
 import { Image, Grid,  Header} from 'semantic-ui-react'
 
 interface Props{

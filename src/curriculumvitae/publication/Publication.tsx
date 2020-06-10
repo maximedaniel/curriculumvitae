@@ -42,6 +42,20 @@ class Publication extends Component<Props, State> {
                     </Grid.Row>
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
+                    <Image centered src='img/univbordeaux.jpg' size= 'tiny'/>
+                    </Grid.Column>
+                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
+                        <b>Maxime Daniel</b>. 2018. Shape-changing cylindrical displays: Application to data physicalization and peripheral interaction for energy demande-side management (PhD thesis). University of Bordeaux, France.
+                        <Menu.Item
+                          href="pdf/daniel2018thesis.pdf"
+                          link
+                        >
+                          <Icon link name="file pdf outline"/>
+                        </Menu.Item>
+                    </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row >
+                    <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/tei18.png' size= 'tiny'/>
                     </Grid.Column>
                     <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>

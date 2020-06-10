@@ -27,14 +27,25 @@ class Scrollspy extends Component<Props, State> {
             <List.Content>Biarritz, France</List.Content>
             </List.Item>
         </List>
-        <Label as='a' onClick= {() => window.open("https://github.com/maximedaniel", "_blank")}>
-            <Icon name='github' />
-            Github
-        </Label>
-        <Label as='a' onClick= {() => window.open("https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw", "_blank")}>
-        <Icon name='youtube' />
-        Youtube
-        </Label>
+        
+        <List>
+          <List.Item>
+            <Label  as='a' href="pdf/curriculumvitae.pdf"> {/*target="_blank" rel="noopener noreferrer"*/}
+            <Icon name='file pdf outline'/>
+              Curriculum Vitae
+            </Label>
+          </List.Item>
+          <List.Item>
+            <Label as='a' href="https://github.com/maximedaniel">
+              <Icon name='github' />
+              Github
+            </Label>
+            <Label as='a' href="https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw">
+              <Icon name='youtube' />
+              Youtube
+            </Label>
+          </List.Item>
+        </List>
       </div>
     );
   }

@@ -1,3 +1,8 @@
+## Open ssh connexion to OVH VPS
+
+1. Enter `docker run -p 80:5000 --name curriculumvitae tydius/curriculumvitae`
+2. Enter `docker run -d --name ouroboros -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros`
+
 ## Managing NodeJS version
 nvm list
 nvm use <v> | nvm install <v>

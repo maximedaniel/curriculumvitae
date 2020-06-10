@@ -56,6 +56,7 @@ class Curriculumvitae extends  Component<Props, State> {
               <Grid.Row centered>
                   <Grid.Column textAlign='center' width={16}>
                     <Image circular src='/img/profil0.jpg' size='small' centered/>
+                    
                   <Header as='h3'>
                       <Header.Content>
                         Maxime DANIEL

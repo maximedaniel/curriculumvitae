@@ -1,5 +1,6 @@
 ## Open ssh connexion to OVH VPS
-
+0. Open PuTTY on Windows
+1. Enter Hostname and Mdp
 1. Enter `docker run -p 80:5000 --name curriculumvitae tydius/curriculumvitae`
 2. Enter `docker run -d --name ouroboros -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros`
 

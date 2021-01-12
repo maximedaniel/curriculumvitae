@@ -1,5 +1,6 @@
 import React, { Component }  from 'react'
-import { Grid, Header} from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
+import { Button, Grid, Header, Icon} from 'semantic-ui-react'
 
 interface Props{
 
@@ -20,6 +21,8 @@ class Methodology extends Component<Props, State> {
   handleOnMouseOver = (event: any) => {
     this.setState({hover: !this.state.hover});
   }
+
+  
 
   render = ()  => {
     return (
@@ -73,6 +76,16 @@ class Methodology extends Component<Props, State> {
                         <b>Open sourcing</b> (GitHub, OnShape), <b>Video editing</b> (Adobe After Effect, Blender), <b>Paper writing</b> (LaTeX, Word, Markdown), and <b>Talking</b> (english operational, french native)
                         </Header.Subheader>
                     </Header>
+                    </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row >
+                    <Grid.Column textAlign='center' verticalAlign='middle'>
+                      <Link to='tools'>
+                        <Button icon labelPosition='right'> {/*target="_blank" rel="noopener noreferrer"*/}
+                          Personal Tools for HCI Research
+                          <Icon name='arrow right'/>
+                        </Button>
+                      </Link>
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>

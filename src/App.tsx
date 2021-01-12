@@ -4,6 +4,7 @@ import {createBrowserHistory} from 'history'
 
 import Curriculumvitae from './curriculumvitae/Curriculumvitae'
 import Zotero from './zotero/Zotero'
+import Approach from './approach/Approach'
 
 import SocketContext from './SocketContext'
 
@@ -24,6 +25,7 @@ class App extends  Component<Props, State> {
             <Router history={history}>
                     <Route path ='/' exact  component={Curriculumvitae} />
                     <Route path ='/zotero' exact  component={Zotero} />
+                    <Route path ='/tools' exact  component={Approach} />
             </Router>
          </SocketContext.Provider>
        </div>

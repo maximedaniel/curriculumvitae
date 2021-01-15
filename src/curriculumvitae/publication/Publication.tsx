@@ -28,6 +28,14 @@ class Publication extends Component<Props, State> {
                 <Grid padded>
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
+                    <Image centered src='img/tei21.png' size= 'tiny'/>
+                    </Grid.Column>
+                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
+                        <b>Maxime Daniel</b> and Guillaume Rivière. 2021. xploring Axisymmetric Shape-Change's Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications. <i>In Proceedings of the 15th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '21)</i>. ACM, New York, NY, USA, X-X (<b>incoming</b>).
+                    </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row >
+                    <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/tei19.png' size= 'tiny'/>
                     </Grid.Column>
                     <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>

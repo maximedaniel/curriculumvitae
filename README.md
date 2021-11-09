@@ -47,11 +47,13 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Develop
+## Run Develop branch
+
 - Open a terminal
 - Enter `npm start`
 
-## Production
+## Add, Commit and Push Develop branch to Master branch
+
 - Open a terminal
 - Enter `git add --all`
 - Enter `git status`
@@ -59,11 +61,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Enter `git push --force origin develop`, push local DEVELOP branch to remote one
 - Enter `git push origin develop:master`, push local DEVELOP branch to remote MASTER branch
 
-
-
-## deploy
+## Buid and Deploy Docker Image
 
 - Open Docker
 - Open a terminal
 - Enter `docker build -t tydius/curriculumvitae:latest .`
+- Enter `docker login`
 - Enter `docker push tydius/curriculumvitae:latest`

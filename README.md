@@ -19,7 +19,7 @@ nvm use <v> | nvm install <v>
 - Enter `git add *`
 - Enter `git status`
 - Enter `git commit -m '<commit_message>'`
-- Enter `git push origin develop`, push local DEVELOP branch to remote one
+- Enter `git push`, push local DEVELOP branch to remote one
 - Enter `git push origin develop:master`, push local DEVELOP branch to remote MASTER branch
 
 ## Buid and Deploy Docker Image

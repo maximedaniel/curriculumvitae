@@ -56,7 +56,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Enter `git add --all`
 - Enter `git status`
 - Enter `git commit -m '<commit_message>'`
-- Enter `git push --force origin main`
+- Enter `git push --force origin develop`, push local DEVELOP branch to remote one
+- Enter `git push origin develop:master`, push local DEVELOP branch to remote MASTER branch
+
 
 
 ## deploy

@@ -1,6 +1,10 @@
-# ZOTERO: a Tool for Bibliography Management (IN PROGRESS)
 
-Zotero is an open source bibliography management tool with [approximatively the same features](<https://guides.library.upenn.edu/citationmgmt>) as prorietary tools (e.g., [Mendeley](<https://www.mendeley.com/>), [EndNote](<https://endnote.com/>), [RefWorks](<https://refworks.proquest.com/>)):
+
+![Zotero Logo](img/zotero/zotero-logo.png#small-centered)
+# ZOTERO: a Tool for Literature Management
+Zotero is an open source bibliography management tool with [approximatively the same features](<https://guides.library.upenn.edu/citationmgmt>) as prorietary tools (e.g., [Mendeley](<https://www.mendeley.com/>), [EndNote](<https://endnote.com/>), [RefWorks](<https://refworks.proquest.com/>)).
+
+In this tutorial, you will learn to:
 
 - **gather** literature data (references, PDFs, web pages) in one place
 - **annote** literature data with notes and markers
@@ -9,12 +13,28 @@ Zotero is an open source bibliography management tool with [approximatively the 
 
 ## Sommaire
 
-- [Installation](#installation)
+1. [Create a Zotero Account](#account)
+1. [Download and Install Zotero](#installation)
+1. [Gather literature data](#gather)
+1. [Annotate literature data](#annotate)
+1. [Organize literature data](#organize)
+1. [Export literature data](#export)
+
 
 ## Installation
 
 1. Download and install [Zotero for Windows](<https://www.zotero.org/download/>)
 2. Download and install [Zotero Connector for Google Chome](<https://www.zotero.org/download/>)
+
+## Instructions
+
+``` js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
 
 ## Adding a bibliography reference
 

@@ -1,5 +1,6 @@
 import React, { Component }  from 'react'
-import { Image, Grid,  Header} from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
+import { Image, Grid,  Header, Button, Icon} from 'semantic-ui-react'
 
 interface Props{
 
@@ -103,6 +104,16 @@ class Teaching extends Component<Props, State> {
                           Master 1 | 20h | 2016, 2017, 2019
                         </Header.Subheader>
                     </Header>
+                    </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row >
+                    <Grid.Column textAlign='center' verticalAlign='middle'>
+                      <Link to='zotero'>
+                        <Button icon labelPosition='right'> {/*target="_blank" rel="noopener noreferrer"*/}
+                          Zotero Tutorial
+                          <Icon name='arrow right'/>
+                        </Button>
+                      </Link>
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>

@@ -983,3 +983,15 @@
     margin: 0 .2em .25em -1.6em;
     vertical-align: middle;
   }
+
+  /* Maxime DANIEL */
+  .markdown-body img[src*='#left'] {
+    float: left;
+  }
+  .markdown-body img[src*='#right'] {
+      float: right;
+  }
+  .markdown-body img[src*='#center'] {
+      display: block;
+      margin: auto;
+  }

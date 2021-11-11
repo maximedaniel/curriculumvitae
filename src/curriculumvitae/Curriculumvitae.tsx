@@ -45,7 +45,6 @@ class Curriculumvitae extends  Component<Props, State> {
         this.setCurrentSegment(newSegment);
       }
   };
-
   render(){
       return (
       <Grid padded stackable>
@@ -72,7 +71,7 @@ class Curriculumvitae extends  Component<Props, State> {
               </Grid.Row>
               <Responsive as={Grid.Row} minWidth={768} >
                   <Grid.Column textAlign='center' width={16}>
-                    <Header as='h5'>Sommaire</Header>
+                    <Header as='h5'>Curriculum vitæ</Header>
                     <List link>
                       <List.Item as='a' href="#experience"  active={this.isSegmentActice("experience")}  onClick={() => this.setCurrentSegment('experience')}>Experience</List.Item>
                       <List.Item as='a' href="#education"   active={this.isSegmentActice("education")}   onClick={() => this.setCurrentSegment('education')}>Education</List.Item>

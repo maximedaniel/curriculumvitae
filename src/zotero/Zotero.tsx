@@ -1,5 +1,6 @@
+// @ts-nocheck
 import React, {createRef, Component, RefObject} from 'react'
-import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility, Segment} from 'semantic-ui-react'
+import {Grid, Sticky, Ref, Image, Responsive, Header, List, Visibility, Segment, Form, Radio, Button, Message} from 'semantic-ui-react'
 
 
 interface Props{
@@ -15,6 +16,7 @@ interface State{
 }
 
 class Zotero extends  Component<Props, State> {
+
   constructor(props: any){
     super(props);
     this.state = {
@@ -43,6 +45,18 @@ class Zotero extends  Component<Props, State> {
   componentDidMount() {
     window.scrollTo(0, 0);
     this.setCurrentSegment("introduction");
+  }
+  
+
+  handleSubmit = (e) => {
+    // alert('Le nom a été soumis : ' + this.state.value);
+    // event.preventDefault();
+    // console.log(e.target.value);
+  }
+
+  handleChange = (e) => {
+    console.log(e.target.value);
+    // this.setState({ value })
   }
   render(){
       return (
@@ -367,6 +381,67 @@ class Zotero extends  Component<Props, State> {
                               </Grid.Row> 
                             </Grid> 
                           </List>
+                  </div>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+
+                  <div id="questions"  key="questions">
+                  <Form  success={this.state.correctQuestion0 === true}  error={this.state.correctQuestion0 === false} onSubmit={
+                    (e) => {
+                      e.preventDefault();
+                      var answerQuestion0 = '0';
+                      if(this.state.choiceQuestion0 !== undefined){
+                        this.setState({correctQuestion0: this.state.choiceQuestion0 === answerQuestion0})
+                      }
+                      
+                    }
+                  }
+                  >
+                    <Form.Field>
+                      Select the right answer:
+                    </Form.Field>
+                    <Form.Field>
+                      <Radio
+                        label='Choose this'
+                        name='radioGroup'
+                        value='0'
+                        checked={this.state.choiceQuestion0 === '0'}
+                        onChange={(e, {value})  => this.setState({choiceQuestion0: value})}
+                      />
+                    </Form.Field>
+                    <Form.Field>
+                      <Radio
+                        label='Or that'
+                        name='radioGroup'
+                        value='1'
+                        checked={this.state.choiceQuestion0 === '1'}
+                        onChange={(e, {value})  => this.setState({choiceQuestion0: value})}
+                      />
+                    </Form.Field>
+                    {
+                      this.state.correctQuestion0 === true ? 
+                        <Message
+                            success
+                            header='Correct answer!'
+                            content="You're all signed up for the newsletter"
+                          /> : 
+                        <Message
+                          error
+                          header='Wrong answser!'
+                          content='You can only sign up for an account once with a given e-mail address.'
+                        />
+                    }
+                    <Button type='submit' disabled={this.state.choiceQuestion0===undefined || this.state.choiceQuestion0===''}>Submit</Button>
+                  </Form>
                   </div>
                   </Visibility>
                   </Grid.Column>

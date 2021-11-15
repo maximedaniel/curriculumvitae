@@ -1,26 +1,38 @@
-FROM rocker/shiny:4.0.5
-# Install system requirements for index.R as needed
+# Example shiny app docker file
+# https://blog.sellorm.com/2021/04/25/shiny-app-in-docker/
+
+# get shiny server and R from the rocker project
+FROM rocker/shiny:4.1.2
+# system libraries
+# Try to only install system libraries you actually need
+# Package Manager is a good resource to help discover system deps
 RUN apt-get update && apt-get install -y \
-    --no-install-recommends \
-    git-core \
-    libssl-dev \
     libcurl4-gnutls-dev \
-    curl \
-    libsodium-dev \
-    libxml2-dev \
-    libicu-dev \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-ENV _R_SHLIB_STRIP_=true
-COPY Rprofile.site /etc/R
-RUN install2.r --error --skipinstalled \
-    shiny \
-    forecast \
-    jsonlite \
-    ggplot2 \
-    htmltools \
-    plotly
+    libssl-dev
+  
+
+# install R packages required 
+# Change the packages list to suit your needs
+RUN R -e 'install.packages(c(\
+              "tidyverse", \
+              "rmarkdown", \
+              "learnr", \
+              "shiny", \
+              "shinydashboard", \
+              "ggplot2" \
+            ), \
+            repos="https://packagemanager.rstudio.com/cran/__linux__/focal/2021-04-23"\
+          )'
+
+
+# copy the app directory into the image
 COPY ./app/* /srv/shiny-server/
-USER shiny
+#COPY ./app/* /srv/shiny-server/
+
+# VOLUME ./app/ /srv/shiny-server/
+# VOLUME ./log/ /var/log/shiny-server/
+
 EXPOSE 3838
+
+# run app
 CMD ["/usr/bin/shiny-server"]

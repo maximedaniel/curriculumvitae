@@ -1,0 +1,10 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+
+
+processing file: index.Rmd
+output file: index.knit.md
+
+
+Output created: index.html
+
+Listening on http://127.0.0.1:40131

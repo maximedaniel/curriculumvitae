@@ -1,0 +1,38 @@
+su: ignoring --preserve-environment, it's mutually exclusive with --login
+
+Listening on http://127.0.0.1:34375
+
+
+
+processing file: index.Rmd
+Quitting from lines 8-10 (index.Rmd) 
+Warning: Error in : package or namespace load failed for 'learnr':
+ .onAttach failed in attachNamespace() for 'learnr', details:
+  call: NULL
+  error: The shiny_prerendered_chunk function can only be called from within runtime: shinyrmd
+  144: stop
+  143: value[[3L]]
+  142: tryCatchOne
+  141: tryCatchList
+  140: tryCatch
+  139: library
+  138: eval
+  137: eval
+  132: evaluate_call
+  131: evaluate::evaluate
+  130: evaluate
+  128: eng_r
+  127: block_exec
+  126: call_block
+  125: process_group.block
+  122: process_file
+  121: knitr::knit
+  120: <Anonymous>
+  115: <reactive>
+   99: doc
+   98: renderUI
+   97: func
+   84: renderFunc
+   83: output$__reactivedoc__
+    3: <Anonymous>
+    1: rmarkdown::run

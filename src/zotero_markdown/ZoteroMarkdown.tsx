@@ -17,7 +17,7 @@ interface State{
     content: string
 }
 
-class Zotero extends  Component<Props, State> {
+class ZoteroMarkdown extends  Component<Props, State> {
   constructor(props: any){
     super(props);
     this.state = {
@@ -66,4 +66,4 @@ class Zotero extends  Component<Props, State> {
   }
 }
 
-export default Zotero;
+export default ZoteroMarkdown;

@@ -1,5 +1,5 @@
 import React, { Component }  from 'react'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { Image, Grid,  Header, Button, Icon} from 'semantic-ui-react'
 
 interface Props{
@@ -108,12 +108,10 @@ class Teaching extends Component<Props, State> {
                     </Grid.Row>
                     <Grid.Row >
                     <Grid.Column textAlign='center' verticalAlign='middle'>
-                      <Link to='zotero'>
-                        <Button icon labelPosition='right'> {/*target="_blank" rel="noopener noreferrer"*/}
+                        <Button icon labelPosition='right' href='/courses/zotero'> {/*target="_blank" rel="noopener noreferrer"*/}
                           Zotero Tutorial
                           <Icon name='arrow right'/>
                         </Button>
-                      </Link>
                     </Grid.Column>
                     </Grid.Row>
                 </Grid>

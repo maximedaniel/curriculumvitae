@@ -1,0 +1,37 @@
+---
+title: "Zotero tutorial : "
+author: "Maxime DANIEL"
+date: "`r Sys.Date()`"
+output: 
+    html_document:
+        highlight: kate #kate, zenburn, espresso
+---
+
+---
+# Configure working directory for knitr and here
+--- 
+```{r, setup, include=FALSE}
+require("knitr")
+working_directory <- getwd()
+file_path <- knitr::current_input(dir = TRUE)
+knitr::opts_knit$set(root.dir = working_directory)
+here::i_am("index.Rmd")
+```
+working_directory =  `r working_directory`.
+file_path =  `r file_path`.
+```{r ssa-logo, echo=FALSE, fig.align = 'center', out.width = "25%", fig.cap = "The new SSA logo, which is actually a scatterplot, which is super neat!"}
+knitr::include_graphics(here::here("img", "zotero-logo.png"))
+```
+
+This is a paragraph in an R Markdown document.
+
+Below is a code chunk:
+
+```{r}
+fit <- lm(dist ~ speed, data = cars)
+b   <- coef(fit)
+plot(cars)
+abline(fit)
+```
+
+The slope of the regression is `r b[1]`.

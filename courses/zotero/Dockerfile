@@ -14,6 +14,7 @@ RUN apt-get update && apt-get install -y \
 # install R packages required 
 # Change the packages list to suit your needs
 RUN R -e 'install.packages(c(\
+              "here", \
               "tidyverse", \
               "rmarkdown", \
               "learnr", \

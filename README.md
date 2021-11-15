@@ -36,3 +36,5 @@ nvm use <v> | nvm install <v>
 2. Enter Hostname and Mdp
 3. Enter `docker run -p 80:5000 --name curriculumvitae tydius/curriculumvitae`
 4. Enter `docker run -d --name ouroboros -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros`
+
+`docker run --rm -p 3838:3838 rocker/shiny:4.1`

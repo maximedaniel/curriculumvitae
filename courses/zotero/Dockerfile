@@ -22,7 +22,8 @@ RUN R -e 'install.packages(c(\
               "shinydashboard", \
               "ggplot2" \
             ), \
-            repos="https://packagemanager.rstudio.com/cran/__linux__/focal/2021-04-23"\
+            repos="http://cran.rstudio.com/"\
+           # repos="https://packagemanager.rstudio.com/cran/__linux__/focal/2021-04-23"\
           )'
 
 

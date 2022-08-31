@@ -26,6 +26,22 @@ class Publication extends Component<Props, State> {
       <div id='publication'>
             <Header as='h2'>Publications</Header>
                 <Grid padded>
+
+                    <Grid.Row>
+                    <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
+                    <Image centered src='img/chi22.png' size= 'tiny'/>
+                    </Grid.Column>
+                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
+                         William Delamare, <b>Maxime Daniel</b>, and Khalad Hasan. 2022. MultiFingerBubble: A 3D Bubble Cursor Variation for Dense Environments. <i>In Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems (CHI EA '22)</i>. ACM, New York, NY, USA, Article 453, 1–6.
+                        <Menu.Item
+                          href="pdf/delamare2022multifingerbubble.pdf"
+                          link
+                        >
+                          <Icon link name="file pdf outline"/>
+                        </Menu.Item>
+                    </Grid.Column>
+                    </Grid.Row>
+
                     <Grid.Row>
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/tei21.png' size= 'tiny'/>
@@ -40,6 +56,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/tei19.png' size= 'tiny'/>
@@ -54,7 +71,8 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row >
+
+                    <Grid.Row>
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/univbordeaux.jpg' size= 'tiny'/>
                     </Grid.Column>
@@ -68,6 +86,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/tei18.png' size= 'tiny'/>
@@ -82,6 +101,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/ihm17.png' size= 'tiny'/>
@@ -96,6 +116,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/ihm16.png' size= 'tiny'/>
@@ -110,6 +131,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/ihm16.png' size= 'tiny'/>
@@ -124,6 +146,7 @@ class Publication extends Component<Props, State> {
                         </Menu.Item>
                     </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/chi16.png' size= 'tiny'/>

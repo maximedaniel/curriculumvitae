@@ -26,9 +26,12 @@ nvm use <v> | nvm install <v>
 
 - Open Docker
 - Open a terminal
+- (Optional) Enter `docker system prune -f`
 - Enter `docker build -t tydius/curriculumvitae:latest .`, Dockerfile will run `npm run build`
+- Enter `docker run -p 80:5000 -t tydius/curriculumvitae:latest`
 - Enter `docker login`
 - Enter `docker push tydius/curriculumvitae:latest`
+- (Optional) Enter `docker system prune -f`
 
 ## If problem with CI then open ssh connexion to OVH VPS
 
@@ -36,5 +39,4 @@ nvm use <v> | nvm install <v>
 2. Enter Hostname and Mdp
 3. Enter `docker run -p 80:5000 --name curriculumvitae tydius/curriculumvitae`
 4. Enter `docker run -d --name ouroboros -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros`
-
-`docker run --rm -p 3838:3838 rocker/shiny:4.1`
+#5. Enter `docker run --rm -p 3838:3838 rocker/shiny:4.1`

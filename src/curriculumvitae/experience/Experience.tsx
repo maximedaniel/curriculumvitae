@@ -28,11 +28,24 @@ class Experience extends Component<Props, State> {
                 <Grid padded stretched>
                     <Grid.Row >
                     <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
+                    <Image centered src='img/ubc.png' size= 'tiny'/>
+                    </Grid.Column>
+                    <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
+                    <Header as='h5'>
+                        Post-doctoral Fellow
+                        <Header.Subheader>
+                        Oct 2022 - Now
+                       </Header.Subheader>
+                    </Header>
+                    </Grid.Column>
+                    </Grid.Row>
+                    <Grid.Row >
+                    <Grid.Column mobile={6} tablet={3} computer={2} verticalAlign='middle'>
                     <Image centered src='img/estia.jpg' size= 'tiny'/>
                     </Grid.Column>
                     <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
                     <Header as='h5'>
-                        Assistant Professor
+                        Lecturer and Researcher
                         <Header.Subheader>
                         Sep 2021 - Now
                        </Header.Subheader>
@@ -45,7 +58,7 @@ class Experience extends Component<Props, State> {
                     </Grid.Column>
                     <Grid.Column textAlign='left' verticalAlign='middle' mobile={10} tablet={13}  computer={14}>
                     <Header as='h5'>
-                        Assistant Lecturer
+                        Assistant Lecturer and Researcher
                         <Header.Subheader>
                         Sep 2020 - August 2021
                        </Header.Subheader>

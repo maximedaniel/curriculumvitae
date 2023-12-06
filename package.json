@@ -33,7 +33,7 @@
     "react-markdown": "^4.3.1",
     "react-markdown-github": "^3.3.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "^3.2.0",
     "react-scrollspy": "^3.4.2",
     "react-syntax-highlighter": "^12.2.1",
     "react-waypoint": "^9.0.2",

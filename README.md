@@ -1,5 +1,9 @@
 # README
 
+## Debugging
+- Open a terminal
+- Enter `npm start`
+
 ## Managing NodeJS version
 
 nvm list
@@ -22,13 +26,22 @@ nvm use <v> | nvm install <v>
 - Enter `git push`, push local DEVELOP branch to remote one
 - Enter `git push origin develop:master`, push local DEVELOP branch to remote MASTER branch
 
-## Buid and Deploy Docker Image
-
+## Build Docker Image
+- Open a terminal
+- (Optional) Enter `build.bat`
+OR
 - Open Docker
 - Open a terminal
 - (Optional) Enter `docker system prune -f`
 - Enter `docker build -t tydius/curriculumvitae:latest .`, Dockerfile will run `npm run build`
 - Enter `docker run -p 80:5000 -t tydius/curriculumvitae:latest`
+
+## Deploy Docker Image
+- Open a terminal
+- (Optional) Enter `deploy.bat`
+OR
+- Open Docker
+- Open a terminal
 - Enter `docker login`
 - Enter `docker push tydius/curriculumvitae:latest`
 - (Optional) Enter `docker system prune -f`

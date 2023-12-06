@@ -50,6 +50,4 @@ OR
 
 1. Open PuTTY on Windows
 2. Enter Hostname and Mdp
-3. Enter `docker run -p 80:5000 --name curriculumvitae tydius/curriculumvitae`
-4. Enter `docker run -d --name ouroboros -v /var/run/docker.sock:/var/run/docker.sock pyouroboros/ouroboros`
-#5. Enter `docker run --rm -p 3838:3838 rocker/shiny:4.1`
+3. Check Watchtower is running this `docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 30`

@@ -6,6 +6,7 @@ import Teaching from './teaching/Teaching'
 import Project from './project/Project'
 import Publication from './publication/Publication'
 import Methodology from './methodology/Methodology'
+import Review from './review/Review'
 import Scrollspy from './scrollspy/Scrollspy'
 
 interface Props{
@@ -79,7 +80,8 @@ class Curriculumvitae extends  Component<Props, State> {
                       <List.Item as='a' href="#publication" active={this.isSegmentActice("publication")} onClick={() => this.setCurrentSegment('publication')}>Publications</List.Item>
                       <List.Item as='a' href="#methodology"   active={this.isSegmentActice("methodology")} onClick={() => this.setCurrentSegment('methodology')}>Workflow</List.Item>
                       <List.Item as='a' href="#project"     active={this.isSegmentActice("project")}     onClick={() => this.setCurrentSegment('project')}>Projects</List.Item>
-                       </List>
+                      <List.Item as='a' href="#review"     active={this.isSegmentActice("review")}     onClick={() => this.setCurrentSegment('review')}>Reviews</List.Item>
+                      </List>
                   </Grid.Column>
               </Responsive>
               </Grid>
@@ -152,6 +154,18 @@ class Curriculumvitae extends  Component<Props, State> {
                       onUpdate={this.handleSegmentActivation}
                   >
                           <Project key='project'/>
+                  </Visibility>
+                  </Grid.Column>
+              </Grid.Row>
+              <Grid.Row centered>
+                  <Grid.Column textAlign='left' width={16}>
+            
+                  <Visibility
+                      continuous={true}
+                      once={false}
+                      onUpdate={this.handleSegmentActivation}
+                  >
+                          <Review key='review'/>
                   </Visibility>
                   </Grid.Column>
               </Grid.Row>

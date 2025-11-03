@@ -1,0 +1,124 @@
+local Publications = {}
+
+function ref_to_markdown(ref)
+  if not ref then
+    return ""
+  end
+
+  if type(ref) == "string" then
+    -- Already Markdown
+    return ref
+
+  elseif type(ref) == "table" then
+    -- Could be a list of inlines or a single element
+    if ref.t then
+      -- Single element
+      return pandoc.write(pandoc.Pandoc({pandoc.Para({ref})}), "markdown")
+    else
+      -- List of inlines
+      return pandoc.write(pandoc.Pandoc({pandoc.Para(ref)}), "markdown")
+    end
+  end
+
+  return ""
+end
+
+function Publications.render(metadata, debug)
+    local printable = metadata.printable or false
+    local publications = metadata.publications or {}
+    local publications_html = ""
+      for _, publication in ipairs(publications) do
+        if debug then
+            quarto.log.output(publication) 
+        end
+        local thumbnail = pandoc.utils.stringify(publication.thumbnail or "")
+        local pdf = pandoc.utils.stringify(publication.pdf or "")
+        local md_ref = pandoc.write(pandoc.Pandoc({pandoc.Para(publication.ref)}), "markdown")
+        local parsed_ref = pandoc.read(md_ref, "markdown")
+        local ref = pandoc.write(parsed_ref, "html")
+        ref = ref:gsub("^<p>", ""):gsub("</p>%s*$", "")
+        local submissions = publication.submissions or {}
+        local submissions_html = ""
+        for i, submission in ipairs(submissions) do
+            local name = pandoc.utils.stringify(submission.name or "")
+            local track = pandoc.utils.stringify(submission.track or "")
+            if i == #submissions - 1 then
+                submissions_html = submissions_html .. string.format([[
+                    <li class="breadcrumb-item active"><i class="bi bi-check" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
+                ]], name, track)
+            else
+                submissions_html = submissions_html .. string.format([[
+                    <li class="breadcrumb-item"><i class="bi bi-check" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
+                ]], name, track)
+            end
+        end
+        local final_submissions_html = string.format([[
+            <ol class="breadcrumb" style="margin-bottom:0.25rem;">
+                %s
+            </ol>
+            ]], submissions_html)
+        -- parse that markdown to a Pandoc document (so pandoc does actual markdown -> html)
+        -- local parsed = pandoc.read(md, "markdown")
+        -- local html = pandoc.write(parsed, "html")
+        if printable then
+            publications_html = publications_html .. string.format([[
+                <div class="g-col-12">
+                    <div class="grid">
+                    <div class="g-col-2 d-flex align-items-center justify-content-center">
+                        <img src="%s" style="max-height: 100px; max-width: 100%%;object-fit: contain;"">
+                    </div>
+                    <div class="g-col-10 d-flex align-items-center gap-2">
+                        <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
+                        %s
+                        </nav>
+                        <div style="margin-bottom:0.5rem">
+                            <span>%s</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            ]], thumbnail, final_submissions_html, ref)
+        else
+            publications_html = publications_html .. string.format([[
+                <div class="g-col-12">
+                    <div class="grid">
+                    <div class="g-col-2 d-flex align-items-center justify-content-center">
+                        <img src="%s" style="max-height: 100px; max-width: 100%%;object-fit: contain;"">
+                    </div>
+                    <div class="g-col-10 d-flex align-items-center gap-2">
+                        <div style="display: flex; flex-direction: column; line-height: 1.2;">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
+                        %s
+                        </nav>
+                        <div style="margin-bottom:0.5rem">
+                            <span>%s</span>
+                        </div>
+                        <div class="d-inline-flex align-items-center gap-2">
+                            <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                                <i class="bi bi-box-arrow-up-right"></i> Open
+                            </a>
+                            <a class="btn btn-sm btn-outline-dark" href="%s" download>
+                                <i class="bi bi-download"></i> Download
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            ]], thumbnail, final_submissions_html, ref, pdf, pdf)
+        end
+
+    end
+
+    local html = string.format([[
+    <div class="grid">
+        %s
+    </div>
+    ]], publications_html)
+
+    return html
+end
+
+return Publications

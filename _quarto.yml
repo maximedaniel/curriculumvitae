@@ -1,0 +1,28 @@
+project:
+  type: website
+  
+filters: ["filters/main.lua"]
+
+website:
+  title: "quarto"
+format:
+  html:
+    theme:
+      - cosmo
+    css: css/style.css
+    toc: true
+    include-in-header:
+      text: |
+        <meta name="google-site-verification" content="MN4fn86K1DpKV0jR0rbbUHYzjk9MwgfsGbGnSNdN4CI">
+        <script type="application/javascript" src="js/jquery-3.7.1.min.js"></script>
+    include-after-body:
+      text: |
+        <script type="application/javascript" src="js/video_embedding.js"></script>
+        <script type="application/javascript" src="js/btn_collapse.js"></script>
+        <script type="application/javascript" src="js/printable.js"></script>
+  # pdf:
+  #   toc: true
+  #   number-sections: true
+  #   colorlinks: true
+
+

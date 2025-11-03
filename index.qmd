@@ -1,0 +1,1127 @@
+---
+title: "Maxime Daniel"
+subtitle: "Assistant Professor in Computer Science<br>Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V"
+bibliography: bibliography.bib
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+
+printable: false
+
+profil:
+
+  thumbnail: "img/profil0.jpg"
+
+  informations:
+    - name: "workplace"
+      icon: "geo-alt-fill"
+      text: "Bureau 205, 97 All. Théodore Monod ESTIA 2, 64210 Bidart, France"
+    - name: "email"
+      icon: "at"
+      text: "m.daniel@estia.fr"
+    - name: "phone"
+      icon: "telephone-fill"
+      text: "(+33) 5 59 43 85 ?"
+    - name: "birthdate"
+      icon: "cake2-fill"
+      text: "4 août 1992"
+    # - name: "github"
+    #   icon: "github"
+    #   text: "https://github.com/maximedaniel"
+    # - name: "youtube"
+    #   icon: "youtube"
+    #   text: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
+
+  socials:
+      - name: "website"
+        icon: "browser-firefox"
+        href: "https://www.maximedaniel.me/"
+        btn: "btn-outline-dark"
+      - name: "Github"
+        icon: "github"
+        href: "https://github.com/maximedaniel"
+        btn: "btn-outline-dark"
+      - name: "Youtube"
+        icon: "youtube"
+        href: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
+        btn: "btn-outline-danger"
+
+projects:
+
+    - name: "ShyPins"
+      period: "Jan 2021 - Dec 2023"
+      keywords: "Programmable Matter; Shape-Changing Interfaces; Pin-Based Shape Displays; User Safety; Lab Study."
+      abstract: "Pin-based shape displays can cause psychological harm by forcefully actuating pins in contact with users, which ShyPins mitigates by regulating pin motion based on user proximity. A user study shows that gradually decreasing pin speed as users approach is perceived as safer than abruptly pausing motion, while the perceived safety of pausing depends on user preferences in user-triggered actuation. Another study finds that projecting user-centered stop zones enhances perceived safety more than pin-centered ones, and users feel less safe when approaching moving pins than when pins move toward them."
+      thumbnail: "img/shypins.png"
+      youtube: "6KpGmuIf1v8"
+      fundings: "Interreg Altantic Area (DURABLE Project 2020-2023)"
+      contributors: "Maxime Daniel, William Delamare"
+
+
+    - name: "CairnFORM²"
+      period: "Dec 2018 - Nov 2020"
+      keywords: "Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Use Cases; In-Situ Study."
+      abstract: "We extend the understanding of the potential utility and usability of axisymmetric shape-change for display. We present (1) 16 new use cases for CairnFORM and (2) a two-month comparative field study with CairnFORM in the workplace. Compared with flat-screen animations, early results show that cylindrical shape-change animations keep a better attractiveness over time."
+      thumbnail: "img/cairnform-2.jpg"
+      youtube: "XDaJmj2BntU"
+      fundings: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+      contributors: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+    - name: "CairnFORM¹"
+      period: "Oct 2016 - Nov 2018"
+      keywords: " Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Data Physicalization; Peripheral Interaction; Lab study."
+      abstract: "CairnFORM is a stack of expandable illuminated rings for display that can change of axisymmetric shape (e.g., cone, double cone, cylinder). We show that axisymmetric shape-change can be used (1) for informing users around the display through data physicalization, (2) for unobtrusively notifying users around the display through peripheral interaction, (3) for offering a greater user experience over time than a traditional flat display with no shape change."
+      thumbnail: "img/cairnform.jpg"
+      youtube: "wZ_3CtDllbA"
+      fundings: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+      contributors: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+    - name: "Expandable Illuminated Ring"
+      period: "Oct 2015 - Nov 2016"
+      keywords: "Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Building Block."
+      abstract: "Ring-based shape displays are a type of shape-changing interface where the deformation or movement of the display is achieved through a system of rings. These rings can be mechanically actuated to create different shapes, surfaces, or structures in a controlled manner. We present the iterative design process of the building block of a novel ring-based shape display - an expandable and stackable illuminated ring."
+      thumbnail: "img/eir.png"
+      youtube: "bVAmZ0PiiQo"
+      fundings: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+      contributors: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+    - name: "EEG EvTool"
+      period: "Feb 2015 - Jul 2015"
+      keywords: "HCI Evaluation; Electroencephalography; Workload; Attention; Interaction errors."
+      abstract: "EEG EvTool is a tool for continuously estimating the user's mental workload, attention and recognition of interaction errors during different interaction tasks. We (1) validate these measures on a controlled virtual environment and (2) show how they can be used to compare different interaction techniques or devices."
+      thumbnail: "img/eeg.png"
+      vimeo: "153599331"
+      fundings: ""
+      contributors: "Jérémy Frey, Maxime Daniel, Fabien Lotte, Martin Hachet"
+
+experiences:
+
+    - thumbnail: "img/estia.jpg"
+      position: "Assistant Professor"
+      period: "Sept 2021 - Now"
+
+    - thumbnail: "img/ubc.png"
+      position: "Post-doctoral Fellow"
+      period: "Oct 2022 - Sept 2023"
+
+    - thumbnail: "img/estia.jpg"
+      position: "Temporary Research and Teaching Assissant"
+      period: "Sep 2020 - August 2021"
+
+    - thumbnail: ""
+      position: "Research Engineer"
+      period: "Dec 2018 - March 2020"
+
+    - thumbnail: ""
+      position: "PhD Student"
+      period: "Oct 2015 - Nov 2018"
+
+    - thumbnail: "img/immersion.png"
+      position: "MSc Student"
+      period: "Feb 2015 - Jul 2015"
+
+educations:
+
+    - thumbnail: "img/gouv.png"
+      degree: "Qualification for Assistant Professor Position in Computer Science"
+      period: "2019 - 2024"
+    
+    - thumbnail: "img/univbordeaux.jpg"
+      degree: "Doctorate in Computer Science"
+      period: "2015 - 2018"
+      
+    - thumbnail: ""
+      degree: "Master in Computer Science"
+      period: "2013 - 2015"
+      
+    - thumbnail: "img/ubs.png"
+      degree: "Licence in Mathematics, Informatics, and Statistics"
+      period: "2010 - 2013"
+
+    - thumbnail: "img/benjamin-franklin.png"
+      degree: "Baccalauréat in Economics and Social sciences"
+      period: "2010"
+
+lectures:
+
+  - year: 2025
+    courses:
+      - name: Dynamic Web Developement
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 35
+
+      - name: Static Web Developement 
+        tools: Front End, HTML, CSS, VS Code, Web Browser
+        role: Lecturer
+        duration: 18h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 37
+
+      - name: Algorithms and Data Structures
+        tools: Python, Ad Hoc Online Learning Platform 
+        role: Coordinator, Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+  - year: 2024
+
+    courses:
+      - name: Application and Integration Work
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+      - name: Application and Integration Work
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Advanced Programming
+        tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+      
+      - name: Dynamic Web Developement
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Lecturer
+        duration: 12h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Dynamic Web Developement
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Lecturer
+        duration: 12h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Static Web Developement
+        tools: Front End, HTML, CSS, VS Code, Web Browser
+        role: Lecturer
+        duration: 18h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+      - name: Static Web Developement
+        tools: Front End, HTML, CSS, VS Code, Web Browser
+        role: Lecturer
+        duration: 18h
+        status: Apprentice
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+        
+      - name: Algorithms and Data Structures
+        tools: Python, Ad Hoc Online Learning Platform 
+        role: Coordinator, Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+      - name: Algorithms and Data Structures
+        tools: Python, Ad Hoc Online Learning Platform 
+        role: Coordinator, Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+  - year: 2023
+    courses:
+      - name: Application and Integration Work
+        tools: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+      - name: Application and Integration Work
+        tools: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 3
+
+      - name: Advanced Programming
+        tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+      - name: Advanced Programming
+        tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Dynamic Web Developement
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Lecturer
+        duration: 12h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Dynamic Web Developement
+        tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        role: Lecturer
+        duration: 12h
+        status: Apprentice
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+
+      - name: Algorithms and Data Structures
+        tools: Javascript
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+  - year: 2021
+    courses:
+      - name: Application and Integration Work
+        tools: SQL, Java AWT, Eclipse IDE, WampServer
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+        
+
+      - name: Application and Integration Work
+        tools: SQL, Java AWT, Eclipse IDE, WampServer
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Coordinator, Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+      - name: Procedural Programming
+        tools: C, VS Code, Command Terminal
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+
+      - name: Procedural Programming
+        tools: C, VS Code, Command Terminal
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+    
+      - name: Web Developement
+        tools: HTML, CSS, JS, VS Code, Web Browser
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+        
+      - name: Algorithms and Data Structures
+        tools: Javascript
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+
+  - year: 2020
+    courses:
+      - name: Application and Integration Work
+        tools: SQL, Java AWT, Eclipse IDE, WampServer
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+
+      - name: Application and Integration Work
+        tools: SQL, Java AWT, Eclipse IDE, WampServer
+        role: Tutor
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+
+      - name: Database management
+        tools: SQL, VS Code, WampServer
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Object-Oriented Programming
+        tools: JAVA, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Object-Oriented Programming
+        tools: JAVA, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+  - year: 2019
+    courses:
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+        
+
+      - name: Internet Of Things Expertise
+        tools: MQTT, C, Arduino IDE, ESP32
+        role: Coordinator, Lecturer
+        duration: 3h
+        status: Student
+        cycle: 3ʳᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 15
+
+      - name: Systematic Litterature Review
+        tools: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+        role: Coordinator, Lecturer
+        duration: 4h
+        status: Student
+        cycle: 3ʳᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+
+      - name: Microprogrammed Systems
+        tools: C, Development boards and kits - PIC
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Database management
+        tools: SQL, VS Code, WampServer
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+
+      - name: Event-Oriented Programming
+        tools: Java SWT, Eclipse IDE
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+  - year: 2018
+    courses:
+      - name: Version Control Initiation 
+        tools: Git, VS Code, HTML, CSS
+        role: Coordinator, Lecturer
+        duration: 4h
+        status: Student
+        cycle: 3ʳᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 18
+
+      - name: Augmented Virtuality Expertise
+        tools: Reality–Virtuality Continuum,  Augmented Virtuality, Tangible User Interfaces
+        role: Coordinator, Lecturer
+        duration: 1h
+        status: Student
+        cycle: 3ʳᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 25
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+      - name: Mobile Communication Systems
+        tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+
+      - name: Event-Oriented Programming
+        tools: Java SWT, Eclipse IDE
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 32
+
+
+  - year: 2017
+    courses:
+      - name: Object-Oriented Programming
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Apprentice
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+        
+      - name: Event-Oriented Programming
+        tools: Java SWT, Eclipse IDE
+        role: Lecturer
+        duration: 16h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+
+  - year: 2016
+    courses:
+      - name: Object-Oriented Programming 
+        tools: Java, Eclipse IDE
+        role: Lecturer
+        duration: 24h
+        status: Student
+        cycle: 2ⁿᵈ Year Engineering Cycle
+        school: ESTIA
+        size: 33
+
+      - name: Web Developement
+        tools: HTML, CSS, JS, VS Code, Web Browser
+        role: Lecturer
+        duration: 32h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 30
+
+
+  - year: 2015
+    courses:
+      - name: Procedural Programming
+        tools: C, VS Code, Command Terminal
+        role: Lecturer
+        duration: 22h
+        status: Apprentice
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 31
+        
+      - name: Procedural Programming
+        tools: C, VS Code, Command Terminal
+        role: Lecturer
+        duration: 22h
+        status: Student
+        cycle: 1ˢᵗ Year Engineering Cycle
+        school: ESTIA
+        size: 34
+
+
+coordinations:
+    - name: "Algorithms and Data Structures"
+      volume: "24h"
+      period: "2023-Now"
+      level: "1ˢᵗ Year Engineering Cycle (Refresher Course)"
+      location: "ESTIA"
+      aavs: 
+        - "[Understand]{.underline} the fundamentals of algorithms (variables, operators, expressions, control structures, loops, functions) and common data structures (arrays, lists, queues, stacks, dictionaries)."
+        - "[Analyze]{.underline} the time complexity of algorithms using asymptotic comparisons and Big O notation."
+        - "[Design and implement]{.underline} algorithms and choose suitable data structures to solve problems, including tasks like finding minimum/maximum, sorting, summing, and averaging data."
+      tools: Python, Ad Hoc Online Learning Platform
+
+    - name: "Mobile Communication Systems"
+      volume: "12h"
+      period: "2023-Now"
+      level: "2ⁿᵈ Year Engineering Cycle"
+      location: "ESTIA"
+      aavs: 
+        - "[Apply]{.underline} previous learning outcomes to implement a connected device with multiple input sensors and output actuators, along with a mobile application featuring multiple input and output widgets."
+        - "[Design and implement]{.underline} a BLE communication protocol enabling bidirectional requests and acknowledgements between the connected device and the mobile application."
+      tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+
+    - name: "Systematic Litterature Review"
+      volume: "4h"
+      period: "2019"
+      level: "3ʳᵈ Year Engineering Cycle"
+      location: "ESTIA"
+      aavs: 
+        - "[Understand]{.underline} the principles and methodology of a Systematic Literature Review, including research questions formulation, inclusion/exclusion criteria, data extraction, and quality assessment of studies."
+        - "[Apply]{.underline} the SLR methodology by conducting structured searches, selecting relevant studies, extracting and synthesizing data, and critically analyzing results to draw evidence-based conclusions."
+      tools: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+
+    - name: "Internet Of Things Expertise"
+      volume: "4h"
+      period: "2019"
+      level: "3ʳᵈ Year Engineering Cycle"
+      location: "ESTIA"
+      aavs: 
+        - "[Understand]{.underline} the principles of the Internet of Things (IoT), including IoT architectures and communication protocols, with emphasis on MQTT's publish/subscribe model."
+        - "[Apply]{.underline} IoT concepts by designing, programming, and deploying connected devices with sensors and actuators (ESP32), communicating via MQTT through a local hub (Raspberry Pi)."
+      tools: MQTT, C, Arduino IDE, ESP32
+
+    - name: "Version Control Initiation"
+      volume: "4h"
+      period: "2018"
+      level: "3ʳᵈ Year Engineering Cycle"
+      location: "ESTIA"
+      aavs: 
+        - "[Understand]{.underline} the basic concepts of version control, including repositories, commits, branches, and merges."
+        - "[Apply]{.underline} these concepts using Git, performing common operations such as add, commit, push, and pull, as well as handling merge conflicts and synchronizing with a remote collaborative repository."
+      tools: Git, VS Code, HTML, CSS
+
+    - name: "Augmented Virtuality Expertise"
+      volume: "1h"
+      period: "2018"
+      level: "3ʳᵈ Year Engineering Cycle"
+      location: "ESTIA"
+      aavs: 
+        - "[Understand]{.underline} the Reality–Virtuality continuum, with a focus on augmented virtuality and the comparative strengths, weaknesses, and differences between tangible user interfaces and graphical user interfaces."
+      tools: Reality–Virtuality Continuum,  Augmented Virtuality, Tangible User Interfaces
+      
+      # - name: Augmented Virtuality Expertise
+      #   tools: Tangible Interaction
+      #   role: Coordinator, Lecturer
+      #   duration: 1h
+      #   status: Student
+      #   cycle: 3ʳᵈ Year Engineering Cycle
+      #   school: ESTIA
+      #   size: 25
+
+      # - name: Internet Of Things Expertise
+      #   tools: MQTT, C, Arduino IDE, ESP32
+      #   role: Coordinator, Lecturer
+      #   duration: 3h
+      #   status: Student
+      #   cycle: 3ʳᵈ Year Engineering Cycle
+      #   school: ESTIA
+      #   size: 15
+
+
+theses:
+    - thumbnail: "img/univbordeaux.jpg" 
+      pdf: "pdf/daniel2018thesis.pdf"
+      ref:  "Maxime Daniel. 2018. *Shape-Changing Cylindrical Displays: Application to Data Physicalization and Peripheral Interaction for Energy Demand-Side Management*. **PhD thesis**. University of Bordeaux, France."
+      name: "PhD Thesis in Computer Science, University of Bordeaux (2018)"
+      title: "Shape-Changing Cylindrical Displays: Application to Data Physicalization and Peripheral Interaction for Energy Demand-Side Management"
+      abstract: "In the middle of public and collective spaces, cylindrical displays inform users around them. We question the utility and the usability of dynamic revolution symmetry for shape-changing cylindrical displays. We present CairnFORM, a prototype of cylindrical display that can change its revolution symmetry using a modular stack of expandable illuminated rings. We show that revolution symmetry is usable for informing users through data physicalization: We observe with a 10-ring CairnFORM that a physical ring chart is more efficient for a range task and for a compare task rather than for an order task. We show that revolution symmetry change is usable for unobtrusively notifying users through peripheral interaction: We observe with a 1-ring CairnFORM that a ring diameter change with exponential speed is perceived more often and calmer in the periphery of attention rather than with a constant speed or a logarithmic speed.We show that cylindrical displays with dynamic revolution symmetry offer a greater user experience over time than planar displays: After two months in context of use in a workplace, we observe that CairnFORM is as pragmatic as a flat screen but more hedonic than a flat screen. We study a use case for displays in the workplace: Helping employees to shift laptop battery charge to peak hours of local renewable energy production."
+      jury:
+        - name: Pascal Desbarats
+          role: Chair
+          position: Professor at University of Bordeaux
+
+        - name: Gaëlle Calvary
+          role: Reviewer
+          position: Professor at ENSIMAG
+
+        - name: Elena Mugellini
+          role: Reviewer
+          position: Professor at HES-SO
+
+        - name: Aurélien Tabard
+          role: Examiner
+          position: Assistant Professor at University of Lyon
+
+        - name: Alexandre Dugarry
+          role: Examiner
+          position: CEO GreenMe
+
+        - name: Stéphane Kreckelbergh
+          role: Co-supervisor
+          position: Associate Researcher at ESTIA
+
+        - name: Nadine Couture
+          role: Supervisor
+          position: Professor at ESTIA
+
+        - name: Guillaume Rivière
+          role: Supervisor
+          position: Assistant Professor at ESTIA
+      laboratory: ESTIA Recherche, ESTIA, 97 allée Théodore Monod, Technopole Izarbel, 64210, Bidart, France.
+
+
+    - thumbnail: "img/univbordeaux.jpg" 
+      pdf: "pdf/daniel2015virtual.pdf"
+      ref:  "Maxime Daniel. 2015. *Virtual Environment for Real-Time Evaluation of Workload, Attention, and Error Recognition through Electroencephalographic Analysis*. **MSc thesis**. University of Bordeaux, France."
+      name: "MSc Thesis in Computer Science, University of Bordeaux (2015)"
+      title: "Virtual Environment for Real-Time Evaluation of Workload, Attention, and Error Recognition through Electroencephalographic Analysis"
+      abstract: "This thesis addresses two interrelated objectives: (1) the development of SCOAL, a system for multimodal synchronization, data archiving, and visualization of physiological signals recorded during neuropsychological tests in a virtual reality environment; and (2) the design of a system to evaluate workload, attention, and error recognition in an interactive environment using electroencephalographic (EEG) analysis. SCOAL integrates the LabStreamingLayer (LSL) protocol for real-time data synchronization, the GDFv2.1 format for comprehensive physiological and event data storage, and OpenViBE software for real-time multimodal visualization and processing. The evaluation system uses a video game as the virtual environment, including mechanisms to modulate mental workload (e.g., path selection, spatial orientation changes, game speed), stimulate attention (e.g., visual and auditory oddball paradigms), and induce error recognition (e.g., random or incorrect path selection). Current work focuses on defining and validating five hypothetical difficulty levels of the virtual environment using the NASA TLX questionnaire, ensuring that induced workload levels match expectations before confirming EEG-based results."
+      jury:
+        - name: Pascal Desbarats
+          role: Advisor
+          position: Professor at University of Bordeaux
+
+        - name: Julien Castet
+          role: Tutor
+          position: PhD from University of Grenoble, Research Engineer at Immersion
+
+        - name: Jeremy Frey
+          role: Collaborator
+          position: PhD Student at University of Bordeaux, INRIA
+
+        - name: Fabien Lotte
+          role: Collaborator
+          position: Researcher at INRIA
+      laboratory: Équipe Potioc, INRIA Bordeaux, 200 Avenue de la Vieille Tour, 33405 Talence.
+
+publications:
+
+    - thumbnail: "img/tei25.png" 
+      pdf: "pdf/daniel2025shypins.pdf"
+      ref:  "**Maxime Daniel** and William Delamare. 2025. ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed  Zones. In *Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 14, 1–16."
+      submissions:
+        - name: TEI 2023
+          track: Long Paper
+        - name: TEI 2025
+          track: Long Paper
+
+    - thumbnail: "img/tei25.png" 
+      pdf: "pdf/angelini2025tangiblellms.pdf"
+      ref:  "Leonardo Angelini, Goda Klumbyte, **Maxime Daniel**, Nadine Couture, Elena Mugellini, and Claude Draude. 2025. Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models. *n Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 132, 1–5."
+      submissions:
+        - name: TEI 2025
+          track: Studio
+
+    - thumbnail: "img/chi22.png" 
+      pdf: "pdf/delamare2022multifingerbubble.pdf"
+      ref:  "William Delamare, **Maxime Daniel**, and Khalad Hasan. 2022. MultiFingerBubble: A 3D Bubble Cursor Variation for Dense Environments. In *Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems (CHI EA '22)*. ACM, New York, NY, USA, Article 453, 1–6."
+      submissions:
+        - name: CHI 2022
+          track: Long Paper
+        - name: CHI EA 2022
+          track: Short Paper
+
+    - thumbnail: "img/tei21.png" 
+      pdf: "pdf/daniel2021exploring.pdf"
+      ref:  "**Maxime Daniel** and Guillaume Rivière. 2021. Exploring Axisymmetric Shape-Change's Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications. In *Proceedings of the 15th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '21)*. ACM, New York, NY, USA, Article 47, 1–6."
+      submissions:
+        - name: TEI 2021
+          track: Short Paper
+
+    - thumbnail: "img/tei19.png" 
+      pdf: "pdf/daniel2019cairnform.pdf"
+      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2019. CairnFORM: a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations. In *Proceedings of the 13th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '19)*. ACM, New York, NY, USA, 275-286."
+      submissions:
+        - name: TEI 2019
+          track: Long Paper
+
+    - thumbnail: "img/tei18.png" 
+      pdf: "pdf/daniel2018designing.pdf"
+      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2018. Designing an Expandable Illuminated Ring to Build an Actuated Ring Chart. In *Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18)*. ACM, New York, NY, USA, 140-147."
+      submissions:
+        - name: TEI 2018
+          track: Short Paper
+
+    - thumbnail: "img/ihm17.png" 
+      pdf: "pdf/daniel2017cairns.pdf"
+      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2017. CAIRNS: an Ambient Tangible Interface for Shifting Energy Demand at Work. In *Proceedings of the 29th Conference on l'Interaction Homme-Machine (IHM '17)*. ACM, New York, NY, USA, 221-231."
+      submissions:
+        - name: IHM 2017
+          track: Doctoral Consortium
+
+    - thumbnail: "img/ihm16.png" 
+      pdf: "pdf/daniel2017persuasive.pdf"
+      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2016. Persuasive Interactive Systems in public and collective spaces: what Role for Tangible Interfaces ?. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 221-229."
+      submissions:
+        - name: IHM 2016
+          track: Short Paper
+
+    - thumbnail: "img/ihm16.png" 
+      pdf: "pdf/daniel2017analysis.pdf"
+      ref:  "**Maxime Daniel**, Guillaume Rivière, Nadine Couture, and Stéphane Kreckelbergh. 2016. An Analysis of Persuasive Technologies for Energy Demand Side Management. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 197-210."
+      submissions:
+        - name: IHM 2016
+          track: Long Paper
+
+    - thumbnail: "img/chi16.png" 
+      pdf: "pdf/daniel2017analysis.pdf"
+      ref:  "Jérémy Frey, **Maxime Daniel**, Julien Castet, Martin Hachet, and Fabien Lotte. 2016. Framework for Electroencephalography-based Evaluation of User Experience. In *Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)*. ACM, New York, NY, USA, 2283-2294."
+      submissions:
+        - name: CHI 2016
+          track: Long Paper
+
+reviews:
+
+    - name: "CHI 2026 Papers"
+      assigned: "1"
+      recognized: ""
+
+    - name: "TEI 2026 Papers"
+      assigned: "3"
+      recognized: ""
+
+    - name: "ISMAR 2025 Papers"
+      assigned: "3"
+      recognized: "1"
+
+    - name: "TEI 2025 Papers"
+      assigned: "1"
+      recognized: "1"
+
+    - name: "TEI 2023 Papers"
+      assigned: "1"
+      recognized: ""
+
+    - name: "IHM 2021 Papers"
+      assigned: "1"
+      recognized: ""
+
+    - name: "TEI 2020 Papers"
+      assigned: "1"
+      recognized: ""
+
+    - name: "IHM 2017 Papers"
+      assigned: "1"
+      recognized: ""
+
+supervisions:
+
+    - name: "Abu Bakar SIDDIQUE"
+      level: "Master 2, Industry 4.0, University of Pau and Pays de l'Adour (UPPA), France"
+      topic: "Expandable Illuminated Ring Design for a High-Resolution Deformable 360° Physical Display"
+      duration: "March 2025 - August 2025 (6 months)"
+      location: "ESTIA, Bidart, France."
+
+    - name: "Mauricio David APAZA IRURI"
+      level: "Bachelor 3, Computer Science, Universidad Católica San Pablo, Perou"
+      topic: "From Dashboard Photo to Automated Control: Designing a Parallel Robot System for Physical Widget Actuation"
+      duration: "May 2025 - November 2025 (6 months)"
+      location: "ESTIA, Bidart, France."
+
+    - name: "Carter JARDINE"
+      level: "Bachelor 3, Electrical and Electronics Engineering, University of British Columbia, Canada"
+      topic: "Custom Drone Design for Carrying a Deformable 360° Afterimage Display"
+      duration: "Jan 2023 - June 2023 (6 months)"
+      location: "UBC, Kelowna, Canada."
+
+    - name: "Emmanuel Reuben STEPHEN"
+      level: "Bachelor 3, Electrical and Electronics Engineering, University of British Columbia, Canada"
+      topic: "Replication and Enhancement of a Line-Based Physical Interface for Lightweight Drone-Borne Deployment"
+      duration: "Jan 2023 - June 2023 (6 months)"
+      location: "UBC, Kelowna, Canada."
+
+animations:
+  - type: "TEI 2025 Studio"
+    title: "Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models"
+    description: "A 1-day studio exploring tangible representations and interactions to enhance the interpretability and trustworthiness of large language models, in contrast to existing graphical representations and interactions."
+    role: "Co-organizer & Co-animator"
+    date: "March 4th, 2025"
+    location: "Bordeaux INP, Bordeaux, France."
+
+missions:
+  - thumbnail: "img/estia.jpg"
+    position: "Research Information System Correspondent for ESTIA Research"
+    period: "2021 - Now"
+---
+
+
+::: {.profil}
+
+:::
+
+
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+# Experience
+
+::: {.experiences}
+
+:::
+
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+# Education
+
+::: {.educations}
+
+:::
+
+:::
+
+:::
+
+# Research
+
+## Theses
+
+::: {.theses}
+
+:::
+
+## Projects
+
+::: {.projects}
+
+:::
+
+
+## Publications
+
+::: {.publications}
+
+:::
+
+
+## Reviews
+
+::: {.reviews}
+
+:::
+
+## Supervisions
+
+::: {.supervisions}
+
+:::
+
+## Animations
+
+::: {.animations}
+
+:::
+
+
+# Teaching
+
+## Coordinations
+
+::: {.coordinations}
+
+:::
+
+## Lectures
+
+::: {.lectures}
+
+:::
+
+
+# Others
+
+## Missions
+
+::: {.missions}
+
+:::
+
+
+
+<!-- ### References
+
+::: {#refs}
+::: -->

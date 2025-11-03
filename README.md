@@ -1,53 +1,21 @@
-# README
+run printable.qmd to "print" with firefox but you need to modify some variables of firefox
 
-## Debugging
-- Open a terminal
-- Enter `npm start`
+Dans la barre d’adresse, tape about:config → accepte le risque.
 
-## Managing NodeJS version
+Dans la recherche, tape print.print_header pour voir les clés.
 
-nvm list
-nvm use <v> | nvm install <v>
+Modifie (double-clique) et vide les valeurs suivantes (mets-les à chaîne vide "") :
 
-## Run Develop branch
+print.print_headerleft
 
-- Open a terminal
-- Enter `git fetch`
-- Enter `git checkout develop`
-- Enter `git pull`
-- Enter `npm start`
+print.print_headermiddle
 
-## Add, Commit and Push Develop branch to Master branch
+print.print_headerright
 
-- Open a terminal
-- Enter `git add *`
-- Enter `git status`
-- Enter `git commit -m '<commit_message>'`
-- Enter `git push`, push local DEVELOP branch to remote one
-- Enter `git push origin develop:master`, push local DEVELOP branch to remote MASTER branch
+print.print_footerleft
 
-## Build Docker Image
-- Open a terminal
-- (Optional) Enter `build.bat`
-OR
-- Open Docker
-- Open a terminal
-- (Optional) Enter `docker system prune -f`
-- Enter `docker build -t tydius/curriculumvitae:latest .`, Dockerfile will run `npm run build`
-- Enter `docker run -p 80:5000 -t tydius/curriculumvitae:latest`
+print.print_footermiddle
 
-## Deploy Docker Image
-- Open a terminal
-- (Optional) Enter `deploy.bat`
-OR
-- Open Docker
-- Open a terminal
-- Enter `docker login`
-- Enter `docker push tydius/curriculumvitae:latest`
-- (Optional) Enter `docker system prune -f`
+print.print_footerright
 
-## If problem with CI then open ssh connexion to OVH VPS
-
-1. Open PuTTY on Windows
-2. Enter Hostname and Mdp
-3. Check Watchtower is running this `docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --interval 30`
+Remarque : il existe aussi des clés spécifiques au nom de l’imprimante, par ex. print.printer_<NOM_IMPRIMANTE>.print_headerleft. Si tu veux modifier les réglages pour une imprimante précise, cherche print.printer_ et édite les clés correspondantes

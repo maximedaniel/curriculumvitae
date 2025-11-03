@@ -1,0 +1,100 @@
+---
+title: "Maxime Daniel"
+subtitle: "Assistant Professor in Computer Science<br>Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V"
+bibliography: bibliography.bib
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+# Programmable Matter
+
+
+::: {#fig-scifi layout-ncol=3 fig-align="center"}
+
+![X-Men (2000)](img/1.gif){#fig-1}
+
+![Man of Steel (2012)](img/2.gif){#fig-2}
+
+![Big Hero 6 (2014)](img/3.gif){#fig-3}
+
+![Matrix Revolution (2006)](img/4.gif){#fig-4}
+
+![Avengers: Infinity War (2018)](img/5.gif){#fig-5}
+
+![Suicide Squad (2021)](img/6.gif){#fig-6}
+
+Sci-Fi interpretations of Programmable Matter
+:::
+
+The cinema and entertainment industries often depict speculative interpretations of future technologies, helping to bridge scientific discourse and the collective imagination. For instance, many films and television series portray objects or environments composed of transformative materials capable of dynamic reconfiguration, as shown in @fig-scifi.
+
+In research, this speculative idea corresponds to what is known as *Programmable Matter* — a technological paradigm representing the convergence of computation and physical materiality, where algorithms are embedded within matter itself, enabling it to sense, compute, and reconfigure its own structure or properties. The conceptual roots of this vision can be traced back to @sutherland1965ultimate, in which Sutherland envisioned a computer capable of "controlling the existence of matter".
+
+Today, this vision unites a range of research domains as shown in @fig-programmable-matter-venn, including self-reconfiguring modular robotics within **Robotics** (e.g., @yim2007modular), smart materials and metamaterials in **Materials Science** (e.g., @pishvar2020foundations), and shape-changing interfaces within **Human–Computer Interaction** (e.g., @rasmussen2012shape).
+
+::: {#fig-programmable-matter-venn}
+
+![](img/programmable-matter-venn.png){width=300}
+
+Venn Diagram of Research Fields Contributing Towards Programmable Matter
+:::
+
+
+<!--
+This vision has often inspired the cinema and entertainment industries to explore speculative interpretations of programmable matter, portraying it as a transformative material capable of dynamic reconfiguration. Conversely, these fictional representations can in turn inspire researchers, offering qualitative illustrations of what programmable matter could become.
+Conversely, these fictional representations can in turn inspire researchers, offering qualitative illustrations of what programmable matter could become. I personnally use these illustrations as valuable cultural references when communicating with the public or popularizing research, helping to bridge scientific discourse and collective imagination
+ -->
+
+# Shape-Changing Interfaces in Human-Computer Interaction
+
+
+Graphical User Interfaces (GUIs) are ubiquitous in modern society offering flexibility and interactivity through graphical elements within a limited two-dimensional (2D) space (e.g., phones, tablets, laptops). While GUIs provide a high degree of malleability, allowing users to manipulate digital content with relative ease, they are constrained by the abstraction of the 2D screen. In contrast, Tangible User Interfaces (TUIs) [@ishii_tangible_1997;@ishii_tangible_2008] leverage physical objects as interactive elements, enabling more natural and embodied interactions. TUIs support collaborative work, facilitate embodied thinking, sustain external memory, and allow parallel actions through spatially distributed interactions [@shaer_tangible_2010]. By grounding interactions in the physical, three-dimensional (3D) world, TUIs leverage human cognitive, motor, and collaborative abilities that have evolved over millennia through hands-on experience with real-world objects.
+
+However, despite these advantages, TUIs are inherently limited in terms of malleability. Unlike GUIs, the physical properties of tangible objects -- such as position, orientation, shape, color, and transparency -- cannot be easily or dynamically modified through software, which restricts their adaptability and versatility in supporting a wide range of interaction scenarios. This trade-off highlights a key design challenge in the development of interfaces that combine the flexibility of GUIs with the embodied richness of TUIs.
+
+
+Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur the boundary between physical and virtual objects, combining the physicality of Tangible User Interfaces (TUIs) with the malleability of Graphical User Interfaces (GUIs)~\cite{ishii_radical_2012, shaer_tangible_2010, strohmeier_sharing_2016}: They are interactive devices performing physical transformations in response to user inputs or system events, enabling them to convey information, meaning, or affect~\cite{alexander_grand_2018}.
+
+
+To realize interfaces with physically reconfigurable geometry, researchers integrate combinations of sensors, hard or soft actuators, and smart materials into surfaces or volumes. These reconfigurable geometries can function as both input and output and are computationally controlled~\cite{alexander_grand_2018}.
+
+The types of shape transformations explored in prior work include changes in orientation, form, volume, texture, viscosity, spatial configuration, material addition/removal, and permeability~\cite{rasmussen_shape_2012}.
+Various actuated architectures for SCIs have emerged in recent years including sparse dots~\cite{le_goc_zooids_2016}, sparse lines~\cite{suzuki_shapebots_2019}, single lines~\cite{nakagaki_lineform_2015}, voxels~\cite{suzuki_dynablock_2018}, layers~\cite{yim_animatronic_2018}, surfaces~\cite{belke_mori_2017}, hub and struts~\cite{katsumoto_inside_2020}, string arrays\cite{engert_straide_2022}, and pin arrays~\cite{taher_exploring_2015}.
+Each of these architectures enables the exploration of one or more types of shape transformations. This diversity is necessary, as no single interface can realize all possible transformations, highlighting the current absence of fully programmable matter.
+
+SCIs have been employed for a variety of purposes~\cite{alexander_grand_2018}, such as:
+communicating information through combinations of visual, haptic, and shape animation (\eg dynamic physical bar charts~\cite{taher_exploring_2015}); 
+physically simulating real or imaginary objects (\eg a simulated human spine~\cite{chacon_spinallog_2019}); 
+adapting shape to specific interaction contexts (\eg a reconfigurable game controller~\cite{roudaut_cubimorph_2016});
+augmenting elements of or within the user's body (\eg a sixth finger~\cite{prattichizzo_sixthfinger_2014}); 
+and supporting aesthetic, sensorial, or entertainment goals (\eg kinetic garments~\cite{berzowska_kukkia_2005}).
+
+
+
+# Grand Challenges: Technology, User Behavior, Design, Ethics, Policy, and Sustainability
+
+To advance SCIs, Alexander et al.~\cite{alexander_grand_2018} identified twelve grand challenges across four domains: \textit{technology}, \textit{user behavior}, \textit{design}, and \textit{policy, ethics, and sustainability}.
+
+# My Contributions
+
+CairnFORM -> Technology, User Behavior, Design
+
+ShyPins -> Technology, User Behavior, Policy
+
+# My Perspectives
+
+
+# Teaching
+
+
+# References
+
+::: {#refs}
+:::

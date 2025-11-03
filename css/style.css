@@ -1,0 +1,62 @@
+a .btn-collapse {
+    color: black;
+}
+.table-borderless,
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+@media (max-width: 991.98px) {
+  #quarto-content .subtitle {
+    padding-top: 0px;
+  }
+}
+
+figcaption {
+  text-align: center;
+}
+
+@media print {
+    body {
+        -webkit-print-color-adjust: exact; /*chrome & webkit browsers*/
+        print-color-adjust: exact; /*firefox & IE */
+    }
+    main  {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+    /* table, .table, .table-sm{
+      border-collapse: unset;
+    } */
+
+    thead { display: table-header-group !important; }
+    tfoot { display: table-footer-group !important; }
+    div, tr, td, th { page-break-inside: avoid; }
+    .grid .g-col-print-1 {grid-column: auto/span 1;}
+    .grid .g-col-print-2 {grid-column: auto/span 2;}
+    .grid .g-col-print-3 {grid-column: auto/span 3;}
+    .grid .g-col-print-4 {grid-column: auto/span 4;}
+    .grid .g-col-print-5 {grid-column: auto/span 5;}
+    .grid .g-col-print-6 {grid-column: auto/span 6;}
+    .grid .g-col-print-7 {grid-column: auto/span 7;}
+    .grid .g-col-print-8 {grid-column: auto/span 8;}
+    .grid .g-col-print-9 {grid-column: auto/span 9;}
+    .grid .g-col-print-10 {grid-column: auto/span 10;}
+    .grid .g-col-print-11 {grid-column: auto/span 11;}
+    .grid .g-col-print-12 {grid-column: auto/span 12;}
+      body .page-columns {
+      display: grid;
+      gap: 0;
+      /* grid-template-columns: [screen-start] 1.5rem [screen-start-inset] 5fr [page-start page-start-inset] 0px [body-start-outset] 0px [body-start] 1.5rem [body-content-start] minmax(500px, calc(1350px - 3rem)) [body-content-end] 1.5rem [body-end] 28px [body-end-outset] minmax(60px, 116px) [page-end-inset] 28px [page-end] 5fr [screen-end-inset] 1.5rem [screen-end]; */
+      grid-template-columns: [screen-start] 0rem [screen-start-inset] 5fr [page-start page-start-inset] 0px [body-start-outset] 0px [body-start] 0rem [body-content-start] minmax(500px, calc(1550px - 0rem)) [body-content-end] 0rem [body-end] 0px [body-end-outset] minmax(0px, 0px) [page-end-inset] 0px [page-end] 5fr [screen-end-inset] 0rem [screen-end];
+    }
+    /* table.table > thead {
+    border-top-width: 0 !important;
+    border-bottom: 10px solid rgb(153.5,156.5,159.5) !important;
+    } */
+}
+

@@ -24,7 +24,6 @@ function Lectures.render(metadata, debug)
     local lectures_html = ""
     for i, lecture in ipairs(lectures) do
         local year = pandoc.utils.stringify(lecture.year or "")
-        quarto.log.output("year:", year)
         local courses_html = ""
         local courses = lecture.courses or {}
         -- table.sort(courses, function(a, b)
@@ -114,7 +113,7 @@ function Lectures.render(metadata, debug)
 
         lectures_html = lectures_html .. string.format([[
             <div class="g-col-12">
-            <span style="font-weight: 600;font-size: 1.65rem;">%s</span><br/>
+            <h3 style="margin-top:0;">%s</h3>
             <table class="table table-borderless table-sm">
             <thead>
                 <tr>
@@ -135,7 +134,7 @@ function Lectures.render(metadata, debug)
             ]], year, courses_html, total_html)
     end
     local html = string.format([[
-    <div class="grid">
+    <div class="grid" style="--bs-gap:0">
         %s
     </div>
     ]], lectures_html)

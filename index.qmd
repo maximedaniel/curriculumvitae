@@ -311,7 +311,7 @@ lectures:
         status: Student
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
-        size: 3
+        size: 29
 
       - name: Advanced Programming
         tools: Continuous Integration, GitHub, C, VS Code, Command terminal
@@ -876,79 +876,83 @@ theses:
 
 publications:
 
-    - thumbnail: "img/tei25.png" 
-      pdf: "pdf/daniel2025shypins.pdf"
-      ref:  "**Maxime Daniel** and William Delamare. 2025. ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed  Zones. In *Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 14, 1–16."
-      submissions:
-        - name: TEI 2023
-          track: Long Paper
-        - name: TEI 2025
-          track: Long Paper
+    - category: "International Peer-Reviewed Conferences"
+      inputs:
+        - thumbnail: "img/tei25.png" 
+          pdf: "pdf/daniel2025shypins.pdf"
+          ref:  "**Maxime Daniel** and William Delamare. 2025. ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed  Zones. In *Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 14, 1–16."
+          submissions:
+            - name: TEI 2023
+              track: Long Paper
+            - name: TEI 2025
+              track: Long Paper
 
-    - thumbnail: "img/tei25.png" 
-      pdf: "pdf/angelini2025tangiblellms.pdf"
-      ref:  "Leonardo Angelini, Goda Klumbyte, **Maxime Daniel**, Nadine Couture, Elena Mugellini, and Claude Draude. 2025. Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models. *n Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 132, 1–5."
-      submissions:
-        - name: TEI 2025
-          track: Studio
+        - thumbnail: "img/tei25.png" 
+          pdf: "pdf/angelini2025tangiblellms.pdf"
+          ref:  "Leonardo Angelini, Goda Klumbyte, **Maxime Daniel**, Nadine Couture, Elena Mugellini, and Claude Draude. 2025. Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models. *n Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 132, 1–5."
+          submissions:
+            - name: TEI 2025
+              track: Studio
 
-    - thumbnail: "img/chi22.png" 
-      pdf: "pdf/delamare2022multifingerbubble.pdf"
-      ref:  "William Delamare, **Maxime Daniel**, and Khalad Hasan. 2022. MultiFingerBubble: A 3D Bubble Cursor Variation for Dense Environments. In *Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems (CHI EA '22)*. ACM, New York, NY, USA, Article 453, 1–6."
-      submissions:
-        - name: CHI 2022
-          track: Long Paper
-        - name: CHI EA 2022
-          track: Short Paper
+        - thumbnail: "img/chi22.png" 
+          pdf: "pdf/delamare2022multifingerbubble.pdf"
+          ref:  "William Delamare, **Maxime Daniel**, and Khalad Hasan. 2022. MultiFingerBubble: A 3D Bubble Cursor Variation for Dense Environments. In *Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems (CHI EA '22)*. ACM, New York, NY, USA, Article 453, 1–6."
+          submissions:
+            - name: CHI 2022
+              track: Long Paper
+            - name: CHI EA 2022
+              track: Short Paper
 
-    - thumbnail: "img/tei21.png" 
-      pdf: "pdf/daniel2021exploring.pdf"
-      ref:  "**Maxime Daniel** and Guillaume Rivière. 2021. Exploring Axisymmetric Shape-Change's Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications. In *Proceedings of the 15th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '21)*. ACM, New York, NY, USA, Article 47, 1–6."
-      submissions:
-        - name: TEI 2021
-          track: Short Paper
+        - thumbnail: "img/tei21.png" 
+          pdf: "pdf/daniel2021exploring.pdf"
+          ref:  "**Maxime Daniel** and Guillaume Rivière. 2021. Exploring Axisymmetric Shape-Change's Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications. In *Proceedings of the 15th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '21)*. ACM, New York, NY, USA, Article 47, 1–6."
+          submissions:
+            - name: TEI 2021
+              track: Short Paper
 
-    - thumbnail: "img/tei19.png" 
-      pdf: "pdf/daniel2019cairnform.pdf"
-      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2019. CairnFORM: a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations. In *Proceedings of the 13th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '19)*. ACM, New York, NY, USA, 275-286."
-      submissions:
-        - name: TEI 2019
-          track: Long Paper
+        - thumbnail: "img/tei19.png" 
+          pdf: "pdf/daniel2019cairnform.pdf"
+          ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2019. CairnFORM: a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations. In *Proceedings of the 13th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '19)*. ACM, New York, NY, USA, 275-286."
+          submissions:
+            - name: TEI 2019
+              track: Long Paper
 
-    - thumbnail: "img/tei18.png" 
-      pdf: "pdf/daniel2018designing.pdf"
-      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2018. Designing an Expandable Illuminated Ring to Build an Actuated Ring Chart. In *Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18)*. ACM, New York, NY, USA, 140-147."
-      submissions:
-        - name: TEI 2018
-          track: Short Paper
+        - thumbnail: "img/tei18.png" 
+          pdf: "pdf/daniel2018designing.pdf"
+          ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2018. Designing an Expandable Illuminated Ring to Build an Actuated Ring Chart. In *Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18)*. ACM, New York, NY, USA, 140-147."
+          submissions:
+            - name: TEI 2018
+              track: Short Paper
 
-    - thumbnail: "img/ihm17.png" 
-      pdf: "pdf/daniel2017cairns.pdf"
-      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2017. CAIRNS: an Ambient Tangible Interface for Shifting Energy Demand at Work. In *Proceedings of the 29th Conference on l'Interaction Homme-Machine (IHM '17)*. ACM, New York, NY, USA, 221-231."
-      submissions:
-        - name: IHM 2017
-          track: Doctoral Consortium
+        - thumbnail: "img/chi16.png" 
+          pdf: "pdf/daniel2017analysis.pdf"
+          ref:  "Jérémy Frey, **Maxime Daniel**, Julien Castet, Martin Hachet, and Fabien Lotte. 2016. Framework for Electroencephalography-based Evaluation of User Experience. In *Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)*. ACM, New York, NY, USA, 2283-2294."
+          submissions:
+            - name: CHI 2016
+              track: Long Paper
 
-    - thumbnail: "img/ihm16.png" 
-      pdf: "pdf/daniel2017persuasive.pdf"
-      ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2016. Persuasive Interactive Systems in public and collective spaces: what Role for Tangible Interfaces ?. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 221-229."
-      submissions:
-        - name: IHM 2016
-          track: Short Paper
+    - category: "National Peer-Reviewed Conferences"
+      inputs:
+        - thumbnail: "img/ihm17.png" 
+          pdf: "pdf/daniel2017cairns.pdf"
+          ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2017. CAIRNS: an Ambient Tangible Interface for Shifting Energy Demand at Work. In *Proceedings of the 29th Conference on l'Interaction Homme-Machine (IHM '17)*. ACM, New York, NY, USA, 221-231."
+          submissions:
+            - name: IHM 2017
+              track: Doctoral Consortium
 
-    - thumbnail: "img/ihm16.png" 
-      pdf: "pdf/daniel2017analysis.pdf"
-      ref:  "**Maxime Daniel**, Guillaume Rivière, Nadine Couture, and Stéphane Kreckelbergh. 2016. An Analysis of Persuasive Technologies for Energy Demand Side Management. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 197-210."
-      submissions:
-        - name: IHM 2016
-          track: Long Paper
+        - thumbnail: "img/ihm16.png" 
+          pdf: "pdf/daniel2017persuasive.pdf"
+          ref:  "**Maxime Daniel**, Guillaume Rivière, and Nadine Couture. 2016. Persuasive Interactive Systems in public and collective spaces: what Role for Tangible Interfaces ?. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 221-229."
+          submissions:
+            - name: IHM 2016
+              track: Short Paper
 
-    - thumbnail: "img/chi16.png" 
-      pdf: "pdf/daniel2017analysis.pdf"
-      ref:  "Jérémy Frey, **Maxime Daniel**, Julien Castet, Martin Hachet, and Fabien Lotte. 2016. Framework for Electroencephalography-based Evaluation of User Experience. In *Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)*. ACM, New York, NY, USA, 2283-2294."
-      submissions:
-        - name: CHI 2016
-          track: Long Paper
+        - thumbnail: "img/ihm16.png" 
+          pdf: "pdf/daniel2017analysis.pdf"
+          ref:  "**Maxime Daniel**, Guillaume Rivière, Nadine Couture, and Stéphane Kreckelbergh. 2016. An Analysis of Persuasive Technologies for Energy Demand Side Management. In *Actes de la 28ième conférence francophone sur l'Interaction Homme-Machine (IHM '16)*. ACM, New York, NY, USA, 197-210."
+          submissions:
+            - name: IHM 2016
+              track: Long Paper
 
 reviews:
 

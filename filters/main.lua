@@ -33,7 +33,7 @@ local function render_div_for_class(class, metadata)
     return pandoc.RawBlock("html", Educations.render(metadata, false))
   elseif class == "publications" then
     quarto.log.output("========== .publications div ==========")
-    return pandoc.RawBlock("html", Publications.render(metadata, false))
+    return pandoc.RawBlock("html", Publications.render(metadata, true))
   elseif class == "lectures" then
     quarto.log.output("========== .lectures div ==========")
     return pandoc.RawBlock("html", Lectures.render(metadata, false))

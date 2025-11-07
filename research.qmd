@@ -16,29 +16,23 @@ format:
 # Vision: Programmable Matter
 
 
-The cinema and entertainment industries frequently present speculative visions of future technologies, serving as a bridge between scientific discourse and the collective imagination. Many films and television series, for instance, explore the concept of transformative materials and environments capable of dynamic reconfiguration, as illustrated in @fig-scifi.\
-In X-Men (2000), the surface of a round table morphs to form a miniature city model, aiding in the visualization of a collective battle strategy as illustrated by @fig-scifi-1.\
-In Man of Steel (2012), the interior of an alien ship materializes a physical key from a surface composed of microscopic robots—an object the protagonist can subsequently remove and use, as shown in @fig-scifi-2.\
-In Big Hero 6 (2014), the protagonist controls a swarm of microbots that assemble into various shapes and structures through thought alone, which is depicted in @fig-scifi-3.\
-In The Matrix Revolutions (2003), a general artificial intelligence manifests itself by commanding a swarm of robots that coalesce into a large humanoid form during its interaction with the protagonist, as seen in @fig-scifi-4.\
-In Avengers: Infinity War (2018), one of the protagonist’s suits, composed of nanobots, dynamically reconfigures to adapt to different combat scenarios, illustrated by @fig-scifi-5.\
-Finally, in The Suicide Squad (2021), a character’s firearm physically reconfigures as components are attached or detached, enabling or disabling specific functions, as demonstrated in @fig-scifi-6.
+The cinema and entertainment industries often present speculative visions of future technologies, serving as a bridge between scientific discourse and the collective imagination. For instance, many films and television series explore the concept of transformative materials and environments capable of dynamic reconfiguration, as illustrated in @fig-scifi.
 
-::: {#fig-scifi layout-ncol=3 fig-align="center"}
+::: {#fig-scifi layout-ncol=2 fig-align="center"}
 
-![X-Men (2000)](img/1.gif){#fig-scifi-1}
+![In **X-Men (2000)**, the surface of a round table morphs to form a miniature city model, aiding in the visualization of a collective battle strategy.](img/sci-scifis/x-men.jpg){#fig-scifi-1}
 
-![Man of Steel (2012)](img/2.gif){#fig-scifi-2}
+![In **Matrix Revolution (2006)**, a artificial intelligence manifests itself by assembling a swarm of robots into a large humanoid face during its interaction with the protagonist.](img/sci-scifis/matrix.jpg){#fig-scifi-4}
 
-![Big Hero 6 (2014)](img/3.gif){#fig-scifi-3}
+![In **Big Hero 6 (2014)**, the protagonist controls a swarm of microbots that assemble into various shapes and structures through thought alone.](img/sci-scifis/big-hero-6.jpg){#fig-scifi-3}
 
-![Matrix Revolution (2006)](img/4.gif){#fig-scifi-4}
+![In **Avengers: Infinity War (2018)**, one of the protagonist’s suits, composed of nanobots, dynamically reconfigures to adapt to different combat scenarios.](img/sci-scifis/avengers.jpg){#fig-scifi-5}
 
-![Avengers: Infinity War (2018)](img/5.gif){#fig-scifi-5}
+![In **Man of Steel (2012)**, the interior of an alien ship materializes a physical key that the protagonist can subsequently remove and use.](img/sci-scifis/man-of-steel.jpg){#fig-scifi-2}
 
-![Suicide Squad (2021)](img/6.gif){#fig-scifi-6}
+![In **Suicide Squad (2021)**, a character’s firearm physically reconfigures as components are attached or detached, enabling or disabling specific functions.](img/sci-scifis/suicide-squad.jpg){#fig-scifi-6}
 
-Sci-Fi interpretations of Programmable Matter
+Interpretations of Programmable Matter in Science-Fiction
 :::
 
 In research, this speculative idea corresponds to what is known as *Programmable Matter* — a technological paradigm representing the convergence of computation and physical materiality, where algorithms are embedded within matter itself, enabling it to sense, compute, and reconfigure its own structure or properties. The conceptual roots of this vision can be traced back to @sutherland1965ultimate, in which Sutherland envisioned a computer capable of "controlling the existence of matter".
@@ -59,7 +53,7 @@ Conversely, these fictional representations can in turn inspire researchers, off
 
 # Research Field: Shape-Changing Interfaces in Human-Computer Interaction
 
-Nowadays, Graphical User Interfaces (GUIs) are ubiquitous in our societies offering flexibility and interactivity through graphical elements within a limited two-dimensional (2D) space (e.g., phones, tablets, laptops). While GUIs provide a high degree of malleability, allowing users to manipulate digital content with relative ease, they are constrained by the abstraction of the 2D screen. In contrast, Tangible User Interfaces (TUIs) [@ishii_tangible_1997;@ishii_tangible_2008] leverage physical objects as interactive elements, enabling more natural and embodied interactions. TUIs support collaborative work, facilitate embodied thinking, sustain external memory, and allow parallel actions through spatially distributed interactions [@shaer_tangible_2010]. By grounding interactions in the physical, three-dimensional (3D) world, TUIs leverage human cognitive, motor, and collaborative abilities that have evolved over millennia through hands-on experience with real-world objects. 
+Nowadays, Graphical User Interfaces (GUIs) are ubiquitous in our societies offering flexibility and interactivity through graphical elements within a limited two-dimensional (2D) space (e.g., phones, tablets, laptops). While GUIs provide a high degree of malleability, allowing users to manipulate digital content with relative ease, they are constrained by the abstraction of the 2D screen. In contrast, Tangible User Interfaces (TUIs) [@ishii_tangible_1997;@ishii_tangible_2008] leverage physical objects as interactive elements, enabling more natural and embodied interactions. TUIs support collaborative work, facilitate embodied thinking, sustain external memory, and allow parallel actions through spatially distributed interactions [@shaer_tangible_2010]. By grounding interactions in the physical 3D world, TUIs leverage human cognitive, motor, and collaborative abilities that have evolved over millennia through hands-on experience with real-world objects. 
 
 However, despite these advantages, TUIs are inherently limited in terms of malleability. Unlike GUIs, the physical properties of tangible objects -- such as position, orientation, shape, color, and transparency -- cannot be easily or dynamically modified through software, which restricts their adaptability and versatility in supporting a wide range of interaction scenarios. 
 Without malleability, TUIs will remain perpetually outpaced by GUIs. Therefore, a key design challenge emerges towards the development of interfaces that combine the flexibility of GUIs with the embodied richness of TUIs.
@@ -70,83 +64,186 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 
 ![](img/radical-atoms.jpg){width="80%"}
 
-Shape-Changing Interfaces (Radical Atoms) in the landscape of human-technology interactions
+**Radical Atoms** by @ishii_radical_2012 :<br> Shape-Changing Interfaces in the landscape of human-technology interactions
 :::
 
+## Approaches
 
 To realize interfaces with physically reconfigurable geometry, researchers integrate combinations of sensors, hard or soft actuators, and smart materials into surfaces or volumes. These reconfigurable geometries can function as both input and output and are computationally controlled [@alexander_grand_2018].
 The types of shape transformations explored in prior work include changes in orientation, form, volume, texture, viscosity, spatial configuration, material addition/removal, and permeability [@rasmussen_shape_2012].
-Various actuated architectures for SCIs have emerged in recent years including sparse dots [@le_goc_zooids_2016], sparse lines [@suzuki_shapebots_2019], single lines [@nakagaki_lineform_2015], voxels [@suzuki_dynablock_2018], layers [@yim_animatronic_2018], surfaces [@belke_mori_2017], hub and structs [@katsumoto_inside_2020], string arrays [@engert_straide_2022], and pin arrays [@taher_exploring_2015].
+Various actuated architectures for SCIs have emerged in recent years as illustrated in @fig-sci-architectures. 
 Each of these architectures enables the exploration of one or more types of shape transformations. This diversity is necessary, as no single interface can realize all possible transformations, highlighting the current absence of fully programmable matter.
 
 ::: {#fig-sci-architectures layout-ncol=5 fig-align="center"}
 
-![Layers](img/sci-architectures/layers.jpg){#fig-sci-architectures-1}
+![**Layers**<br>[@yim_animatronic_2018]](img/sci-architectures/layers.jpg){#fig-sci-architectures-1}
 
-![Pin Array](img/sci-architectures/pin-array.jpg){#fig-sci-architectures-2}
+![**Pin Array**<br>[@taher_exploring_2015]](img/sci-architectures/pin-array.jpg){#fig-sci-architectures-2}
 
-![Sparse Dots](img/sci-architectures/sparse-dots.jpg){#fig-sci-architectures-3}
+![**Sparse Dots**<br>[@le_goc_zooids_2016]](img/sci-architectures/sparse-dots.jpg){#fig-sci-architectures-3}
 
-![Sparse Lines](img/sci-architectures/sparse-lines.jpg){#fig-sci-architectures-4}
+![**Sparse Lines**<br>[@suzuki_shapebots_2019]](img/sci-architectures/sparse-lines.jpg){#fig-sci-architectures-4}
 
-![Single Line](img/sci-architectures/single-line.jpg){#fig-sci-architectures-5}
+![**Single Line**<br>[@nakagaki_lineform_2015]](img/sci-architectures/single-line.jpg){#fig-sci-architectures-5}
 
-![Voxels](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
+![**Voxels**<br>[@suzuki_dynablock_2018]](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
 
-![Surfaces](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
+![**Surfaces**<br>[@belke_mori_2017]](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
 
-![Hub and Structs](img/sci-architectures/hub-and-structs.png){#fig-sci-architectures-8}
+![**Hub and Structs**<br>[@katsumoto_inside_2020]](img/sci-architectures/hub-and-structs.png){#fig-sci-architectures-8}
 
-![Ring Stack](img/sci-architectures/ring-stack.png){#fig-sci-architectures-9}
+![**Ring Stack**<br>[@daniel_cairnform_2019]](img/sci-architectures/ring-stack.png){#fig-sci-architectures-9}
 
-![String Array](img/sci-architectures/string-array.jpg){#fig-sci-architectures-10}
+![**String Array**<br>[@engert_straide_2022]](img/sci-architectures/string-array.jpg){#fig-sci-architectures-10}
 
 Actuated Architectures for Shape-Changing Interfaces
 :::
 
+## Purposes and Benefits
+
+To help researchers and target user-groups see clear benefits in the development of shape-changing interfaces, @alexander_grand_2018 explored the purposes and benefits from the literature. Five fundamental purposes for SCIs were identified, each illustrated in @fig-sci-purposes: *(a) communicate information*, *(b) simulate objects*, *(c) adapt interfaces*, *(d) augment users*, and *(e) support arts*. 
 
 
-Various purposes of SCIs have been demonstrated [@alexander_grand_2018], such as:
+::: {#fig-sci-purposes layout-ncol=3 fig-align="center"}
 
-- communicating information through combinations of visual, haptic, and shape animation (e.g., dynamic physical bar charts by @taher_exploring_2015); 
-- physically simulating real or imaginary objects (e.g., a simulated human spine by @chacon_spinallog_2019); 
-- adapting shape to specific interaction contexts (e.g.,  a reconfigurable game controller by @roudaut_cubimorph_2016);
-- augmenting elements of or within the user's body (e.g.,  a sixth finger by @prattichizzo_sixthfinger_2014); 
-- supporting aesthetic, sensorial, or entertainment goals (e.g., kinetic garments by @berzowska_kukkia_2005).
+![Communicating information through combinations of visual, haptic, and shape animation:<br>dynamic physical bar charts by @taher_exploring_2015](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
 
-::: {#fig-sci-purposes layout-ncol=4 fig-align="center"}
+![Physically simulating real or imaginary objects:<br>physical rendering of a 3D car model by @follmer_inform_2013](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
 
-![Communicate Information](img/sci-architectures/layers.jpg){#fig-sci-purposes-1}
+![Adapting shape to specific interaction contexts:<br>a reconfigurable game controller by @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
 
-![Simulate Objects](img/sci-architectures/pin-array.jpg){#fig-sci-purposes-2}
+![Augmenting elements of or within the user's body:<br>a sixth finger by @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
 
-![Adapt Interfaces](img/sci-architectures/sparse-dots.jpg){#fig-sci-purposes-3}
-
-![Augment Users](img/sci-architectures/sparse-lines.jpg){#fig-sci-purposes-4}
-
-![Entertain Audience](img/sci-architectures/single-line.jpg){#fig-sci-purposes-5}
+![Supporting aesthetic, sensorial, or entertainment goals:<br>kinetic garments by @berzowska_kukkia_2005](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
 
 
-Known purposes of Shape-Changing Interfaces
+Purposes of Shape-Changing Interfaces
 :::
 
 # Research Agenda: Grand Challenges in Technology, User Behavior, Design, Ethics, Policy, and Sustainability
 
-To advance SCIs, Alexander et al.~\cite{alexander_grand_2018} identified twelve grand challenges across four domains: \textit{technology}, \textit{user behavior}, \textit{design}, and \textit{policy, ethics, and sustainability}.
+To advance SCIs, @alexander_grand_2018 identified twelve grand challenges across four domains: *technology*, *user behavior*, *design*, and *policy, ethics, and sustainability*. @fig-grand-challenges illustrates these grand challenges.
+
+::: {#fig-grand-challenges fig-align="center"}
+
+![](img/sci-challenges/grand-challenges.jpg){width="80%"}
+
+**Grand challenges** for Shape-Changing Interfaces by @alexander_grand_2018
+:::
+
+
+## Technology
+
+**Toolkits for Prototyping of Shape-changing Hardware.** There is a need to develop toolkits that facilitate the prototyping of shape-changing interfaces, which requires knowledge of complex electronics and mechanical engineering. This research aims to lower the implementation barrier by creating a standard platform for hardware prototyping, a cross-platform software layer, and tools for end-user programming, ultimately reducing the effort of classic interfaces by at least a factor of 10 in time and cost.
+
+**Miniaturized Device Form Factors and High Resolution.** A significant challenge in shape-changing interfaces is the need for small, lightweight, and high-resolution actuators that can transition from stationary to mobile and wearable forms. Current electromechanical actuators often result in bulky setups, while user expectations demand high-resolution outputs. Addressing this challenge involves leveraging advancements in soft robotics and smart materials to create slimmer, more responsive actuation systems that can support a higher resolution of shape change.
+
+**Integration of Additional I/O Modalities.** Today’s shape-changing interfaces need to integrate additional input and output modalities, such as high-resolution touch sensing and adjustable material properties, to realize their full potential. This can be achieved by incorporating off-the-shelf sensors and displays, as well as advances in flexible technologies that allow for conformal integration with actuators.
+
+**Non-functional Requirements.** Energy consumption is a significant challenge in actuated systems, particularly in mobile or wearable solutions that must be self-contained, often relying on large batteries or having short battery life-spans. To address this, there is potential in systems design that reduces power consumption by offering (bi-)stable states, along with environmental energy harvesting and self-charging capabilities to ensure usability for at least a full day without recharging.
+
+## User Behavior
+
+**Understanding the User Experience of Shape-change.** We should seek to understand the user experience (UX) of shape-change, as evaluating its effectiveness presents unique challenges. These include isolating the effects of combined modalities and assessing the robustness of current systems for in-depth evaluations. By characterizing the value of shape-changing interfaces, we can identify beneficial domains and tasks, supporting their design and construction. This involves conducting comparative studies and isolating factors to deepen our understanding of user interactions with shape-change.
+
+**Shape-Change Theory Building.** Behavioural sciences construct theories to integrate empirical results and make predictions, yet shape-change research lacks such theorizing. Developing theoretical statements that articulate how shape-change affects interaction could help predict user reactions and enhance our understanding of its usefulness.
+
+## Design
+
+**Designing for Temporality.** Shape-changing interfaces require temporal design, presenting challenges in translating behavioral sketches into actual designs due to the unique experiences users have with dynamic forms. While traditional design methods struggle to articulate these properties, inspiration from disciplines like dance and music can help develop techniques for designing and comparing temporal forms.
+
+**Integrating Artefact and Interaction.** Designers of shape-changing interfaces must create devices that harmonize usability and aesthetics, engaging both the body and mind. This requires an understanding of theory, heuristics, and dynamic affordances, alongside the development of tools and methods that integrate artefact and interaction in the design process.
+
+**Application and Content Design.** The design and implementation of applications and content for shape-changing interfaces present significant challenges, which can be categorized into four parts: when to apply shape-change, what shape-changes to implement, what applications to build, and how to design the content for those applications. It is crucial to develop frameworks and design principles that clarify the appropriate contexts for shape-change and establish consensus on shape-change semantics to avoid user confusion. Additionally, careful consideration of end-user content is essential, particularly for interfaces that utilize dynamic displays, necessitating the development of toolkits for content design across various formats.
+
+
+## Policy, Ethics, and Sustainability
+
+**Policy and Ethics.** Policy-makers face the challenge of creating legislation that ensures the safe and ethical operation of shape-changing interfaces without stifling innovation. Key issues include safety, security, content appropriateness, ownership responsibility, and the implications of non-permanency in transformations.
+
+**Sustainability and the Environment.** Shape-changing interfaces pose sustainability challenges due to their demand for natural resources and recycling difficulties, but their morphing ability could reduce the need for multiple devices, ultimately lowering resource requirements. Researchers should focus on developing long-lasting, modular interfaces that support upgrades and interoperability to enhance sustainability.
 
 # My Contributions
 
-CairnFORM -> Technology, User Behavior, Design
-architectures: ring stacks
-purposes: communicate information, simulate objects, adapt interfaces, entertain audience
+So far, I contributed three research projects in the field of Shape-Changing Interfaces that addressed some of these grand challenges.
 
-ShyPins -> Technology, User Behavior, Policy
-architectures: pin arrays
-purposes: communicate information, simulate objects, adapt interfaces, entertain audience
-contributions: safety strategy to preserve user physical and mental well-being when interacting with shape-changing interfaces.
+## Expandable Illuminated Ring (2018)
+
+In @daniel_designing_2018, I presented the design and implementation of an expandable and stackable illuminated ring as a building block for ring-based shape displays. Ring-based shape displays are a type of shape-changing interface where the deformation or movement of the display is achieved through a system of rings. These rings can be mechanically actuated to create different shapes, surfaces, or structures in a controlled manner. We present the iterative design process of an expandable and stackable illuminated ring (@fig-ring) -- the building block of a ring-based shape display.
+
+This project contributed to the grand challenges of **Technology** (*toolkits for prototyping of shape-changing hardware, miniaturized device form factors and high resolution*).
+
+::: {#fig-ring  layout="[[1,1,1], [1]]" fig-align="center"}
+
+![Version 1](img/sci-contributions/ring-v0.jpg){width="80%" #fig-ring-1}
+
+![Version 2](img/sci-contributions/ring-v1.jpg){width="80%" #fig-ring-2}
+
+![Version 3](img/sci-contributions/ring-v2.jpg){width="80%" #fig-ring-3}
+
+![Version Finale](img/sci-contributions/ring-final.jpg){width="80%" #fig-ring-4}
+
+Designing an Expandable Illuminated Ring to Build an Actuated Ring Chart
+:::
+
+
+
+## CairnFORM (2019)
+
+In @daniel_cairnform_2019, we introduced *CairnFORM*, (1) a stack of expandable illuminated rings for display that can change of axisymmetric shape (e.g., cone, double cone, cylinder). We show that axisymmetric shape-change can be used (2) for informing users around the display through data physicalization and (3) for unobtrusively notifying users around the display through peripheral interaction.
+
+This project contributed to the grand challenges of **Technology** (*miniaturized device form factors and high resolution*) and **Design** (*integrating artefact and interaction, application and content design*).
+
+::: {#fig-cairnform-1 layout="[[1], [1, 1]]" fig-align="center"}
+
+![A stack of expandable illuminated rings for display](img/sci-contributions/cairnform-tech.jpg){width="80%" #fig-sci-cairnform-1-1}
+
+![Factors of the first study on data physicalization](img/sci-contributions/cairnform-study-1.png){#fig-sci-cairnform-1-2}
+
+![Factors of the second study on peripheral interaction](img/sci-contributions/cairnform-study-2.png){#fig-sci-cairnform-1-3}
+
+CairnFORM: a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations
+:::
+
+
+## CairnFORM² (2021)
+
+In @daniel_exploring_2021, we extend the understanding of the potential utility and usability of axisymmetric shape-change for display. We present (1) 16 new use cases for *CairnFORM*  (@fig-sci-cairnform-2-1) and (2) a two-month comparative field study with *CairnFORM* in the workplace (@fig-sci-cairnform-2-2). Compared with flat-screen animations, early results show that cylindrical shape-change animations keep a better attractiveness over time.
+
+This project contributed to the grand challenges of **User Behavior** (*understanding the user experience of shape-change*) and **Design** (*application and content design*).
+
+::: {#fig-cairnform-2 layout-ncol=1 fig-align="center"}
+
+![Sixtheen use cases for ring-based shape displays](img/sci-contributions/cairnform-2-use-cases.jpg){width="80%" #fig-sci-cairnform-2-1}
+
+![Two-month field study comparing ring-based shape displays and flat displays](img/sci-contributions/cairnform-2-in-situ.jpg){width="80%" #fig-sci-cairnform-2-2}
+
+Exploring Axisymmetric Shape-Change’s Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications
+:::
+
+## ShyPins (2025)
+
+In @daniel_shypins_2025, we introduced ShyPins, a pin-based shape display that implements a safety strategy to protect users’ physical and psychological well-being by regulating pin motion based on user proximity (@fig-shypins). Pin-based shape displays can cause discomfort or psychological harm when pins move forcefully against the user’s body; ShyPins addresses this by modulating actuation behavior as users approach. A user study showed that gradually reducing pin speed as users move closer is perceived as safer than abruptly stopping motion, while the perceived safety of motion pauses depends on user preferences in user-triggered actuation. Another study found that projecting user-centered stop zones improves perceived safety compared to pin-centered zones, and that users feel less safe when approaching moving pins than when pins move toward them.
+
+This project contributed to the grand challenges of **Technology** (*integration of additional I/O modalities*), **Policy, Ethics, and Sustainability** (*policy and ethics*) and **User Behavior** (*understanding the user experience of shape-change*).
+
+
+::: {#fig-shypins layout="[[1], [1, 1]]" fig-align="center"}
+
+![ShyPins regulates pin motion to prevent the forcible (dis)appearance of tangible controls, mitigating psychological harm to users during scenarios like reconfiguring a tangible cockpit (top) and transitioning a physical bar chart (bottom).](img/sci-contributions/shypins-strategy.jpg){width="80%" #fig-shypins-1}
+
+![Factors of the first study on perceived safety: the number of pin speed zones (a), the level of user body engagement (b), and the trigger of pin actuation (c).](img/sci-contributions/shypins-study-1.jpg){#fig-shypins-2}
+
+![Factors of the second study on perceived safety: the stop zone visualization (a), the pin matrix actuation density (b), and the shape-change interruption event (c).](img/sci-contributions/shypins-study-2.jpg){#fig-shypins-3}
+
+ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed Zones
+:::
 
 # My Perspectives
 
+My perspectives are quite straigthforward. I believe that Shape-Changing Interfaces have a great potential to impact Human-Computer Interaction in the future, especially if we consider the long-term vision of Programmable Matter. However, I also believe that there are still many challenges to overcome before we can reach this vision. I am using these grand challenges as a guide for my research agenda, and I am particularly interested in addressing the technology and user behavior challenges. but I am also open to any opportunities to contribute to the other challenges  I am also interested in exploring the design challenges and he policy, ethics, and sustainability challenges.
+
+My next goal in my academic carrer is to aim for HDR (Habilitation à Diriger des Recherches) in order to be able to supervise PhD students and lead research projects. I am plan to use my current research on Shape-Changing Interfaces as a basis for my HDR, and I am looking forward to contributing to the advancement of this field.
 
 # Teaching
 

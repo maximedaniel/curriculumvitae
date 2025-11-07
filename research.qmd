@@ -1,7 +1,8 @@
 ---
-title: "Maxime Daniel"
-subtitle: "Assistant Professor in Computer Science<br>Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V"
+title: "Research Interests"
+subtitle: '"The ultimate display would be a room within which the computer can control the existence of matter" -- Ivan E. Sutherland (1965)'
 bibliography: bibliography.bib
+csl: sigchi-ext.csl
 format:
   html:
     grid:
@@ -35,7 +36,7 @@ The cinema and entertainment industries often present speculative visions of fut
 Interpretations of Programmable Matter in Science-Fiction
 :::
 
-In research, this speculative idea corresponds to what is known as *Programmable Matter* — a technological paradigm representing the convergence of computation and physical materiality, where algorithms are embedded within matter itself, enabling it to sense, compute, and reconfigure its own structure or properties. The conceptual roots of this vision can be traced back to @sutherland1965ultimate, in which Sutherland envisioned a computer capable of "controlling the existence of matter".
+In research, this speculative idea corresponds to what is known as *Programmable Matter* — a technological paradigm representing the convergence of computation and physical materiality, where algorithms are embedded within matter itself, enabling it to sense, compute, and reconfigure its own structure or properties. The conceptual roots of this vision can be traced back to  1965, when Sutherland envisioned a computer capable of "controlling the existence of matter" @sutherland1965ultimate.
 
 Today, this vision unites a range of research domains as shown in @fig-programmable-matter-venn, including self-reconfiguring modular robotics within **Robotics** (e.g., @yim2007modular), smart materials and metamaterials in **Materials Science** (e.g., @pishvar2020foundations), and shape-changing interfaces within **Human–Computer Interaction** (e.g., @rasmussen2012shape).
 
@@ -64,7 +65,7 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 
 ![](img/radical-atoms.jpg){width="80%"}
 
-**Radical Atoms** by @ishii_radical_2012 :<br> Shape-Changing Interfaces in the landscape of human-technology interactions
+**Radical Atoms** @ishii_radical_2012:<br> Shape-Changing Interfaces in the landscape of human-computer interaction
 :::
 
 ## Approaches
@@ -76,25 +77,25 @@ Each of these architectures enables the exploration of one or more types of shap
 
 ::: {#fig-sci-architectures layout-ncol=5 fig-align="center"}
 
-![**Layers**<br>[@yim_animatronic_2018]](img/sci-architectures/layers.jpg){#fig-sci-architectures-1}
+![**Layers** (e.g., [@yim_animatronic_2018])](img/sci-architectures/layers.jpg){#fig-sci-architectures-1}
 
-![**Pin Array**<br>[@taher_exploring_2015]](img/sci-architectures/pin-array.jpg){#fig-sci-architectures-2}
+![**Pin Array** (e.g., [@taher_exploring_2015])](img/sci-architectures/pin-array.jpg){#fig-sci-architectures-2}
 
-![**Sparse Dots**<br>[@le_goc_zooids_2016]](img/sci-architectures/sparse-dots.jpg){#fig-sci-architectures-3}
+![**Sparse Dots** (e.g., [@le_goc_zooids_2016])](img/sci-architectures/sparse-dots.jpg){#fig-sci-architectures-3}
 
-![**Sparse Lines**<br>[@suzuki_shapebots_2019]](img/sci-architectures/sparse-lines.jpg){#fig-sci-architectures-4}
+![**Sparse Lines** (e.g., [@suzuki_shapebots_2019])](img/sci-architectures/sparse-lines.jpg){#fig-sci-architectures-4}
 
-![**Single Line**<br>[@nakagaki_lineform_2015]](img/sci-architectures/single-line.jpg){#fig-sci-architectures-5}
+![**Single Line** (e.g., [@nakagaki_lineform_2015])](img/sci-architectures/single-line.jpg){#fig-sci-architectures-5}
 
-![**Voxels**<br>[@suzuki_dynablock_2018]](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
+![**Voxels**(e.g., [@suzuki_dynablock_2018])](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
 
-![**Surfaces**<br>[@belke_mori_2017]](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
+![**Surfaces**(e.g., [@belke_mori_2017])](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
 
-![**Hub and Structs**<br>[@katsumoto_inside_2020]](img/sci-architectures/hub-and-structs.png){#fig-sci-architectures-8}
+![**Hub and Structs** (e.g., [@katsumoto_inside_2020])](img/sci-architectures/hub-and-structs.png){#fig-sci-architectures-8}
 
-![**Ring Stack**<br>[@daniel_cairnform_2019]](img/sci-architectures/ring-stack.png){#fig-sci-architectures-9}
+![**Ring Stack** (e.g., [@daniel_cairnform_2019])](img/sci-architectures/ring-stack.png){#fig-sci-architectures-9}
 
-![**String Array**<br>[@engert_straide_2022]](img/sci-architectures/string-array.jpg){#fig-sci-architectures-10}
+![**String Array** (e.g., [@engert_straide_2022])](img/sci-architectures/string-array.jpg){#fig-sci-architectures-10}
 
 Actuated Architectures for Shape-Changing Interfaces
 :::
@@ -106,21 +107,21 @@ To help researchers and target user-groups see clear benefits in the development
 
 ::: {#fig-sci-purposes layout-ncol=3 fig-align="center"}
 
-![Communicating information through combinations of visual, haptic, and shape animation:<br>dynamic physical bar charts by @taher_exploring_2015](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
+![Communicating information through combinations of visual, haptic, and shape animation (e.g., dynamic physical bar charts @taher_exploring_2015)](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
 
-![Physically simulating real or imaginary objects:<br>physical rendering of a 3D car model by @follmer_inform_2013](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
+![Physically simulating real or imaginary objects (e.g., physical rendering of a 3D car model @follmer_inform_2013)](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
 
-![Adapting shape to specific interaction contexts:<br>a reconfigurable game controller by @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
+![Adapting shape to specific interaction contexts (e.g., a reconfigurable game controller @roudaut_cubimorph_2016)](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
 
-![Augmenting elements of or within the user's body:<br>a sixth finger by @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
+![Augmenting elements of or within the user's body (e.g., a sixth finger @prattichizzo_sixthfinger_2014)](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
 
-![Supporting aesthetic, sensorial, or entertainment goals:<br>kinetic garments by @berzowska_kukkia_2005](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
+![Supporting aesthetic, sensorial, or entertainment goals (e.g., kinetic garments @berzowska_kukkia_2005)](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
 
 
 Purposes of Shape-Changing Interfaces
 :::
 
-# Research Agenda: Grand Challenges in Technology, User Behavior, Design, Ethics, Policy, and Sustainability
+# Research Agenda: Technology, User Behavior, Design, Ethics, Policy, and Sustainability
 
 To advance SCIs, @alexander_grand_2018 identified twelve grand challenges across four domains: *technology*, *user behavior*, *design*, and *policy, ethics, and sustainability*. @fig-grand-challenges illustrates these grand challenges.
 
@@ -128,7 +129,7 @@ To advance SCIs, @alexander_grand_2018 identified twelve grand challenges across
 
 ![](img/sci-challenges/grand-challenges.jpg){width="80%"}
 
-**Grand challenges** for Shape-Changing Interfaces by @alexander_grand_2018
+**Grand challenges** for Shape-Changing Interfaces @alexander_grand_2018
 :::
 
 
@@ -163,7 +164,7 @@ To advance SCIs, @alexander_grand_2018 identified twelve grand challenges across
 
 **Sustainability and the Environment.** Shape-changing interfaces pose sustainability challenges due to their demand for natural resources and recycling difficulties, but their morphing ability could reduce the need for multiple devices, ultimately lowering resource requirements. Researchers should focus on developing long-lasting, modular interfaces that support upgrades and interoperability to enhance sustainability.
 
-# My Contributions
+# My Main Contributions
 
 So far, I contributed three research projects in the field of Shape-Changing Interfaces that addressed some of these grand challenges.
 
@@ -239,13 +240,11 @@ This project contributed to the grand challenges of **Technology** (*integration
 ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed Zones
 :::
 
-# My Perspectives
+# My Personal Perspectives
 
-My perspectives are quite straigthforward. I believe that Shape-Changing Interfaces have a great potential to impact Human-Computer Interaction in the future, especially if we consider the long-term vision of Programmable Matter. However, I also believe that there are still many challenges to overcome before we can reach this vision. I am using these grand challenges as a guide for my research agenda, and I am particularly interested in addressing the technology and user behavior challenges. but I am also open to any opportunities to contribute to the other challenges  I am also interested in exploring the design challenges and he policy, ethics, and sustainability challenges.
+My research perspectives are quite straightforward. I believe that Shape-Changing Interfaces hold great potential to transform the field of Human-Computer Interaction, particularly in light of the long-term vision of Programmable Matter. At the same time, I recognize that many significant challenges remain before this vision can be fully realized. These grand challenges serve as guiding principles for my research agenda. I am particularly interested in addressing the technological and behavioral aspects of these challenges, while also remaining open to contributing to the design, policy, ethical, and sustainability dimensions of the field.
 
-My next goal in my academic carrer is to aim for HDR (Habilitation à Diriger des Recherches) in order to be able to supervise PhD students and lead research projects. I am plan to use my current research on Shape-Changing Interfaces as a basis for my HDR, and I am looking forward to contributing to the advancement of this field.
-
-# Teaching
+My next goal in my academic career is to pursue an Habilitation à Diriger des Recherches (HDR), which will allow me to supervise PhD students and lead independent research projects. I intend to build upon my current work on Shape-Changing Interfaces as the foundation of my HDR, and I am eager to contribute further to the advancement and maturation of this emerging research area.
 
 
 # References

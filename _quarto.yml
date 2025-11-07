@@ -4,7 +4,11 @@ project:
 filters: ["filters/main.lua"]
 
 website:
-  title: "quarto"
+  title: "Home"
+  navbar:
+    left:
+      - research.qmd
+
 format:
   html:
     theme:

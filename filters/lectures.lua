@@ -82,23 +82,15 @@ function Lectures.render(metadata, debug)
                 courses_html = courses_html .. string.format([[
                 <tr>
                 <td>
-                
-                <div class="text-start" style="font-size: 1.25rem;font-weight: 400;line-height: 1.2;">
-                    <a class="btn btn-outline-dark btn-sm btn-collapse" id="%s" role="button">
-                        <i class="bi bi-caret-right-fill"></i><span>More</span>
-                    </a> 
-                    %s
-                </div>
-                <div class="collapse" id="%s">
-                        <div>%s</div>
-                </div>
+                <div class="text-start" style="font-size: 1.25rem;font-weight: 400;line-height: 1.2;">%s</div>
+                <div>%s</div>
                 </td>
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
-                </tr>]], collapse_id, name, collapse_id, tools_html, role, cycle, school, size, duration)
+                </tr>]], name, tools_html, role, cycle, school, size, duration)
             end 
         end
         local total_html = string.format([[

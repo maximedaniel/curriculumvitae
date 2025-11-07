@@ -30,13 +30,32 @@ function Publications.render(metadata, debug)
     for _, category in ipairs(categories) do
         local category_name = pandoc.utils.stringify(category.category or "")
         if debug then
-            quarto.log.output(name) 
+            quarto.log.output(category_name) 
         end
         local publications = category.inputs or {}
         local publications_html = ""
         for _, publication in ipairs(publications) do
             local thumbnail = pandoc.utils.stringify(publication.thumbnail or "")
+
             local pdf = pandoc.utils.stringify(publication.pdf or "")
+            local pdf_html = ""
+            if pdf ~= "" then
+                pdf_html = string.format([[
+                <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                    <i class="bi bi-box-arrow-up-right"></i> PDF
+                </a>]], pdf)
+            end
+
+            local doi = pandoc.utils.stringify(publication.doi or "")
+            local doi_html = ""
+            if doi ~= "" then
+                doi_html = string.format([[
+                <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                    <i class="bi bi-box-arrow-up-right"></i> DOI
+                </a>]], doi)
+            end
+            
+            local note = pandoc.utils.stringify(publication.note or "")
             local md_ref = pandoc.write(pandoc.Pandoc({pandoc.Para(publication.ref)}), "markdown")
             local parsed_ref = pandoc.read(md_ref, "markdown")
             local ref = pandoc.write(parsed_ref, "html")
@@ -48,7 +67,7 @@ function Publications.render(metadata, debug)
                 local track = pandoc.utils.stringify(submission.track or "")
                 if i == #submissions - 1 then
                     submissions_html = submissions_html .. string.format([[
-                        <li class="breadcrumb-item active"><i class="bi bi-check" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
+                        <li class="breadcrumb-item active"><i class="bi bi-x" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
                     ]], name, track)
                 else
                     submissions_html = submissions_html .. string.format([[
@@ -61,6 +80,15 @@ function Publications.render(metadata, debug)
                     %s
                 </ol>
                 ]], submissions_html)
+
+            local keywords = publication.keywords or {}
+            local keywords_html = ""
+            for _, keyword in ipairs(keywords) do
+                local kw = pandoc.utils.stringify(keyword or "")
+                keywords_html = keywords_html .. string.format([[
+                    <span class="badge bg-light" style="margin-right:0.25rem; margin-bottom:0.25rem;">%s</span>
+                ]], kw)
+            end
             -- parse that markdown to a Pandoc document (so pandoc does actual markdown -> html)
             -- local parsed = pandoc.read(md, "markdown")
             -- local html = pandoc.write(parsed, "html")
@@ -73,17 +101,18 @@ function Publications.render(metadata, debug)
                         </div>
                         <div class="g-col-10 d-flex align-items-center gap-2">
                             <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
-                            %s
-                            </nav>
-                            <div style="margin-bottom:0.5rem">
-                                <span>%s</span>
-                            </div>
+                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
+                                %s
+                                </nav>
+                                <div style="margin-bottom:0.5rem">
+                                    <p class="badge bg-light" style="margin-bottom:0.25rem;">%s</p>
+                                    <p style="margin-bottom:0rem;">%s</p>
+                                </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                ]], thumbnail, final_submissions_html, ref)
+                ]], thumbnail, final_submissions_html,  note, ref)
             else
                 publications_html = publications_html .. string.format([[
                     <div class="g-col-12">
@@ -93,25 +122,25 @@ function Publications.render(metadata, debug)
                         </div>
                         <div class="g-col-10 d-flex align-items-center gap-2">
                             <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                            <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
-                            %s
-                            </nav>
-                            <div style="margin-bottom:0.5rem">
-                                <span>%s</span>
-                            </div>
-                            <div class="d-inline-flex align-items-center gap-2">
-                                <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
-                                    <i class="bi bi-box-arrow-up-right"></i> Open
-                                </a>
-                                <a class="btn btn-sm btn-outline-dark" href="%s" download>
-                                    <i class="bi bi-download"></i> Download
-                                </a>
-                            </div>
+                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
+                                %s
+                                </nav>
+                                <div style="margin-bottom:0.5rem">
+                                    <div class="d-inline-flex align-items-start">
+                                        %s
+                                    </div>
+                                    <p style="margin-bottom:0.25rem;">%s</p>
+                                    <p style="margin-bottom:0.25rem;font-size:0.8em;opacity:0.75">%s</p>
+                                </div>
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    %s
+                                    %s
+                                </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                ]], thumbnail, final_submissions_html, ref, pdf, pdf)
+                ]], thumbnail, final_submissions_html, keywords_html, ref,  note, pdf_html, doi_html)
             end
 
         end

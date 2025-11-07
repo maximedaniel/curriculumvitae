@@ -32,7 +32,6 @@ function Profil.render(metadata, debug)
         local name = pandoc.utils.stringify(social.name or "")
         local icon = pandoc.utils.stringify(social.icon or "")
         local href = pandoc.utils.stringify(social.href or "")
-        local btn = pandoc.utils.stringify(social.btn or "")
         social_html = social_html .. string.format([[
             <div class="d-inline-flex align-items-start">
                 <span class="text-start"><i class="bi bi-%s"></i> <b>%s:</b> <a href="%s">%s</a></span>
@@ -63,12 +62,12 @@ function Profil.render(metadata, debug)
         local name = pandoc.utils.stringify(social.name or "")
         local icon = pandoc.utils.stringify(social.icon or "")
         local href = pandoc.utils.stringify(social.href or "")
-        local btn = pandoc.utils.stringify(social.btn or "")
+        local color = pandoc.utils.stringify(social.color or "")
         social_html = social_html .. string.format([[
-            <a class="btn %s" href="%s">
+            <a class="btn btn-outline-custom" style="--bs-btn-color:%s;--bs-btn-hover-border-color:%s;" href="%s">
                 <i class="bi bi-%s"></i> %s
             </a>
-        ]], btn, href, icon, name)
+        ]], color,color, href, icon, name)
         end
         social_html = string.format([[<div class="d-inline-flex align-items-center gap-2">%s</div>]], social_html)
         html = string.format([[

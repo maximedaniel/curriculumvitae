@@ -88,10 +88,7 @@ function Theses.render(metadata, debug)
                                 </div>
                                 <div class="d-inline-flex align-items-center gap-2">
                                     <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
-                                        <i class="bi bi-box-arrow-up-right"></i> Open
-                                    </a>
-                                    <a class="btn btn-sm btn-outline-dark" href="%s" download>
-                                        <i class="bi bi-download"></i> Download
+                                        <i class="bi bi-box-arrow-up-right"></i> PDF
                                     </a>
                                     <a class="btn btn-outline-dark btn-sm btn-collapse" id="%s" role="button">
                                         <i class="bi bi-caret-right-fill"></i><span> More</span>
@@ -110,7 +107,7 @@ function Theses.render(metadata, debug)
                         </div>
                     </div>
                 </div>
-            ]], thumbnail, ref, pdf, pdf, thesis_id, thesis_id, title, name, abstract, laboratory, jury_html)
+            ]], thumbnail, ref, pdf, thesis_id, thesis_id, title, name, abstract, laboratory, jury_html)
         end
     end
 

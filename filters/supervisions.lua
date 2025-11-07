@@ -12,15 +12,17 @@ function Supervisions.render(metadata, debug)
         local level = pandoc.utils.stringify(supervision.level or "")
         local duration = pandoc.utils.stringify(supervision.duration or "")
         local location = pandoc.utils.stringify(supervision.location or "")
+        local supervisor = pandoc.utils.stringify(supervision.supervisor or "")
         supervisions_html = supervisions_html .. string.format([[
         <div class="g-col-12 g-col-sm-12 g-col-md-12 g-col-lg-6">
             <div class="text-start" style="font-size: 1.25rem;font-weight: 400;line-height: 1.2;">%s</div>
             <div class="text-start" style="font-size: 1rem;font-weight: 400; line-height: 1; opacity:0.75; margin-bottom:0.5rem;">%s</div>
-            <div class="text-start"><i class="bi bi-bookmark-fill"></i> <b>topic:</b> <i>%s</i></div>
-            <div class="text-start"><i class="bi bi-hourglass-split"></i> <b>duration:</b> %s</div>
-            <div class="text-start"><i class="bi bi-geo-alt-fill"></i> <b>location:</b> %s</div>
+            <div class="text-start"><i class="bi bi-bookmark-fill"></i><b>topic:</b> <i>%s</i></div>
+            <div class="text-start"><i class="bi bi-hourglass-split"></i><b>duration:</b> %s</div>
+            <div class="text-start"><i class="bi bi-geo-alt-fill"></i><b>location:</b> %s</div>
+            <div class="text-start"><i class="bi bi-clipboard2-check-fill"></i><b>supervision:</b> %s</div>
         </div>
-        ]], name,  level, topic, duration, location)
+        ]], name,  level, topic, duration, location, supervisor)
         -- local thumbnail = pandoc.utils.stringify(project.thumbnail or "")
         -- local youtube = ""
         -- if project.youtube then

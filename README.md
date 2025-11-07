@@ -1,3 +1,17 @@
+
+
+# CNU 27 INFORMATIQUE - Guide dossier qualification
+
+https://cnu27.ls2n.fr/note-pour-les-candidatures-a-la-qualification/
+
+- attestation enseignement
+- tout en francais
+
+- améliore les colonnes des cours
+- ajout badges des thematic de recherche
+
+# export sans en-tête ni pied de page avec firefox
+
 run printable.qmd to "print" with firefox but you need to modify some variables of firefox
 
 Dans la barre d’adresse, tape about:config → accepte le risque.

@@ -738,7 +738,7 @@ lectures:
         
 
       - name: Internet Of Things Expertise
-        tools: MQTT, C, Arduino IDE, ESP32
+        tools: C, Arduino, RESTful API
         position: Research Engineer
         role: Coordinator, Lecturer
         type: Lecture, Project
@@ -831,7 +831,7 @@ lectures:
         school: ESTIA
         size: 18
 
-      - name: Augmented Virtuality Expertise
+      - name: Shape-Changing Interfaces Introduction
         tools: Reality–Virtuality Continuum,  Augmented Virtuality, Tangible User Interfaces
         position: Research Engineer
         role: Coordinator, Lecturer
@@ -986,7 +986,7 @@ coordinations:
       tools: Python, Ad Hoc Online Learning Platform
       responsibilities: ["Online Learning Platform implementation and maintenance", "Student assessment and grading", "Lecturers coordination"]
       links: 
-        - text: "Ad Hoc Online Learning Platform"
+        - text: "Online Learning Platform"
           href: "https://devweb.estia.fr/asd/student/"
 
     - name: "Mobile Communication Systems"
@@ -1001,8 +1001,8 @@ coordinations:
       tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
       responsibilities: ["Slides and toolkits preparation and updates",  "Student assessment and grading", "Practical work and project supervision", "Lecturers coordination"]
       links: 
-        - text: "Lecture"
-          href: "https://devweb.estia.fr/mcs/"
+        - text: "Introduction and Instructions Slides"
+          href: "https://drive.google.com/file/d/1W4TZBiVDvLvALRew4LQ3iYKgDjKellc6/view?usp=sharing"
 
     - name: "Systematic Litterature Review"
       volume: "4h"
@@ -1016,17 +1016,8 @@ coordinations:
       tools: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
       responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
       links: 
-        - text: "Demo"
-          href: "Google Drive\\teaching\\systematic-litterature-review\\a-systematic-literature-review.pdf"
-
-        - text: "Method and Tools"
-          href: "Google Drive\\teaching\\systematic-litterature-review\\maximedaniel - method and tools.pdf"
-          
-        - text: "10 Rules"
-          href: "Google Drive\\teaching\\systematic-litterature-review\\10-rules-for-writing-literature-review.pdf"
-
-        - text: "Zotero Tutorial"
-          href: "Google Drive\\teaching\\systematic-litterature-review\\tutorial-zotero.pdf"
+        - text: "Method and Tools Slides"
+          href: "https://drive.google.com/file/d/1nlPkc6dFxioqcZjrvfuE_7gdKk1QDwey/view?usp=sharing"
 
     - name: "Internet Of Things Expertise"
       volume: "4h"
@@ -1035,13 +1026,13 @@ coordinations:
       location: "ESTIA"
       type: "Lecture, Project"
       aavs: 
-        - "[Understand]{.underline} the principles of the Internet of Things (IoT), including IoT architectures and communication protocols, with emphasis on MQTT's publish/subscribe model."
-        - "[Apply]{.underline} IoT concepts by designing, programming, and deploying connected devices with sensors and actuators (ESP32), communicating via MQTT through a local hub (Raspberry Pi)."
-      tools: MQTT, C, Arduino IDE, ESP32
+        - "[Understand]{.underline} the principles of the Internet of Things (IoT), including IoT architectures and communication protocols, with emphasis on RESTful API."
+        - "[Apply]{.underline} IoT concepts by designing, programming, and deploying connected devices with sensors and actuators (ESP32), communicating via a RESTful API."
+      tools: C, Arduino, RESTful API
       responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
       links: 
-        - text: "Lecture"
-          href: "https://devweb.estia.fr/mcs/"
+        - text: "Introduction Slides"
+          href: "https://drive.google.com/file/d/1tRUwGBs5GDpWTSaZzIaS3X-yyQptl8bZ/view?usp=sharing"
 
     - name: "Version Control Initiation"
       volume: "4h"
@@ -1055,22 +1046,22 @@ coordinations:
       tools: Git, VS Code, HTML, CSS
       responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Practical work supervision"]
       links: 
-        - text: "Lecture"
-          href: "https://devweb.estia.fr/mcs/"
+        - text: "Introduction Slides"
+          href: "https://drive.google.com/file/d/1TIQeWHImjvcevHAFIjFOR5_aw0WB0Ik0/view?usp=sharing"
 
-    - name: "Augmented Virtuality Expertise"
+    - name: "Shape-Changing Interfaces Introduction"
       volume: "1h"
       period: "2018"
       level: "3ʳᵈ Year Engineering Cycle"
       location: "ESTIA"
       type: "Lecture"
       aavs: 
-        - "[Understand]{.underline} the Reality–Virtuality continuum, with a focus on augmented virtuality and the comparative strengths, weaknesses, and differences between tangible user interfaces and graphical user interfaces."
-      tools: Reality–Virtuality Continuum, Augmented Virtuality, Tangible User Interfaces
-      responsibilities: ["Slides preparation and updates"]
+        - "[Understand]{.underline} the fundamental concepts, purposes, benefits, and challenges of shape-changing interfaces."
+      tools: Programmable matter, Human-Computer Interaction, Shape-Changing Interfaces
+      responsibilities: ["Webpage preparation and updates"]
       links: 
-        - text: "Lecture"
-          href: "https://devweb.estia.fr/mcs/"
+        - text: "Introduction Webpage"
+          href: "./research.html"
       
 
 

@@ -21,17 +21,17 @@ The cinema and entertainment industries often present speculative visions of fut
 
 ::: {#fig-scifi layout-ncol=2 fig-align="center"}
 
-![In **X-Men (2000)**, the surface of a round table morphs to form a miniature city model, aiding in the visualization of a collective battle strategy.](img/sci-scifis/x-men.jpg){#fig-scifi-1}
+![In **X-Men (2000)**, the surface of a round table morphs to form a miniature city model, aiding in the visualization of a collective battle strategy ([gif](./img/sci-scifis/x-men.gif){target="_blank"}).](img/sci-scifis/x-men.jpg){#fig-scifi-1}
 
-![In **Matrix Revolution (2006)**, a artificial intelligence manifests itself by assembling a swarm of robots into a large humanoid face during its interaction with the protagonist.](img/sci-scifis/matrix.jpg){#fig-scifi-4}
+![In **Matrix Revolution (2006)**, a artificial intelligence manifests itself by assembling a swarm of robots into a large humanoid face during its interaction with the protagonist ([gif](./img/sci-scifis/matrix.gif){target="_blank"}).](img/sci-scifis/matrix.jpg){#fig-scifi-4}
 
-![In **Big Hero 6 (2014)**, the protagonist controls a swarm of microbots that assemble into various shapes and structures through thought alone.](img/sci-scifis/big-hero-6.jpg){#fig-scifi-3}
+![In **Big Hero 6 (2014)**, the protagonist controls a swarm of microbots that assemble into various shapes and structures through thought alone ([gif](./img/sci-scifis/big-hero-6.gif){target="_blank"}).](img/sci-scifis/big-hero-6.jpg){#fig-scifi-3}
 
-![In **Avengers: Infinity War (2018)**, one of the protagonist’s suits, composed of nanobots, dynamically reconfigures to adapt to different combat scenarios.](img/sci-scifis/avengers.jpg){#fig-scifi-5}
+![In **Avengers: Infinity War (2018)**, one of the protagonist’s suits, composed of nanobots, dynamically reconfigures to adapt to different combat scenarios ([gif](./img/sci-scifis/avengers.gif){target="_blank"}).](img/sci-scifis/avengers.jpg){#fig-scifi-5}
 
-![In **Man of Steel (2012)**, the interior of an alien ship materializes a physical key that the protagonist can subsequently remove and use.](img/sci-scifis/man-of-steel.jpg){#fig-scifi-2}
+![In **Man of Steel (2012)**, the interior of an alien ship materializes a physical key that the protagonist can subsequently remove and use ([gif](./img/sci-scifis/man-of-steel.gif){target="_blank"}).](img/sci-scifis/man-of-steel.jpg){#fig-scifi-2}
 
-![In **Suicide Squad (2021)**, a character’s firearm physically reconfigures as components are attached or detached, enabling or disabling specific functions.](img/sci-scifis/suicide-squad.jpg){#fig-scifi-6}
+![In **Suicide Squad (2021)**, a character’s firearm physically reconfigures as components are attached or detached, enabling or disabling specific functions ([gif](./img/sci-scifis/suicide-squad.gif){target="_blank"}).](img/sci-scifis/suicide-squad.jpg){#fig-scifi-6}
 
 Interpretations of Programmable Matter in Science-Fiction
 :::
@@ -65,8 +65,9 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 
 ![](img/radical-atoms.jpg){width="80%"}
 
-**Radical Atoms** @ishii_radical_2012:<br> Shape-Changing Interfaces in the landscape of human-computer interaction
+**Radical Atoms** @ishii_radical_2012: <br> Shape-Changing Interfaces in the landscape of human-computer interaction
 :::
+
 
 ## Approaches
 

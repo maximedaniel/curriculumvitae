@@ -1,7 +1,7 @@
 local Educations = {}
 
 function Educations.render(metadata, debug)
-    local printable = metadata.printable or {}
+    local printable = metadata.printable  or false
     local educations = metadata.educations or {}
     local educations_html = ""
       for i, education in ipairs(educations) do
@@ -11,7 +11,11 @@ function Educations.render(metadata, debug)
         local thumbnail = pandoc.utils.stringify(education.thumbnail or "")
         local degree = pandoc.utils.stringify(education.degree or "")
         local period = pandoc.utils.stringify(education.period or "")
-        local img_html = thumbnail ~= "" and string.format('<img src="%s" style="max-height: 100px; max-width: 100%%; object-fit: contain;">', thumbnail) or ""
+        local url = pandoc.utils.stringify(education.url or "")
+        local institution = pandoc.utils.stringify(education.institution or "")
+        local location = pandoc.utils.stringify(education.location or "")
+
+        local img_html = thumbnail ~= "" and string.format('<img src="%s" class="image-hover-effect" style="max-height: 100px; max-width: 100%%; object-fit: contain;">', thumbnail) or ""
         
         local more = education.more or {}
         local display_more_button = ""
@@ -92,25 +96,20 @@ function Educations.render(metadata, debug)
         end
 
         if printable then
+            local institution_html = ""
+            if institution ~= "" then
+                institution_html = string.format('<a href="%s" target="_blank">%s <i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i></a>,', url, institution)
+            end
             educations_html = educations_html .. string.format([[
-                <div class="g-col-12">
-                    <div class="grid">
-                        <div class="g-col-3 d-flex align-items-center justify-content-center">
-                            %s
-                        </div>
-                        <div class="g-col-9 d-flex align-items-cente">
-                            <div class="d-flex flex-row align-items-center">
-                                <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                                    <div style="font-size: 1em;">%s</div>
-                                    <div style="font-size: 0.8em; color: rgba(0,0,0,.4);">%s</div>
-                                </div>
-                                %s
-                            </div>
-                            %s
-                        </div>
-                    </div>
-                </div>
-            ]], img_html, degree, period, display_more_button, display_more_div)
+                <tr>
+                <td style="text-align: right;">%s</td>
+                <td>
+                <b>%s</b>
+                <br>
+                %s %s
+                </td>
+                </tr>
+            ]], period, degree, institution_html, location)
         else
             educations_html = educations_html .. string.format([[
                 <div class="g-col-12">
@@ -135,8 +134,18 @@ function Educations.render(metadata, debug)
 
     end
 
+    if printable then
+        educations_html = string.format([[
+            <table class="table table-borderless">
+                <tbody>
+                    %s
+                </tbody>
+            </table>
+        ]], educations_html)
+    end
+
     local html = string.format([[
-    <div class="grid">
+    <div class="grid gap-2">
         %s
     </div>
     ]], educations_html)

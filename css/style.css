@@ -50,6 +50,16 @@ a .btn-collapse {
   border-color: var(--bs-btn-hover-border-color);
 }
 
+.image-hover-effect {
+  transition: filter 0.15s ease;
+}
+
+.image-hover-effect:hover {
+  background: transparent;
+  /* filter: grayscale(100%);  */
+  /* invert(100%); */
+}
+
 @media (max-width: 991.98px) {
   #quarto-content .subtitle {
     padding-top: 0px;
@@ -61,6 +71,7 @@ figcaption {
 }
 
 @media print {
+
     body {
         -webkit-print-color-adjust: exact; /*chrome & webkit browsers*/
         print-color-adjust: exact; /*firefox & IE */
@@ -68,6 +79,10 @@ figcaption {
     main  {
         padding-top: 0 !important;
         margin-top: 0 !important;
+    }
+
+    nav {
+      display: none !important;
     }
     /* table, .table, .table-sm{
       border-collapse: unset;

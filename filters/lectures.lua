@@ -116,10 +116,14 @@ function Lectures.render(metadata, debug)
             <th scope="row">%sh</th>
             </tr>]], total_duration)
 
+        local table_classes = "table table-sm"
+        -- if printable then
+        --     table_classes = "table table-sm table-borderless"
+        -- end
         lectures_html = lectures_html .. string.format([[
             <div class="g-col-12">
             <h3 style="margin-top:0;">%s</h3>
-            <table class="table table-sm">
+            <table class="%s">
             <thead>
                 <tr>
                 <th scope="col">Course</th>
@@ -139,7 +143,7 @@ function Lectures.render(metadata, debug)
             </tbody>
             </table>
             </div>
-            ]], year, courses_html, total_html)
+            ]], year, table_classes, courses_html, total_html)
     end
     local html = string.format([[
     <div class="grid" style="--bs-gap:0">

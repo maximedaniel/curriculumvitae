@@ -110,26 +110,44 @@ projects:
 experiences:
 
     - thumbnail: "img/estia.jpg"
+      institution: "ESTIA - Institute of Technology"
+      url: "https://www.estia.fr/"
+      location: "Bidart, France"
       position: "Assistant Professor"
       period: "Sept 2021 - Now"
 
     - thumbnail: "img/ubc.png"
+      institution: "OVI Lab, University of British Columbia"
+      url: "https://ovi.ok.ubc.ca/"
+      location: " Kelowna, Canada"
       position: "Post-doctoral Fellow"
       period: "Oct 2022 - Sept 2023"
 
     - thumbnail: "img/estia.jpg"
+      institution: "ESTIA - Institute of Technology"
+      url: "https://www.estia.fr/"
+      location: "Bidart, France"
       position: "Temporary Research and Teaching Assissant"
       period: "Sep 2020 - August 2021"
 
     - thumbnail: ""
+      institution: "ESTIA - Institute of Technology"
+      url: "https://www.estia.fr/"
+      location: "Bidart, France"
       position: "Research Engineer"
       period: "Dec 2018 - March 2020"
 
     - thumbnail: ""
+      institution: "ESTIA - Institute of Technology"
+      url: "https://www.estia.fr/"
+      location: "Bidart, France"
       position: "PhD Student"
       period: "Oct 2015 - Nov 2018"
 
     - thumbnail: "img/immersion.png"
+      institution: "Immersion"
+      url: "https://www.immersion.fr/"
+      location: "Bidart, France"
       position: "MSc Student"
       period: "Feb 2015 - Jul 2015"
 
@@ -141,18 +159,30 @@ educations:
     
     - thumbnail: "img/univbordeaux.jpg"
       degree: "Doctorate in Computer Science"
+      institution: "University of Bordeaux"
+      url: "https://www.u-bordeaux.fr/"
+      location: "Bordeaux, France"
       period: "2015 - 2018"
       
     - thumbnail: ""
       degree: "Master in Computer Science"
+      institution: "University of Bordeaux"
+      url: "https://www.u-bordeaux.fr/"
+      location: "Bordeaux, France"
       period: "2013 - 2015"
       
     - thumbnail: "img/ubs.png"
       degree: "Licence in Mathematics, Informatics, and Statistics"
+      institution: "University of South Brittany"
+      url: "https://www.univ-ubs.fr/"
+      location: "Vannes, France"
       period: "2010 - 2013"
 
     - thumbnail: "img/benjamin-franklin.png"
       degree: "Baccalauréat in Economics and Social sciences"
+      institution: "Benjamin Franklin High School"
+      url: "https://lyceefranklinauray.fr/"
+      location: "Auray, France"
       period: "2010"
 
 lectures:

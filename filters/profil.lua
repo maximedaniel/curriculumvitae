@@ -61,12 +61,18 @@ function Profil.render(metadata, debug)
             <!--<p class="subtitle lead">Assistant Professor in Computer Science<br>Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V</p>-->
             <div class="text-center profil">
                 <div class="grid" style="--bs-gap: 0rem 1rem;">
-                    <div class="g-col-3">
+                    <div class="g-col-2">
                         %s
                     </div>
-                    <div class="g-col-9 d-flex align-items-center">
+                    <div class="g-col-5 d-flex align-items-center">
                         <div class="grid" style="--bs-columns: 1; --bs-gap: 0.2em 0rem;">
+                        <h3 class="text-start">Contact Information</h3>
                         %s
+                        </div>
+                    </div>
+                    <div class="g-col-5 d-flex align-items-center">
+                        <div class="grid" style="--bs-columns: 1; --bs-gap: 0.2em 0rem;">
+                        <h3 class="text-start">Social Links</h3>
                         %s
                         </div>
                     </div>

@@ -40,22 +40,40 @@ function Publications.render(metadata, debug)
             local pdf = pandoc.utils.stringify(publication.pdf or "")
             local pdf_html = ""
             if pdf ~= "" then
-                pdf_html = string.format([[
-                <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
-                    <i class="bi bi-box-arrow-up-right"></i> PDF
-                </a>]], pdf)
+                if printable then
+                    pdf_html = string.format([[
+                    <a href="%s" target="_blank">pdf <i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i></a>]], pdf)
+                
+                else
+                    pdf_html = string.format([[
+                    <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                        <i class="bi bi-box-arrow-up-right"></i> PDF
+                    </a>]], pdf)
+                end
             end
 
             local doi = pandoc.utils.stringify(publication.doi or "")
             local doi_html = ""
             if doi ~= "" then
-                doi_html = string.format([[
-                <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
-                    <i class="bi bi-box-arrow-up-right"></i> DOI
-                </a>]], doi)
+                if printable then
+                    -- doi_html = string.format([[
+                    -- <a href="%s" target="_blank">doi <i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i></a>]], doi)
+                    doi_html = string.format([[<a href="%s" target="_blank">%s</a>]], doi, doi)
+                
+                else
+                    doi_html = string.format([[
+                    <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                        <i class="bi bi-box-arrow-up-right"></i> DOI
+                    </a>]], doi)
+                end
             end
             
             local note = pandoc.utils.stringify(publication.note or "")
+            local note_html = ""
+            if note ~= "" then
+                note_html = string.format([[<p style="margin-bottom:0.25rem;font-size:0.8em;opacity:0.75">%s</p>]], note)
+            end
+
             local md_ref = pandoc.write(pandoc.Pandoc({pandoc.Para(publication.ref)}), "markdown")
             local parsed_ref = pandoc.read(md_ref, "markdown")
             local ref = pandoc.write(parsed_ref, "html")
@@ -83,36 +101,40 @@ function Publications.render(metadata, debug)
 
             local keywords = publication.keywords or {}
             local keywords_html = ""
-            for _, keyword in ipairs(keywords) do
-                local kw = pandoc.utils.stringify(keyword or "")
-                keywords_html = keywords_html .. string.format([[
-                    <span class="badge bg-light" style="margin-right:0.25rem; margin-bottom:0.25rem;">%s</span>
-                ]], kw)
+            if #keywords > 0 then
+                for _, keyword in ipairs(keywords) do
+                    local kw = pandoc.utils.stringify(keyword or "")
+                    keywords_html = keywords_html .. string.format([[
+                        <span class="badge bg-light" style="margin-right:0.25rem; margin-bottom:0.25rem;">%s</span>
+                    ]], kw)
+                end
+                keywords_html = string.format([[
+                    <div class="d-inline-flex align-items-start flex-wrap">
+                        %s
+                    </div>
+                    ]], keywords_html)
             end
             -- parse that markdown to a Pandoc document (so pandoc does actual markdown -> html)
             -- local parsed = pandoc.read(md, "markdown")
             -- local html = pandoc.write(parsed, "html")
             if printable then
                 publications_html = publications_html .. string.format([[
-                    <div class="g-col-12">
+                    <div class="g-col-1">
+                    </div>
+                    <div class="g-col-11">
                         <div class="grid">
-                        <div class="g-col-2 d-flex align-items-center justify-content-center">
-                            <img src="%s" style="max-height: 100px; max-width: 100%%;object-fit: contain;"">
-                        </div>
-                        <div class="g-col-10 d-flex align-items-center gap-2">
+                        <div class="g-col-12 d-flex align-items-center gap-2">
                             <div style="display: flex; flex-direction: column; line-height: 1.2;">
-                                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
-                                %s
-                                </nav>
-                                <div style="margin-bottom:0.5rem">
-                                    <p class="badge bg-light" style="margin-bottom:0.25rem;">%s</p>
-                                    <p style="margin-bottom:0rem;">%s</p>
+                                <div>
+                                    %s
+                                    <p style="margin-bottom:0.25rem;">%s %s</p>
+                                    %s
                                 </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                ]], thumbnail, final_submissions_html,  note, ref)
+                ]], keywords_html, ref, doi_html, note_html)
             else
                 publications_html = publications_html .. string.format([[
                     <div class="g-col-12">
@@ -125,12 +147,10 @@ function Publications.render(metadata, debug)
                                 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%%3E%%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%%3E%%3C/svg%%3E&#34;);" aria-label="breadcrumb" >
                                 %s
                                 </nav>
-                                <div style="margin-bottom:0.5rem">
-                                    <div class="d-inline-flex align-items-start">
-                                        %s
-                                    </div>
+                                <div>
+                                    %s
                                     <p style="margin-bottom:0.25rem;">%s</p>
-                                    <p style="margin-bottom:0.25rem;font-size:0.8em;opacity:0.75">%s</p>
+                                    %s
                                 </div>
                                 <div class="d-inline-flex align-items-center gap-2">
                                     %s
@@ -140,14 +160,14 @@ function Publications.render(metadata, debug)
                         </div>
                         </div>
                     </div>
-                ]], thumbnail, final_submissions_html, keywords_html, ref,  note, pdf_html, doi_html)
+                ]], thumbnail, final_submissions_html, keywords_html, ref,  note_html, pdf_html, doi_html)
             end
 
         end
         
         html = html .. string.format([[
         <h3>%s</h3>
-        <div class="grid">
+        <div class="grid gap-4">
             %s
         </div>
         ]], category_name, publications_html)

@@ -39,29 +39,28 @@ profil:
     #   text: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
 
   socials:
-      - name: "website"
-        icon: "browser-firefox"
-        href: "https://www.maximedaniel.me/"
-        color: "#343a40"
-      - name: "Github"
-        icon: "github"
-        href: "https://github.com/maximedaniel"
-        color: "#343a40"
-      - name: "Youtube"
-        icon: "youtube"
-        href: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
-        color: "#ff0039"
-
       - name: "ORCID"
         icon: "orcid"
         href: "https://orcid.org/0000-0001-9273-5888"
         color: "#a6ce39"
+      - name: "Youtube"
+        icon: "youtube"
+        href: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
+        color: "#ff0039"
+      - name: "Github"
+        icon: "github"
+        href: "https://github.com/maximedaniel"
+        color: "#343a40"
+      - name: "website"
+        icon: "browser-firefox"
+        href: "https://www.maximedaniel.me/"
+        color: "#343a40"
 
 projects:
 
     - name: "ShyPins"
       period: "Jan 2021 - Dec 2023"
-      keywords: "Programmable Matter; Shape-Changing Interfaces; Pin-Based Shape Displays; User Safety; Lab Study."
+      keywords: ["Pin-Based Shape Displays", "User Safety", "Lab Study"]
       abstract: "Pin-based shape displays can cause psychological harm by forcefully actuating pins in contact with users, which ShyPins mitigates by regulating pin motion based on user proximity. A user study shows that gradually decreasing pin speed as users approach is perceived as safer than abruptly pausing motion, while the perceived safety of pausing depends on user preferences in user-triggered actuation. Another study finds that projecting user-centered stop zones enhances perceived safety more than pin-centered ones, and users feel less safe when approaching moving pins than when pins move toward them."
       thumbnail: "img/shypins.png"
       youtube: "6KpGmuIf1v8"
@@ -71,7 +70,7 @@ projects:
 
     - name: "CairnFORM²"
       period: "Dec 2018 - Nov 2020"
-      keywords: "Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Use Cases; In-Situ Study."
+      keywords: ["Ring-Based Shape Displays", "Use Cases", "In-Situ Study"]
       abstract: "We extend the understanding of the potential utility and usability of axisymmetric shape-change for display. We present (1) 16 new use cases for CairnFORM and (2) a two-month comparative field study with CairnFORM in the workplace. Compared with flat-screen animations, early results show that cylindrical shape-change animations keep a better attractiveness over time."
       thumbnail: "img/cairnform-2.jpg"
       youtube: "XDaJmj2BntU"
@@ -81,7 +80,7 @@ projects:
 
     - name: "CairnFORM¹"
       period: "Oct 2016 - Nov 2018"
-      keywords: " Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Data Physicalization; Peripheral Interaction; Lab study."
+      keywords: ["Ring-Based Shape Displays", "Data Physicalization", "Peripheral Interaction", "Lab Study"]
       abstract: "CairnFORM is a stack of expandable illuminated rings for display that can change of axisymmetric shape (e.g., cone, double cone, cylinder). We show that axisymmetric shape-change can be used (1) for informing users around the display through data physicalization, (2) for unobtrusively notifying users around the display through peripheral interaction, (3) for offering a greater user experience over time than a traditional flat display with no shape change."
       thumbnail: "img/cairnform.jpg"
       youtube: "wZ_3CtDllbA"
@@ -91,7 +90,7 @@ projects:
 
     - name: "Expandable Illuminated Ring"
       period: "Oct 2015 - Nov 2016"
-      keywords: "Programmable Matter; Shape-Changing Interfaces; Ring-Based Shape Displays; Building Block."
+      keywords: ["Ring-Based Shape Displays", "Building Block"]
       abstract: "Ring-based shape displays are a type of shape-changing interface where the deformation or movement of the display is achieved through a system of rings. These rings can be mechanically actuated to create different shapes, surfaces, or structures in a controlled manner. We present the iterative design process of the building block of a novel ring-based shape display - an expandable and stackable illuminated ring."
       thumbnail: "img/eir.png"
       youtube: "bVAmZ0PiiQo"
@@ -101,7 +100,7 @@ projects:
 
     - name: "EEG EvTool"
       period: "Feb 2015 - Jul 2015"
-      keywords: "HCI Evaluation; Electroencephalography; Workload; Attention; Interaction errors."
+      keywords: ["User Experience Evaluation", "Electroencephalography"]
       abstract: "EEG EvTool is a tool for continuously estimating the user's mental workload, attention and recognition of interaction errors during different interaction tasks. We (1) validate these measures on a controlled virtual environment and (2) show how they can be used to compare different interaction techniques or devices."
       thumbnail: "img/eeg.png"
       vimeo: "153599331"
@@ -162,27 +161,39 @@ lectures:
     courses:
       - name: Dynamic Web Developement
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 35
 
       - name: Static Web Developement 
         tools: Front End, HTML, CSS, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Problem
         duration: 18h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 37
 
       - name: Algorithms and Data Structures
         tools: Python, Ad Hoc Online Learning Platform 
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
@@ -192,108 +203,156 @@ lectures:
     courses:
       - name: Application and Integration Work
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
 
       - name: Application and Integration Work
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Advanced Programming
         tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 30
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
       
       - name: Dynamic Web Developement
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 12h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Dynamic Web Developement
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 12h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Static Web Developement
         tools: Front End, HTML, CSS, VS Code, Web Browser
-        role: Lecturer
+        position: Assistant Professor
+        role: Tutor
+        type: Problem
         duration: 18h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
 
       - name: Static Web Developement
         tools: Front End, HTML, CSS, VS Code, Web Browser
-        role: Lecturer
+        position: Assistant Professor
+        role: Tutor
+        type: Problem
         duration: 18h
         status: Apprentice
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
         
       - name: Algorithms and Data Structures
         tools: Python, Ad Hoc Online Learning Platform 
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
 
       - name: Algorithms and Data Structures
         tools: Python, Ad Hoc Online Learning Platform 
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
@@ -302,90 +361,130 @@ lectures:
     courses:
       - name: Application and Integration Work
         tools: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
 
       - name: Application and Integration Work
         tools: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 29
 
       - name: Advanced Programming
         tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 30
 
       - name: Advanced Programming
         tools: Continuous Integration, GitHub, C, VS Code, Command terminal
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Project
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Dynamic Web Developement
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 12h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Dynamic Web Developement
         tools: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 12h
         status: Apprentice
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 30
@@ -393,9 +492,13 @@ lectures:
 
       - name: Algorithms and Data Structures
         tools: Javascript
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 33
@@ -404,9 +507,13 @@ lectures:
     courses:
       - name: Application and Integration Work
         tools: SQL, Java AWT, Eclipse IDE, WampServer
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
@@ -414,27 +521,39 @@ lectures:
 
       - name: Application and Integration Work
         tools: SQL, Java AWT, Eclipse IDE, WampServer
+        position: Assistant Professor
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 32
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Assistant Professor
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 31
@@ -442,27 +561,39 @@ lectures:
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 32
 
       - name: Procedural Programming
         tools: C, VS Code, Command Terminal
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work, Project
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
@@ -470,27 +601,39 @@ lectures:
 
       - name: Procedural Programming
         tools: C, VS Code, Command Terminal
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work, Project
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
     
       - name: Web Developement
         tools: HTML, CSS, JS, VS Code, Web Browser
+        position: Assistant Professor
         role: Lecturer
+        type: Problem
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 33
         
       - name: Algorithms and Data Structures
         tools: Javascript
+        position: Assistant Professor
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
@@ -500,9 +643,13 @@ lectures:
     courses:
       - name: Application and Integration Work
         tools: SQL, Java AWT, Eclipse IDE, WampServer
+        position: Temporary Research and Teaching Assissant
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
@@ -510,9 +657,13 @@ lectures:
 
       - name: Application and Integration Work
         tools: SQL, Java AWT, Eclipse IDE, WampServer
+        position: Temporary Research and Teaching Assissant
         role: Tutor
+        type: Project
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
@@ -520,27 +671,39 @@ lectures:
 
       - name: Database management
         tools: SQL, VS Code, WampServer
+        position: Temporary Research and Teaching Assissant
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Object-Oriented Programming
         tools: JAVA, Eclipse IDE
+        position: Temporary Research and Teaching Assissant
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Object-Oriented Programming
         tools: JAVA, Eclipse IDE
+        position: Temporary Research and Teaching Assissant
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
@@ -549,18 +712,26 @@ lectures:
     courses:
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 33
@@ -568,18 +739,26 @@ lectures:
 
       - name: Internet Of Things Expertise
         tools: MQTT, C, Arduino IDE, ESP32
+        position: Research Engineer
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 3h
         status: Student
+        level: M2
+        degree: General Engineering
         cycle: 3ʳᵈ Year Engineering Cycle
         school: ESTIA
         size: 15
 
       - name: Systematic Litterature Review
         tools: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+        position: Research Engineer
         role: Coordinator, Lecturer
+        type: Lecture, Project
         duration: 4h
         status: Student
+        level: M2
+        degree: General Engineering
         cycle: 3ʳᵈ Year Engineering Cycle
         school: ESTIA
         size: 30
@@ -587,36 +766,52 @@ lectures:
 
       - name: Microprogrammed Systems
         tools: C, Development boards and kits - PIC
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Database management
         tools: SQL, VS Code, WampServer
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 31
 
       - name: Event-Oriented Programming
         tools: Java SWT, Eclipse IDE
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 16h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
 
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
@@ -625,36 +820,52 @@ lectures:
     courses:
       - name: Version Control Initiation 
         tools: Git, VS Code, HTML, CSS
+        position: Research Engineer
         role: Coordinator, Lecturer
+        type: Lecture, Practical Work
         duration: 4h
         status: Student
+        level: M2
+        degree: General Engineering
         cycle: 3ʳᵈ Year Engineering Cycle
         school: ESTIA
         size: 18
 
       - name: Augmented Virtuality Expertise
         tools: Reality–Virtuality Continuum,  Augmented Virtuality, Tangible User Interfaces
+        position: Research Engineer
         role: Coordinator, Lecturer
+        type: Lecture
         duration: 1h
         status: Student
+        level: M2
+        degree: General Engineering
         cycle: 3ʳᵈ Year Engineering Cycle
         school: ESTIA
         size: 25
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
 
       - name: Mobile Communication Systems
         tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Project
         duration: 16h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 32
@@ -662,9 +873,13 @@ lectures:
 
       - name: Event-Oriented Programming
         tools: Java SWT, Eclipse IDE
+        position: Research Engineer
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 16h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 32
@@ -674,18 +889,26 @@ lectures:
     courses:
       - name: Object-Oriented Programming
         tools: Java, Eclipse IDE
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Apprentice
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
         
       - name: Event-Oriented Programming
         tools: Java SWT, Eclipse IDE
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 16h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 34
@@ -695,18 +918,26 @@ lectures:
     courses:
       - name: Object-Oriented Programming 
         tools: Java, Eclipse IDE
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 24h
         status: Student
+        level: M1
+        degree: General Engineering
         cycle: 2ⁿᵈ Year Engineering Cycle
         school: ESTIA
         size: 33
 
       - name: Web Developement
         tools: HTML, CSS, JS, VS Code, Web Browser
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work
         duration: 32h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 30
@@ -716,18 +947,26 @@ lectures:
     courses:
       - name: Procedural Programming
         tools: C, VS Code, Command Terminal
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work, Project
         duration: 22h
         status: Apprentice
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 31
         
       - name: Procedural Programming
         tools: C, VS Code, Command Terminal
+        position: PhD Student
         role: Lecturer
+        type: Lecture, Practical Work, Project
         duration: 22h
         status: Student
+        level: L3
+        degree: General Engineering
         cycle: 1ˢᵗ Year Engineering Cycle
         school: ESTIA
         size: 34
@@ -739,78 +978,100 @@ coordinations:
       period: "2023-Now"
       level: "1ˢᵗ Year Engineering Cycle (Refresher Course)"
       location: "ESTIA"
+      type: "Lecture, Practical Work"
       aavs: 
         - "[Understand]{.underline} the fundamentals of algorithms (variables, operators, expressions, control structures, loops, functions) and common data structures (arrays, lists, queues, stacks, dictionaries)."
         - "[Analyze]{.underline} the time complexity of algorithms using asymptotic comparisons and Big O notation."
         - "[Design and implement]{.underline} algorithms and choose suitable data structures to solve problems, including tasks like finding minimum/maximum, sorting, summing, and averaging data."
       tools: Python, Ad Hoc Online Learning Platform
+      responsibilities: ["Online Learning Platform implementation and maintenance", "Student assessment and grading", "Lecturers coordination"]
+      links: 
+        - text: "Ad Hoc Online Learning Platform"
+          href: "https://devweb.estia.fr/asd/student/"
 
     - name: "Mobile Communication Systems"
       volume: "12h"
       period: "2023-Now"
       level: "2ⁿᵈ Year Engineering Cycle"
       location: "ESTIA"
+      type: "Lecture, Practical Work, Project"
       aavs: 
         - "[Apply]{.underline} previous learning outcomes to implement a connected device with multiple input sensors and output actuators, along with a mobile application featuring multiple input and output widgets."
         - "[Design and implement]{.underline} a BLE communication protocol enabling bidirectional requests and acknowledgements between the connected device and the mobile application."
       tools: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+      responsibilities: ["Slides and toolkits preparation and updates",  "Student assessment and grading", "Practical work and project supervision", "Lecturers coordination"]
+      links: 
+        - text: "Lecture"
+          href: "https://devweb.estia.fr/mcs/"
 
     - name: "Systematic Litterature Review"
       volume: "4h"
       period: "2019"
       level: "3ʳᵈ Year Engineering Cycle"
       location: "ESTIA"
+      type: "Lecture, Project"
       aavs: 
         - "[Understand]{.underline} the principles and methodology of a Systematic Literature Review, including research questions formulation, inclusion/exclusion criteria, data extraction, and quality assessment of studies."
         - "[Apply]{.underline} the SLR methodology by conducting structured searches, selecting relevant studies, extracting and synthesizing data, and critically analyzing results to draw evidence-based conclusions."
       tools: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+      responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
+      links: 
+        - text: "Demo"
+          href: "Google Drive\\teaching\\systematic-litterature-review\\a-systematic-literature-review.pdf"
+
+        - text: "Method and Tools"
+          href: "Google Drive\\teaching\\systematic-litterature-review\\maximedaniel - method and tools.pdf"
+          
+        - text: "10 Rules"
+          href: "Google Drive\\teaching\\systematic-litterature-review\\10-rules-for-writing-literature-review.pdf"
+
+        - text: "Zotero Tutorial"
+          href: "Google Drive\\teaching\\systematic-litterature-review\\tutorial-zotero.pdf"
 
     - name: "Internet Of Things Expertise"
       volume: "4h"
       period: "2019"
       level: "3ʳᵈ Year Engineering Cycle"
       location: "ESTIA"
+      type: "Lecture, Project"
       aavs: 
         - "[Understand]{.underline} the principles of the Internet of Things (IoT), including IoT architectures and communication protocols, with emphasis on MQTT's publish/subscribe model."
         - "[Apply]{.underline} IoT concepts by designing, programming, and deploying connected devices with sensors and actuators (ESP32), communicating via MQTT through a local hub (Raspberry Pi)."
       tools: MQTT, C, Arduino IDE, ESP32
+      responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
+      links: 
+        - text: "Lecture"
+          href: "https://devweb.estia.fr/mcs/"
 
     - name: "Version Control Initiation"
       volume: "4h"
       period: "2018"
       level: "3ʳᵈ Year Engineering Cycle"
       location: "ESTIA"
+      type: "Lecture, Practical Work"
       aavs: 
         - "[Understand]{.underline} the basic concepts of version control, including repositories, commits, branches, and merges."
         - "[Apply]{.underline} these concepts using Git, performing common operations such as add, commit, push, and pull, as well as handling merge conflicts and synchronizing with a remote collaborative repository."
       tools: Git, VS Code, HTML, CSS
+      responsibilities: ["Slides preparation and updates",  "Student assessment and grading", "Practical work supervision"]
+      links: 
+        - text: "Lecture"
+          href: "https://devweb.estia.fr/mcs/"
 
     - name: "Augmented Virtuality Expertise"
       volume: "1h"
       period: "2018"
       level: "3ʳᵈ Year Engineering Cycle"
       location: "ESTIA"
+      type: "Lecture"
       aavs: 
         - "[Understand]{.underline} the Reality–Virtuality continuum, with a focus on augmented virtuality and the comparative strengths, weaknesses, and differences between tangible user interfaces and graphical user interfaces."
-      tools: Reality–Virtuality Continuum,  Augmented Virtuality, Tangible User Interfaces
+      tools: Reality–Virtuality Continuum, Augmented Virtuality, Tangible User Interfaces
+      responsibilities: ["Slides preparation and updates"]
+      links: 
+        - text: "Lecture"
+          href: "https://devweb.estia.fr/mcs/"
       
-      # - name: Augmented Virtuality Expertise
-      #   tools: Tangible Interaction
-      #   role: Coordinator, Lecturer
-      #   duration: 1h
-      #   status: Student
-      #   cycle: 3ʳᵈ Year Engineering Cycle
-      #   school: ESTIA
-      #   size: 25
-
-      # - name: Internet Of Things Expertise
-      #   tools: MQTT, C, Arduino IDE, ESP32
-      #   role: Coordinator, Lecturer
-      #   duration: 3h
-      #   status: Student
-      #   cycle: 3ʳᵈ Year Engineering Cycle
-      #   school: ESTIA
-      #   size: 15
 
 
 theses:
@@ -892,7 +1153,7 @@ publications:
               track: Long Paper
             - name: TEI 2025
               track: Long Paper
-          note: "Rank B (CORE2023) -- Best venue specialized in Tangible, Embedded, and Embodied Interaction"
+          note: "Rank B (CORE2023) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
           keywords: ["Tangible Interaction", "Shape-Changing Interfaces", "User Safety"]
 
         - thumbnail: "img/chi22.png" 
@@ -904,7 +1165,7 @@ publications:
               track: Long Paper
             - name: CHI EA 2022
               track: Short Paper
-          note: "Rank A* (CORE2021) -- Best venue in Human-Computer Interaction"    
+          note: "Rank A* (CORE2021) -- best international venue in Human-Computer Interaction"    
           keywords: ["Virtual Reality", "3D Selection", "Gesture"]
 
         - thumbnail: "img/tei21.png" 
@@ -914,7 +1175,7 @@ publications:
           submissions:
             - name: TEI 2021
               track: Short Paper
-          note: "Rank A (CORE2020) -- Best venue specialized in Tangible, Embedded, and Embodied Interaction"
+          note: "Rank A (CORE2020) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
           keywords: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
 
 
@@ -925,7 +1186,7 @@ publications:
           submissions:
             - name: TEI 2019
               track: Long Paper
-          note: "Rank A (CORE2018) -- Best venue specialized in Tangible, Embedded, and Embodied Interaction"
+          note: "Rank A (CORE2018) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
           keywords: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
 
         - thumbnail: "img/tei18.png" 
@@ -935,7 +1196,7 @@ publications:
           submissions:
             - name: TEI 2018
               track: Short Paper
-          note: "Rank A (CORE2017) -- Best venue specialized in Tangible, Embedded, and Embodied Interaction"
+          note: "Rank A (CORE2017) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
           keywords: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
 
         - thumbnail: "img/chi16.png" 
@@ -945,8 +1206,8 @@ publications:
           submissions:
             - name: CHI 2016
               track: Long Paper
-          note: "Rank A* (CORE2015) -- Best venue in Human-Computer Interaction"
-          keywords: ["Brain-Computer Interaction", "Electroencephalogram", "User Experience Evaluation"]
+          note: "Rank A* (CORE2015) -- best international venue in Human-Computer Interaction"
+          keywords: ["User Experience Evaluation", "Electroencephalography", "Workload", "Attention", "Interaction Errors"]
 
     - category: "International Peer-Reviewed Workshops"
       inputs:
@@ -958,7 +1219,7 @@ publications:
           submissions:
             - name: TEI 2025
               track: Studio
-          note: "Rank B (CORE2023) -- Best venue specialized in Tangible, Embedded, and Embodied Interaction"
+          note: "Rank B (CORE2023) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
           keywords: ["Tangible Interaction", "Large Language Models", "Explainability"]
 
     - category: "National Peer-Reviewed Conferences"
@@ -971,7 +1232,7 @@ publications:
           submissions:
             - name: IHM 2016
               track: Long Paper
-          keywords: ["Persuasive Technology", "Energy Demand Side Management", "Literature Review"]
+          keywords: ["Literature Review", "Persuasive Technology", "Energy Demand Side Management"]
               
         - thumbnail: "img/ihm16.png" 
           pdf: "pdf/daniel2017persuasive.pdf"
@@ -1002,6 +1263,23 @@ publications:
         - thumbnail: "img/tei18.png" 
           ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2018. **Expandable Illuminated Ring**. 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18). March 18 – 21, Stockholm, Sweden."
 
+
+    # - category: "Extra Disciplinary Collaborations"
+    #   inputs:
+    #     - thumbnail: "img/ihm17.png" 
+    #       pdf: "pdf/ambrosino2017ideabulb.pdf"
+    #       doi: "https://dumas.ccsd.cnrs.fr/ENSEIRB/hal-01534697v2"
+    #       ref:  "Julien Ambrosino, Maxime Daniel, Dimitri Masson, Jérémy Legardeur. 2017. **IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions**. In *SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering (pp. 70-74)*. Berntzen, L. et al.."
+
+        # - thumbnail: "img/ihm17.png" 
+        #   pdf: "pdf/faham2016toward.pdf"
+        #   doi: "https://link.springer.com/chapter/10.1007/978-3-319-51133-7_58"
+        #   ref:  "Faham, Jérémie, Maxime Daniel, and Jérémy Legardeur. 2016. **Toward a Matching Approach to Support CBM (Collaborative Business Model) Processes between Regional Entrepreneurs within the RIS3 Policy**. In *IFIP International Conference on Advances in Production Management Systems*. Cham: Springer International Publishing."
+
+        # - thumbnail: "img/ihm17.png" 
+        #   pdf: "pdf/faham2016dialoj.pdf"
+        #   doi: "https://dumas.ccsd.cnrs.fr/ENSEIRB/hal-01332579v1"
+        #   ref:  "Faham, Jérémie, Maxime Daniel, Benjamin Tyl, Iban Lizarralde, Iñaki Garagorri, and Jérémy Legardeur. 2016. **A Dialogical Approach to increase Matching Efficiency before Collaborative Business Model Processes**. In *XXVII ISPIM Innovation Conference–Blending Tomorrow's Innovation Vintage*."
 
 reviews:
 

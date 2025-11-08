@@ -6,9 +6,9 @@ https://cnu27.ls2n.fr/note-pour-les-candidatures-a-la-qualification/
 
 - attestation enseignement
 - tout en francais
+- add materials of each course (syllabus, exam, project, etc)
 
 - améliore les colonnes des cours
-- ajout badges des thematic de recherche
 
 # export sans en-tête ni pied de page avec firefox
 

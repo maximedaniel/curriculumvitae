@@ -36,6 +36,10 @@ function Lectures.render(metadata, debug)
         for j, course in ipairs(courses) do
             local name = pandoc.utils.stringify(course.name or "")
             local tools = pandoc.utils.stringify(course.tools or "")
+            local position = pandoc.utils.stringify(course.position or "")
+            local type = pandoc.utils.stringify(course.type or "")
+            local level = pandoc.utils.stringify(course.level or "")
+            local degree = pandoc.utils.stringify(course.degree or "")
             local role = pandoc.utils.stringify(course.role or "")
             local duration = pandoc.utils.stringify(course.duration or "")
             local numeric_duration = tonumber(duration:match("%d+"))
@@ -77,7 +81,10 @@ function Lectures.render(metadata, debug)
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
-                </tr>]], name, tools_html, role, cycle, school, size, duration)
+                <td>%s</td>
+                <td>%s</td>
+                <td>%s</td>
+                </tr>]], name, tools_html, position, role, type, level, degree, school, size, duration)
             else
                 courses_html = courses_html .. string.format([[
                 <tr>
@@ -90,11 +97,17 @@ function Lectures.render(metadata, debug)
                 <td>%s</td>
                 <td>%s</td>
                 <td>%s</td>
-                </tr>]], name, tools_html, role, cycle, school, size, duration)
+                <td>%s</td>
+                <td>%s</td>
+                <td>%s</td>
+                </tr>]], name, tools_html, position, role, type,  level, degree, school, size, duration)
             end 
         end
         local total_html = string.format([[
             <tr>
+            <td></td>
+            <td></td>
+            <td></td>
             <td></td>
             <td></td>
             <td></td>
@@ -106,14 +119,17 @@ function Lectures.render(metadata, debug)
         lectures_html = lectures_html .. string.format([[
             <div class="g-col-12">
             <h3 style="margin-top:0;">%s</h3>
-            <table class="table table-borderless table-sm">
+            <table class="table table-sm">
             <thead>
                 <tr>
                 <th scope="col">Course</th>
+                <th scope="col">Position</th>
                 <th scope="col">Role</th>
+                <th scope="col">Type</th>
                 <th scope="col">Level</th>
-                <th scope="col">School</th>
-                <th scope="col">Students</th>
+                <th scope="col">Degree</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Headcount</th>
                 <th scope="col">Hours</th>
                 </tr>
             </thead>

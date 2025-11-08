@@ -61,6 +61,32 @@ function Coordinations.render(metadata, debug)
             ]], tool);
         end
 
+        local responsibilities = coordination.responsibilities or {}
+        local responsibilities_html = ""
+        if #responsibilities > 0 then
+          for j, responsibility in ipairs(responsibilities) do
+              responsibilities_html = responsibilities_html .. string.format([[
+                  <li>%s</li>
+              ]], pandoc.utils.stringify(responsibility or ""))
+          end
+          responsibilities_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>responsabilities:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>]], responsibilities_html)
+        end
+
+        local links = coordination.links or {}
+        local links_html = ""
+        if #links > 0 then
+          for j, link in ipairs(links) do
+              local text = pandoc.utils.stringify(link.text or "")
+              local href = pandoc.utils.stringify(link.href or "")
+              if j == #links then
+                  links_html = links_html .. string.format([[ <a href="%s" target="_blank"><i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i> %s</a> ]], href, text)
+              else
+                  links_html = links_html .. string.format([[ <a href="%s" target="_blank"><i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i> %s</a>, ]], href, text)
+              end
+          end
+          links_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>materials:</b>%s</div>]], links_html)
+        end
+
         local aavs = coordination.aavs or {}
         local aavs_html = ""
         for j, aav in ipairs(aavs) do
@@ -88,9 +114,11 @@ function Coordinations.render(metadata, debug)
                 <div class="text-start"><i class="bi bi-bookmark-fill"></i> <b>level:</b> %s</div>
                 <div class="text-start"><i class="bi bi-geo-alt-fill"></i> <b>location:</b> %s</div>
                 <div class="text-start"><i class="bi bi-stopwatch"></i> <b>volume:</b> %s</div>
-                <div class="text-start"><i class="bi bi-bullseye"></i> <b>outcomes:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>
+                <div class="text-start"><i class="bi bi-bullseye"></i> <b>goals:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>
+                %s
+                %s
             </div>
-        ]], name, period, tools_html, level, location, volume, aavs_html)
+        ]], name, period, tools_html, level, location, volume, aavs_html, responsibilities_html, links_html)
 
     end
 

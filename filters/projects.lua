@@ -21,7 +21,16 @@ function Projects.render(metadata, debug)
         end
         local name = pandoc.utils.stringify(project.name or "")
         local period = pandoc.utils.stringify(project.period or "")
-        local keywords = pandoc.utils.stringify(project.keywords or "")
+
+        local keywords = project.keywords or {}
+        local keywords_html = ""
+        for _, keyword in ipairs(keywords) do
+            local kw = pandoc.utils.stringify(keyword or "")
+            keywords_html = keywords_html .. string.format([[
+                <span class="badge bg-light" style="margin-right:0.25rem; margin-bottom:0.25rem;">%s</span>
+            ]], kw)
+        end
+
         local abstract = pandoc.utils.stringify(project.abstract or "")
         local fundings = pandoc.utils.stringify(project.fundings or "")
         local contributors = pandoc.utils.stringify(project.contributors or "")
@@ -35,14 +44,14 @@ function Projects.render(metadata, debug)
                         <div class="fw-bold fs-5">%s</div>
                         <div class="text-muted fs-6">%s</div>
                         <div style="margin-bottom:0.25rem;">%s</div>
-                        <div style="margin-bottom:0.25rem;"><b>Keywords:</b> %s</div>
+                        <div style="margin-bottom:0.25rem;">%s</div>
                         <div style="margin-bottom:0.25rem;"><b>Video:</b> <a href="%s">%s</a></div>
                         <div style="margin-bottom:0.25rem;"><b>Contributors:</b> %s</div>
                         <div><b>Fundings:</b> %s</div>
 
                     </div>
                 </div>
-            ]], thumbnail, name, period, abstract, keywords, video_link, video_link, contributors, fundings)
+            ]], thumbnail, name, period, keywords_html, abstract, video_link, video_link, contributors, fundings)
         else
             local project_id = "project_"..i
             projects_html = projects_html .. string.format([[
@@ -65,7 +74,7 @@ function Projects.render(metadata, debug)
                             <div class="card-title d-flex justify-content-between align-items-center">
                                 <div class="text-start">
                                     <span class="fw-bold fs-5">%s</span><br>
-                                    <span class="text-muted fs-6">%s</span>
+                                    <span class="text-muted fs-6">%s</span><br>
                                 </div>
 
                                 <a class="btn btn-outline-dark btn-sm btn-collapse" id="%s" role="button">
@@ -75,14 +84,14 @@ function Projects.render(metadata, debug)
                             <div class="card-text">
                                 <div class="collapse" id="%s">
                                     <div style="margin-bottom:0.25rem;">%s</div>
-                                    <div style="margin-bottom:0.25rem;"><b>Keywords:</b> %s</div>
+                                    <div style="margin-bottom:0.25rem;">%s</div>
                                     <div style="margin-bottom:0.25rem;"><b>Contributors:</b> %s</div>
                                     <div><b>Fundings:</b> %s</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-            ]], thumbnail, video_data, name, period, project_id, project_id, abstract, keywords, contributors, fundings)
+            ]], thumbnail, video_data, name, period, project_id, project_id, keywords_html, abstract, contributors, fundings)
         end
     end
 

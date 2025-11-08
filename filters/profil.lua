@@ -14,6 +14,22 @@ function Profil.render(metadata, debug)
         <img src="%s" class="img-thumbnail" alt="Profil picture" style="border:none;">
     ]], thumbnail);
 
+    
+    local keywords = profil.keywords or {}
+    local keywords_html = ""
+    for _, keyword in ipairs(keywords) do
+        local kw = pandoc.utils.stringify(keyword or "")
+        keywords_html = keywords_html .. string.format([[
+            <span class="badge bg-light" style="margin-right:0.25rem; font-size: 1rem;">%s</span>
+        ]], kw)
+    end
+    
+    keywords_html = string.format([[
+        <div class="d-inline-flex align-items-start flex-wrap">
+            %s
+        </div>
+    ]], keywords_html)
+
     local info_html = ""
     for _, info in ipairs(informations) do
     local name = pandoc.utils.stringify(info.name or "")
@@ -25,6 +41,8 @@ function Profil.render(metadata, debug)
         </div>
     ]], icon, name, text)
     end
+
+
     local html = ""
     local social_html = ""
     if printable then
@@ -82,12 +100,13 @@ function Profil.render(metadata, debug)
                         <div class="grid" style="--bs-columns: 1; --bs-gap: 0.2em 0rem;">
                         %s
                         %s
+                        %s
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        ]], thumbnail_html, info_html, social_html)
+        ]], thumbnail_html, keywords_html, info_html, social_html)
     end
 
 

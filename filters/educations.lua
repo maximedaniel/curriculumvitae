@@ -2,18 +2,20 @@ local Educations = {}
 
 function Educations.render(metadata, debug)
     local printable = metadata.printable  or false
-    local educations = metadata.educations or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local educations_title = pandoc.utils.stringify(metadata.educations.title[lang] or "Educations")
+    local educations = metadata.educations.items or {}
     local educations_html = ""
       for i, education in ipairs(educations) do
         if debug then
             quarto.log.output(educations) 
         end
         local thumbnail = pandoc.utils.stringify(education.thumbnail or "")
-        local degree = pandoc.utils.stringify(education.degree or "")
-        local period = pandoc.utils.stringify(education.period or "")
+        local degree = pandoc.utils.stringify(education.degree[lang] or "")
+        local period = pandoc.utils.stringify(education.period[lang] or "")
         local url = pandoc.utils.stringify(education.url or "")
-        local institution = pandoc.utils.stringify(education.institution or "")
-        local location = pandoc.utils.stringify(education.location or "")
+        local institution = pandoc.utils.stringify(education.institution[lang] or "")
+        local location = pandoc.utils.stringify(education.location[lang] or "")
 
         local img_html = thumbnail ~= "" and string.format('<img src="%s" class="image-hover-effect" style="max-height: 100px; max-width: 100%%; object-fit: contain;">', thumbnail) or ""
         
@@ -136,11 +138,13 @@ function Educations.render(metadata, debug)
 
     if printable then
         educations_html = string.format([[
-            <table class="table table-borderless">
-                <tbody>
-                    %s
-                </tbody>
-            </table>
+            <div class="g-col-12">
+                <table class="table table-borderless">
+                    <tbody>
+                        %s
+                    </tbody>
+                </table>
+            </div>
         ]], educations_html)
     end
 

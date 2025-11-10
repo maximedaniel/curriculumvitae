@@ -1,28 +1,34 @@
 local Supervisions = {}
 
 function Supervisions.render(metadata, debug)
-    local supervisions = metadata.supervisions or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local supervision_title = pandoc.utils.stringify(metadata.supervisions.titles.title[lang] or "Supervisions")
+    local supervisions = metadata.supervisions.items or {}
     local supervisions_html = ""
     for i, supervision in ipairs(supervisions) do
         if debug then
             quarto.log.output(supervision) 
         end
         local name = pandoc.utils.stringify(supervision.name or "")
-        local topic = pandoc.utils.stringify(supervision.topic or "")
-        local level = pandoc.utils.stringify(supervision.level or "")
-        local duration = pandoc.utils.stringify(supervision.duration or "")
-        local location = pandoc.utils.stringify(supervision.location or "")
-        local supervisor = pandoc.utils.stringify(supervision.supervisor or "")
+        local level = pandoc.utils.stringify(supervision.level[lang] or "")
+        local topic = pandoc.utils.stringify(supervision.topic[lang] or "")
+        local topic_title = pandoc.utils.stringify(metadata.supervisions.titles.headers[lang][1] or "topic")
+        local duration = pandoc.utils.stringify(supervision.duration[lang] or "")
+        local duration_title = pandoc.utils.stringify(metadata.supervisions.titles.headers[lang][2] or "duration")
+        local location = pandoc.utils.stringify(supervision.location[lang] or "")
+        local location_title = pandoc.utils.stringify(metadata.supervisions.titles.headers[lang][3] or "location")
+        local supervisor = pandoc.utils.stringify(supervision.supervisor[lang] or "")
+        local supervisor_title = pandoc.utils.stringify(metadata.supervisions.titles.headers[lang][4] or "supervisor")
         supervisions_html = supervisions_html .. string.format([[
         <div class="g-col-12 g-col-sm-12 g-col-md-12 g-col-lg-6">
             <div class="text-start" style="font-size: 1.25rem;font-weight: 400;line-height: 1.2;">%s</div>
             <div class="text-start" style="font-size: 1rem;font-weight: 400; line-height: 1; opacity:0.75; margin-bottom:0.5rem;">%s</div>
-            <div class="text-start"><i class="bi bi-bookmark-fill"></i><b>topic:</b> <i>%s</i></div>
-            <div class="text-start"><i class="bi bi-hourglass-split"></i><b>duration:</b> %s</div>
-            <div class="text-start"><i class="bi bi-geo-alt-fill"></i><b>location:</b> %s</div>
-            <div class="text-start"><i class="bi bi-clipboard2-check-fill"></i><b>supervision:</b> %s</div>
+            <div class="text-start"><i class="bi bi-bookmark-fill"></i><b>%s:</b> <i>%s</i></div>
+            <div class="text-start"><i class="bi bi-hourglass-split"></i><b>%s:</b> %s</div>
+            <div class="text-start"><i class="bi bi-geo-alt-fill"></i><b>%s:</b> %s</div>
+            <div class="text-start"><i class="bi bi-clipboard2-check-fill"></i><b>%s:</b> %s</div>
         </div>
-        ]], name,  level, topic, duration, location, supervisor)
+        ]], name,  level, topic_title, topic, duration_title, duration, location_title, location, supervisor_title, supervisor)
         -- local thumbnail = pandoc.utils.stringify(project.thumbnail or "")
         -- local youtube = ""
         -- if project.youtube then

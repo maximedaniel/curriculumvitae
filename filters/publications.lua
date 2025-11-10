@@ -25,14 +25,17 @@ end
 
 function Publications.render(metadata, debug)
     local printable = metadata.printable or false
-    local html = ""
-    local categories = metadata.publications or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local publications_title = pandoc.utils.stringify(metadata.publications.title[lang] or "Publications")
+    local html = "" --string.format([[<h1>%s</h1>]], publications_title)
+    
+    local categories = metadata.publications.categories or {}
     for _, category in ipairs(categories) do
-        local category_name = pandoc.utils.stringify(category.category or "")
+        local category_name = pandoc.utils.stringify(category.title[lang] or "")
         if debug then
             quarto.log.output(category_name) 
         end
-        local publications = category.inputs or {}
+        local publications = category.items or {}
         local publications_html = ""
         for _, publication in ipairs(publications) do
             local thumbnail = pandoc.utils.stringify(publication.thumbnail or "")
@@ -61,16 +64,17 @@ function Publications.render(metadata, debug)
                     doi_html = string.format([[<a href="%s" target="_blank">%s</a>]], doi, doi)
                 
                 else
-                    doi_html = string.format([[
-                    <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
-                        <i class="bi bi-box-arrow-up-right"></i> DOI
-                    </a>]], doi)
+                    -- doi_html = string.format([[
+                    -- <a class="btn btn-sm btn-outline-dark" href="%s" target="_blank">
+                    --     <i class="bi bi-box-arrow-up-right"></i> DOI
+                    -- </a>]], doi)
+                    doi_html = string.format([[<a href="%s" target="_blank">%s</a>]], doi, doi)
                 end
             end
             
-            local note = pandoc.utils.stringify(publication.note or "")
             local note_html = ""
-            if note ~= "" then
+            if publication.note ~= nil then
+                note = pandoc.utils.stringify(publication.note[lang] or "")
                 note_html = string.format([[<p style="margin-bottom:0.25rem;font-size:0.8em;opacity:0.75">%s</p>]], note)
             end
 
@@ -99,8 +103,11 @@ function Publications.render(metadata, debug)
                 </ol>
                 ]], submissions_html)
 
-            local keywords = publication.keywords or {}
             local keywords_html = ""
+            local keywords = {}
+            if publication.keywords ~= nil then
+                keywords = publication.keywords[lang]
+            end
             if #keywords > 0 then
                 for _, keyword in ipairs(keywords) do
                     local kw = pandoc.utils.stringify(keyword or "")
@@ -149,18 +156,17 @@ function Publications.render(metadata, debug)
                                 </nav>
                                 <div>
                                     %s
-                                    <p style="margin-bottom:0.25rem;">%s</p>
-                                    %s
+                                    <p style="margin-bottom:0.25rem;">%s %s</p>
+                                    %s 
                                 </div>
                                 <div class="d-inline-flex align-items-center gap-2">
-                                    %s
                                     %s
                                 </div>
                             </div>
                         </div>
                         </div>
                     </div>
-                ]], thumbnail, final_submissions_html, keywords_html, ref,  note_html, pdf_html, doi_html)
+                ]], thumbnail, final_submissions_html, keywords_html, ref,  doi_html, note_html,  pdf_html)
             end
 
         end
@@ -172,7 +178,7 @@ function Publications.render(metadata, debug)
         </div>
         ]], category_name, publications_html)
     end
-
+    
     return html
 end
 

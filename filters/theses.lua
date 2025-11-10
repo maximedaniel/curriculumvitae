@@ -2,7 +2,19 @@ local Theses = {}
 
 function Theses.render(metadata, debug)
     local printable = metadata.printable or false
-    local theses = metadata.theses or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local theses_title = pandoc.utils.stringify(metadata.theses.titles.title[lang] or "Theses")
+    local abstract_title = pandoc.utils.stringify(metadata.theses.titles.abstract[lang] or "Abstract")
+    local laboratory_title = pandoc.utils.stringify(metadata.theses.titles.laboratory[lang] or "Laboratory")
+    local members_titles = metadata.theses.titles.jury[lang] or {}
+    local members_titles_html = ""
+    for j, member_title in ipairs(members_titles) do
+        local title = pandoc.utils.stringify(member_title or "")
+        members_titles_html = members_titles_html .. string.format([[
+            <th scope="col">%s</th>
+        ]], title)
+    end
+    local theses = metadata.theses.items or {}
     local theses_html = ""
       for i, thesis in ipairs(theses) do
         if debug then
@@ -11,20 +23,20 @@ function Theses.render(metadata, debug)
 
         local thumbnail = pandoc.utils.stringify(thesis.thumbnail or "")
         local pdf = pandoc.utils.stringify(thesis.pdf or "")
-        local md_ref = pandoc.write(pandoc.Pandoc({pandoc.Para(thesis.ref)}), "markdown")
+        local md_ref = pandoc.write(pandoc.Pandoc({pandoc.Para(thesis.ref[lang])}), "markdown")
         local parsed_ref = pandoc.read(md_ref, "markdown")
         local ref = pandoc.write(parsed_ref, "html")
         ref = ref:gsub("^<p>", ""):gsub("</p>%s*$", "")
 
-        local name = pandoc.utils.stringify(thesis.name or "")
-        local title = pandoc.utils.stringify(thesis.title or "")
-        local abstract = pandoc.utils.stringify(thesis.abstract or "")
+        local name = pandoc.utils.stringify(thesis.name[lang] or "")
+        local title = pandoc.utils.stringify(thesis.title[lang] or "")
+        local abstract = pandoc.utils.stringify(thesis.abstract[lang] or "")
         local members = thesis.jury or {}
         local members_html = ""
         for j, member in ipairs(members) do
             local name = pandoc.utils.stringify(member.name or "")
-            local role = pandoc.utils.stringify(member.role or "")
-            local position = pandoc.utils.stringify(member.position or "")
+            local role = pandoc.utils.stringify(member.role[lang] or "")
+            local position = pandoc.utils.stringify(member.position[lang] or "")
             members_html = members_html .. string.format([[
             <tr>
             <td>%s</td>
@@ -37,16 +49,14 @@ function Theses.render(metadata, debug)
             <table class="table table-borderless table-sm">
                 <thead>
                     <tr>
-                    <th scope="col">PhD Defense Committee member</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Position</th>
+                    %s
                     </tr>
                 </thead>
                 <tbody>
                 %s
                 </tbody>
             </table>
-            ]], members_html)
+            ]], members_titles_html, members_html)
         
         local laboratory = pandoc.utils.stringify(thesis.laboratory or "")
         if printable then
@@ -64,15 +74,15 @@ function Theses.render(metadata, debug)
                                 <div class="d-flex flex-column align-items-left">
                                     <h3 style="margin-bottom:0">%s</h3>
                                     <p class="subtitle lead">%s</p>
-                                    <div style="font-size: 1em;margin-bottom:1rem;"><b>Abstract</b><br>%s</div>
-                                    <div style="font-size: 1em;margin-bottom:1rem;"><b>Laboratory</b><br>%s</div>
+                                    <div style="font-size: 1em;margin-bottom:1rem;"><b>%s</b><br>%s</div>
+                                    <div style="font-size: 1em;margin-bottom:1rem;"><b>%s</b><br>%s</div>
                                     <div style="font-size: 1em;margin-bottom:1rem;">%s</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            ]], thumbnail, ref, title, name, abstract, laboratory, jury_html)
+            ]], thumbnail, ref, title, name, abstract_title, abstract, laboratory_title, laboratory, jury_html)
         else
             local thesis_id = "thesis_"..i
             theses_html = theses_html .. string.format([[
@@ -98,8 +108,8 @@ function Theses.render(metadata, debug)
                                     <div class="d-flex flex-column align-items-left">
                                         <h3 style="margin-bottom:0">%s</h3>
                                         <p class="subtitle lead">%s</p>
-                                        <div style="font-size: 1em;margin-bottom:1rem;"><b>Abstract</b><br>%s</div>
-                                        <div style="font-size: 1em;margin-bottom:1rem;"><b>Laboratory</b><br>%s</div>
+                                        <div style="font-size: 1em;margin-bottom:1rem;"><b>%s</b><br>%s</div>
+                                        <div style="font-size: 1em;margin-bottom:1rem;"><b>%s</b><br>%s</div>
                                         <div style="font-size: 1em;margin-bottom:1rem;">%s</div>
                                     </div>
                                 </div>
@@ -107,7 +117,7 @@ function Theses.render(metadata, debug)
                         </div>
                     </div>
                 </div>
-            ]], thumbnail, ref, pdf, thesis_id, thesis_id, title, name, abstract, laboratory, jury_html)
+            ]], thumbnail, ref, pdf, thesis_id, thesis_id, title, name, abstract_title, abstract, laboratory_title, laboratory, jury_html)
         end
     end
 

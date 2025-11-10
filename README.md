@@ -10,9 +10,18 @@ https://cnu27.ls2n.fr/note-pour-les-candidatures-a-la-qualification/
 
 - améliore les colonnes des cours
 
+# print cv
+
+- activate "pritnable: true" in _quarto.yml
+- open mozilla firefox
+ - open devtools (F12)
+ - select fourth icon (print preview)
+ - right click on the page -> print preview
+ - select "print to pdf"
+
+
 # export sans en-tête ni pied de page avec firefox
 
-run printable.qmd to "print" with firefox but you need to modify some variables of firefox
 
 Dans la barre d’adresse, tape about:config → accepte le risque.
 

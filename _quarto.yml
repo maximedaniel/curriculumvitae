@@ -1,6 +1,6 @@
 project:
   type: website
-  
+
 filters: ["filters/main.lua"]
 
 website:

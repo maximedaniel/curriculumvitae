@@ -17,9 +17,18 @@ end
 
 function Lectures.render(metadata, debug)
     local printable = metadata.printable or false
-    local lectures = metadata.lectures or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local lectures_title = pandoc.utils.stringify(metadata.lectures.title[lang] or "Lectures")
+    local lectures = metadata.lectures.items or {}
     if debug then
         quarto.log.output(lectures) 
+    end
+    local heads_titles = metadata.lectures.headers[lang] or {"Course", "Position", "Role", "Type", "Level", "Degree", "Institution", "Headcount", "Hours"}
+    local heads_titles_html = ""
+    for _, head in ipairs(heads_titles) do
+        heads_titles_html = heads_titles_html .. string.format([[
+            <th scope="col">%s</th>
+        ]], pandoc.utils.stringify(head or ""))
     end
     local lectures_html = ""
     for i, lecture in ipairs(lectures) do
@@ -34,19 +43,19 @@ function Lectures.render(metadata, debug)
         total_duration = 0
         total_size = 0
         for j, course in ipairs(courses) do
-            local name = pandoc.utils.stringify(course.name or "")
-            local tools = pandoc.utils.stringify(course.tools or "")
-            local position = pandoc.utils.stringify(course.position or "")
-            local type = pandoc.utils.stringify(course.type or "")
-            local level = pandoc.utils.stringify(course.level or "")
-            local degree = pandoc.utils.stringify(course.degree or "")
-            local role = pandoc.utils.stringify(course.role or "")
-            local duration = pandoc.utils.stringify(course.duration or "")
+            local name = pandoc.utils.stringify(course.name[lang] or "")
+            local tools = pandoc.utils.stringify(course.tools[lang] or "")
+            local position = pandoc.utils.stringify(course.position[lang] or "")
+            local type = pandoc.utils.stringify(course.type[lang] or "")
+            local level = pandoc.utils.stringify(course.level[lang] or "")
+            local degree = pandoc.utils.stringify(course.degree[lang] or "")
+            local role = pandoc.utils.stringify(course.role[lang] or "")
+            local duration = pandoc.utils.stringify(course.duration[lang] or "")
             local numeric_duration = tonumber(duration:match("%d+"))
             total_duration = total_duration + numeric_duration
-            local status = pandoc.utils.stringify(course.status or "")
-            local cycle = pandoc.utils.stringify(course.cycle or "")
-            local school = pandoc.utils.stringify(course.school or "")
+            local status = pandoc.utils.stringify(course.status[lang] or "")
+            local cycle = pandoc.utils.stringify(course.cycle[lang] or "")
+            local school = pandoc.utils.stringify(course.school[lang] or "")
             local size = pandoc.utils.stringify(course.size or "")
             local numeric_size = tonumber(size)
             total_size = total_size + numeric_size
@@ -126,15 +135,7 @@ function Lectures.render(metadata, debug)
             <table class="%s">
             <thead>
                 <tr>
-                <th scope="col">Course</th>
-                <th scope="col">Position</th>
-                <th scope="col">Role</th>
-                <th scope="col">Type</th>
-                <th scope="col">Level</th>
-                <th scope="col">Degree</th>
-                <th scope="col">Institution</th>
-                <th scope="col">Headcount</th>
-                <th scope="col">Hours</th>
+                %s
                 </tr>
             </thead>
             <tbody>
@@ -143,7 +144,7 @@ function Lectures.render(metadata, debug)
             </tbody>
             </table>
             </div>
-            ]], year, table_classes, courses_html, total_html)
+            ]], year, table_classes, heads_titles_html, courses_html, total_html)
     end
     local html = string.format([[
     <div class="grid" style="--bs-gap:0">

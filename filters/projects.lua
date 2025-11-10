@@ -2,7 +2,10 @@ local Projects = {}
 
 function Projects.render(metadata, debug)
     local printable = metadata.printable or false
-    local projects = metadata.projects or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local projects_title = pandoc.utils.stringify(metadata.projects.titles.title[lang] or "Projects")
+    local projects = metadata.projects.items or {}
+    local headers = metadata.projects.titles.headers[lang] or {}
     local projects_html = ""
     for i, project in ipairs(projects) do
         if debug then
@@ -19,10 +22,10 @@ function Projects.render(metadata, debug)
             video_data = string.format("data-vimeo-id='%s'", pandoc.utils.stringify(project.vimeo))
             video_link = string.format("https://vimeo.com/%s", pandoc.utils.stringify(project.vimeo)) 
         end
-        local name = pandoc.utils.stringify(project.name or "")
-        local period = pandoc.utils.stringify(project.period or "")
+        local name = pandoc.utils.stringify(project.name[lang] or "")
+        local period = pandoc.utils.stringify(project.period[lang] or "")
 
-        local keywords = project.keywords or {}
+        local keywords = project.keywords[lang] or {}
         local keywords_html = ""
         for _, keyword in ipairs(keywords) do
             local kw = pandoc.utils.stringify(keyword or "")
@@ -31,27 +34,32 @@ function Projects.render(metadata, debug)
             ]], kw)
         end
 
-        local abstract = pandoc.utils.stringify(project.abstract or "")
-        local fundings = pandoc.utils.stringify(project.fundings or "")
-        local contributors = pandoc.utils.stringify(project.contributors or "")
+        local abstract = pandoc.utils.stringify(project.abstract[lang] or "")
+        local contributors = pandoc.utils.stringify(project.contributors[lang] or "")
+        local fundings = pandoc.utils.stringify(project.fundings[lang] or "")
+        
+        local video_title = pandoc.utils.stringify(headers[1] or "Video")
+        local contributors_title = pandoc.utils.stringify(headers[2] or "Contributors")
+        local fundings_title = pandoc.utils.stringify(headers[3] or "Fundings")
+
         if printable then
              projects_html = projects_html .. string.format([[
-                <div class="g-col-4">
-                        <img src="%s" class="card-img-top">
-                </div>
-                <div class="g-col-8">
-                    <div class="text-start">
-                        <div class="fw-bold fs-5">%s</div>
-                        <div class="text-muted fs-6">%s</div>
-                        <div style="margin-bottom:0.25rem;">%s</div>
-                        <div style="margin-bottom:0.25rem;">%s</div>
-                        <div style="margin-bottom:0.25rem;"><b>Video:</b> <a href="%s">%s</a></div>
-                        <div style="margin-bottom:0.25rem;"><b>Contributors:</b> %s</div>
-                        <div><b>Fundings:</b> %s</div>
-
+                    <div class="g-col-4">
+                            <img src="%s" class="card-img-top">
                     </div>
-                </div>
-            ]], thumbnail, name, period, keywords_html, abstract, video_link, video_link, contributors, fundings)
+                    <div class="g-col-8">
+                        <div class="text-start">
+                            <div class="fw-bold fs-5">%s</div>
+                            <div class="text-muted fs-6">%s</div>
+                            <div style="margin-bottom:0.25rem;">%s</div>
+                            <div style="margin-bottom:0.25rem;">%s</div>
+                            <div style="margin-bottom:0.25rem;"><b>%s:</b> <a href="%s">%s</a></div>
+                            <div style="margin-bottom:0.25rem;"><b>%s:</b> %s</div>
+                            <div><b>%s:</b> %s</div>
+
+                        </div>
+                    </div>
+            ]], thumbnail, name, period, keywords_html, abstract, video_title, video_link, video_link, contributors_title, contributors, fundings_title, fundings)
         else
             local project_id = "project_"..i
             projects_html = projects_html .. string.format([[
@@ -85,13 +93,13 @@ function Projects.render(metadata, debug)
                                 <div class="collapse" id="%s">
                                     <div style="margin-bottom:0.25rem;">%s</div>
                                     <div style="margin-bottom:0.25rem;">%s</div>
-                                    <div style="margin-bottom:0.25rem;"><b>Contributors:</b> %s</div>
-                                    <div><b>Fundings:</b> %s</div>
+                                    <div style="margin-bottom:0.25rem;"><b>%s:</b> %s</div>
+                                    <div><b>%s:</b> %s</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-            ]], thumbnail, video_data, name, period, project_id, project_id, keywords_html, abstract, contributors, fundings)
+            ]], thumbnail, video_data, name, period, project_id, project_id, keywords_html, abstract, contributors_title, contributors, fundings_title, fundings)
         end
     end
 

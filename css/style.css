@@ -76,21 +76,48 @@ figcaption {
         -webkit-print-color-adjust: exact; /*chrome & webkit browsers*/
         print-color-adjust: exact; /*firefox & IE */
     }
+
     main  {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
 
-    nav {
+    body > header#quarto-header {
       display: none !important;
     }
+
+    body > div#quarto-search-results {
+      display: none !important;
+    }
+
+    body > i {
+        display: none !important;
+    }
+
+    div#quarto-content > div#quarto-margin-sidebar {
+      display: none !important;
+    }
+    div#quarto-content > * {
+      padding-top: 0 !important;
+    }
+
+    section > h1 {
+      margin-top: 0.5rem !important;
+      margin-bottom: 0rem !important;
+    }
+    section > h2 {
+      /*margin-top: 0rem !important;*/
+      margin-top: 0.5rem !important;
+    }
+
+
     /* table, .table, .table-sm{
       border-collapse: unset;
     } */
 
     thead { display: table-header-group !important; }
     tfoot { display: table-footer-group !important; }
-    div, tr, td, th { page-break-inside: avoid; }
+    /* div, tr, td, th { page-break-inside: avoid; } */
     .grid .g-col-print-1 {grid-column: auto/span 1;}
     .grid .g-col-print-2 {grid-column: auto/span 2;}
     .grid .g-col-print-3 {grid-column: auto/span 3;}
@@ -104,14 +131,24 @@ figcaption {
     .grid .g-col-print-11 {grid-column: auto/span 11;}
     .grid .g-col-print-12 {grid-column: auto/span 12;}
       body .page-columns {
-      display: grid;
+      /* display: grid;
       gap: 0;
-      /* grid-template-columns: [screen-start] 1.5rem [screen-start-inset] 5fr [page-start page-start-inset] 0px [body-start-outset] 0px [body-start] 1.5rem [body-content-start] minmax(500px, calc(1350px - 3rem)) [body-content-end] 1.5rem [body-end] 28px [body-end-outset] minmax(60px, 116px) [page-end-inset] 28px [page-end] 5fr [screen-end-inset] 1.5rem [screen-end]; */
       grid-template-columns: [screen-start] 0rem [screen-start-inset] 5fr [page-start page-start-inset] 0px [body-start-outset] 0px [body-start] 0rem [body-content-start] minmax(500px, calc(1550px - 0rem)) [body-content-end] 0rem [body-end] 0px [body-end-outset] minmax(0px, 0px) [page-end-inset] 0px [page-end] 5fr [screen-end-inset] 0rem [screen-end];
+       */
+      display: flex;
+      flex-direction: column;
     }
-    /* table.table > thead {
-    border-top-width: 0 !important;
-    border-bottom: 10px solid rgb(153.5,156.5,159.5) !important;
-    } */
+    .avoid-page-break {
+      break-inside: always !important;
+      page-break-inside: always !important;
+    }
+    .always-break-before {
+      break-before: page !important;
+      page-break-before: page !important;
+    }
+    .always-break-after {
+      break-after: page !important;
+      page-break-after: page !important;
+    }
 }
 

@@ -2,18 +2,20 @@ local Experiences = {}
 
 function Experiences.render(metadata, debug)
     local printable = metadata.printable or false
-    local experiences = metadata.experiences or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local experiences_title = pandoc.utils.stringify(metadata.experiences.title[lang] or "Experiences")
+    local experiences = metadata.experiences.items or {}
     local experiences_html = ""
       for _, experience in ipairs(experiences) do
         if debug then
             quarto.log.output(experience) 
         end
         local thumbnail = pandoc.utils.stringify(experience.thumbnail or "")
-        local position = pandoc.utils.stringify(experience.position or "")
-        local period = pandoc.utils.stringify(experience.period or "")
+        local position = pandoc.utils.stringify(experience.position[lang] or "")
+        local period = pandoc.utils.stringify(experience.period[lang] or "")
         local url = pandoc.utils.stringify(experience.url or "")
-        local institution = pandoc.utils.stringify(experience.institution or "")
-        local location = pandoc.utils.stringify(experience.location or "")
+        local institution = pandoc.utils.stringify(experience.institution[lang] or "")
+        local location = pandoc.utils.stringify(experience.location[lang] or "")
         local img_html = thumbnail ~= "" and string.format('<img src="%s" style="max-height: 100px; max-width: 100%%; object-fit: contain;">', thumbnail) or ""
         if printable then
             local institution_html = ""
@@ -51,11 +53,13 @@ function Experiences.render(metadata, debug)
     end
     if printable then
         experiences_html = string.format([[
-            <table class="table table-borderless">
-                <tbody>
-                    %s
-                </tbody>
-            </table>
+            <div class="g-col-12">
+                <table class="table table-borderless">
+                    <tbody>
+                        %s
+                    </tbody>
+                </table>
+            </div>
         ]], experiences_html)
     end
     local html = string.format([[

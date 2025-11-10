@@ -40,28 +40,30 @@ end
 
 function Coordinations.render(metadata, debug)
     local printable = metadata.printable or false
-    local coordinations = metadata.coordinations or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local coordination_title = pandoc.utils.stringify(metadata.coordinations.titles.title[lang] or "Coordinations")
+    local coordinations = metadata.coordinations.items or {}
     local coordinations_html = ""
       for _, coordination in ipairs(coordinations) do
         if debug then
             quarto.log.output(coordination) 
         end
 
-        local name = pandoc.utils.stringify(coordination.name or "")
-        local period = pandoc.utils.stringify(coordination.period or "")
-        local volume = pandoc.utils.stringify(coordination.volume or "")
-        local level = pandoc.utils.stringify(coordination.level or "")
-        local location = pandoc.utils.stringify(coordination.location or "")
-        local tools = pandoc.utils.stringify(coordination.tools or "")
+        local name = pandoc.utils.stringify(coordination.name[lang] or "")
+        local period = pandoc.utils.stringify(coordination.period[lang] or "")
+        local volume = pandoc.utils.stringify(coordination.volume[lang] or "")
+        local level = pandoc.utils.stringify(coordination.level[lang] or "")
+        local location = pandoc.utils.stringify(coordination.location[lang] or "")
+        local tools = coordination.tools[lang] or {}
         local tools_html = ""
-        local tools_list = split_and_trim(tools)
-        for k, tool in ipairs(tools_list) do
+        for k, tool in ipairs(tools) do
             tools_html = tools_html .. string.format([[
             <span class="badge bg-light">%s</span>
-            ]], tool);
+            ]], pandoc.utils.stringify(tool or ""));
         end
 
-        local responsibilities = coordination.responsibilities or {}
+        local responsibilities = coordination.responsibilities[lang] or {}
+        local responsabilities_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][5] or "responsabilities")
         local responsibilities_html = ""
         if #responsibilities > 0 then
           for j, responsibility in ipairs(responsibilities) do
@@ -69,14 +71,16 @@ function Coordinations.render(metadata, debug)
                   <li>%s</li>
               ]], pandoc.utils.stringify(responsibility or ""))
           end
-          responsibilities_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>responsabilities:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>]], responsibilities_html)
+          responsibilities_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>%s:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>]], responsabilities_title, responsibilities_html)
+        
         end
-
+        
+        local materials_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][6] or "materials")
         local links = coordination.links or {}
         local links_html = ""
         if #links > 0 then
           for j, link in ipairs(links) do
-              local text = pandoc.utils.stringify(link.text or "")
+              local text = pandoc.utils.stringify(link.text[lang] or "")
               local href = pandoc.utils.stringify(link.href or "")
               if j == #links then
                   links_html = links_html .. string.format([[ <a href="%s" target="_blank">%s <i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i></a> ]], href, text)
@@ -84,10 +88,10 @@ function Coordinations.render(metadata, debug)
                   links_html = links_html .. string.format([[ <a href="%s" target="_blank">%s <i class="bi bi-box-arrow-up-right" style="font-size:0.8em;"></i></a>, ]], href, text)
               end
           end
-          links_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>materials:</b>%s</div>]], links_html)
+          links_html = string.format([[<div class="text-start"><i class="bi bi-bullseye"></i> <b>%s:</b>%s</div>]], materials_title, links_html)
         end
 
-        local aavs = coordination.aavs or {}
+        local aavs = coordination.aavs[lang] or {}
         local aavs_html = ""
         for j, aav in ipairs(aavs) do
             local md_aav = pandoc.write(pandoc.Pandoc({pandoc.Para(aav)}), "markdown")
@@ -105,20 +109,24 @@ function Coordinations.render(metadata, debug)
         -- local ref = pandoc.write(parsed_ref, "html")
         -- ref = ref:gsub("^<p>", ""):gsub("</p>%s*$", "")
 
+        local level_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][1] or "level")
+        local location_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][2] or "location")
+        local volume_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][3] or "volume")
+        local goals_title = pandoc.utils.stringify(metadata.coordinations.titles.categories[lang][4] or "goals")
 
         coordinations_html = coordinations_html .. string.format([[
             <div class="g-col-12 g-col-sm-12 g-col-md-12 g-col-lg-6">
                 <div class="text-start" style="font-size: 1.25rem;font-weight: 400;line-height: 1.2;">%s</div>
                 <div class="text-start" style="font-size: 1rem;font-weight: 400; line-height: 1; opacity:0.75;">%s</div>
                 <div class="text-start" style="margin-bottom:0.5rem;">%s</div>
-                <div class="text-start"><i class="bi bi-bookmark-fill"></i> <b>level:</b> %s</div>
-                <div class="text-start"><i class="bi bi-geo-alt-fill"></i> <b>location:</b> %s</div>
-                <div class="text-start"><i class="bi bi-stopwatch"></i> <b>volume:</b> %s</div>
-                <div class="text-start"><i class="bi bi-bullseye"></i> <b>goals:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>
+                <div class="text-start"><i class="bi bi-bookmark-fill"></i> <b>%s:</b> %s</div>
+                <div class="text-start"><i class="bi bi-geo-alt-fill"></i> <b>%s:</b> %s</div>
+                <div class="text-start"><i class="bi bi-stopwatch"></i> <b>%s:</b> %s</div>
+                <div class="text-start"><i class="bi bi-bullseye"></i> <b>%s:</b><ul style="margin-bottom:0.25rem;">%s</ul></div>
                 %s
                 %s
             </div>
-        ]], name, period, tools_html, level, location, volume, aavs_html, responsibilities_html, links_html)
+        ]], name, period, tools_html, level_title, level, location_title, location, volume_title, volume, goals_title, aavs_html, responsibilities_html, links_html)
 
     end
 
@@ -126,7 +134,7 @@ function Coordinations.render(metadata, debug)
     <div class="grid">
         %s
     </div>
-    ]], coordinations_html)
+    ]],  coordinations_html)
 
     return html
 end

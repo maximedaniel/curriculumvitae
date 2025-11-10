@@ -1,15 +1,17 @@
 local Missions = {}
 
 function Missions.render(metadata, debug)
-    local missions = metadata.missions or {}
+    local lang = pandoc.utils.stringify(metadata.lang) or "en"
+    local missions_title = pandoc.utils.stringify(metadata.missions.title[lang] or "Missions")
+    local missions = metadata.missions.items or {}
     local missions_html = ""
       for _, mission in ipairs(missions) do
         if debug then
             quarto.log.output(mission) 
         end
         local thumbnail = pandoc.utils.stringify(mission.thumbnail or "")
-        local position = pandoc.utils.stringify(mission.position or "")
-        local period = pandoc.utils.stringify(mission.period or "")
+        local position = pandoc.utils.stringify(mission.position[lang] or "")
+        local period = pandoc.utils.stringify(mission.period[lang] or "")
         local img_html = thumbnail ~= "" and string.format('<img src="%s" style="max-height: 100px; max-width: 100%%; object-fit: contain;">', thumbnail) or ""
         missions_html = missions_html .. string.format([[
             <div class="g-col-12">

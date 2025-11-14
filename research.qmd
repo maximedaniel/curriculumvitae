@@ -72,26 +72,30 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 
 ## Purposes and Benefits
 
-To help researchers and target user-groups see clear benefits in the development of shape-changing interfaces, @alexander_grand_2018 explored the purposes and benefits from the literature. Five fundamental purposes for SCIs were identified, each illustrated in @fig-sci-purposes: *(a) communicate information*, *(b) simulate objects*, *(c) adapt interfaces*, *(d) augment users*, and *(e) support arts*. 
+To help researchers and target user-groups see clear benefits in the development of shape-changing interfaces, @alexander_grand_2018 explored the purposes and benefits from the literature. Five fundamental purposes for SCIs were identified, each illustrated in @fig-sci-purposes:
+
+* **Communicate Information** – conveying information through combinations of visual, haptic, and shape animation (see @fig-sci-purposes-1).
+* **Simulate Objects** – physically simulating real or imaginary objects (see @fig-sci-purposes-2).
+* **Adapt Interfaces** – adapting shape to specific interaction contexts (see @fig-sci-purposes-3).
+* **Augment Users** – augmenting elements of or within the user's body (see @fig-sci-purposes-4).
+* **Support Arts** – supporting aesthetic, sensorial, or entertainment goals (see @fig-sci-purposes-5).
 
 
 ::: {#fig-sci-purposes layout-ncol=3 fig-align="center"}
 
-![Communicating information through combinations of visual, haptic, and shape animation (e.g., dynamic physical bar charts @taher_exploring_2015)](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
+![**Communicate Information**: dynamic physical bar chart @taher_exploring_2015](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
 
-![Physically simulating real or imaginary objects (e.g., physical rendering of a 3D car model @follmer_inform_2013)](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
+![**Simulate Objects**: physical rendering of a 3D car model @follmer_inform_2013](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
 
-![Adapting shape to specific interaction contexts (e.g., a reconfigurable game controller @roudaut_cubimorph_2016)](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
+![**Adapt Interfaces*: a reconfigurable game controller @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
 
-![Augmenting elements of or within the user's body (e.g., a sixth finger @prattichizzo_sixthfinger_2014)](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
+![*Augment Users**: a sixth finger @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
 
-![Supporting aesthetic, sensorial, or entertainment goals (e.g., kinetic garments @berzowska_kukkia_2005)](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
+![**Support Arts**: kinetic garments @berzowska_kukkia_2005](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
 
 
 Purposes of Shape-Changing Interfaces
 :::
-
-
 
 ## Interaction Types
 
@@ -124,7 +128,7 @@ Rasmussen et al. @rasmussen_shape_2012 identify three primary interaction types 
 
 ![**Direct interaction (action and reaction)**: a shape-changing widget combining a knob and slider, allowing mode switching via a central button [@kim_knobslider_2018] ([video](https://www.youtube.com/watch?v=Codcy5Ab8gU){target="_blank"}).](img/sci-interaction-types/knob-slider.jpg){#fig-sci-interaction-types-5}
 
-![**Direct interaction (action and reaction)** a kinetic toy that records user-manipulated shape transformations and plays back corresponding movements [@raffle_topobo_2004] ([video](https://www.youtube.com/watch?v=UYn4GLs5veQ){target="_blank"}).](img/sci-interaction-types/timborobot.png){#fig-sci-interaction-types-6}
+![**Direct interaction (action and reaction)**: a kinetic toy that records user-manipulated shape transformations and plays back corresponding movements [@raffle_topobo_2004] ([video](https://www.youtube.com/watch?v=UYn4GLs5veQ){target="_blank"}).](img/sci-interaction-types/timborobot.png){#fig-sci-interaction-types-6}
 
 
 ![ **Direct interaction (input and output)**: users push against a pin-based shape display that simulates chest resistance during CPR training [@nakagaki_inforce_2019] ([video](https://vimeo.com/326196792?fl=pl&fe=vl){target="_blank"}).](img/sci-interaction-types/cpr-app-inforce.png){#fig-sci-interaction-types-7}

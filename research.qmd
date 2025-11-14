@@ -69,10 +69,92 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 :::
 
 
-## Approaches
+
+## Purposes and Benefits
+
+To help researchers and target user-groups see clear benefits in the development of shape-changing interfaces, @alexander_grand_2018 explored the purposes and benefits from the literature. Five fundamental purposes for SCIs were identified, each illustrated in @fig-sci-purposes: *(a) communicate information*, *(b) simulate objects*, *(c) adapt interfaces*, *(d) augment users*, and *(e) support arts*. 
+
+
+::: {#fig-sci-purposes layout-ncol=3 fig-align="center"}
+
+![Communicating information through combinations of visual, haptic, and shape animation (e.g., dynamic physical bar charts @taher_exploring_2015)](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
+
+![Physically simulating real or imaginary objects (e.g., physical rendering of a 3D car model @follmer_inform_2013)](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
+
+![Adapting shape to specific interaction contexts (e.g., a reconfigurable game controller @roudaut_cubimorph_2016)](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
+
+![Augmenting elements of or within the user's body (e.g., a sixth finger @prattichizzo_sixthfinger_2014)](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
+
+![Supporting aesthetic, sensorial, or entertainment goals (e.g., kinetic garments @berzowska_kukkia_2005)](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
+
+
+Purposes of Shape-Changing Interfaces
+:::
+
+
+
+## Interaction Types
+
+Rasmussen et al. @rasmussen_shape_2012 identify three primary interaction types for shape-changing interfaces (See @fig-sci-interaction-types-0):
+
+* **No interaction** – shape change is used solely as system output (see @fig-sci-interaction-types-1 and @fig-sci-interaction-types-2).
+* **Indirect interaction** – shape change occurs in response to implicit input (see @fig-sci-interaction-types-3 and @fig-sci-interaction-types-4).
+* **Direct interaction** – shape change functions as both input and output. Within direct interaction, they distinguish two subtypes:
+
+  * **Action and reaction** – users physically manipulate the interface’s shape, and the system responds with its own physical transformation (see @fig-sci-interaction-types-5 and @fig-sci-interaction-types-6).
+  * **Input and output** – both the user and the system simultaneously manipulate the interface’s shape (see @fig-sci-interaction-types-7 and @fig-sci-interaction-types-8).
+
+
+
+
+
+
+::: {#fig-sci-interaction-types layout="[[1], [1, 1, 1, 1] , [1, 1, 1, 1]]" fig-align="center"}
+
+![Types of Interaction for Shape-Changing Interfaces](img/sci-interaction-types/three-interaction-types.jpg){#fig-sci-interaction-types-0 width="80%"}
+
+![**No interaction**: 10,000 drones physically render a 3D model of Shenzhen (China) in a show by Damoda, September 26th, 2024 ([video](https://www.youtube.com/watch?v=HJxM44npcJo){target="_blank"})).](img/sci-interaction-types/10000-drone-show.jpg){#fig-sci-interaction-types-1}
+
+
+![**No interaction**: 3D robotic billboard by The Coca-Cola Company (USA) at Times Square, New York, August 8th, 2017 ([video](https://www.youtube.com/watch?v=7iUdFw9WfrU){target="_blank"}).](img/sci-interaction-types/3D-robotic-billboard.jpg){#fig-sci-interaction-types-2}
+
+![**Indirect interaction**: an actuated water faucet with creature-like motion that bends when users' daily water consumption exceeds a threshold [@togler_living_2009].](img/sci-interaction-types/thrifty-faucet.jpg){#fig-sci-interaction-types-3}
+
+![**Indirect interaction**: an actuated foldable table that reshapes itself to accommodate the number of nearby users[@gronbaek_kirigamitable_2020] ([video](https://www.youtube.com/watch?v=sEQYKRLKJV0){target="_blank"}).](img/sci-interaction-types/kirigami-table.jpg){#fig-sci-interaction-types-4}
+
+![**Direct interaction (action and reaction)**: a shape-changing widget combining a knob and slider, allowing mode switching via a central button [@kim_knobslider_2018] ([video](https://www.youtube.com/watch?v=Codcy5Ab8gU){target="_blank"}).](img/sci-interaction-types/knob-slider.jpg){#fig-sci-interaction-types-5}
+
+![**Direct interaction (action and reaction)** a kinetic toy that records user-manipulated shape transformations and plays back corresponding movements [@raffle_topobo_2004] ([video](https://www.youtube.com/watch?v=UYn4GLs5veQ){target="_blank"}).](img/sci-interaction-types/timborobot.png){#fig-sci-interaction-types-6}
+
+
+![ **Direct interaction (input and output)**: users push against a pin-based shape display that simulates chest resistance during CPR training [@nakagaki_inforce_2019] ([video](https://vimeo.com/326196792?fl=pl&fe=vl){target="_blank"}).](img/sci-interaction-types/cpr-app-inforce.png){#fig-sci-interaction-types-7}
+
+![**Direct interaction (input and output)**: an auxetic surface actuated by a small number of motors simulates varying 3D curvatures as users move it across a table [@steed_mechatronic_2021] ([video](https://www.youtube.com/watch?v=3oRe6TTEG-8){target="_blank"}).](img/sci-interaction-types/auxetic-microsoft.jpg){#fig-sci-interaction-types-8}
+
+
+Examples Illustrating Each Interaction Type
+:::
+
+
+## Shape-Change Properties
+
+
+Rasmussen et al. @rasmussen_shape_2012 identify eight primary types of shape transformations : **Orientation**, **Form**,
+**Volume**, **Texture**, **Viscosity**, **Spatiality**, **Adding/Subtracting**, and **Permeability**. 
+See @fig-sci-shape-change-properties for illustrations of these properties.
+
+::: {#fig-sci-shape-change-properties fig-align="center"}
+
+![](img/sci-shape-change-types/shape-change-types.jpg){width="80%"}
+
+Types of shape transformations for Shape-Changing Interfaces
+:::
+
+
+## Architectures
 
 To realize interfaces with physically reconfigurable geometry, researchers integrate combinations of sensors, hard or soft actuators, and smart materials into surfaces or volumes. These reconfigurable geometries can function as both input and output and are computationally controlled [@alexander_grand_2018].
-The types of shape transformations explored in prior work include changes in orientation, form, volume, texture, viscosity, spatial configuration, material addition/removal, and permeability [@rasmussen_shape_2012].
+<!-- The types of shape transformations explored in prior work include changes in orientation, form, volume, texture, viscosity, spatial configuration, material addition/removal, and permeability [@rasmussen_shape_2012].-->
 Various actuated architectures for SCIs have emerged in recent years as illustrated in @fig-sci-architectures. 
 Each of these architectures enables the exploration of one or more types of shape transformations. This diversity is necessary, as no single interface can realize all possible transformations, highlighting the current absence of fully programmable matter.
 
@@ -101,26 +183,6 @@ Each of these architectures enables the exploration of one or more types of shap
 Actuated Architectures for Shape-Changing Interfaces
 :::
 
-## Purposes and Benefits
-
-To help researchers and target user-groups see clear benefits in the development of shape-changing interfaces, @alexander_grand_2018 explored the purposes and benefits from the literature. Five fundamental purposes for SCIs were identified, each illustrated in @fig-sci-purposes: *(a) communicate information*, *(b) simulate objects*, *(c) adapt interfaces*, *(d) augment users*, and *(e) support arts*. 
-
-
-::: {#fig-sci-purposes layout-ncol=3 fig-align="center"}
-
-![Communicating information through combinations of visual, haptic, and shape animation (e.g., dynamic physical bar charts @taher_exploring_2015)](img/sci-purposes/bar-chart.jpg){#fig-sci-purposes-1}
-
-![Physically simulating real or imaginary objects (e.g., physical rendering of a 3D car model @follmer_inform_2013)](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
-
-![Adapting shape to specific interaction contexts (e.g., a reconfigurable game controller @roudaut_cubimorph_2016)](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
-
-![Augmenting elements of or within the user's body (e.g., a sixth finger @prattichizzo_sixthfinger_2014)](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
-
-![Supporting aesthetic, sensorial, or entertainment goals (e.g., kinetic garments @berzowska_kukkia_2005)](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
-
-
-Purposes of Shape-Changing Interfaces
-:::
 
 # Research Agenda: Technology, User Behavior, Design, Ethics, Policy, and Sustainability
 

@@ -1,0 +1,3366 @@
+---
+title: "Maxime Daniel"
+subtitle: "Assistant Professor in Computer Science<br>Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V"
+bibliography: bibliography.bib
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+
+lang: en
+en: true
+printable: true
+
+profil:
+  title: Assistant Professor in Computer Science
+  signature: Univ. Bordeaux, ESTIA-Institute of Technology, EstiaR, № 201420655V
+  thumbnail: "img/profil0.jpg"
+  keywords: 
+    en: ["Programmable Matter", "Human-Computer Interaction", "Tangible Interaction", "Shape-Changing Interfaces"]
+    fr: ["Matière Programmable", "Interaction Humain-Machine", "Interaction Tangible", "Interfaces à changement de forme"]
+  informations:
+    title:
+          en: "Contact Information"
+          fr: "Contact"
+    items:
+      - name: 
+            en: "workplace"
+            fr: "lieu de travail"
+        icon: "geo-alt-fill"
+        text:
+            en: "Bureau 205, 97 All. Théodore Monod ESTIA 2, 64210 Bidart, France"
+            fr: "Bureau 205, 97 All. Théodore Monod ESTIA 2, 64210 Bidart, France"
+      - name:
+            en: "email"
+            fr: "email"
+        icon: "at"
+        text: 
+            en: "m.daniel@estia.fr"
+            fr: "m.daniel@estia.fr"
+      - name:
+            en: "phone"
+            fr: "téléphone"
+        icon: "telephone-fill"
+        text: 
+            en: "(+33) 5 59 43 84 62"
+            fr: "(+33) 5 59 43 84 62"
+      - name:
+            en: "birthdate"
+            fr: "date de naissance"
+        icon: "cake2-fill"
+        text: 
+          en: "August 4, 1992"
+          fr: "4 août 1992"
+      # - name: "github"
+      #   icon: "github"
+      #   text: "https://github.com/maximedaniel"
+      # - name: "youtube"
+      #   icon: "youtube"
+      #   text: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
+
+  socials:
+      title:
+          en: "Social Links"
+          fr: "Social"
+      links:
+        - name: 
+            en: "ORCID"
+            fr: "ORCID"
+          icon: "orcid"
+          href: "https://orcid.org/0000-0001-9273-5888"
+          color: "#a6ce39"
+        - name: 
+            en: "Youtube"
+            fr: "Youtube"
+          icon: "youtube"
+          href: "https://www.youtube.com/channel/UCX7uHVWqJ6TxoQnIXhVZ2gw"
+          color: "#ff0039"
+        - name: 
+            en: "Github"
+            fr: "Github"
+          icon: "github"
+          href: "https://github.com/maximedaniel"
+          color: "#343a40"
+        - name: 
+            en: "website"
+            fr: "site web"
+          icon: "browser-firefox"
+          href: "https://www.maximedaniel.me/"
+          color: "#343a40"
+researchs:
+    title:
+        en: "Research"
+        fr: "Recherche"
+projects:
+    titles: 
+      title:
+        en: "Projects"
+        fr: "Projets"
+      headers:
+          en: ["Video", "Contributors", "Fundings"]
+          fr: ["Vidéo", "Contributeurs", "Financements"]
+    items:
+      - name: 
+          en: "ShyPins"
+          fr: "ShyPins"
+        period: 
+          en: "Jan 2021 - Dec 2023"
+          fr: "Jan 2021 - Déc 2023"
+        keywords: 
+          en: ["Pin-Based Shape Displays", "User Safety", "Lab Study"]
+          fr: ["Interfaces à broches", "Sécurité des utilisateurs", "Étude en laboratoire"]
+        abstract: 
+          en: "Pin-based shape displays can cause psychological harm by forcefully actuating pins in contact with users, which ShyPins mitigates by regulating pin motion based on user proximity. A user study shows that gradually decreasing pin speed as users approach is perceived as safer than abruptly pausing motion, while the perceived safety of pausing depends on user preferences in user-triggered actuation. Another study finds that projecting user-centered stop zones enhances perceived safety more than pin-centered ones, and users feel less safe when approaching moving pins than when pins move toward them."
+          fr: "Les interfaces à broches peuvent causer des dommages psychologiques en actionnant de force les broches en contact avec les utilisateurs, ce que ShyPins atténue en régulant le mouvement des broches en fonction de la proximité de l'utilisateur. Une étude utilisateur montre que la diminution progressive de la vitesse des broches à l'approche des utilisateurs est perçue comme plus sûre qu'une pause brutale du mouvement, tandis que la sécurité perçue de la pause dépend des préférences des utilisateurs dans l'activation déclenchée par l'utilisateur. Une autre étude révèle que la projection de zones d'arrêt centrées sur l'utilisateur améliore la sécurité perçue plus que celles centrées sur les broches, et les utilisateurs se sentent moins en sécurité lorsqu'ils s'approchent de broches en mouvement que lorsque les broches se déplacent vers eux."
+        thumbnail: "img/shypins.png"
+        youtube: "6KpGmuIf1v8"
+        fundings: 
+          en: "Interreg Altantic Area (DURABLE Project 2020-2023)"
+          fr: "Interreg Espace Atlantique (Projet DURABLE 2020-2023)"
+        contributors: 
+          en: "Maxime Daniel, William Delamare"
+          fr: "Maxime Daniel, William Delamare"
+
+
+      - name: 
+          en: "CairnFORM²"
+          fr: "CairnFORM²"
+        period: 
+          en: "Dec 2018 - Nov 2020"
+          fr: "Déc 2018 - Nov 2020"
+        keywords: 
+          en: ["Ring-Based Shape Displays", "Use Cases", "In-Situ Study"]
+          fr: ["Interfaces à anneaux", "Cas d'utilisation", "Étude in situ"]
+        abstract: 
+          en: "We extend the understanding of the potential utility and usability of axisymmetric shape-change for display. We present (1) 16 new use cases for CairnFORM and (2) a two-month comparative field study with CairnFORM in the workplace. Compared with flat-screen animations, early results show that cylindrical shape-change animations keep a better attractiveness over time."
+          fr: "Nous étendons la compréhension de l'utilité et de l'utilisabilité potentielles du changement de forme axisymétrique pour l'affichage. Nous présentons (1) 16 nouveaux cas d'utilisation pour CairnFORM et (2) une étude de terrain comparative de deux mois avec CairnFORM sur le lieu de travail. Par rapport aux animations sur écran plat, les résultats préliminaires montrent que les animations de changement de forme cylindrique conservent une meilleure attractivité au fil du temps."
+        thumbnail: "img/cairnform-2.jpg"
+        youtube: "XDaJmj2BntU"
+        fundings: 
+          en: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+          fr: "Région Aquitaine + Communauté d'agglomération Côte Basque–Adour (Projet ITAME 2015-2018)"
+        contributors: 
+          en: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+          fr: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+      - name: 
+          en: "CairnFORM¹"
+          fr: "CairnFORM¹"
+        period: 
+          en: "Oct 2016 - Nov 2018"
+          fr: "Oct 2016 - Nov 2018"
+        keywords: 
+          en: ["Ring-Based Shape Displays", "Data Physicalization", "Peripheral Interaction", "Lab Study"]
+          fr: ["Interfaces à anneaux", "Physicalisation de données", "Interaction périphérique", "Étude en laboratoire"]
+        abstract: 
+          en: "CairnFORM is a stack of expandable illuminated rings for display that can change of axisymmetric shape (e.g., cone, double cone, cylinder). We show that axisymmetric shape-change can be used (1) for informing users around the display through data physicalization, (2) for unobtrusively notifying users around the display through peripheral interaction, (3) for offering a greater user experience over time than a traditional flat display with no shape change."
+          fr: "CairnFORM est une pile d'anneaux illuminés extensibles pour l'affichage qui peut changer de forme axisymétrique (par exemple, cône, double cône, cylindre). Nous montrons que le changement de forme axisymétrique peut être utilisé (1) pour informer les utilisateurs autour de l'affichage via la physicalisation des données, (2) pour notifier discrètement les utilisateurs autour de l'affichage via l'interaction périphérique, (3) pour offrir une meilleure expérience utilisateur au fil du temps qu'un affichage plat traditionnel sans changement de forme."
+        thumbnail: "img/cairnform.jpg"
+        youtube: "wZ_3CtDllbA"
+        fundings: 
+          en: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+          fr: "Région Aquitaine + Communauté d'agglomération Côte Basque–Adour (Projet ITAME 2015-2018)"
+        contributors: 
+          en: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+          fr: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+      - name: 
+          en: "Expandable Illuminated Ring"
+          fr: "Anneau Illuminé Extensible"
+        period: 
+          en: "Oct 2015 - Nov 2016"
+          fr: "Oct 2015 - Nov 2016"
+        keywords: 
+          en: ["Ring-Based Shape Displays", "Building Block"]
+          fr: ["Interfaces à anneaux", "Bloc de construction"]
+        abstract: 
+          en: "Ring-based shape displays are a type of shape-changing interface where the deformation or movement of the display is achieved through a system of rings. These rings can be mechanically actuated to create different shapes, surfaces, or structures in a controlled manner. We present the iterative design process of the building block of a novel ring-based shape display - an expandable and stackable illuminated ring."
+          fr: "Les interfaces à anneaux sont un type d'interface à changement de forme où la déformation ou le mouvement de l'affichage est réalisé par un système d'anneaux. Ces anneaux peuvent être actionnés mécaniquement pour créer différentes formes, surfaces ou structures de manière contrôlée. Nous présentons le processus de conception itératif du bloc de construction d'une nouvelle interface à changement de forme à base d'anneaux - un anneau illuminé extensible et empilable."
+        thumbnail: "img/eir.png"
+        youtube: "bVAmZ0PiiQo"
+        fundings: 
+          en: "Aquitaine Region + Côte Basque–Adour agglomeration (ITAME Project 2015-2018)"
+          fr: "Région Aquitaine + Communauté d'agglomération Côte Basque–Adour (Projet ITAME 2015-2018)"
+        contributors: 
+          en: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+          fr: "Maxime Daniel, Guillaume Rivière, Nadine Couture"
+
+
+      - name: 
+          en: "EEG EvTool"
+          fr: "EEG EvTool"
+        period: 
+          en: "Feb 2015 - Jul 2015"
+          fr: "Fév 2015 - Juil 2015"
+        keywords:
+          en: ["User Experience Evaluation", "Electroencephalography"]
+          fr: ["Évaluation de l'expérience utilisateur", "Électroencéphalographie"]
+        abstract: 
+          en: "EEG EvTool is a tool for continuously estimating the user's mental workload, attention and recognition of interaction errors during different interaction tasks. We (1) validate these measures on a controlled virtual environment and (2) show how they can be used to compare different interaction techniques or devices."
+          fr: "EEG EvTool est un outil d'estimation continue de la charge mentale, de l'attention et de la reconnaissance des erreurs d'interaction de l'utilisateur lors de différentes tâches d'interaction. Nous (1) validons ces mesures sur un environnement virtuel contrôlé et (2) montrons comment elles peuvent être utilisées pour comparer différentes techniques ou dispositifs d'interaction."
+        thumbnail: "img/eeg.png"
+        vimeo: "153599331"
+        fundings: 
+          en: ""
+          fr: ""
+        contributors: 
+          en: "Jérémy Frey, Maxime Daniel, Fabien Lotte, Martin Hachet"
+          fr: "Jérémy Frey, Maxime Daniel, Fabien Lotte, Martin Hachet"
+
+experiences:
+  title:
+      en: "Experience"
+      fr: "Expérience"
+  items:
+    - thumbnail: "img/estia.jpg"
+      institution: 
+        en: "ESTIA - Institute of Technology"
+        fr: "ESTIA - Institut de Technologie"
+      url: "https://www.estia.fr/"
+      location: 
+        en: "Bidart, France"
+        fr: "Bidart, France"
+      position: 
+        en: "Assistant Professor"
+        fr: "Enseignant-Chercheur"
+      period: 
+        en: "Sept 2021 - Now"
+        fr: "Sep 2021 - Aujourd'hui"
+
+    - thumbnail: "img/ubc.png"
+      institution: 
+        en: "OVI Lab, University of British Columbia"
+        fr: "Laboratoire OVI, Université de la Colombie-Britannique"
+      url: "https://ovi.ok.ubc.ca/"
+      location: 
+        en: " Kelowna, Canada"
+        fr: " Kelowna, Canada"
+      position: 
+        en: "Post-doctoral Fellow"
+        fr: "Chercheur Postdoctoral"
+      period: 
+        en: "Oct 2022 - Sept 2023"
+        fr: "Oct 2022 - Sep 2023"
+
+    - thumbnail: "img/estia.jpg"
+      institution: 
+        en: "ESTIA - Institute of Technology"
+        fr: "ESTIA - Institut de Technologie"
+      url: "https://www.estia.fr/"
+      location: 
+        en: "Bidart, France"
+        fr: "Bidart, France"
+      position: 
+        en: "Temporary Research and Teaching Assissant"
+        fr: "Attaché Temporaire d'Enseignement et de Recherche"
+      period: 
+        en: "Sep 2020 - August 2021"
+        fr: "Sep 2020 - Août 2021"
+
+    - thumbnail: ""
+      institution: 
+        en: "ESTIA - Institute of Technology"
+        fr: "ESTIA - Institut de Technologie"
+      url: "https://www.estia.fr/"
+      location: 
+        en: "Bidart, France"
+        fr: "Bidart, France"
+      position: 
+        en: "Research Engineer"
+        fr: "Ingénieur de Recherche"
+      period: 
+        en: "Dec 2018 - March 2020"
+        fr: "Déc 2018 - Mars 2020"
+
+    - thumbnail: ""
+      institution: 
+        en: "ESTIA - Institute of Technology"
+        fr: "ESTIA - Institut de Technologie"
+      url: "https://www.estia.fr/"
+      location: 
+        en: "Bidart, France"
+        fr: "Bidart, France"
+      position: 
+        en: "PhD Student"
+        fr: "Doctorant"
+      period: 
+        en: "Oct 2015 - Nov 2018"
+        fr: "Oct 2015 - Nov 2018"
+
+    - thumbnail: "img/immersion.png"
+      institution: 
+        en: "Immersion"
+        fr: "Immersion"
+      url: "https://www.immersion.fr/"
+      location: 
+        en: "Bidart, France"
+        fr: "Bidart, France"
+      position: 
+        en: "MSc Student"
+        fr: "Étudiant en Master"
+      period: 
+        en: "Feb 2015 - Jul 2015"
+        fr: "Fév 2015 - Juil 2015"
+
+educations:
+  title:
+      en: "Education"
+      fr: "Éducation"
+  items:
+    - thumbnail: "img/gouv.png"
+      degree: 
+        en: "Qualification for Assistant Professor Position in Computer Science"
+        fr: "Qualification au poste de Enseignant-Chercheur en Informatique"
+      institution: 
+        en: ""
+        fr: ""
+      location: 
+        en: ""
+        fr: ""
+      period: 
+        en: "2019 - 2024"
+        fr: "2019 - 2024"
+    - thumbnail: "img/univbordeaux.jpg"
+      degree: 
+        en: "Doctorate in Computer Science"
+        fr: "Doctorat en Informatique"
+      institution: 
+        en: "University of Bordeaux"
+        fr: "Université de Bordeaux"
+      url: "https://www.u-bordeaux.fr/"
+      location: 
+        en: "Bordeaux, France"
+        fr: "Bordeaux, France"
+      period: 
+        en: "2015 - 2018"
+        fr: "2015 - 2018"
+      
+    - thumbnail: ""
+      degree: 
+        en: "Master in Computer Science"
+        fr: "Master en Informatique"
+      institution: 
+        en: "University of Bordeaux"
+        fr: "Université de Bordeaux"
+      url: "https://www.u-bordeaux.fr/"
+      location: 
+        en: "Bordeaux, France"
+        fr: "Bordeaux, France"
+      period: 
+        en: "2013 - 2015"
+        fr: "2013 - 2015"
+      
+    - thumbnail: "img/ubs.png"
+      degree: 
+        en: "Licence in Mathematics, Informatics, and Statistics"
+        fr: "Licence en Mathématiques, Informatique et Statistiques"
+      institution: 
+        en: "University of South Brittany"
+        fr: "Université de Bretagne Sud"
+      url: "https://www.univ-ubs.fr/"
+      location: 
+        en: "Vannes, France"
+        fr: "Vannes, France"
+      period: 
+        en: "2010 - 2013"
+        fr: "2010 - 2013"
+
+    - thumbnail: "img/benjamin-franklin.png"
+      degree: 
+        en: "Baccalauréat in Economics and Social sciences"
+        fr: "Baccalauréat en Sciences Économiques et Sociales"
+      institution: 
+        en: "Benjamin Franklin High School"
+        fr: "Lycée Benjamin Franklin"
+      url: "https://lyceefranklinauray.fr/"
+      location: 
+        en: "Auray, France"
+        fr: "Auray, France"
+      period: 
+        en: "2010"
+        fr: "2010"
+
+teachings:
+    title:
+        en: "Teaching"
+        fr: "Enseignement"
+
+lectures:
+  title:
+      en: "Lectures"
+      fr: "Interventions"
+  headers:
+      en: ["Course", "Position", "Role", "Type", "Level", "Degree", "Institution", "Headcount", "Duration"]
+      fr: ["Module", "Poste", "Rôle", "Type", "Niveau", "Diplôme", "Établissement", "Effectif", "Durée"]
+  items:
+  - year: 2025
+    courses:
+      - name: 
+          en: Dynamic Web Developement
+          fr: Développement Web Dynamique
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 35
+
+      - name: 
+          en: Static Web Development
+          fr: Développement Web Statique
+        tools: 
+          en: Front End, HTML, CSS, VS Code, Web Browser
+          fr: Front End, HTML, CSS, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Problem
+          fr: Problème
+        duration: 
+          en: 18h
+          fr: 18h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 37
+
+      - name: 
+          en: Algorithms and Data Structures
+          fr: Algorithmes et Structures de Données
+        tools: 
+          en: Python, Online Learning Platform
+          fr: Python, Plateforme d'Apprentissage en Ligne
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+  - year: 2024
+    courses:
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Advanced Programming
+          fr: Programmation Avancée
+        tools: 
+          en: Continuous Integration, GitHub, C, VS Code, Command terminal
+          fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Dynamic Web Development
+          fr: Développement Web Dynamique
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 12h
+          fr: 12h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Dynamic Web Development
+          fr: Développement Web Dynamique
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 12h
+          fr: 12h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Static Web Development
+          fr: Développement Web Statique
+        tools: 
+          en: Front End, HTML, CSS, VS Code, Web Browser
+          fr: Front End, HTML, CSS, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Problem
+          fr: Problème
+        duration: 
+          en: 18h
+          fr: 18h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Static Web Development
+          fr: Développement Web Statique
+        tools: 
+          en: Front End, HTML, CSS, VS Code, Web Browser
+          fr: Front End, HTML, CSS, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Problem
+          fr: Problème
+        duration: 
+          en: 18h
+          fr: 18h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Algorithms and Data Structures
+          fr: Algorithmes et Structures de Données
+        tools: 
+          en: Python, Online Learning Platform
+          fr: Python, Plateforme d'Apprentissage en Ligne
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Algorithms and Data Structures
+          fr: Algorithmes et Structures de Données
+        tools: 
+          en: Python, Online Learning Platform
+          fr: Python, Plateforme d'Apprentissage en Ligne
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+  - year: 2023
+    courses:
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 29
+
+      - name: 
+          en: Advanced Programming
+          fr: Programmation Avancée
+        tools: 
+          en: Continuous Integration, GitHub, C, VS Code, Command terminal
+          fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Advanced Programming
+          fr: Programmation Avancée
+        tools: 
+          en: Continuous Integration, GitHub, C, VS Code, Command terminal
+          fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Dynamic Web Development
+          fr: Développement Web Dynamique
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 12h
+          fr: 12h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Dynamic Web Development
+          fr: Développement Web Dynamique
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 12h
+          fr: 12h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Algorithms and Data Structures
+          fr: Algorithmes et Structures de Données
+        tools: 
+          en: Javascript
+          fr: Javascript
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+  - year: 2021
+    courses:
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: SQL, Java AWT, Eclipse IDE, WampServer
+          fr: SQL, Java AWT, Eclipse IDE, WampServer
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: SQL, Java AWT, Eclipse IDE, WampServer
+          fr: SQL, Java AWT, Eclipse IDE, WampServer
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Procedural Programming
+          fr: Programmation Procédurale
+        tools: 
+          en: C, VS Code, Command Terminal
+          fr: C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work, Project
+          fr: Cours, Travaux Pratiques, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Procedural Programming
+          fr: Programmation Procédurale
+        tools: 
+          en: C, VS Code, Command Terminal
+          fr: C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work, Project
+          fr: Cours, Travaux Pratiques, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Web Development
+          fr: Développement Web
+        tools: 
+          en: HTML, CSS, JS, VS Code, Web Browser
+          fr: HTML, CSS, JS, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Problem
+          fr: Problème
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Algorithms and Data Structures
+          fr: Algorithmes et Structures de Données
+        tools: 
+          en: Javascript
+          fr: Javascript
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+  - year: 2020
+    courses:
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: SQL, Java AWT, Eclipse IDE, WampServer
+          fr: SQL, Java AWT, Eclipse IDE, WampServer
+        position: 
+          en: Temporary Research and Teaching Assistant
+          fr: Attaché Temporaire d'Enseignement et de Recherche
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: SQL, Java AWT, Eclipse IDE, WampServer
+          fr: SQL, Java AWT, Eclipse IDE, WampServer
+        position: 
+          en: Temporary Research and Teaching Assistant
+          fr: Attaché Temporaire d'Enseignement et de Recherche
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Database Management
+          fr: Gestion de Bases de Données
+        tools: 
+          en: SQL, VS Code, WampServer
+          fr: SQL, VS Code, WampServer
+        position: 
+          en: Temporary Research and Teaching Assistant
+          fr: Attaché Temporaire d'Enseignement et de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: JAVA, Eclipse IDE
+          fr: JAVA, Eclipse IDE
+        position: 
+          en: Temporary Research and Teaching Assistant
+          fr: Attaché Temporaire d'Enseignement et de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: JAVA, Eclipse IDE
+          fr: JAVA, Eclipse IDE
+        position: 
+          en: Temporary Research and Teaching Assistant
+          fr: Attaché Temporaire d'Enseignement et de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+  - year: 2019
+    courses:
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Internet Of Things Expertise
+          fr: Expertise Internet des Objets
+        tools: 
+          en: C, Arduino, RESTful API
+          fr: C, Arduino, RESTful API
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 3h
+          fr: 3h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M2
+          fr: M2
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 3ʳᵈ Year Engineering Cycle
+          fr: 3ᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 15
+
+      - name: 
+          en: Systematic Literature Review
+          fr: Revue Systématique de Littérature
+        tools: 
+          en: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+          fr: PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 4h
+          fr: 4h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M2
+          fr: M2
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 3ʳᵈ Year Engineering Cycle
+          fr: 3ᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+      - name: 
+          en: Microprogrammed Systems
+          fr: Systèmes Microprogrammés
+        tools: 
+          en: C, Development boards and kits - PIC
+          fr: C, Cartes et kits de développement - PIC
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Database Management
+          fr: Gestion de Bases de Données
+        tools: 
+          en: SQL, VS Code, WampServer
+          fr: SQL, VS Code, WampServer
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Event-Oriented Programming
+          fr: Programmation Orientée Événements
+        tools: 
+          en: Java SWT, Eclipse IDE
+          fr: Java SWT, Eclipse IDE
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+  - year: 2018
+    courses:
+      - name: 
+          en: Version Control Initiation
+          fr: Initiation au Contrôle de Version
+        tools: 
+          en: Git, VS Code, HTML, CSS
+          fr: Git, VS Code, HTML, CSS
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 4h
+          fr: 4h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M2
+          fr: M2
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 3ʳᵈ Year Engineering Cycle
+          fr: 3ᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 18
+
+      - name: 
+          en: Shape-Changing Interfaces Introduction
+          fr: Introduction aux Interfaces à Changement de Forme
+        tools: 
+          en:  Programmable Matter, Human-Computer Interaction, Shape-Changing Interfaces
+          fr:  Matière programmable, Interaction Humain-Machine, Interfaces à Changement de Forme 
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture
+          fr: Cours
+        duration: 
+          en: 1h
+          fr: 1h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M2
+          fr: M2
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 3ʳᵈ Year Engineering Cycle
+          fr: 3ᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 25
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+      - name: 
+          en: Event-Oriented Programming
+          fr: Programmation Orientée Événements
+        tools: 
+          en: Java SWT, Eclipse IDE
+          fr: Java SWT, Eclipse IDE
+        position: 
+          en: Research Engineer
+          fr: Ingénieur de Recherche
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+
+  - year: 2017
+    courses:
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: PhD Student
+          fr: Doctorant
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Apprentice
+          fr: Apprenti
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Event-Oriented Programming
+          fr: Programmation Orientée Événements
+        tools: 
+          en: Java SWT, Eclipse IDE
+          fr: Java SWT, Eclipse IDE
+        position: 
+          en: PhD Student
+          fr: Doctorant
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+  - year: 2016
+    courses:
+      - name: 
+          en: Object-Oriented Programming
+          fr: Programmation Orientée Objet
+        tools: 
+          en: Java, Eclipse IDE
+          fr: Java, Eclipse IDE
+        position: 
+          en: PhD Student
+          fr: Doctorant
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 33
+
+      - name: 
+          en: Web Development
+          fr: Développement Web
+        tools: 
+          en: HTML, CSS, JS, VS Code, Web Browser
+          fr: HTML, CSS, JS, VS Code, Navigateur Web
+        position: 
+          en: PhD Student
+          fr: Doctorant
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Practical Work
+          fr: Cours, Travaux Pratiques
+        duration: 
+          en: 32h
+          fr: 32h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+
+  # - year: 2015
+  #   courses:
+  #     - name: Procedural Programming
+  #       tools: C, VS Code, Command Terminal
+  #       position: PhD Student
+  #       role: Lecturer
+  #       type: Lecture, Practical Work, Project
+  #       duration: 22h
+  #       status: Apprentice
+  #       level: L3
+  #       degree: General Engineering
+  #       cycle: 1ˢᵗ Year Engineering Cycle
+  #       school: ESTIA
+  #       size: 31
+        
+  #     - name: Procedural Programming
+  #       tools: C, VS Code, Command Terminal
+  #       position: PhD Student
+  #       role: Lecturer
+  #       type: Lecture, Practical Work, Project
+  #       duration: 22h
+  #       status: Student
+  #       level: L3
+  #       degree: General Engineering
+  #       cycle: 1ˢᵗ Year Engineering Cycle
+  #       school: ESTIA
+  #       size: 34
+
+
+coordinations:
+  titles:
+    title:
+      en: "Coordinations"
+      fr: "Coordinations"
+    categories:
+      en: [level, location, volume, goals, responsabilities, materials]
+      fr: [niveau, lieu, volume, objectifs, responsabilités, supports]
+  items:
+    - name: 
+        en: "Algorithms and Data Structures"
+        fr: "Algorithmes et Structures de Données"
+      volume: 
+        en: "24h"
+        fr: "24h"
+      period: 
+        en: "2023-Now"
+        fr: "2023-Présent"
+      level: 
+        en: "1ˢᵗ Year Engineering Cycle (Refresher Course)"
+        fr: "1ʳᵉ Année du Cycle Ingénieur (Cours de Remise à Niveau)"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type:
+        en: "Lecture, Practical Work"
+        fr: "Cours Magistral, Travaux Pratiques"
+      aavs: 
+        en: [
+          "[Understand]{.underline} the fundamentals of algorithms (variables, operators, expressions, control structures, loops, functions) and common data structures (arrays, lists, queues, stacks, dictionaries).",
+          "[Analyze]{.underline} the time complexity of algorithms using asymptotic comparisons and Big O notation.",
+          "[Design and implement]{.underline} algorithms and choose suitable data structures to solve problems, including tasks like finding minimum/maximum, sorting, summing, and averaging data."
+          ]
+        fr: [
+          "[Comprendre]{.underline} les fondamentaux des algorithmes (variables, opérateurs, expressions, structures de contrôle, boucles, fonctions) et des structures de données courantes (tableaux, listes, files d'attente, piles, dictionnaires).",
+          "[Analyser]{.underline} la complexité temporelle des algorithmes en utilisant des comparaisons asymptotiques et la notation Big O.",
+          "[Concevoir et implémenter]{.underline} des algorithmes et choisir des structures de données appropriées pour résoudre des problèmes, y compris des tâches telles que la recherche du minimum/maximum, le tri, la somme et la moyenne des données."
+          ]
+      tools: 
+        en: ["Python", "Online Learning Platform"]
+        fr: ["Python", "Plateforme d'Apprentissage en Ligne"]
+      responsibilities: 
+        en: ["Online Learning Platform implementation and maintenance", "Student assessment and grading", "Lecturers coordination"]
+        fr: ["Implémentation et maintenance de la Plateforme d'Apprentissage en Ligne", "Évaluation et notation des étudiants", "Coordination des enseignants"]
+      links: 
+        - text: 
+            en: "Online Learning Platform"
+            fr: "Plateforme d'Apprentissage en Ligne"
+          href: "https://devweb.estia.fr/asd/student/"
+
+    - name: 
+        en: "Mobile Communication Systems"
+        fr: "Systèmes Mobiles Communicants"
+      volume: 
+        en: "12h"
+        fr: "12h"
+      period: 
+        en: "2023-Now"
+        fr: "2023-Présent"
+      level: 
+        en: "2ⁿᵈ Year Engineering Cycle"
+        fr: "2ᵉ Année du Cycle Ingénieur"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type: 
+        en: "Lecture, Practical Work, Project"
+        fr: "Cours Magistral, Travaux Pratiques, Projet"
+      aavs: 
+        en: [
+          "[Apply]{.underline} previous learning outcomes to implement a connected device with multiple input sensors and output actuators, along with a mobile application featuring multiple input and output widgets.",
+          "[Design and implement]{.underline} a BLE communication protocol enabling bidirectional requests and acknowledgements between the connected device and the mobile application."
+          ]
+        fr: [
+          "[Appliquer]{.underline} les acquis précédents pour implémenter un dispositif connecté avec plusieurs capteurs d'entrée et actionneurs de sortie, ainsi qu'une application mobile comportant plusieurs widgets d'entrée et de sortie.",
+          "[Concevoir et implémenter]{.underline} un protocole de communication BLE permettant des requêtes et des accusés de réception bidirectionnels entre le dispositif connecté et l'application mobile."
+          ]
+      tools: 
+        en: [Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy]
+        fr: [Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy]
+      responsibilities: 
+        en: ["Slides and toolkits preparation and updates",  "Student assessment and grading", "Practical work and project supervision", "Lecturers coordination"]
+        fr: ["Préparation et mise à jour des diapositives et des kits d'outils",  "Évaluation et notation des étudiants", "Supervision des travaux pratiques et des projets", "Coordination des enseignants"]
+      links: 
+        - text: 
+            en: "Introduction and Instructions Slides"
+            fr: "Diapositives d'Introduction et d'Instructions"
+          href: "https://drive.google.com/file/d/1W4TZBiVDvLvALRew4LQ3iYKgDjKellc6/view?usp=sharing"
+
+    - name: 
+        en: "Systematic Litterature Review"
+        fr: "Revue Systématique de Littérature"
+      volume: 
+        en: "4h"
+        fr: "4h"
+      period: 
+        en: "2019"
+        fr: "2019"
+      level: 
+        en: "3ʳᵈ Year Engineering Cycle"
+        fr: "3ᵉ Année du Cycle Ingénieur"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type:
+        en: "Lecture, Project"
+        fr: "Cours Magistral, Projet"
+      aavs: 
+        en: [
+          "[Understand]{.underline} the principles and methodology of a Systematic Literature Review, including research questions formulation, inclusion/exclusion criteria, data extraction, and quality assessment of studies.",
+          "[Apply]{.underline} the SLR methodology by conducting structured searches, selecting relevant studies, extracting and synthesizing data, and critically analyzing results to draw evidence-based conclusions."
+        ]
+        fr: [
+          "[Comprendre]{.underline} les principes et la méthodologie d'une Revue Systématique de Littérature, y compris la formulation des questions de recherche, les critères d'inclusion/exclusion, l'extraction des données et l'évaluation de la qualité des études.",
+          "[Appliquer]{.underline} la méthodologie RSL en effectuant des recherches structurées, en sélectionnant les études pertinentes, en extrayant et en synthétisant les données, et en analysant de manière critique les résultats pour tirer des conclusions basées sur des preuves."
+        ]
+      tools: 
+        en: [PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel]
+        fr: [PRISMA statement, Zotero, Google Scholar, Microsoft Word, Microsoft Excel]
+      responsibilities: 
+        en: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
+        fr: ["Préparation et mise à jour des diapositives",  "Évaluation et notation des étudiants", "Supervision du projet"]
+      links: 
+        - text: 
+            en: "Method and Tools Slides"
+            fr: "Diapositives sur la Méthode et les Outils"
+          href: "https://drive.google.com/file/d/1nlPkc6dFxioqcZjrvfuE_7gdKk1QDwey/view?usp=sharing"
+
+    - name: 
+        en: "Internet Of Things Expertise"
+        fr: "Expertise Internet des Objets"
+      volume: 
+        en: "4h"
+        fr: "4h"
+      period: 
+        en: "2019"
+        fr: "2019"
+      level: 
+        en: "3ʳᵈ Year Engineering Cycle"
+        fr: "3ᵉ Année du Cycle Ingénieur"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type: 
+        en: "Lecture, Project"
+        fr: "Cours Magistral, Projet"
+      aavs: 
+        en: [
+          "[Understand]{.underline} the principles of the Internet of Things (IoT), including IoT architectures and communication protocols, with emphasis on RESTful API.",
+          "[Apply]{.underline} IoT concepts by designing, programming, and deploying connected devices with sensors and actuators (ESP32), communicating via a RESTful API."
+        ]
+        fr: [
+          "[Comprendre]{.underline} les principes de l'Internet des Objets (IoT), y compris les architectures IoT et les protocoles de communication, avec un accent sur les API RESTful.",
+          "[Appliquer]{.underline} les concepts IoT en concevant, programmant et déployant des dispositifs connectés avec des capteurs et des actionneurs (ESP32), communiquant via une API RESTful."
+        ]
+      tools: 
+        en: [C, Arduino, RESTful API]
+        fr: [C, Arduino, RESTful API]
+      responsibilities: 
+        en: ["Slides preparation and updates",  "Student assessment and grading", "Project supervision"]
+        fr: ["Préparation et mise à jour des diapositives",  "Évaluation et notation des étudiants", "Supervision du projet"]
+      links: 
+        - text: 
+            en: "Introduction Slides"
+            fr: "Diapositives d'Introduction"
+          href: "https://drive.google.com/file/d/1tRUwGBs5GDpWTSaZzIaS3X-yyQptl8bZ/view?usp=sharing"
+
+    - name: 
+        en: "Version Control Initiation"
+        fr: "Initiation au Contrôle de Version"
+      volume: 
+        en: "4h"
+        fr: "4h"
+      period: 
+        en: "2018"
+        fr: "2018"
+      level: 
+        en: "3ʳᵈ Year Engineering Cycle"
+        fr: "3ᵉ Année du Cycle Ingénieur"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type: 
+        en: "Lecture, Practical Work"
+        fr: "Cours Magistral, Travaux Pratiques"
+      aavs: 
+        en: [
+          "[Understand]{.underline} the basic concepts of version control, including repositories, commits, branches, and merges.",
+          "[Apply]{.underline} these concepts using Git, performing common operations such as add, commit, push, and pull, as well as handling merge conflicts and synchronizing with a remote collaborative repository."
+        ]
+        fr: [
+          "[Comprendre]{.underline} les concepts de base du contrôle de version, y compris les dépôts, les commits, les branches et les merges.",
+          "[Appliquer]{.underline} ces concepts en utilisant Git, en effectuant des opérations courantes telles que l'ajout, le commit, le push et le pull, ainsi que la gestion des conflits de fusion et la synchronisation avec un dépôt collaboratif distant."
+        ]
+      tools: 
+        en: [Git, VS Code, HTML, CSS]
+        fr: [Git, VS Code, HTML, CSS]
+      responsibilities: 
+        en: ["Slides preparation and updates",  "Student assessment and grading", "Practical work supervision"]
+        fr: ["Préparation et mise à jour des diapositives",  "Évaluation et notation des étudiants", "Supervision des travaux pratiques"]
+      links: 
+        - text: 
+            en: "Introduction Slides"
+            fr: "Diapositives d'Introduction"
+          href: "https://drive.google.com/file/d/1TIQeWHImjvcevHAFIjFOR5_aw0WB0Ik0/view?usp=sharing"
+
+    - name: 
+        en: "Shape-Changing Interfaces Introduction"
+        fr: "Introduction aux Interfaces à Changement de Forme"
+      volume: 
+        en: "1h"
+        fr: "1h"
+      period:
+        en: "2018"
+        fr: "2018"
+      level: 
+        en: "3ʳᵈ Year Engineering Cycle"
+        fr: "3ᵉ Année du Cycle Ingénieur"
+      location: 
+        en: "ESTIA"
+        fr: "ESTIA"
+      type: 
+        en: "Lecture"
+        fr: "Cours Magistral"
+      aavs: 
+        en: [
+          "[Understand]{.underline} the fundamental concepts, purposes, benefits, and challenges of shape-changing interfaces."
+        ]
+        fr: [
+          "[Comprendre]{.underline} les concepts fondamentaux, les objectifs, les avantages et les défis des interfaces à changement de forme."
+        ]
+      tools: 
+        en: [Programmable matter, Human-Computer Interaction, Shape-Changing Interfaces]
+        fr: [Matière programmable, Interaction Humain-Machine, Interfaces à Changement de Forme]
+      responsibilities: 
+        en: ["Webpage preparation and updates"]
+        fr: ["Préparation et mise à jour de la page web"]
+      links: 
+        - text: 
+            en: "Introduction Webpage"
+            fr: "Page Web d'Introduction"
+          href: "./research.html"
+      
+theses:
+  titles: 
+    title:
+      en: "Theses"
+      fr: "Thèses"
+    abstract:
+      en: "Abstract"
+      fr: "Résumé"
+    laboratory:
+      en: "Laboratory"
+      fr: "Laboratoire"
+    jury:
+      en: [Jury Members, Role, Position]
+      fr: [Membres du Jury, Rôle, Position]
+  items:
+    - thumbnail: "img/univbordeaux.jpg" 
+      pdf: "pdf/daniel2018thesis.pdf"
+      ref: 
+        en: "Maxime Daniel. 2018. *Shape-Changing Cylindrical Displays: Application to Data Physicalization and Peripheral Interaction for Energy Demand-Side Management*. **PhD thesis**. University of Bordeaux, France."
+        fr: "Maxime Daniel. 2018. *Afficheurs cylindriques à changement de forme : application à la physicalisation des données et l'interaction périphérique pour la maîtrise de l'énergie*. **Thèse de doctorat**. Université de Bordeaux, France."
+      name: 
+        en: "PhD Thesis in Computer Science, University of Bordeaux (2018)"
+        fr: "Thèse de Doctorat en Informatique, Université de Bordeaux (2018)"
+      title: 
+        en: "Shape-Changing Cylindrical Displays: Application to Data Physicalization and Peripheral Interaction for Energy Demand-Side Management"
+        fr: "Afficheurs cylindriques à changement de forme : application à la physicalisation des données et l'interaction périphérique pour la maîtrise de l'énergie"
+      abstract: 
+        en: "In the middle of public and collective spaces, cylindrical displays inform users around them. We question the utility and the usability of dynamic revolution symmetry for shape-changing cylindrical displays. We present CairnFORM, a prototype of cylindrical display that can change its revolution symmetry using a modular stack of expandable illuminated rings. We show that revolution symmetry is usable for informing users through data physicalization: We observe with a 10-ring CairnFORM that a physical ring chart is more efficient for a range task and for a compare task rather than for an order task. We show that revolution symmetry change is usable for unobtrusively notifying users through peripheral interaction: We observe with a 1-ring CairnFORM that a ring diameter change with exponential speed is perceived more often and calmer in the periphery of attention rather than with a constant speed or a logarithmic speed.We show that cylindrical displays with dynamic revolution symmetry offer a greater user experience over time than planar displays: After two months in context of use in a workplace, we observe that CairnFORM is as pragmatic as a flat screen but more hedonic than a flat screen. We study a use case for displays in the workplace: Helping employees to shift laptop battery charge to peak hours of local renewable energy production."
+        fr: "Au milieu des espaces collectifs et publics, les afficheurs cylindriques informent les utilisateurs autour d'eux. Nous questionnons l'utilité et l'utilisabilité de la symétrie dynamique de révolution pour les afficheurs cylindriques à changement de forme. Nous présentons CairnFORM, un prototype d'afficheur cylindrique capable de changer de symétrie de révolution à l'aide d'une pile modulaire d'anneaux extensibles illuminés. Nous montrons que la symétrie de révolution est utilisable pour informer les utilisateurs par physicalisation des données : nous observons avec un CairnFORM à 10 anneaux qu'un histogramme à anneaux physiques est plus efficace pour une tâche d'intervalle et une tâche de comparaison plutôt que pour une tâche d'ordonnancement. Nous montrons que le changement de symétrie de révolution est utilisable pour notifier sans déranger les utilisateurs par interaction périphérique : nous observons avec un CairnFORM à 1 anneau que le changement de diamètre d'un anneau avec une vitesse exponentielle est perçu plus souvent et plus calmement en périphérie de l'attention plutôt qu'avec une vitesse constante ou logarithmique. Nous montrons que les afficheurs cylindriques à symétrie dynamique de révolution offrent une expérience utilisateur sur la durée supérieure aux afficheurs planaires : après deux mois en contexte d'usage sur un lieu de travail, nous observons que CairnFORM est aussi pragmatique mais plus hédonique qu'un écran plat. Nous étudions un cas d'usage pour les afficheurs sur le lieu de travail, c'est-à-dire aider les employés à décaler le chargement de batterie des ordinateurs portables vers les heures de pic de production locale d'énergie renouvelable."
+      laboratory: 
+        en: ESTIA Recherche, ESTIA, 97 allée Théodore Monod, Technopole Izarbel, 64210, Bidart, France.
+        fr: ESTIA Recherche, ESTIA, 97 allée Théodore Monod, Technopole Izarbel, 64210, Bidart, France.
+
+      jury:
+        - name: Pascal Desbarats
+          role: 
+            en: Chair
+            fr: Président
+          position: 
+            en: Professor at University of Bordeaux
+            fr: Professeur à l'Université de Bordeaux
+
+        - name: Gaëlle Calvary
+          role: 
+            en: Reviewer
+            fr: Rapporteur
+          position: 
+            en: Professor at ENSIMAG
+            fr: Professeure à l'ENSIMAG
+
+        - name: Elena Mugellini
+          role: 
+            en: Reviewer
+            fr: Rapporteur
+          position: 
+            en: Professor at HES-SO
+            fr: Professeure à la HES-SO
+
+        - name: Aurélien Tabard
+          role: 
+            en: Examiner
+            fr: Examinateur
+          position: 
+            en: Assistant Professor at University of Lyon
+            fr: Maître de Conférences à l'Université de Lyon
+
+        - name: Alexandre Dugarry
+          role: 
+            en: Examiner
+            fr: Examinateur
+          position: 
+            en: CEO GreenMe
+            fr: CEO GreenMe
+
+        - name: Stéphane Kreckelbergh
+          role: 
+            en: Co-supervisor
+            fr: Co-directeur de thèse
+          position: 
+            en: Associate Researcher at ESTIA
+            fr: Chercheur associé à l'ESTIA
+
+        - name: Nadine Couture
+          role: 
+            en: Supervisor
+            fr: Directrice de thèse
+          position: 
+            en: Professor at ESTIA
+            fr: Professeure à l'ESTIA
+
+        - name: Guillaume Rivière
+          role: 
+            en: Supervisor
+            fr: Directeur de thèse
+          position: 
+            en: Assistant Professor at ESTIA
+            fr: Enseignant-Chercheur à l'ESTIA
+
+
+    - thumbnail: "img/univbordeaux.jpg" 
+      pdf: "pdf/daniel2015virtual.pdf"
+      ref: 
+        en: "Maxime Daniel. 2015. *Virtual Environment for Real-Time Evaluation of Workload, Attention, and Error Recognition through Electroencephalographic Analysis*. **MSc thesis**. University of Bordeaux, France."
+        fr: "Maxime Daniel. 2015. *Environnement virtuel pour l'évaluation en temps réel de la charge mentale, de l'attention et de la reconnaissance d'erreurs par analyse électroencéphalographique*. **Mémoire de Master**. Université de Bordeaux, France."
+      name: 
+        en: "MSc Thesis in Computer Science, University of Bordeaux (2015)"
+        fr: "Mémoire de Master en Informatique, Université de Bordeaux (2015)"
+      title: 
+        en: "Virtual Environment for Real-Time Evaluation of Workload, Attention, and Error Recognition through Electroencephalographic Analysis"
+        fr: "Environnement virtuel pour l'évaluation en temps réel de la charge mentale, de l'attention et de la reconnaissance d'erreurs par analyse électroencéphalographique"
+      abstract: 
+        en: "This thesis addresses two interrelated objectives: (1) the development of SCOAL, a system for multimodal synchronization, data archiving, and visualization of physiological signals recorded during neuropsychological tests in a virtual reality environment; and (2) the design of a system to evaluate workload, attention, and error recognition in an interactive environment using electroencephalographic (EEG) analysis. SCOAL integrates the LabStreamingLayer (LSL) protocol for real-time data synchronization, the GDFv2.1 format for comprehensive physiological and event data storage, and OpenViBE software for real-time multimodal visualization and processing. The evaluation system uses a video game as the virtual environment, including mechanisms to modulate mental workload (e.g., path selection, spatial orientation changes, game speed), stimulate attention (e.g., visual and auditory oddball paradigms), and induce error recognition (e.g., random or incorrect path selection). Current work focuses on defining and validating five hypothetical difficulty levels of the virtual environment using the NASA TLX questionnaire, ensuring that induced workload levels match expectations before confirming EEG-based results."
+        fr: "Ce mémoire de master traite de deux objectifs interdépendants : (1) le développement de SCOAL, un système de synchronisation multimodale, d'archivage et de visualisation des signaux physiologiques enregistrés lors de tests neuropsychologiques dans un environnement de réalité virtuelle ; et (2) la conception d'un système d'évaluation de la charge mentale, de l'attention et de la reconnaissance d'erreurs dans un environnement interactif par analyse électroencéphalographique (EEG). SCOAL intègre le protocole LabStreamingLayer (LSL) pour la synchronisation des données en temps réel, le format GDFv2.1 pour le stockage complet des données physiologiques et événementielles, et le logiciel OpenViBE pour la visualisation et le traitement multimodal en temps réel. Le système d'évaluation utilise un jeu vidéo comme environnement virtuel, incluant des mécanismes pour moduler la charge mentale (par exemple, choix de chemin, changements d'orientation spatiale, vitesse du jeu), stimuler l'attention (par exemple, paradigmes oddball visuels et auditifs) et induire la reconnaissance d'erreurs (par exemple, sélection aléatoire ou incorrecte de chemin). Les travaux en cours se concentrent sur la définition et la validation de cinq niveaux hypothétiques de difficulté de l'environnement virtuel à l'aide du questionnaire NASA TLX, garantissant que les niveaux de charge mentale induits correspondent aux attentes avant de confirmer les résultats basés sur l'EEG."
+      laboratory: 
+            en: Équipe Potioc, INRIA Bordeaux, 200 Avenue de la Vieille Tour, 33405 Talence.
+            fr: Équipe Potioc, INRIA Bordeaux, 200 Avenue de la Vieille Tour, 33405 Talence.
+      jury:
+        - name: Pascal Desbarats
+          role: 
+            en: Advisor
+            fr: Directeur de mémoire
+          position: 
+            en: Professor at University of Bordeaux
+            fr: Professeur à l'Université de Bordeaux
+
+        - name: Julien Castet
+          role: 
+            en: Tutor
+            fr: Tuteur
+          position: 
+            en: PhD from University of Grenoble, Research Engineer at Immersion
+            fr: Docteur de l'Université de Grenoble, Ingénieur de Recherche chez Immersion
+
+        - name: Jeremy Frey
+          role: 
+            en: Collaborator
+            fr: Collaborateur
+          position: 
+            en: PhD Student at University of Bordeaux, INRIA
+            fr: Doctorant à l'Université de Bordeaux, INRIA
+
+        - name: Fabien Lotte
+          role: 
+            en: Collaborator
+            fr: Collaborateur
+          position: 
+            en: Researcher at INRIA
+            fr: Chercheur à l'INRIA
+
+publications:
+  title:
+      en: "Publications"
+      fr: "Publications"
+  categories:
+    - title: 
+        en: "International Peer-Reviewed Conferences"
+        fr: "Conférences Internationales avec Comité de Lecture"
+      items:
+        - thumbnail: "img/tei25.png" 
+          pdf: "pdf/daniel2025shypins.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3689050.3704940" 
+          ref:  "Maxime Daniel and William Delamare. 2025. **ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed  Zones**. In *Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 14, 1–16."
+          submissions:
+            - name: TEI 2023
+              track: Long Paper
+            - name: TEI 2025
+              track: Long Paper
+          note: 
+            en: "Rank B (CORE2023) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
+            fr: "Rang B (CORE2023) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
+          keywords: 
+            en: ["Tangible Interaction", "Shape-Changing Interfaces", "User Safety"]
+            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Sécurité des Utilisateurs"]
+
+        - thumbnail: "img/chi22.png" 
+          pdf: "pdf/delamare2022multifingerbubble.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3491101.3519692" 
+          ref:  "William Delamare, Maxime Daniel, and Khalad Hasan. 2022. **MultiFingerBubble: A 3D Bubble Cursor Variation for Dense Environments**. In *Extended Abstracts of the 2022 CHI Conference on Human Factors in Computing Systems (CHI EA '22)*. ACM, New York, NY, USA, Article 453, 1–6."
+          submissions:
+            - name: CHI 2022
+              track: Long Paper
+            - name: CHI EA 2022
+              track: Short Paper
+          note: 
+            en: "Rank A* (CORE2021) -- best international venue in Human-Computer Interaction"    
+            fr: "Rang A* (CORE2021) -- meilleure conférence internationale en Interaction Humain-Machine"
+          keywords: 
+            en: ["Virtual Reality", "3D Selection", "Gesture"]
+            fr: ["Réalité Virtuelle", "Sélection 3D", "Geste"]
+
+        - thumbnail: "img/tei21.png" 
+          pdf: "pdf/daniel2021exploring.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3430524.3442452" 
+          ref:  "Maxime Daniel and Guillaume Rivière. 2021. **Exploring Axisymmetric Shape-Change's Purposes and Allure for Ambient Display: 16 Potential Use Cases and a Two-Month Preliminary Study on Daily Notifications**. In *Proceedings of the 15th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '21)*. ACM, New York, NY, USA, Article 47, 1–6."
+          submissions:
+            - name: TEI 2021
+              track: Short Paper
+          note: 
+            en: "Rank A (CORE2020) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
+            fr: "Rang A (CORE2020) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
+          keywords: 
+            en: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
+            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Afficheur à Anneaux"]
+
+
+        - thumbnail: "img/tei19.png" 
+          pdf: "pdf/daniel2019cairnform.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3294109.3295634"
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2019. **CairnFORM: a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations**. In *Proceedings of the 13th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '19)*. ACM, New York, NY, USA, 275-286."
+          submissions:
+            - name: TEI 2019
+              track: Long Paper
+          note: 
+            en: "Rank A (CORE2018) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
+            fr: "Rang A (CORE2018) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
+          keywords: 
+            en: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
+            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Afficheur à Anneaux"]
+
+        - thumbnail: "img/tei18.png" 
+          pdf: "pdf/daniel2018designing.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3173225.3173294"
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2018. **Designing an Expandable Illuminated Ring to Build an Actuated Ring Chart**. In *Proceedings of the 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18)*. ACM, New York, NY, USA, 140-147."
+          submissions:
+            - name: TEI 2018
+              track: Short Paper
+          note: 
+            en: "Rank A (CORE2017) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
+            fr: "Rang A (CORE2017) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
+          keywords: 
+            en: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display"]
+            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Afficheur à Anneaux"]
+
+        - thumbnail: "img/chi16.png" 
+          pdf: "pdf/daniel2017analysis.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/2858036.2858525"
+          ref:  "Jérémy Frey, Maxime Daniel, Julien Castet, Martin Hachet, and Fabien Lotte. 2016. **Framework for Electroencephalography-based Evaluation of User Experience**. In *Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems (CHI '16)*. ACM, New York, NY, USA, 2283-2294."
+          submissions:
+            - name: CHI 2016
+              track: Long Paper
+          note: 
+            en: "Rank A* (CORE2015) -- best international venue in Human-Computer Interaction"
+            fr: "Rang A* (CORE2015) -- meilleure conférence internationale en Interaction Humain-Machine"
+          keywords: 
+            en: ["User Experience Evaluation", "Electroencephalography", "Workload", "Attention", "Interaction Errors"]
+            fr: ["Évaluation de l'Expérience Utilisateur", "Électroencéphalographie", "Charge Mentale", "Attention", "Erreurs d'Interaction"]
+
+    - title: 
+        en: "International Peer-Reviewed Workshops"
+        fr: "Ateliers Internationaux avec Comité de Lecture"
+      items:
+        - thumbnail: "img/tei25.png" 
+          pdf: "pdf/angelini2025tangiblellms.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3689050.3708338"
+          ref:  "Leonardo Angelini, Goda Klumbyte, Maxime Daniel, Nadine Couture, Elena Mugellini, and Claude Draude. 2025. **Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models**. *In Proceedings of the Nineteenth International Conference on Tangible, Embedded, and Embodied Interaction (TEI '25)*. Association for Computing Machinery, New York, NY, USA, Article 132, 1–5."
+          submissions:
+            - name: TEI 2025
+              track: Studio
+          note: 
+            en: "Rank B (CORE2023) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
+            fr: "Rang B (CORE2023) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
+          keywords: 
+            en: ["Tangible Interaction", "Large Language Models", "Explainability"]
+            fr: ["Interaction Tangible", "Grands Modèles de Langage", "Explicabilité"]
+
+    - title: 
+        en: "National Peer-Reviewed Conferences"
+        fr: "Conférences Nationales avec Comité de Lecture"
+      items:
+        - thumbnail: "img/ihm16.png" 
+          pdf: "pdf/daniel2017analysis.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3004107.3004111"
+          ref:  "Maxime Daniel, Guillaume Rivière, Nadine Couture, and Stéphane Kreckelbergh. 2016. **An Analysis of Persuasive Technologies for Energy Demand Side Management**. In *Actes de la 28ième conférence francophone sur l'Interaction Humain-Machine (IHM '16)*. ACM, New York, NY, USA, 197-210."
+          submissions:
+            - name: IHM 2016
+              track: Long Paper
+          keywords: 
+            en: ["Literature Review", "Persuasive Technology", "Energy Demand Side Management"]
+            fr: ["Revue de Littérature", "Technologie Persuasive", "Maîtrise de la Demande Énergétique"]
+              
+        - thumbnail: "img/ihm16.png" 
+          pdf: "pdf/daniel2017persuasive.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3004107.3004131"
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2016. **Persuasive Interactive Systems in public and collective spaces: what Role for Tangible Interfaces ?**. In *Actes de la 28ième conférence francophone sur l'Interaction Humain-Machine (IHM '16)*. ACM, New York, NY, USA, 221-229."
+          submissions:
+            - name: IHM 2016
+              track: Short Paper
+          keywords: 
+            en: ["Tangible Interaction", "Persuasive Technology", "Energy Demand Side Management"]
+            fr: ["Interaction Tangible", "Technologie Persuasive", "Maîtrise de la Demande Énergétique"]
+
+
+    - title: 
+        en: "National Peer-Reviewed Doctoral Consortiums"
+        fr: "Consortiums Doctorals Nationaux avec Comité de Lecture"
+      items:
+        - thumbnail: "img/ihm17.png" 
+          pdf: "pdf/daniel2017cairns.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3132129.3132152"
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2017. **CAIRNS: an Ambient Tangible Interface for Shifting Energy Demand at Work**. In *Proceedings of the 29th Conference on l'Interaction Humain-Machine (IHM '17)*. ACM, New York, NY, USA, 221-231."
+          submissions:
+            - name: IHM 2017
+              track: Doctoral Consortium
+          keywords: 
+            en: ["Tangible Interaction", "Shape-Changing Interfaces", "Ring-Based Shape Display", "Energy Demand Side Management"]
+            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Afficheur à Anneaux", "Maîtrise de la Demande Énergétique"]
+
+    - title: 
+        en: "Demonstrations"
+        fr: "Démonstrations"
+      items:
+        - thumbnail: "img/ihm18.png" 
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2018. **CairnFORM**. 30th Conference on l'Interaction Humain-Machine (IHM '18). October 23 - 26, Brest, France."
+
+        - thumbnail: "img/tei18.png" 
+          ref:  "Maxime Daniel, Guillaume Rivière, and Nadine Couture. 2018. **Expandable Illuminated Ring**. 12th International Conference on Tangible, Embedded, and Embodied Interaction (TEI '18). March 18 – 21, Stockholm, Sweden."
+
+
+    # - category: "Extra Disciplinary Collaborations"
+    #   items:
+    #     - thumbnail: "img/ihm17.png" 
+    #       pdf: "pdf/ambrosino2017ideabulb.pdf"
+    #       doi: "https://dumas.ccsd.cnrs.fr/ENSEIRB/hal-01534697v2"
+    #       ref:  "Julien Ambrosino, Maxime Daniel, Dimitri Masson, Jérémy Legardeur. 2017. **IdeaBulb: A Smart and Tangible User Interface for Monitoring Ideation During Creative Sessions**. In *SMART INTERFACES 2017, The Symposium for Empowering and Smart Interfaces in Engineering (pp. 70-74)*. Berntzen, L. et al.."
+
+        # - thumbnail: "img/ihm17.png" 
+        #   pdf: "pdf/faham2016toward.pdf"
+        #   doi: "https://link.springer.com/chapter/10.1007/978-3-319-51133-7_58"
+        #   ref:  "Faham, Jérémie, Maxime Daniel, and Jérémy Legardeur. 2016. **Toward a Matching Approach to Support CBM (Collaborative Business Model) Processes between Regional Entrepreneurs within the RIS3 Policy**. In *IFIP International Conference on Advances in Production Management Systems*. Cham: Springer International Publishing."
+
+        # - thumbnail: "img/ihm17.png" 
+        #   pdf: "pdf/faham2016dialoj.pdf"
+        #   doi: "https://dumas.ccsd.cnrs.fr/ENSEIRB/hal-01332579v1"
+        #   ref:  "Faham, Jérémie, Maxime Daniel, Benjamin Tyl, Iban Lizarralde, Iñaki Garagorri, and Jérémy Legardeur. 2016. **A Dialogical Approach to increase Matching Efficiency before Collaborative Business Model Processes**. In *XXVII ISPIM Innovation Conference–Blending Tomorrow's Innovation Vintage*."
+
+reviews:
+  titles:
+      title:
+        en: "Reviews"
+        fr: "Relectures"
+      review:
+        en: ["Category", "Assigned", "Special Recognitions for Outstanding Reviews"]
+        fr: ["Catégorie", "Assignées", "Reconnaissances Spéciales pour Relectures Exceptionnelles"]
+  items:
+    - name: 
+        en: "CHI 2026 Papers"
+        fr: "Articles CHI 2026"
+      assigned: "1"
+      recognized: ""
+
+    - name: 
+        en: "TEI 2026 Papers"
+        fr: "Articles TEI 2026"
+      assigned: "3"
+      recognized: ""
+
+    - name: 
+        en: "ISMAR 2025 Papers"
+        fr: "Articles ISMAR 2025"
+      assigned: "3"
+      recognized: "1"
+
+    - name: 
+        en: "TEI 2025 Papers"
+        fr: "Articles TEI 2025"
+      assigned: 1
+      recognized: 1
+
+    - name: 
+        en: "TEI 2023 Papers"
+        fr: "Articles TEI 2023"
+      assigned: "1"
+      recognized: ""
+
+    - name: 
+        en: "IHM 2021 Papers"
+        fr: "Articles IHM 2021"
+      assigned: "1"
+      recognized: ""
+
+    - name: 
+        en: "TEI 2020 Papers"
+        fr: "Articles TEI 2020"
+      assigned: "1"
+      recognized: ""
+
+    - name: 
+        en: "IHM 2017 Papers"
+        fr: "Articles IHM 2017"
+      assigned: "1"
+      recognized: ""
+
+supervisions:
+  titles:
+    title:
+      en: "Supervisions"
+      fr: "Encadrements"
+    headers:
+      en: ["Topic",  "Duration", "Location", "Supervision"]
+      fr: ["Sujet", "Durée", "Lieu", "Encadrement"]
+  items:
+    - name: "Abu Bakar SIDDIQUE"
+      level: 
+          en: "Master 2, Industry 4.0, University of Pau and Pays de l'Adour (UPPA), France"
+          fr: "Master 2, Industrie 4.0, Université de Pau et des Pays de l'Adour (UPPA), France"
+      topic: 
+          en: "Expandable Illuminated Ring Design for a High-Resolution Deformable 360° Physical Display"
+          fr: "Conception d'un Anneau Illuminé Extensible pour un Afficheur Physique Déformable à 360° et Haute Résolution"
+      supervisor: 
+          en: "100%"
+          fr: "100%"
+      duration: 
+          en: "March 2025 - August 2025 (6 months)"
+          fr: "Mars 2025 - Août 2025 (6 mois)"
+      location: 
+          en: "ESTIA, Bidart, France."
+          fr: "ESTIA, Bidart, France."
+
+    - name: "Mauricio David APAZA IRURI"
+      level: 
+          en: "Bachelor 3, Computer Science, Universidad Católica San Pablo, Perou"
+          fr: "Licence 3, Informatique, Universidad Católica San Pablo, Pérou"
+      topic: 
+          en: "From Dashboard Photo to Automated Control: Designing a Parallel Robot System for Physical Widget Actuation"
+          fr: "De la Photo du Tableau de Bord au Contrôle Automatisé : Conception d'un Système de Robot Parallèle pour l'Actionnement de Widgets Physiques"
+      supervisor: 
+          en: "50% with Dr William DELAMARE"
+          fr: "50% avec Dr William DELAMARE"
+      duration: 
+          en: "May 2025 - November 2025 (6 months)"
+          fr: "Mai 2025 - Novembre 2025 (6 mois)"
+      location: 
+          en: "ESTIA, Bidart, France."
+          fr: "ESTIA, Bidart, France."
+
+    - name: "Carter JARDINE"
+      level: 
+          en: "Bachelor 3, Electrical and Electronics Engineering, University of British Columbia, Canada"
+          fr: "Licence 3, Génie Électrique et Électronique, University of British Columbia, Canada"
+      topic: 
+          en: "Custom Drone Design for Carrying a Deformable 360° Afterimage Display"
+          fr: "Conception de Drone Personnalisé pour le Transport d'un Afficheur à Après-Image Déformable à 360°"
+      supervisor: 
+          en: "50% with Pr Pourang IRANI"
+          fr: "50% avec Pr Pourang IRANI"
+      duration: 
+          en: "Jan 2023 - June 2023 (6 months)"
+          fr: "Jan 2023 - Juin 2023 (6 mois)"
+      location: 
+          en: "University of British Columbia, Kelowna, Canada."
+          fr: "Université de Colombie-Britannique, Kelowna, Canada."
+
+    - name: "Emmanuel Reuben STEPHEN"
+      level: 
+        en: "Bachelor 3, Electrical and Electronics Engineering, University of British Columbia, Canada"
+        fr: "Licence 3, Génie Électrique et Électronique, University of British Columbia, Canada"
+      topic: 
+        en: "Replication and Enhancement of a Line-Based Physical Interface for Lightweight Drone-Borne Deployment"
+        fr: "Réplication et Amélioration d'une Interface Physique à Lignes pour un Déploiement Léger par Drone"
+      supervisor: 
+        en: "50% with Pr Pourang IRANI"
+        fr: "50% avec Pr Pourang IRANI"
+      duration: 
+        en: "Jan 2023 - June 2023 (6 months)"
+        fr: "Jan 2023 - Juin 2023 (6 mois)"
+      location: 
+        en: "University of British Columbia, Kelowna, Canada."
+        fr: "Université de Colombie-Britannique, Kelowna, Canada."
+
+animations:
+  titles:
+      title:
+        en: "Animations"
+        fr: "Animations"
+      headers:
+        en: ["Description", "Role", "Date", "Location"]
+        fr: ["Description", "Rôle", "Date", "Lieu"]
+
+  items:
+    - type: 
+        en: "TEI 2025 Studio"
+        fr: "Atelier TEI 2025"
+      title: 
+        en: "Tangible LLMs: Tangible Sense-Making For Trustworthy Large Language Models"
+        fr: "LLMs Tangibles : Employer l'Interaction Tangible pour Rendre les Grands Modèles de Langage Plus Fiables"
+      description: 
+        en: "A 1-day studio exploring tangible representations and interactions to enhance the interpretability and trustworthiness of large language models, in contrast to existing graphical representations and interactions."
+        fr: "Un atelier d'une journée explorant des représentations et interactions tangibles pour améliorer l'interprétabilité et la fiabilité des grands modèles de langage, en contraste avec les représentations et interactions graphiques existantes."
+      role: 
+        en: "Co-organizer & Co-animator"
+        fr: "Co-organisateur & Co-animateur"
+      date: 
+        en: "March 4th, 2025"
+        fr: "4 Mars 2025"
+      location: 
+        en: "University of British Columbia, Kelowna, Canada."
+        fr: "Université de Colombie-Britannique, Kelowna, Canada."
+
+others:
+  title:
+      en: "Others"
+      fr: "Autres"
+missions:
+  title:
+      en: "Missions"
+      fr: "Missions"
+  items:
+    - thumbnail: "img/estia.jpg"
+      position: 
+        en: "Information System Correspondent for ESTIA Research"
+        fr: "Correspondant Système d'Information pour ESTIA Recherche"
+      period: 
+        en: "2021 - Now"
+        fr: "2021 - Présent"
+---
+
+
+
+::: {.profil}
+
+:::
+
+
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+::: {.content-visible when-meta="en"}
+
+# {{< meta experiences.title.en>}}
+
+:::
+
+::: {.content-visible when-meta="fr"}
+
+# {{< meta experiences.title.fr>}}
+
+:::
+
+::: {.experiences}
+
+:::
+
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+::: {.content-visible when-meta="en"}
+
+# {{< meta educations.title.en>}}
+
+:::
+
+::: {.content-visible when-meta="fr"}
+
+# {{< meta educations.title.fr>}}
+
+:::
+
+::: {.educations}
+
+:::
+
+:::
+
+:::
+
+# [{{< meta researchs.title.en>}}]{.content-visible when-meta="en"}[{{< meta researchs.title.fr>}}]{.content-visible when-meta="fr"}
+
+## [{{< meta theses.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta theses.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.theses}
+
+:::
+
+## [{{< meta projects.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta projects.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.projects}
+
+:::
+
+
+## [{{< meta publications.title.en>}}]{.content-visible when-meta="en"}[{{< meta publications.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.publications}
+
+:::
+
+
+## [{{< meta reviews.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta reviews.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.reviews}
+
+:::
+
+
+## [{{< meta supervisions.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta supervisions.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.supervisions}
+
+:::
+
+## [{{< meta animations.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta animations.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.animations}
+
+:::
+
+# [{{< meta teachings.title.en>}}]{.content-visible when-meta="en"}[{{< meta teachings.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+## [{{< meta coordinations.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta coordinations.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.coordinations}
+
+:::
+
+## [{{< meta lectures.title.en>}}]{.content-visible when-meta="en"}[{{< meta lectures.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.lectures}
+
+:::
+
+# [{{< meta others.title.en>}}]{.content-visible when-meta="en"}[{{< meta others.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+## [{{< meta missions.title.en>}}]{.content-visible when-meta="en"}[{{< meta missions.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.missions}
+
+:::
+
+
+
+<!-- ### References
+
+::: {#refs}
+::: -->

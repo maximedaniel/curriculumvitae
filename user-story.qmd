@@ -1,0 +1,131 @@
+---
+title: "User Stories"
+subtitle: 'Assessing the Potential Impact of Interface Designs on User Experience'
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+This document describes the methodology I am using to assess the potential impact of different interface designs on user experience.
+The methodology consists of writing two user stories: one describing a baseline interface/interaction and another describing a novel interface/interaction.
+Both user stories are based on the same context and goal but differ in the interface/interaction used to achieve the goal.
+The user stories also include an expected drawback/benefit of each interface/interaction.
+I did not add the scientific references that support this methodology yet but I will do it soon.
+
+
+## 1. Define the components of the user story
+
+Find a **context**
+
+> Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home. Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh.
+
+Find a **goal**
+
+> Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour.
+
+Find a **baseline interface/interaction**
+
+> User can interact with CairnFORM using **voice command** (e.g, "Show me the details for 2pm").  Thomas approaches CairnFORM and whispers "Show me the details for 2pm". In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
+
+
+Find a **novel interface/interaction**
+
+> User can interact with CairnFORM using **physical input** (e.g., pushing the ring corresponding to 2pm to select that hour). Thomas approaches CairnFORM and push the ring corresponding to 2pm to select that hour. In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
+
+
+Find an **expected drawback/benefit**
+
+> Using voice command wakes up Emilie a bit from her nap (**more frustration** for Thomas and Emilie) whereas using physical input does not disturb Emilie who continues to nap peacefully (**less frustration** for Thomas and Emilie). See  @sec-metrics below for more ideas about what drawbacks/benefits to consider.
+
+
+## 2. Write down the two user stories using the components defined above
+
+### User Story 1: Baseline Interface/Interaction (Voice Command)
+
+> Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home.Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh. Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour. Thomas approaches CairnFORM and whispers "Show me the details for 2pm". This voice command wakes up Emilie a lit bit from her nap and she looks at Thomas with a slightly annoyed expression. Thomas apologizes to Emilie and continues to interact with CairnFORM. In response to the previous voice command, CairnFORM morphed to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
+
+### User Story 2: Novel Interface/Interaction (Physical Input)
+
+> Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home.Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh. Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour. Thomas approaches CairnFORM and quietly push the ring corresponding to 2pm to select that hour which does not disturb Emilie who continues to nap peacefully. In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake. This does not disturb Emilie who continues to nap peacefully.
+
+
+## User Experience Metrics {#sec-metrics}
+
+Multiple methods can be used together to evaluate the user experience of the two interfaces/interactions described in the user stories above.
+We often combine **system log metrics**, **physiological measures**, **questionnaires**, and **semi-structured interviews** to gather a comprehensive understanding of the user experience. 
+Individually, each method provides either **quantitative** and **qualitative** data about the user's experience with each interface/interaction. Quantitative metrics are objective measures that can be directly observed and measured, while qualitative metrics are subjective measures that capture the user's perceptions and feelings about the interface/interaction.
+
+### System Log Metrics (Quantitative Data)
+
+- **Task completion time** : Time taken by the user to complete the task.
+- **Error rate** : Number of errors made by the user while completing the task.
+- **action sequence** : The sequence of actions taken by the user to complete the task.
+
+### Physiological Measures (Quantitative Data)
+
+- **Heart rate** : Measure of the user's heart rate during the task.
+- **Galvanic skin response** : Measure of the user's skin conductance, which can indicate stress levels.
+- **Eye tracking** : Measure of the user's eye movements and fixations during the task.
+- **Motion capture** : Measure of the user's body posture and movements during the task.
+- **Electroencephalography (EEG)** : Measure of the user's brain activity during the task.
+
+### Questionnaires (Qualitative Data)
+
+Here are some standardized questionnaires you can use to gather qualitative data about the user experience with each interface/interaction.
+
+#### NASA-TLX questionnaire 
+
+- **Mental workload** : How mentally demanding was the task with this interface?
+- **Physical workload** : How physically demanding was the task with this interface?
+- **Temporal demand** : How hurried or rushed was the pace of the task with this interface?
+- **Performance** : How successful were you in accomplishing what you were asked to do with this interface?
+- **Effort** : How hard did you have to work to accomplish your level of performance with this interface?
+- **Frustration** : How insecure, discouraged, irritated, stressed, and annoyed were you while using this interface?
+
+#### User Experience Questionnaire (UEQ)
+
+Overall Quality:
+
+- **Attractiveness**: Overall impression of the product. Do users like or dislike it?
+
+Pragamatic Quality:
+
+- **Efficiency**: Can users solve their tasks without unnecessary effort? Does it react fast?
+- **Perspicuity**: Is it easy to get familiar with the product and to learn how to use it?
+- **Dependability**: Does the user feel in control of the interaction? Is it secure and predictable?
+
+Hedonic Quality:  
+  
+- **Stimulation**: Is it exciting and motivating to use the product? Is it fun to use?
+- **Originality**: Is the design of the product creative? Does it catch the interest of users?
+
+#### Others
+
+See the questionnaires available in the [PEAC2H platform](https://app.peac2h.io/).
+
+- **Stress**
+- **Accessibility**
+- **Trust**
+- **Comfort**
+- **Sense of control**
+- **Perceived Safety**
+- **Aesthetics**
+- **Engagement**
+- ... 
+
+### Semi-structured Interviews (Qualitative Data)
+
+Conduct interviews with users after they have used each interface/interaction to gather in-depth qualitative data about their experiences. Sample questions include:
+
+- What did you like most about this interface/interaction?
+- What did you like least about this interface/interaction?
+- How did you feel while using this interface/interaction?
+- Were there any moments of frustration or confusion? If so, can you describe them?
+- How does this interface/interaction compare to others you have used in the past?
+- ...

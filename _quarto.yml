@@ -8,6 +8,11 @@ website:
   navbar:
     left:
       - research.qmd
+    right:
+      - text: "Misc"
+        menu:
+          - user-story.qmd
+
 
 format:
   html:

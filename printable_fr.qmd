@@ -316,8 +316,8 @@ educations:
   items:
     - thumbnail: "img/gouv.png"
       degree: 
-        en: "Qualification for Assistant Professor Position in Computer Science"
-        fr: "Qualification au poste de Enseignant-Chercheur en Informatique"
+        en: "Qualification for Associate Professor Position (n°1922733197, CNU 27)"
+        fr: "Qualification aux fonctions de maître de conférences (n°1922733197, CNU 27)"
       institution: 
         en: ""
         fr: ""

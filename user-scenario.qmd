@@ -1,5 +1,5 @@
 ---
-title: "User Stories"
+title: "User Scenarios"
 subtitle: 'Assessing the Potential Impact of Interface Designs on User Experience'
 format:
   html:
@@ -12,52 +12,62 @@ format:
     title-block: false
 ---
 
-This document describes the methodology I am using to assess the potential impact of different interface designs on user experience.
-The methodology consists of writing two user stories: one describing a baseline interface/interaction and another describing a novel interface/interaction.
-Both user stories are based on the same context and goal but differ in the interface/interaction used to achieve the goal.
-The user stories also include an expected drawback/benefit of each interface/interaction.
-I did not add the scientific references that support this methodology yet but I will do it soon.
 
+User scenarios are a powerful tool commonly used to convince stakeholders about the potential impact of design choices on user experience. They help illustrate how users might interact with a system and what their experiences might be like.
 
-## 1. Define the components of the user story
+This document describes a methodology consisting of writing **two user scenarios**:
 
-Find a **context**
+1. One describing a **baseline interface/interaction**
+2. Another describing a **novel interface/interaction**
+
+Both user scenarios share the same **context** and **goal** but differ in the interface/interaction used to achieve the goal. The user scenarios also include an **expected drawback/benefit** of each interface/interaction.
+
+Sources:
+
+- [https://www.justinmind.com/blog/how-to-design-user-scenarios/](https://www.justinmind.com/blog/how-to-design-user-scenarios/)
+- [https://blog.uxtweak.com/user-scenario/](https://blog.uxtweak.com/user-scenario/)
+- [Scenario-Based Design (Mary Beth Rosson and John M. Carroll, 2002)](https://ocw.tudelft.nl/wp-content/uploads/2_RossonCarrollSBDforHandbook2002.pdf?utm_source=chatgpt.com)
+
+## 1. Define the components of the user scenario
+
+Find a **context**: Describe the situation and steps your actual user takes to arrive at your product/service.
 
 > Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home. Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh.
 
-Find a **goal**
+Find a **goal**: Describe what the user wants to achieve with your product/service.
 
 > Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour.
 
-Find a **baseline interface/interaction**
+Find a **baseline interface/interaction**: Describe the steps the user would take to achieve their goal and how the product/service would respond.
+
 
 > User can interact with CairnFORM using **voice command** (e.g, "Show me the details for 2pm").  Thomas approaches CairnFORM and whispers "Show me the details for 2pm". In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
 
 
-Find a **novel interface/interaction**
+Find a **novel interface/interaction**: Describe an alternative way the user could interact with your product/service.
 
 > User can interact with CairnFORM using **physical input** (e.g., pushing the ring corresponding to 2pm to select that hour). Thomas approaches CairnFORM and push the ring corresponding to 2pm to select that hour. In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
 
 
-Find an **expected drawback/benefit**
+Find an **expected drawback/benefit**: Describe a potential drawback/benefit of each interface/interaction on the user experience.
 
 > Using voice command wakes up Emilie a bit from her nap (**more frustration** for Thomas and Emilie) whereas using physical input does not disturb Emilie who continues to nap peacefully (**less frustration** for Thomas and Emilie). See  @sec-metrics below for more ideas about what drawbacks/benefits to consider.
 
 
-## 2. Write down the two user stories using the components defined above
+## 2. Write down the two user scenarios using the components defined above
 
-### User Story 1: Baseline Interface/Interaction (Voice Command)
+### User Scenario 1: Baseline Interface/Interaction (Voice Command)
 
 > Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home.Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh. Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour. Thomas approaches CairnFORM and whispers "Show me the details for 2pm". This voice command wakes up Emilie a lit bit from her nap and she looks at Thomas with a slightly annoyed expression. Thomas apologizes to Emilie and continues to interact with CairnFORM. In response to the previous voice command, CairnFORM morphed to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake.
 
-### User Story 2: Novel Interface/Interaction (Physical Input)
+### User Scenario 2: Novel Interface/Interaction (Physical Input)
 
 > Thomas, a 35-year-old software engineer and Emilie, his 33-year-old partner working as a graphic designer, are resting on the couch in the living room of their smart home.Emilie is currently taking a nap on the couch while Thomas is curious about their energy consumption. CairnFORM, a 12-ring display is placed on the coffee table and displays by default the household energy consumption data hour per hour between 8am to 10pm with each ring encoding an hour and the blue color intensity and width of the ring encoding the energy produced in kWh. Thomas sees a peak in energy consumption at 2pm and wants to understand what caused this peak. He wants to see the details per minute energy consumption for that hour. Thomas approaches CairnFORM and quietly push the ring corresponding to 2pm to select that hour which does not disturb Emilie who continues to nap peacefully. In response, CairnFORM morphs to display a detailed view of the energy consumption for that hour with each ring now encoding 5 minutes and the green color intensity and width of the ring encoding the energy produced in kWh during that 5-minute interval. Thomas inspects the rings and sees that there was a sudden spike in energy consumption between 2:15pm and 2:20pm. He recalls that this was when he turned on the oven to bake a cake. This does not disturb Emilie who continues to nap peacefully.
 
 
 ## User Experience Metrics {#sec-metrics}
 
-Multiple methods can be used together to evaluate the user experience of the two interfaces/interactions described in the user stories above.
+Multiple methods can be used together to evaluate the user experience of the two interfaces/interactions described in the user scenarios above.
 We often combine **system log metrics**, **physiological measures**, **questionnaires**, and **semi-structured interviews** to gather a comprehensive understanding of the user experience. 
 Individually, each method provides either **quantitative** and **qualitative** data about the user's experience with each interface/interaction. Quantitative metrics are objective measures that can be directly observed and measured, while qualitative metrics are subjective measures that capture the user's perceptions and feelings about the interface/interaction.
 

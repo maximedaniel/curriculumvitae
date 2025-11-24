@@ -11,7 +11,7 @@ website:
     right:
       - text: "Misc"
         menu:
-          - user-story.qmd
+          - user-scenario.qmd
 
 
 format:

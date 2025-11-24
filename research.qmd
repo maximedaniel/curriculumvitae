@@ -96,6 +96,8 @@ To help researchers and target user-groups see clear benefits in the development
 
 ![**Adapt Interfaces**: a reconfigurable game controller @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
 
+<!-- ![**Adapt Interfaces**: a foldable smartphone @roudaut_cubimorph_2016](img/sci-purposes/samsung-galaxy-fold.jpg){#fig-sci-purposes-3-bis} -->
+
 ![**Augment Users**: a sixth finger @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
 
 ![**Support Arts**: kinetic garments @berzowska_kukkia_2005](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}

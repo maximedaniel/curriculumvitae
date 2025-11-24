@@ -40,11 +40,18 @@ In research, this speculative idea corresponds to what is known as *Programmable
 
 Today, this vision unites a range of research domains as shown in @fig-programmable-matter-venn, including self-reconfiguring modular robotics within **Robotics** (e.g., @yim2007modular), smart materials and metamaterials in **Materials Science** (e.g., @pishvar2020foundations), and shape-changing interfaces within **Human–Computer Interaction** (e.g., @rasmussen2012shape).
 
-::: {#fig-programmable-matter-venn}
 
-![](img/programmable-matter-venn.png){width=300}
+::: {#fig-programmable-matter-fields layout="[[1], [1,1,1]]" fig-align="center"}
 
-Venn Diagram of Research Fields Contributing Towards Programmable Matter
+![Venn Diagram](img/programmable-matter-fields/venn-diagram.jpg){#fig-programmable-matter-venn width="50%"}
+
+![**Robotics**: [Roombots](https://www.youtube.com/watch?v=KY6QCDUngtk) is a self-reconfiguring modular robot [@sprowitz2010roombots].](img/programmable-matter-fields/roombots.jpg){#fig-programmable-matter-robotics width="80%"}
+
+![**Human-Computer Interaction**: [Elevate](https://www.youtube.com/watch?v=G4n-WHrbPiU&pp=ygU_RWxldmF0ZTogQSBXYWxrYWJsZSBQaW4tQXJyYXkgZm9yIExhcmdlIFNoYXBlLUNoYW5naW5nIFRlcnJhaW5z) is a shape-changing interface [@je2021elevate].](img/programmable-matter-fields/elevate.jpg){#fig-programmable-matter-hci width="80%"}
+
+![**Material Sciences**: [Auxetic Materials](https://www.youtube.com/watch?v=UL-OQYvQPO8) are metamaterials [@chen2021bistable].](img/programmable-matter-fields/auxetic-material.jpg){#fig-programmable-matter-materials width="80%"}
+
+Multiple Research Fields Contributing Towards Programmable Matter
 :::
 
 <!--
@@ -52,7 +59,7 @@ This vision has often inspired the cinema and entertainment industries to explor
 Conversely, these fictional representations can in turn inspire researchers, offering qualitative illustrations of what programmable matter could become. I personnally use these illustrations as valuable cultural references when communicating with the public or popularizing research, helping to bridge scientific discourse and collective imagination
  -->
 
-# Research Field: Shape-Changing Interfaces in Human-Computer Interaction
+# Research Field: Shape-Changing Interfaces
 
 Nowadays, Graphical User Interfaces (GUIs) are ubiquitous in our societies offering flexibility and interactivity through graphical elements within a limited two-dimensional (2D) space (e.g., phones, tablets, laptops). While GUIs provide a high degree of malleability, allowing users to manipulate digital content with relative ease, they are constrained by the abstraction of the 2D screen. In contrast, Tangible User Interfaces (TUIs) [@ishii_tangible_1997;@ishii_tangible_2008] leverage physical objects as interactive elements, enabling more natural and embodied interactions. TUIs support collaborative work, facilitate embodied thinking, sustain external memory, and allow parallel actions through spatially distributed interactions [@shaer_tangible_2010]. By grounding interactions in the physical 3D world, TUIs leverage human cognitive, motor, and collaborative abilities that have evolved over millennia through hands-on experience with real-world objects. 
 
@@ -87,9 +94,9 @@ To help researchers and target user-groups see clear benefits in the development
 
 ![**Simulate Objects**: physical rendering of a 3D car model @follmer_inform_2013](img/sci-purposes/inform.jpg){#fig-sci-purposes-2}
 
-![**Adapt Interfaces*: a reconfigurable game controller @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
+![**Adapt Interfaces**: a reconfigurable game controller @roudaut_cubimorph_2016](img/sci-purposes/cubimorph.jpg){#fig-sci-purposes-3}
 
-![*Augment Users**: a sixth finger @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
+![**Augment Users**: a sixth finger @prattichizzo_sixthfinger_2014](img/sci-purposes/sixth-finger.jpg){#fig-sci-purposes-4}
 
 ![**Support Arts**: kinetic garments @berzowska_kukkia_2005](img/sci-purposes/kinetic-garments.jpg){#fig-sci-purposes-5}
 
@@ -174,9 +181,9 @@ Each of these architectures enables the exploration of one or more types of shap
 
 ![**Single Line** (e.g., [@nakagaki_lineform_2015])](img/sci-architectures/single-line.jpg){#fig-sci-architectures-5}
 
-![**Voxels**(e.g., [@suzuki_dynablock_2018])](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
+![**Voxels** (e.g., [@suzuki_dynablock_2018])](img/sci-architectures/voxels.jpg){#fig-sci-architectures-6}
 
-![**Surfaces**(e.g., [@belke_mori_2017])](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
+![**Surfaces** (e.g., [@belke_mori_2017])](img/sci-architectures/surfaces.jpg){#fig-sci-architectures-7}
 
 ![**Hub and Structs** (e.g., [@katsumoto_inside_2020])](img/sci-architectures/hub-and-structs.png){#fig-sci-architectures-8}
 
@@ -309,9 +316,20 @@ ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pi
 
 # My Personal Perspectives
 
-My research perspectives are quite straightforward. I believe that Shape-Changing Interfaces hold great potential to transform the field of Human-Computer Interaction, particularly in light of the long-term vision of Programmable Matter. At the same time, I recognize that many significant challenges remain before this vision can be fully realized. These grand challenges serve as guiding principles for my research agenda. I am particularly interested in addressing the technological and behavioral aspects of these challenges, while also remaining open to contributing to the design, policy, ethical, and sustainability dimensions of the field.
+## Research
 
-My next goal in my academic career is to pursue an Habilitation à Diriger des Recherches (HDR), which will allow me to supervise PhD students and lead independent research projects. I intend to build upon my current work on Shape-Changing Interfaces as the foundation of my HDR, and I am eager to contribute further to the advancement and maturation of this emerging research area.
+My research perspectives are quite straightforward. I believe that Shape-Changing Interfaces hold great potential to transform the field of Human-Computer Interaction, particularly in light of the long-term vision of Programmable Matter. At the same time, I recognize that many significant challenges remain before this vision can be fully realized in human societies. These grand challenges serve as guiding principles for my research agenda. I am particularly interested in addressing the technological and behavioral aspects of these challenges, while also remaining open to contributing to the design, policy, ethical, and sustainability dimensions of the field.
+
+My next goal in my academic career is to train PhD students in Shape-Changing Interfaces and to  pursue an Habilitation à Diriger des Recherches (HDR), which will allow me to supervise PhD students and lead independent research projects. I intend to build upon my current work on Shape-Changing Interfaces as the foundation of my HDR, and I am eager to contribute further to the advancement and maturation of this emerging research area.
+
+My next career goal is to train PhD students in Shape-Changing Interfaces and pursue an Habilitation à Diriger des Recherches (HDR), which will enable me to supervise doctoral candidates and lead independent research programs. I aim to build upon my current body of work on Shape-Changing Interfaces as the foundation for my HDR thesis, using the grand challenges outlined above as guiding principles for my research agenda.
+
+## Teaching
+
+Beyond research supervision, I am deeply passionate about educating the next generation of computer scientists at the university level, from undergraduate (Licence) to graduate (Master) programs. My teaching interests span foundational Computer Science topics including algorithms and data structures, procedural programming, object-oriented programming, event-driven programming, and embedded systems programming.
+
+Ultimately, I aspire to develop and teach a dedicated course on Human-Computer Interaction, with a particular focus on Shape-Changing Interfaces. While I have not yet had the opportunity to create such a course, I am eager to design a curriculum that would introduce students to this emerging field, bridging theoretical foundations with hands-on prototyping experiences. I believe that educating future researchers and practitioners in Shape-Changing Interfaces will be crucial for advancing the field and realizing the long-term vision of Programmable Matter.
+
 
 
 # References

@@ -139,3 +139,5 @@ Conduct interviews with users after they have used each interface/interaction to
 - Were there any moments of frustration or confusion? If so, can you describe them?
 - How does this interface/interaction compare to others you have used in the past?
 - ...
+
+to add: thematic analysis of interview transcripts

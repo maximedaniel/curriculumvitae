@@ -1,0 +1,95 @@
+# Abstract
+
+1. Write a fairly-specific, overarching statement about the
+problem domain – (1 sentence): e.g., Narrative visualisations
+are increasingly used for visualizing sports stories. Or, Food
+decision-making has been studied in the context of grocery
+shopping.
+
+2. State the problem connected to the above statement —
+what has not been done/known (and why it is important) –
+(1 sentence + the importance is optional): e.g., Yet, [some
+particular aspect] has not been looked at and this is important
+because . . . Or, However, [some aspects] have not been
+considered to help practitioners make decisions regarding...
+
+3. State your method/solution to the above problem with
+some specific details – (1-2 sentences): e.g., To address these
+shortcomings, we conducted a card-sorting study by [doing
+this and this]. . . Or, We designed [some interface] based on
+studying people in their work contexts...
+
+4. State your contributions/what you found – (1-2 sentences):
+e.g., Based on our analysis, we present a design space of
+. . . Or, We found that our participants performed better on
+[interface A] than that on [interface B]
+
+5. State how your results or contributions can be useful – (1
+sentence – optional): e.g., Our results have useful implications
+for how technology should be designed to support the grocery
+shopping experience... Or, Our characterisation can be used to
+understand how this process works..
+
+# Introduction
+
+1. Argues that the general research topic being tackled is an
+important one and there exists an opportunity to further the
+understanding of some particular aspect of the topic. Within
+this process, related works are properly cited as evidence
+to back up the claims that are needed to support the main
+argument.
+3. Presents the proposal/prototype/concept and the particular
+approach that was used to investigate the problem.
+3. Quickly present the user studies and their main takeaways.
+3. (Optional) Presents a roadmap of the rest of the paper.
+4. List your contributions which can be:
+• Empirical research (Interview, diary, lab study, crowd-
+sourced, or field study (Qual or Quant));
+• Artifact (Input Device, System, Hardware toolkit, Input
+technique, Envisionment);
+• Methodological (Method application, innovation, or
+adaptation, New measures, New instrument);
+• Theoretical (Thought framework, Design space, Conceptual
+model, Design criteria, Quantitative model);
+• Dataset (Test corpus, Benchmark tasks, Corpus creation,
+Repository, Global dataset);
+• Survey (Techniques, Emerging topic, Tools, Domain,
+Technology);
+• Opinion (Evaluation, Prioritization, Application, Vision,
+Definition).
+
+
+# Related Work
+
+1. Describe the method used to select the related work.
+1. Question formulation. Define research questions (e.g., How
+to implement pin-based shape-changing interfaces?).
+2. Search strategy. Define review scope and search strings
+(i.e., databases set, years range, keywords list, results count).
+3. Selection process. Define inclusion (e.g., entry describes
+and illustrates a functional prototype) and exclusion (e.g.,
+duplicated entry) criteria.
+4. Strength of evidence. Define what makes a high quality
+paper (e.g., shape-changing capabilities, reproducibility).
+5. Analysis. Extract evidence from the selected papers
+(descriptive statistics, statistics plotting).
+6. Synthesis. Structure evidence in order to draw conclusions
+(tendencies, divergences).
+
+David Moher, Alessandro Liberati, Jennifer Tetzlaff, and
+Douglas G Altman. 2009. Preferred reporting items for
+systematic reviews and meta-analyses: the PRISMA
+statement. Annals of internal medicine 151, 4 (2009),
+264–269.
+
+# Proposal
+
+# Implementation
+
+# Evaluation
+
+# Applications
+
+# Discussion/Theoritical Limitations/Technical Improvements
+
+# Conclusion

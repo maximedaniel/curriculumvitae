@@ -32,31 +32,80 @@ understand how this process works..
 
 # Introduction
 
-1. Argues that the general research topic being tackled is an
-important one and there exists an opportunity to further the
-understanding of some particular aspect of the topic. Within
-this process, related works are properly cited as evidence
-to back up the claims that are needed to support the main
-argument.
-3. Presents the proposal/prototype/concept and the particular
-approach that was used to investigate the problem.
-3. Quickly present the user studies and their main takeaways.
-3. (Optional) Presents a roadmap of the rest of the paper.
-4. List your contributions which can be:
-• Empirical research (Interview, diary, lab study, crowd-
-sourced, or field study (Qual or Quant));
-• Artifact (Input Device, System, Hardware toolkit, Input
-technique, Envisionment);
-• Methodological (Method application, innovation, or
-adaptation, New measures, New instrument);
-• Theoretical (Thought framework, Design space, Conceptual
-model, Design criteria, Quantitative model);
-• Dataset (Test corpus, Benchmark tasks, Corpus creation,
-Repository, Global dataset);
-• Survey (Techniques, Emerging topic, Tools, Domain,
-Technology);
-• Opinion (Evaluation, Prioritization, Application, Vision,
-Definition).
+Write three paragraphs following this structure:
+
+1. Topic
+    - Describe the research topic (what is it about?).
+    For instance, "Shape-changing interfaces are..."
+2. Importance
+    - Describe why the research topic is important (why should we care?).
+    For instance, "Shape-changing interfaces have the potential to..."
+2.  Problem
+    - Describe the specific problem that you are tackling within this research topic (what is the problem?)
+    "However, existing shape-changing interfaces do not maintain constant pixel density when the interface expands..."
+3. Importance again
+    -  Describe why it is important (why should we care? What are the consequences if we do not fix the problem?).
+    "Without constant pixel density, users may experience readability issues when the interface expands..."
+4. Limitations of existing work
+    -  Describe the landscape of existing work and their limitations (why is the problem not solved yet?). 
+    "Existing shape-changing interfaces use a fixed number of LED screens or projectors, causing the pixel density to decrease when the interface expands [citations]..."
+5. Proposal
+    - Describe your proposed solution to the problem (what is your proposal? What are the key benefits?).
+    "To address these limitations, we propose a novel shape-changing interface that dynamically adjusts its pixel density by... This allows for..."
+6. Feasability
+    - Describe how your proposal is feasible (how did you implement it?).
+    "We implemented a prototype using... which demonstrates the feasibility of our approach by..."
+7. Utility
+    - Describe how you demonstrated that your proposal is useful (What existing or new applications does your proposal improve or bring?).
+    "We demonstrated the utility of our proposal through applications such as... which showed improvements in..."
+8. Utilisability
+    - Describe how you evaluated that your proposal is usable (how did you evaluate the benefits of
+    your proposal? what did you find compared to previous work?)
+    "We conducted a user study comparing our proposal to existing solutions, finding that participants experienced improved usability in terms of..."
+
+10. Contributions list
+    - Then, list your main contributions (what are your contributions?) in bullet points. Pick from the following types of contributions:
+        - Empirical research (Interview, diary, lab study, crowd-
+        sourced, or field study (Qual or Quant));
+        - Artifact (Input Device, System, Hardware toolkit, Input
+        technique, Envisionment);
+        - Methodological (Method application, innovation, or
+        adaptation, New measures, New instrument);
+        - Theoretical (Thought framework, Design space, Conceptual
+        model, Design criteria, Quantitative model);
+        - Dataset (Test corpus, Benchmark tasks, Corpus creation,
+        Repository, Global dataset);
+        - Survey (Techniques, Emerging topic, Tools, Domain,
+        Technology);
+        - Opinion (Evaluation, Prioritization, Application, Vision,
+        Definition).
+    "
+    Our main contributions are:
+        - A technique for maintaining constant pixel density in shape-changing
+        interfaces by...
+        - A prototype implementation demonstrating the feasibility of
+        our approach...
+        - A technical evaluation assessing the performance of our approach...
+        - Applications demonstrating the utility of our approach...
+        - A user study evaluating the usability of our approach...
+    "
+
+## Elevate: A Walkable Pin-Array for Large Shape-Changing Terrains (Je et al., CHI 2024)
+
+**(topic)** Today, the majority of head-mounted displays, even most commercial devices, allow users to explore virtual worlds by simply walking around in their surroundings; this is known as real-walking Virtual Reality (VR). **(importance)** The advantage of real-walking VR as a locomotion modality is that it is immersive as it stimulates the user’s proprioceptive and vestibular senses as users physically move their bodies both in the real and virtual environments. **(problem)** This compelled researchers into tackling a subsequent key challenge that arises in real-walking VR systems: not only should users be able to walk around but also they should be able to feel the terrain beneath their feet (e.g.,[18, 23, 27]).
+
+**(importance again)** In fact, although often taken for granted, walking is a rich somatosensory activity, all the way down from limb movements to the feedback we feel from the soles of our feet. The body is capable of perceiving the slightest variation in inclination, bumps, and holes in the terrain, with the feet serving simultaneously as kinesthetic [23] and tactile [44] sensors. Diferent from the hands, the static and dynamic forces applied to the feet during standing or walking are in the order of hundreds or thousands of Newtons [44], making the experience of "feeling through the feet" a unique yet powerful haptic experience.
+
+**(limitations of existing work)** The search for this elusive haptics for feet, led researchers into engineering haptic devices that can render terrains by physically displacing modular pieces that the user stands on, such as moving
+robot tiles [10], tilting haptic tiles [1, 2, 5], infatable airbags [36 , 40], tilt-adjustable treadmills [24], and pin-arrays [33]. However, these previous shape-changing foors are limited by their tabletop scale [1, 2 , 5] or the coarse resolution of the terrains they can display, due
+to the limited number of actuators [ 2 , 10 , 24 , 33 , 36 , 40] and their low vertical resolution [2, 24, 40].
+
+### Proposal
+
+**(proposal)** To tackle these challenges altogether and contribute to the feld of interactive haptics, we introduce Elevate, **[faisability aspect]** a dynamic and walkable pin array foor on which users can not only experience large variations in shapes but also subtle details of the underlying terrain, as depicted in Figure 1. Our device achieves this by means of 1200 individually controllable pins arranged on a 1.80m × 0.60m platform. Furthermore, each 3cm × 3cm size pin can be actuated to one of ten height levels (resolution: 15mm/level). **[utility aspect]** To illustrate the design space enabled by this one-of-a-kind large-scale haptic foor, we present it in combination with several real-walking VR and standalone applications. **[utilisability aspect]** Lastly, we validated our prototype through a user study in VR, in which participants reported increased realism and enjoyment when experiencing the VR environment via Elevate.
+
+
+# Add examples of good introduction paragraphs from papers in your field.
 
 
 # Related Work

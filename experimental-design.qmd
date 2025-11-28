@@ -1,0 +1,32 @@
+---
+title: "Experimental Design Cheat Sheet"
+subtitle: '...'
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+# Experimental Design Basics
+
+1. **Define Research Question**: Clearly state the hypothesis or question you aim to answer (e.g., "interface A leads to faster task completion than interface B.").
+2. **Select Variables**:
+   - Independent Variable(s): The variable(s) you manipulate (e.g., tasks, interaction techniques)
+   - Dependent Variable(s): The variable(s) you measure (e.g., completion time, error rate)
+   - Control Variables: Variables you keep constant to prevent confounding effects (e.g., environment, participant demographics).
+3. **Choose Experimental Design**:
+   - Between-Subjects Design: Different participants for each condition (e.g., A/B testing).
+   - Within-Subjects Design: Same participants across all conditions (e.g., repeated measures).
+4. **Randomization**: Randomly assign participants to conditions to reduce bias (e.g., latin square design).
+5. **Replication**: Ensure the experiment can be repeated to verify results (e.g., detailed protocol).
+6. **Data Collection**: Use reliable and valid methods to gather data (e.g., logs, surveys, interviews).
+7. **Data Analysis**: Choose appropriate statistical tests based on data type and design (e.g., t-test, ANOVA).
+8. **Ethical Considerations**: Obtain informed consent, ensure confidentiality, and minimize harm to participants.
+
+
+

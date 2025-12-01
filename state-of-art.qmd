@@ -1,0 +1,47 @@
+---
+title: "State of the Art Cheat Sheet"
+subtitle: '...'
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+
+
+# Systematic Literature Review
+
+PRISMA Checklist: [link](https://prisma-statement.org/PRISMAStatement/Checklist)
+
+1. Review Planning: Plan review effort and training activities (e.g., tools, methods).
+2. Question formulation: Define research questions (e.g, using PICOC).
+3. Search strategy: Define review scope and search strings.
+4. Selection process: Define inclusion and exclusion criteria.
+5. Strength of evidence: Define what makes a high quality paper.
+6. Analysis: Extract evidence from the selected papers.
+7. Synthesis: Structure evidence in order to draw conclusions.
+8. Process Monitoring: Ensure process is repeatable & complete.
+
+
+# PICOC Method for Question Formulation
+
+The PICOC method is used to formulate research questions in systematic literature reviews.
+- Population: What is the population or domain of interest?
+- Intervention: What is the intervention or technology being studied?
+- Comparison: What is the alternative to the intervention (if any)?
+- Outcome: What are the expected outcomes or effects?
+- Context: What is the context or setting of the study?
+
+## example
+- Population: Software development teams
+- Intervention: Agile methodologies
+- Comparison: Traditional waterfall methodologies
+- Outcome: Project success rates
+- Context: Medium to large software development projects in the IT industry
+
+final research question: "How do agile methodologies impact project success rates compared to traditional waterfall methodologies in medium to large software development projects in the IT industry?"

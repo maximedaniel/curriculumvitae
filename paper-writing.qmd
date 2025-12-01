@@ -1,64 +1,59 @@
 # Abstract
 
-1. Write a fairly-specific, overarching statement about the
-problem domain – (1 sentence): e.g., Narrative visualisations
-are increasingly used for visualizing sports stories. Or, Food
-decision-making has been studied in the context of grocery
-shopping.
+1. Write a fairly-specific, overarching statement about the problem domain – (1 sentence)e.g., Narrative visualisations are increasingly used for visualizing sports stories. Or, Food decision-making has been studied in the context of grocery shopping.
 
-2. State the problem connected to the above statement —
-what has not been done/known (and why it is important) –
-(1 sentence + the importance is optional): e.g., Yet, [some
-particular aspect] has not been looked at and this is important
-because . . . Or, However, [some aspects] have not been
-considered to help practitioners make decisions regarding...
+2. State the problem connected to the above statement — what has not been done/known (and why it is important) – (1 sentence + the importance is optional): e.g., Yet, [some particular aspect] has not been looked at and this is important because . . . Or, However, [some aspects] have not been considered to help practitioners make decisions regarding...
 
-3. State your method/solution to the above problem with
-some specific details – (1-2 sentences): e.g., To address these
-shortcomings, we conducted a card-sorting study by [doing
-this and this]. . . Or, We designed [some interface] based on
-studying people in their work contexts...
+3. State your method/solution to the above problem with some specific details – (1-2 sentences): e.g., To address these shortcomings, we conducted a card-sorting study by [doing this and this]. . . Or, We designed [some interface] based on studying people in their work contexts...
 
-4. State your contributions/what you found – (1-2 sentences):
-e.g., Based on our analysis, we present a design space of
-. . . Or, We found that our participants performed better on
-[interface A] than that on [interface B]
+4. State your contributions/what you found – (1-2 sentences): e.g., Based on our analysis, we present a design space of . . . Or, We found that our participants performed better on [interface A] than that on [interface B]
 
-5. State how your results or contributions can be useful – (1
-sentence – optional): e.g., Our results have useful implications
-for how technology should be designed to support the grocery
-shopping experience... Or, Our characterisation can be used to
-understand how this process works..
+5. State how your results or contributions can be useful – (1 sentence – optional): e.g., Our results have useful implications for how technology should be designed to support the grocery
+shopping experience... Or, Our characterisation can be used to understand how this process works..
 
 # Introduction
 
 Write three paragraphs following this structure:
 
+## First Paragraph
+
 1. Topic
     - Describe the research topic (what is it about?).
     For instance, "Shape-changing interfaces are..."
+
 2. Importance
     - Describe why the research topic is important (why should we care?).
     For instance, "Shape-changing interfaces have the potential to..."
-2.  Problem
+
+3.  Problem
     - Describe the specific problem that you are tackling within this research topic (what is the problem?)
     "However, existing shape-changing interfaces do not maintain constant pixel density when the interface expands..."
-3. Importance again
+
+4. Importance again
     -  Describe why it is important (why should we care? What are the consequences if we do not fix the problem?).
     "Without constant pixel density, users may experience readability issues when the interface expands..."
-4. Limitations of existing work
+
+## Second Paragraph
+
+5. Limitations of existing work
     -  Describe the landscape of existing work and their limitations (why is the problem not solved yet?). 
     "Existing shape-changing interfaces use a fixed number of LED screens or projectors, causing the pixel density to decrease when the interface expands [citations]..."
-5. Proposal
+
+## Third Paragraph
+
+6. Proposal
     - Describe your proposed solution to the problem (what is your proposal? What are the key benefits?).
-    "To address these limitations, we propose a novel shape-changing interface that dynamically adjusts its pixel density by... This allows for..."
-6. Feasability
+    "To address these limitations, we propose a novel shape-changing interface that dynamically adjusts its pixel density by... This allows for..." 
+
+7. Feasability
     - Describe how your proposal is feasible (how did you implement it?).
     "We implemented a prototype using... which demonstrates the feasibility of our approach by..."
-7. Utility
+
+8. Utility
     - Describe how you demonstrated that your proposal is useful (What existing or new applications does your proposal improve or bring?).
     "We demonstrated the utility of our proposal through applications such as... which showed improvements in..."
-8. Utilisability
+
+9. Utilisability
     - Describe how you evaluated that your proposal is usable (how did you evaluate the benefits of
     your proposal? what did you find compared to previous work?)
     "We conducted a user study comparing our proposal to existing solutions, finding that participants experienced improved usability in terms of..."
@@ -90,7 +85,11 @@ Write three paragraphs following this structure:
         - A user study evaluating the usability of our approach...
     "
 
-## Elevate: A Walkable Pin-Array for Large Shape-Changing Terrains (Je et al., CHI 2024)
+## Examples of Good Introduction Paragraphs from SCI Papers
+
+The number of paragraphs may vary depending on the paper, but they all content most of the elements described above.
+
+### Elevate: A Walkable Pin-Array for Large Shape-Changing Terrains (Je et al., CHI 2024)
 
 **(topic)** Today, the majority of head-mounted displays, even most commercial devices, allow users to explore virtual worlds by simply walking around in their surroundings; this is known as real-walking Virtual Reality (VR). **(importance)** The advantage of real-walking VR as a locomotion modality is that it is immersive as it stimulates the user’s proprioceptive and vestibular senses as users physically move their bodies both in the real and virtual environments. **(problem)** This compelled researchers into tackling a subsequent key challenge that arises in real-walking VR systems: not only should users be able to walk around but also they should be able to feel the terrain beneath their feet (e.g.,[18, 23, 27]).
 
@@ -100,12 +99,19 @@ Write three paragraphs following this structure:
 robot tiles [10], tilting haptic tiles [1, 2, 5], infatable airbags [36 , 40], tilt-adjustable treadmills [24], and pin-arrays [33]. However, these previous shape-changing foors are limited by their tabletop scale [1, 2 , 5] or the coarse resolution of the terrains they can display, due
 to the limited number of actuators [ 2 , 10 , 24 , 33 , 36 , 40] and their low vertical resolution [2, 24, 40].
 
-### Proposal
+**(proposal)** To tackle these challenges altogether and contribute to the feld of interactive haptics, we introduce Elevate, **(faisability)** a dynamic and walkable pin array foor on which users can not only experience large variations in shapes but also subtle details of the underlying terrain, as depicted in Figure 1. Our device achieves this by means of 1200 individually controllable pins arranged on a 1.80m × 0.60m platform. Furthermore, each 3cm × 3cm size pin can be actuated to one of ten height levels (resolution: 15mm/level). **(utility)** To illustrate the design space enabled by this one-of-a-kind large-scale haptic foor, we present it in combination with several real-walking VR and standalone applications. **(utilisability)** Lastly, we validated our prototype through a user study in VR, in which participants reported increased realism and enjoyment when experiencing the VR environment via Elevate.
 
-**(proposal)** To tackle these challenges altogether and contribute to the feld of interactive haptics, we introduce Elevate, **[faisability aspect]** a dynamic and walkable pin array foor on which users can not only experience large variations in shapes but also subtle details of the underlying terrain, as depicted in Figure 1. Our device achieves this by means of 1200 individually controllable pins arranged on a 1.80m × 0.60m platform. Furthermore, each 3cm × 3cm size pin can be actuated to one of ten height levels (resolution: 15mm/level). **[utility aspect]** To illustrate the design space enabled by this one-of-a-kind large-scale haptic foor, we present it in combination with several real-walking VR and standalone applications. **[utilisability aspect]** Lastly, we validated our prototype through a user study in VR, in which participants reported increased realism and enjoyment when experiencing the VR environment via Elevate.
+### ChainFORM
 
+**(topic)** As shape changing interfaces being an emerging field in HCI, a lot of actuation techniques have been introduced to provide physical shapes to represent digital data and to embody spatial interactions [9, 4]. **(importance)** Researchers are continually seeking techniques that have a variety of transformational capabilities in different geometries and scales [14, 24]. To extend the sensing and display capability of such shape changing interfaces, extra sensors or cameras and projectors have been installed for detecting human input and displaying information on the active surfaces. **(problem)** However, this strategy poses a challenge for scaling the system, which presents a problem especially for mobile applications. **(importance again)** To push the boundaries of shape-changing interface research, another approach calls for self-contained systems that integrate sensing, actuation and display across different scales, geometries, and transformations.
 
-# Add examples of good introduction paragraphs from papers in your field.
+**(proposal)** We present ChainFORM: a modular integrated hardware system that has a chained, linear form factor (Figure 1). The hardware comprises identical actuated modules connected in series, which allows the user to customize the length and the configuration of devices they construct. The form-factor of line and the modularity expands the possibility of transformation for both shapes and scales. In addition, each module integrates sensing, actuation, and display, enabling a wide array of applications and interactions to be developed with a uniform, easily scalable hardware infrastructure. **(limitations of existing work)** Our approach is a step toward a general platform for custom shape-changing interfaces. Building on the idea and implementation of modular and serpentine robotics[17, 33, 35, 34, 30], we intend to extend their knowledge and technique to enrich interactions with shape-changing interfaces.
+
+In this paper, we **(feasability)** describe the technical implementation of our prototype and **(utility)** present a wide range of applications to demonstrate the modularity and rich input and output capability of our hardware design. **(usability)** We conducted technical evaluations and discuss the capabilities and limitations of our current prototype, with points for future improvement. The contributions of the paper are as follows:
+1. We developed a modular shape changing interface system which has a linear configuration. The module connect together to form an arbitrary linear shape using mechanical joints and electrical communication architecture.
+2. We designed each module of the hardware system to have self-contained sensing, actuation and display system together for rich interaction capability.
+3. We performed technical evaluations of the system.
+4. We implemented a variety of application scenarios for shape changing computer interfaces and actuated prototyping tools.
 
 
 # Related Work

@@ -1,0 +1,62 @@
+
+
+## [EN] Keynote: Shape-Changing Interfaces for Spatial and Temporal Data
+Graphical User Interfaces (GUIs) dominate modern computing, providing powerful ways to visualize complex spatial and temporal information through interactive 2D graphics such as charts, maps, and timelines. Yet, despite their flexibility, GUIs remain confined to flat screens, limiting their ability to tap into the rich sensory, motor, and spatial skills humans naturally use to understand and interact with the physical world.
+
+In this keynote, I will introduce Shape-Changing Interfaces, an emerging class of user interfaces that use dynamic physical transformations to overcome these limitations. I will show how bringing data into tangible, reconfigurable 3D form can deepen our understanding of spatial and temporal information and make its exploration more intuitive by leveraging our innate capacity to perceive, handle, and reason with physical objects.
+
+## PLAN
+
+- GUIs and their limitations for spatial/temporal data
+    - confined to flat screens
+    - limited sensory, motor, spatial skills
+
+- Tangible User Interfaces (TUIs) as a way to overcome these limitations
+    - represent and manipulate data with physical artifacts
+    - strengths for spatial/temporal data: 
+        - collaboration: foster dialogue and shared understanding
+        - situatedness:  remain situated in the real world, and retaining the primacy of the physical world.
+        - tangible thinking: thinking through bodily actions, physical manipulation, and tangible representations.
+            - gesture:  thinking and communicating through unconstrained gestures while interacting with a system.
+            - epistemic actions:  physical actions that help to reduce cognitive load and aid problem solving.
+            - tangible representations:  physical representations that can be directly manipulated to aid understanding and reasoning.
+        - Space-Multiplexing and Directness of Interaction: with space-multiplex input each function is controlled with a dedicated transducer, each occupying its own space. Each transducer can be accessible independently but also simultaneously.” “In contrast, time-multiplex input uses one device to control different functions at different points in time.
+        - Strong-Specificness Enables Iconicity and Affordances:  Employing multiple input objects (space-multiplexing) means that these do not need to be abstract and generic but can be strong-specific [65], dedicated in form and appearance to a particular function or digital data. Strongly specific objects can constrain manipulation to allow (or invite) only those actions that have sensible result. Strong specificness can thus improve the mapping of actions to effects
+
+        - provide physical presence and affordances
+    - representation tangible des données spatio-temporelles:
+        - Chart axes -> The MADE-axis
+        - Topographic map -> Relief
+        - Audio tracks -> Music Blocks
+        - IP Networks -> IP Network Design Workbench https://tangible.media.mit.edu/project/ip-network-design-workbench/
+    - manipulation tangible des données:
+        - Chart axes -> The MADE-axis
+        - Topographic map -> Relief
+        - IP Networks -> IP Network Design Workbench https://tangible.media.mit.edu/project/ip-network-design-workbench/
+        - Audio tracks -> ReactTable
+    - 3D surface plot -> Sandscape
+    - Topographic map -> Sandscape
+    - https://dataphys.org/wiki/
+    - 3D surface plot -> Sandscape
+    - Topographic map -> Relief
+    - Audio tracks -> ReactTable (music table)
+    - IP Networks -> IP Network Design Workbench https://tangible.media.mit.edu/project/ip-network-design-workbench/
+- Shape-Changing Interfaces as a new generation of TUIs
+    - represent and manipulate data with dynamic physical artifacts
+
+- Peek into the future: research challenges and opportunities
+    - Programmable Matter: materials that can change their physical properties (shape, stiffness, texture) in response to digital control.
+    - Actuation Technologies: new actuation methods that are miniaturized, energy-efficient, and capable of producing complex deformations.
+    - Sensing Technologies: advanced sensing methods to accurately capture user interactions with shape-changing interfaces.
+- Conclusion
+
+## [FR] Keynote : Interfaces Tangibles Déformables pour les Données Spatiales et Temporelles
+
+Les interfaces graphiques (GUI) dominent l’informatique moderne pour visualiser des données spatiales et temporelles via des graphiques 2D interactifs. Mais leur confinement aux écrans plats limite l’exploitation de nos capacités sensorielles et motrices développées dans le monde physique.
+
+Dans cette conférence, je présenterai les interfaces tangibles déformables, une nouvelle génération d’interfaces capables de modifier physiquement leur forme. Je montrerai comment ces dispositifs, en donnant une présence 3D tangible aux données, peuvent améliorer leur compréhension et rendre leur exploration plus intuitive.
+
+Les interfaces graphiques utilisateur (GUI) dominent l'informatique moderne, offrant des moyens puissants de visualiser des informations spatiales et temporelles complexes à travers des graphiques 2D interactifs tels que des graphiques, des cartes et des chronologies. Cependant, malgré leur flexibilité, les GUI restent confinées aux écrans plats, limitant leur capacité à exploiter les compétences sensorielles, motrices et spatiales riches que les humains utilisent naturellement pour comprendre et interagir avec le monde physique.
+Dans cette conférence, je présenterai les interfaces tangibles déformables, une classe émergente d'interfaces utilisateur qui utilisent des transformations physiques dynamiques pour surmonter ces limitations. Je montrerai comment la représentation tangible et reconfigurable des données en 3D peut faciliter notre compréhension des informations spatiales et temporelles et rendre leur exploration plus intuitive en tirant parti de notre capacité innée à percevoir, manipuler et raisonner avec des objets physiques.
+
+

@@ -1,5 +1,22 @@
 
 
+
+- multimodal desin by laurence nigay
+
+-> https://www.csfieldguide.org.nz/en/chapters/human-computer-interaction/whats-the-big-picture/
+
+
+This use case is good but I feel like the ring animation app is too light.
+In my opinion, a more powerful use case for adaptive affordance would be to switch from a complete "hedonic" app to a complete "communicate information" app.
+
+"hedonic" app: minCairnFORM is mounted on top of a home medical assistant robot that helps elderly people in their daily activities. The robot uses minCairnFORM to express emotions and intentions by shape-changing into a sphere and displaying face expression and skin color changes. 
+When the elder must take its medicine, the robot uses minCairnFORM to display a happy face and a green color to encourage compliance. If the elder refuses, the robot switches minCairnFORM to a sad face and a red color to express disappointment and rings quickly expand/retract. The elder ends up taking the medicine.
+
+"communicate information" app: after taking the medicine, the elder is curious about the history of its medication intake. He approaches the robot and pulls the bottom ring with "medication app" written on it.
+The face of the robot disappear and minCairnFORM now displays a timeline of the elder's medication history per day. Each ring on the timeline represents a day, and the width of the ring indicates the number of medications taken that day. 
+
+
+
 ## [EN] Keynote: Shape-Changing Interfaces for Spatial and Temporal Data
 Graphical User Interfaces (GUIs) dominate modern computing, providing powerful ways to visualize complex spatial and temporal information through interactive 2D graphics such as charts, maps, and timelines. Yet, despite their flexibility, GUIs remain confined to flat screens, limiting their ability to tap into the rich sensory, motor, and spatial skills humans naturally use to understand and interact with the physical world.
 

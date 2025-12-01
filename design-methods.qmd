@@ -164,7 +164,14 @@ The 9 Windows method is a systems thinking tool used to analyze a problem or sys
 
  https://www.geeksforgeeks.org/system-design/design-process-task-analysis-hci/
 
- 
+ - 1. What are the new properties/features you propose to add to the system?
+    - Constant pixel density during shape-change
+ - 2. What are the potential benefits of adding these new properties/features to the system for the users?
+    - existing information does not get distorted or pixelated during shape-change -> e.g., text remains readable, images/videos remain clear, charts/graphs remain interpretable
+    - new information can be added during shape-change without affecting existing information -> e.g., annotations, highlights, overlays can be added seamlessly without disrupting the user's view of the original content
+ - 3. What technical evaluation or user study can you do to validate and measure the benefits of these new properties/features?
+    ????
+    - assess text readability, image/video clarity, chart/graph interpretability during shape-change with constant pixel density -> does our technique holds up under various conditions?
 
 # Deliver Phase
 

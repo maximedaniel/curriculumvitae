@@ -87,6 +87,7 @@ The 5 Whys method is a problem-solving technique used to explore the root cause 
 ![5 Whys Method](img/design-methods/5whys.jpg){#5whys-container width="50%"}
 
 
+
 # Develop Phase
 
 ## SCAMPER Method
@@ -158,6 +159,12 @@ The 9 Windows method is a systems thinking tool used to analyze a problem or sys
 ![9 Windows Method](img/design-methods/9windows.jpg){#9windows-container width="50%"} -->
 
 
+
+# Interaction Design Methods
+
+ https://www.geeksforgeeks.org/system-design/design-process-task-analysis-hci/
+
+ 
 
 # Deliver Phase
 

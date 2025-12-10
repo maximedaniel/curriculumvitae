@@ -162,7 +162,8 @@ The 9 Windows method is a systems thinking tool used to analyze a problem or sys
 
 # Interaction Design Methods
 
- https://www.geeksforgeeks.org/system-design/design-process-task-analysis-hci/
+- https://www.csfieldguide.org.nz/en/chapters/human-computer-interaction/whats-the-big-picture/
+- https://www.geeksforgeeks.org/system-design/design-process-task-analysis-hci/
 
  - 1. What are the new properties/features you propose to add to the system?
     - Constant pixel density during shape-change

@@ -12,7 +12,7 @@ format:
     title-block: false
 ---
 
-
+# Life Lessons
 
 - Parents: Turns out your parents did their best and also kinda messed you up. But at the end of the day, you’ve got to deal with it.
 - No One’s Coming to Save You: No magical mentor, no secret billionaire uncle, not even Batman. It’s just you — and that includes doing basic stuff like folding your laundry before it becomes a roommate.
@@ -34,7 +34,13 @@ format:
 
 
 # Bienveillance
+
 - «Chaque personne que tu rencontres mène une bataille dont tu n'as aucune idée. Sois gentil. Toujours.» Robin Williams (1951 – 2014)
+
+
+# Social
+
+-  "I was ashamed of myself when I realised life was a costume party and I attended with my real face." Franz Kafka (1883 – 1924)
 
 
 # Self parenting
@@ -70,18 +76,13 @@ Est-ce que la vie vaut la peine d’être vécue ?
 
 # Vivre sa vie
 
-« Penser sa vie, vivre sa pensée »
-André Comte-Sponville
+« Penser sa vie, vivre sa pensée » - André Comte-Sponville
+« Apprendre à aimer la vie telle qu’elle est. » - André Comte-Sponville
 
-« Apprendre à aimer la vie telle qu’elle est. »
-André Comte-Sponville
-
-Penser sa vie, c'est la penser où elle est : ici et maintenant, certes, mais aussi dans la société, dans l'histoire, dans le monde. Et vivre sa pensée, c'est agir, autant qu'on peut, autant qu'on doit, puisqu'on ne pourrait autrement que subir ou rêver.
+" Penser sa vie, c'est la penser où elle est : ici et maintenant, certes, mais aussi dans la société, dans l'histoire, dans le monde. Et vivre sa pensée, c'est agir, autant qu'on peut, autant qu'on doit, puisqu'on ne pourrait autrement que subir ou rêver." - André Comte-Sponville
 
 
 # Amour
-
-
 
 
 D'après Platon (428 - 348 av. J.-C.), il existe trois formes d’amour complémentaires : 
@@ -127,3 +128,9 @@ André Comte-Sponville
 
 
 
+# Fear
+"On est plus souvent effrayé que blessé; et nous souffrons plus dans l'imagination que dans la réalité." - Sénèque (4 av. J.-C. – 65 ap. J.-C.)
+"Ce qui trouble les hommes, ce ne sont pas les choses, mais les jugements qu'ils portent sur les choses." - Épictète (50 – 135 ap. J.-C.)
+- peur collective: La peur est souvent irrationnelle et amplifiée par les médias et les réseaux sociaux, créant un climat de panique collective.
+- peur primordiale (la morte): La peur de la mort est une peur fondamentale qui influence de nombreux aspects de notre comportement et de nos croyances.
+- peur de rater sa vie: La peur de ne pas vivre pleinement peut nous pousser à prendre des risques inutiles ou à nous comparer constamment aux autres.

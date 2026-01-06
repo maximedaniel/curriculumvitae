@@ -1,6 +1,6 @@
 # Abstract
 
-1. Write a fairly-specific, overarching statement about the problem domain – (1 sentence)e.g., Narrative visualisations are increasingly used for visualizing sports stories. Or, Food decision-making has been studied in the context of grocery shopping.
+1. Write a fairly-specific, overarching statement about the problem domain – (1 sentence): e.g., Narrative visualisations are increasingly used for visualizing sports stories. Or, Food decision-making has been studied in the context of grocery shopping.
 
 2. State the problem connected to the above statement — what has not been done/known (and why it is important) – (1 sentence + the importance is optional): e.g., Yet, [some particular aspect] has not been looked at and this is important because . . . Or, However, [some aspects] have not been considered to help practitioners make decisions regarding...
 

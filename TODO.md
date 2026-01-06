@@ -1,0 +1,1 @@
+add "["How to Get Your SIGGRAPH Paper Rejected"](./pdf/kajiya.pdf) somewhere

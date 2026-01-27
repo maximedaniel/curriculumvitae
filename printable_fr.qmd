@@ -3217,7 +3217,24 @@ animations:
       location: 
         en: "University of British Columbia, Kelowna, Canada."
         fr: "Université de Colombie-Britannique, Kelowna, Canada."
-
+    - type: 
+        en: "GAST 2026 Studio"
+        fr: "Atelier GAST 2026"
+      title: 
+        en: "Shape-Changing Interfaces For Spatial and Temporal Data"
+        fr: "Interfaces Tangibles Déformables pour les Données Spatiales et Temporelles"
+      description: 
+        en: "A 1h keynote presenting challenges and opportunities of shape-changing interfaces for spatial and temporal data representation and interaction."
+        fr: "Une keynote d'1h présentant les défis et opportunités des interfaces tangibles déformables pour la représentation et l'interaction avec des données spatiales et temporelles."
+      role: 
+        en: "Keynote Speaker"
+        fr: "Conférencier Principal"
+      date: 
+        en: "January 27th, 2026"
+        fr: "27 Janvier 2026"
+      location: 
+        en: "Knowledge Extraction and Management Conference (EGC) 2026, Anglet, France."
+        fr: "conférence Extraction et Gestion des Connaissances (EGC) 2026, Anglet, France."
 others:
   title:
       en: "Others"

@@ -38,8 +38,7 @@ Interpretations of Programmable Matter in Science-Fiction
 
 In research, this speculative idea corresponds to what is known as *Programmable Matter* — a technological paradigm representing the convergence of computation and physical materiality, where algorithms are embedded within matter itself, enabling it to sense, compute, and reconfigure its own structure or properties. The conceptual roots of this vision can be traced back to  1965, when Sutherland envisioned a computer capable of "controlling the existence of matter" @sutherland1965ultimate.
 
-Today, this vision unites a range of research domains as shown in @fig-programmable-matter-venn, including self-reconfiguring modular robotics within **Robotics** (e.g., @yim2007modular), smart materials and metamaterials in **Materials Science** (e.g., @pishvar2020foundations), and shape-changing interfaces within **Human–Computer Interaction** (e.g., @rasmussen2012shape).
-
+Today, this vision unites a range of research domains as shown in @fig-programmable-matter-venn, including self-reconfiguring modular robotics within **Robotics** (e.g., @yim2007modular), smart materials and metamaterials in **Materials Science** (e.g., @pishvar2020foundations), and shape-changing interfaces within **Human–Computer Interaction** (e.g., @rasmussen2012shape). Ultimately, these fields converge towards moving from discrete objects ("things") to continuous, reconfigurable materials ("stuff") as illustrated in @fig-from-things-to-stuff.
 
 ::: {#fig-programmable-matter-fields layout="[[1], [1,1,1]]" fig-align="center"}
 
@@ -52,6 +51,14 @@ Today, this vision unites a range of research domains as shown in @fig-programma
 ![**Material Sciences**: [Auxetic Materials](https://www.youtube.com/watch?v=UL-OQYvQPO8) are metamaterials [@chen2021bistable].](img/programmable-matter-fields/auxetic-material.jpg){#fig-programmable-matter-materials width="80%"}
 
 Multiple Research Fields Contributing Towards Programmable Matter
+:::
+
+
+::: {#fig-from-things-to-stuff}
+
+![](img/programmable-matter-fields/from-things-to-stuff.jpg){width="60%"}
+
+**From Things to Stuff** @le_goc_zooids_2016 <br> Moving from discrete objects ("things") to continuous, reconfigurable materials ("stuff")
 :::
 
 <!--
@@ -72,7 +79,7 @@ Aligned with *Programmable Matter*, Shape-changing interfaces (SCIs) aim to blur
 
 ![](img/radical-atoms.jpg){width="80%"}
 
-**Radical Atoms** @ishii_radical_2012: <br> Shape-Changing Interfaces in the landscape of human-computer interaction
+**Radical Atoms** @ishii_radical_2012 <br> Shape-Changing Interfaces in the landscape of human-computer interaction
 :::
 
 
@@ -316,6 +323,7 @@ This project contributed to the grand challenges of **Technology** (*integration
 ShyPins: Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed Zones
 :::
 
+<!-- 
 # My Personal Perspectives
 
 ## Research
@@ -331,7 +339,7 @@ My next career goal is to train PhD students in Shape-Changing Interfaces and pu
 Beyond research supervision, I am deeply passionate about educating the next generation of computer scientists at the university level, from undergraduate (Licence) to graduate (Master) programs. My teaching interests span foundational Computer Science topics including algorithms and data structures, procedural programming, object-oriented programming, event-driven programming, and embedded systems programming.
 
 Ultimately, I aspire to develop and teach a dedicated course on Human-Computer Interaction, with a particular focus on Shape-Changing Interfaces. While I have not yet had the opportunity to create such a course, I am eager to design a curriculum that would introduce students to this emerging field, bridging theoretical foundations with hands-on prototyping experiences. I believe that educating future researchers and practitioners in Shape-Changing Interfaces will be crucial for advancing the field and realizing the long-term vision of Programmable Matter.
-
+ -->
 
 
 # References

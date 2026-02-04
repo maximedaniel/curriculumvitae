@@ -19,7 +19,21 @@
 
 ## Design
 
-### AI for Shape-Changing Interfaces
+
+## Design Space Exploration
+
+- Generate a Knowledge Graph of existing SCIs  
+  - Dimensions: purpose, actuation technology, shape-change type, interaction type, application domain, etc.
+- Use AI to explore design space and generate novel SCI concepts  
+  - Input: design constraints, user needs, context
+  - Output: novel SCI designs
+- Use AI to evaluate generated SCI concepts
+  - Simulate user interactions
+  - Predict usability, effectiveness, user satisfaction
+
+### AI for Shape-Changing Interfaces (Aurélie LEBORGNE, Clément IPHAR, Rémi VALLEE)
+
+- AI for generating 3D charts based on data, programmable matter and env (user, obstacles, etc.). Explore design space of 3D charts automatically and generate them on demand. Human select through in the loop interaction.
 - AI for generating shape-changing interfaces (explore a proposed design space)
 - AI for testing shape-changing interfaces  
   - AI mimics different users, tasks, and environments
@@ -40,6 +54,16 @@
   - Transition from one chart to another
 
 ---
+
+## Programmable Matter Programming
+
+- ShapeDiver for Programmable Matter  
+  - Parametric 3D modeling tool for programmable matter
+  - Similar to ShapeDiver for 3D printing
+
+## sustainability
+- using user gesture to power shape-change
+
 
 ## User Augmentation
 - Shape-changing controller attached to user hand  
@@ -67,6 +91,7 @@
   - Moto → car → truck  
   - 4-place → 1-place
 - Shape-changing phone  
+  - AR headset → phone → tablet
   - Flat → gamepad controller (cf. Roudaut)
 - Shape-change preemptively
 
@@ -300,9 +325,3 @@ Focus:
 - SIGCHI
 - GDR Robotique
 
----
-
-## Teaching / Management / Research
-- Research: 10
-- Teaching: 4
-- Management: 2

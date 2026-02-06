@@ -1,5 +1,10 @@
 # ESTIA
 
+
+
+## Poctefa (Abu Bakar)
+ - camera spectral analysis + situation awareness (each ring integrates a different spectrum, e.g., infrared, ultraviolet, etc. and visualize the AI confidence in each spectrum via shape-change) + touch ring to activate view in that spectrum.
+
 ## Ideas
 
 ### Theory

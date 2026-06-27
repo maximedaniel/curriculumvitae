@@ -1,4 +1,8 @@
 
+# ON SERVER REBOOT
+- check container is deployed
+- `systemctl restart nginx`
+
 
 # CNU 27 INFORMATIQUE - Guide dossier qualification
 

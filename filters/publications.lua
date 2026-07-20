@@ -87,13 +87,13 @@ function Publications.render(metadata, debug)
             for i, submission in ipairs(submissions) do
                 local name = pandoc.utils.stringify(submission.name or "")
                 local track = pandoc.utils.stringify(submission.track or "")
-                if i == #submissions - 1 then
+                if i == #submissions then
                     submissions_html = submissions_html .. string.format([[
-                        <li class="breadcrumb-item active"><i class="bi bi-x" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
+                        <li class="breadcrumb-item"><i class="bi bi-check" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
                     ]], name, track)
                 else
                     submissions_html = submissions_html .. string.format([[
-                        <li class="breadcrumb-item"><i class="bi bi-check" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
+                        <li class="breadcrumb-item active"><i class="bi bi-x" style="vertical-align: middle;-webkit-text-stroke: 1px;"></i>%s (%s)</li>
                     ]], name, track)
                 end
             end

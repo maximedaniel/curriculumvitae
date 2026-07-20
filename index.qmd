@@ -106,6 +106,26 @@ projects:
           fr: ["Vidéo", "Contributeurs", "Financements"]
     items:
       - name: 
+          en: "MorphSkein"
+          fr: "MorphSkein"
+        period: 
+          en: "Sep 2022 - July 2026"
+          fr: "Sept 2022 - Juil 2026"
+        keywords: 
+          en: ["Shape-Changing Displays", "Afterimage Rendering", "Pixel Density Preservation"]
+          fr: ["Afficheurs reconfigurables", "Rendu par rémanence", "Préservation de la densité de pixels"]
+        abstract: 
+          en: "Shape-changing displays typically lose pixel density as they expand. We present MorphSkein, a shape-changing afterimage display that preserves an initial density of 1.44 px/cm² across axisymmetric troposkein shapes. A rotating system with four LED strips and a telescopic pole uses centrifugal force to form the display, while persistence of vision creates a 360° image. Pixel density is maintained by releasing new LED rows vertically and rendering additional columns horizontally. Because the approach assumes ideal troposkein geometry, correct angular velocity is essential. Experimental interpolation shows that 69.44% of reachable configurations achieve ≥90% pixel density accuracy and shape fidelity at at least one operating speed, with remaining cases limited by motor or hardware performance."
+          fr: "Les écrans déformables perdent généralement en densité de pixels à mesure que leur surface s'étend. Nous présentons MorphSkein, un écran à rémanence déformable qui préserve une densité initiale de 1,44 px/cm² sur des formes axisymétriques de type troposkein. Le système repose sur une base rotative équipée de quatre rubans de LED et d'un mât télescopique. La force centrifuge donne aux rubans leur forme, tandis que la persistance rétinienne crée une image visible à 360°. La densité de pixels est maintenue en déroulant de nouvelles rangées de LED verticalement et en affichant des colonnes supplémentaires horizontalement. Comme l'approche repose sur un modèle supposant une géométrie idéale du troposkein, la vitesse de rotation est un paramètre critique. Une interpolation des résultats expérimentaux montre que 69,44 % des configurations atteignent au moins 90 % de précision en densité de pixels et de fidélité de forme pour au moins une vitesse de fonctionnement, les autres étant limitées par les performances du moteur ou du matériel."
+        thumbnail: "img/morphskein.jpg"
+        youtube: "tWFdXTCd6Us"
+        fundings: 
+          en: "University of British Columbia, Okanagan, Canada (PostDoc Project 2022-2023)"
+          fr: "Université de Colombie Britannique, Okanagan, Canada (Projet PostDoc 2022-2023)"
+        contributors: 
+          en: "Maxime Daniel, Shariff AM Faleel, Pourang Irani"
+          fr: "Maxime Daniel, Shariff AM Faleel, Pourang Irani"
+      - name: 
           en: "ShyPins"
           fr: "ShyPins"
         period: 
@@ -2875,6 +2895,27 @@ publications:
       fr: "Publications"
   categories:
     - title: 
+        en: "International Peer-Reviewed Journals"
+        fr: "Journaux Internationaux avec Comité de Lecture"
+      items:
+        - thumbnail: "img/siggraph2026.jpeg" 
+          pdf: "pdf/daniel2026morphskein.pdf"
+          doi: "https://dl.acm.org/doi/10.1145/3811320" 
+          ref:  "Maxime Daniel, Shariff AM Faleel, and Pourang Irani. 2026. **MorphSkein: A Shape-Changing Afterimage Display Preserving Pixel Density During Surface-Area Changes Across Troposkein-Based Shapes**. ACM Trans. Graph. 45, 4, Article 40 (July 2026), 11 pages."
+          submissions:
+            - name: UIST 2024
+              track: Long Paper
+            - name: TEI 2025
+              track: Long Paper
+            - name: TOG 2026
+              track: Long Paper
+          note: 
+            en: "Q1 - 5.633 (SJR2025) -- best international venue in infographics and interactive techniques"
+            fr: "Q1 - 5.633 (SJR2025) -- meilleure revue internationale en infographie et techniques interactives"
+          keywords: 
+            en: ["Shape-Changing Displays", "Afterimage Rendering", "Pixel Density Preservation"]
+            fr: ["Afficheurs reconfigurables", "Rendu d'Image Résiduelle", "Préservation de la Densité de Pixels"]
+    - title: 
         en: "International Peer-Reviewed Conferences"
         fr: "Conférences Internationales avec Comité de Lecture"
       items:
@@ -2891,8 +2932,8 @@ publications:
             en: "Rank B (CORE2023) -- best international venue specialized in Tangible, Embedded, and Embodied Interaction"
             fr: "Rang B (CORE2023) -- meilleure conférence internationale spécialisée en Interaction Tangible, Embarquée et Incarnée"
           keywords: 
-            en: ["Tangible Interaction", "Shape-Changing Interfaces", "User Safety"]
-            fr: ["Interaction Tangible", "Interfaces à Changement de Forme", "Sécurité des Utilisateurs"]
+            en: ["Shape-Changing Interfaces", "Tangible Interaction", "User Safety"]
+            fr: ["Interfaces à Changement de Forme", "Interaction Tangible", "Sécurité des Utilisateurs"]
 
         - thumbnail: "img/chi22.png" 
           pdf: "pdf/delamare2022multifingerbubble.pdf"

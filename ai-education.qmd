@@ -1,0 +1,15 @@
+---
+title: "AI Education"
+subtitle: "How to teach computer science in the age of AI?"
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+- [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task (2025)](https://arxiv.org/abs/2506.08872)

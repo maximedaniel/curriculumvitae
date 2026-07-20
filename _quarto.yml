@@ -12,6 +12,7 @@ website:
       - text: "Misc"
         menu:
           - user-scenario.qmd
+          - design-methods.qmd
 
 
 format:

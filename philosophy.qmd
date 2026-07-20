@@ -38,6 +38,7 @@ format:
 "Après la joie, vient la peine."
 "Tel qui rit vendredi, dimanche pleurera."
 "Ris maintenant, tu pleureras plus tard."
+“Comparison is the thief of joy…” may have been words uttered by Theodore Roosevelt in the late 1800's 
 
 # Enfance
 

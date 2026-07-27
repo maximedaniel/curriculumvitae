@@ -423,6 +423,178 @@ lectures:
   - year: 2025
     courses:
       - name: 
+          en: Computer Engineering Project
+          fr: Projet génie informatique
+        tools: 
+          en: Continuous Integration, GitHub, C, VS Code, Command terminal
+          fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Lecturer
+          fr: Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+
+      - name: 
+          en: Application and Integration Work
+          fr: Travail d'Application et d'Intégration
+        tools: 
+          en: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Web Browser
+          fr: Full Stack, PHP, JS, SQL, HTML, CSS, WampServer, VS Code, Navigateur Web
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Tutor
+          fr: Tuteur
+        type: 
+          en: Project
+          fr: Projet
+        duration: 
+          en: 24h
+          fr: 24h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 34
+
+      - name:
+          en: Version Control Systems
+          fr: Systèmes de gestion de version
+        tools: 
+          en: GIT, GitHub, SmartGit
+          fr: GIT, GitHub, SmartGit
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 12h
+          fr: 12h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: L3
+          fr: L3
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 1ˢᵗ Year Engineering Cycle
+          fr: 1ʳᵉ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 32
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 31
+      - name: 
+          en: Mobile Communication Systems
+          fr: Systèmes Mobiles Communicants
+        tools: 
+          en: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+          fr: Arduino, C, Android, MIT App Inventor, Bluetooth Low Energy
+        position: 
+          en: Assistant Professor
+          fr: Enseignant-Chercheur
+        role: 
+          en: Coordinator, Lecturer
+          fr: Coordinateur, Enseignant
+        type: 
+          en: Lecture, Project
+          fr: Cours, Projet
+        duration: 
+          en: 16h
+          fr: 16h
+        status: 
+          en: Student
+          fr: Étudiant
+        level: 
+          en: M1
+          fr: M1
+        degree: 
+          en: General Engineering
+          fr: Ingénieur Généraliste
+        cycle: 
+          en: 2ⁿᵈ Year Engineering Cycle
+          fr: 2ⁿᵈ Année Cycle Ingénieur
+        school: 
+          en: ESTIA
+          fr: ESTIA
+        size: 30
+      - name: 
           en: Dynamic Web Developement
           fr: Développement Web Dynamique
         tools: 
@@ -600,8 +772,8 @@ lectures:
         size: 33
 
       - name: 
-          en: Advanced Programming
-          fr: Programmation Avancée
+          en: Computer Science Project
+          fr: Projet Génie Informatique
         tools: 
           en: Continuous Integration, GitHub, C, VS Code, Command terminal
           fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
@@ -1022,8 +1194,8 @@ lectures:
         size: 29
 
       - name: 
-          en: Advanced Programming
-          fr: Programmation Avancée
+          en: Computer Science Project
+          fr: Projet Génie Informatique
         tools: 
           en: Continuous Integration, GitHub, C, VS Code, Command terminal
           fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
@@ -1057,8 +1229,8 @@ lectures:
         size: 30
 
       - name: 
-          en: Advanced Programming
-          fr: Programmation Avancée
+          en: Computer Science Project
+          fr: Projet Génie Informatique
         tools: 
           en: Continuous Integration, GitHub, C, VS Code, Command terminal
           fr: Intégration Continue, GitHub, C, VS Code, Terminal de Commande
@@ -2907,11 +3079,11 @@ publications:
               track: Long Paper
             - name: TEI 2025
               track: Long Paper
-            - name: TOG 2026
+            - name: SIGGRAPH 2026
               track: Long Paper
           note: 
-            en: "Q1 - 5.633 (SJR2025) -- best international venue in infographics and interactive techniques"
-            fr: "Q1 - 5.633 (SJR2025) -- meilleure revue internationale en infographie et techniques interactives"
+            en: "Q1 - 5.633 (SJR2025) -- best international venue in Computer Graphics and Interactive Techniques"
+            fr: "Q1 - 5.633 (SJR2025) -- meilleure revue internationale en Infographie et Techniques Interactives"
           keywords: 
             en: ["Shape-Changing Displays", "Afterimage Rendering", "Pixel Density Preservation"]
             fr: ["Afficheurs reconfigurables", "Rendu d'Image Résiduelle", "Préservation de la Densité de Pixels"]
@@ -3105,6 +3277,11 @@ reviews:
         en: ["Category", "Assigned", "Special Recognitions for Outstanding Reviews"]
         fr: ["Catégorie", "Assignées", "Reconnaissances Spéciales pour Relectures Exceptionnelles"]
   items:
+    - name: 
+        en: "MobileHCI 2026 Papers"
+        fr: "Articles MobileHCI 2026"
+      assigned: "1"
+      recognized: ""
     - name: 
         en: "CHI 2026 Papers"
         fr: "Articles CHI 2026"

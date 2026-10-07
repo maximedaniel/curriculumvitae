@@ -152,3 +152,9 @@ figcaption {
     }
 }
 
+
+
+.comment {
+  color: gray;
+  font-style: italic;   /* optional */
+}

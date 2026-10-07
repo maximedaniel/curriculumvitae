@@ -1,150 +1,274 @@
+---
+title: "Paper Writing"
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+This is an essay template for writing papers for HCI conferences such as CHI, UIST, and TEI.
+
+# Title
+
+- What is the name of the system? *(1 word)*
+- What does the system do newly or better than prior work? *(1 sentence)*
+
+::: {.panel-tabset}
+
+## ChainFORM (Nakagaki et al., UIST'16)
+
+(**What is the name of the system?**) ChainFORM : (**What does the system do newly or better than prior work?**) A Linear Integrated Modular Hardware System for Shape Changing Interfaces
+
+## CairnFORM (Daniel et al., TEI'19)
+
+(**What is the name of the system?**) CairnFORM :  (**What does the system do newly or better than prior work?**) a Shape-Changing Ring Chart Notifying Renewable Energy Availability in Peripheral Locations.
+
+## Elevate (Je et al., CHI'24)
+(**What is the name of the system?**) Elevate : (**What does the system do newly or better than prior work?**) A Walkable Pin-Array for Large Shape-Changing Terrains
+
+## ShyPins (Daniel et al., TEI'25)
+(**What is the name of the system?**) ShyPins : (**What does the system do newly or better than prior work?**) Safeguarding User Mental Safety From The Forcible (Dis)Appearance Of Pin-based Controls By Using Speed Zones.
+
+
+## MorphSkein (Daniel et al., SIGGRAPH'26)
+(**What is the name of the system?**) MorphSkein : (**What does the system do newly or better than prior work?**) A Shape-Changing Afterimage Display Preserving Pixel Density During Surface-Area Changes Across Troposkein-Based Shapes.
+
+:::
+
+
 # Abstract
 
-1. Write a fairly-specific, overarching statement about the problem domain – (1 sentence): e.g., Narrative visualisations are increasingly used for visualizing sports stories. Or, Food decision-making has been studied in the context of grocery shopping.
+- What problem or gap does this work address? *(1 sentence)*
+- What did we build, study, or propose? *(1 sentence)*
+- What is the key insight that makes the approach work? *(1–3 sentences)*
+- What are the main results, with concrete numbers or named findings? *(2–5 sentences)*
 
-2. State the problem connected to the above statement — what has not been done/known (and why it is important) – (1 sentence + the importance is optional): e.g., Yet, [some particular aspect] has not been looked at and this is important because . . . Or, However, [some aspects] have not been considered to help practitioners make decisions regarding...
+::: {.panel-tabset}
 
-3. State your method/solution to the above problem with some specific details – (1-2 sentences): e.g., To address these shortcomings, we conducted a card-sorting study by [doing this and this]. . . Or, We designed [some interface] based on studying people in their work contexts...
+## ChainFORM (Nakagaki et al., UIST'16)
 
-4. State your contributions/what you found – (1-2 sentences): e.g., Based on our analysis, we present a design space of . . . Or, We found that our participants performed better on [interface A] than that on [interface B]
+(**What problem or gap does this work address?**)ø(**What did we build, study, or propose?**) This paper presents ChainFORM: a linear, modular, actuated hardware system as a novel type of shape changing interface. Using rich sensing and actuation capability, this modular hardware system allows users to construct and customize a wide range of interactive applications. (**What is the key insight that makes the approach work?**) Inspired by modular and serpentine robotics, our prototype comprises identical modules that connect in a chain. Modules are equipped with rich input and output capability: touch detection on multiple surfaces, angular detection, visual output, and motor actuation. Each module includes a servo motor wrapped with a flexible circuit board with an embedded microcontroller. Leveraging the modular functionality, we introduce novel interaction capability with shape changing interfaces, such as rearranging the shape/configuration and attaching to passive objects and bodies. (**What are the main results, with concrete numbers or named findings?**) To demonstrate the capability and interaction design space of ChainFORM, we implemented a variety of applications for both computer interfaces and hands-on prototyping tools.
 
-5. State how your results or contributions can be useful – (1 sentence – optional): e.g., Our results have useful implications for how technology should be designed to support the grocery
-shopping experience... Or, Our characterisation can be used to understand how this process works..
+## CairnFORM (Daniel et al., TEI'19)
 
-# Introduction
-
-Write three paragraphs following this structure:
-
-## First Paragraph
-
-1. Topic
-    - Describe the research topic (what is it about?).
-    For instance, "Shape-changing interfaces are..."
-
-2. Importance
-    - Describe why the research topic is important (why should we care?).
-    For instance, "Shape-changing interfaces have the potential to..."
-
-3.  Problem
-    - Describe the specific problem that you are tackling within this research topic (what is the problem?)
-    "However, existing shape-changing interfaces do not maintain constant pixel density when the interface expands..."
-
-4. Importance again
-    -  Describe why it is important (why should we care? What are the consequences if we do not fix the problem?).
-    "Without constant pixel density, users may experience readability issues when the interface expands..."
-
-## Second Paragraph
-
-5. Limitations of existing work
-    -  Describe the landscape of existing work and their limitations (why is the problem not solved yet?). 
-    "Existing shape-changing interfaces use a fixed number of LED screens or projectors, causing the pixel density to decrease when the interface expands [citations]..."
-
-## Third Paragraph
-
-6. Proposal
-    - Describe your proposed solution to the problem (what is your proposal? What are the key benefits?).
-    "To address these limitations, we propose a novel shape-changing interface that dynamically adjusts its pixel density by... This allows for..." 
-
-7. Feasability
-    - Describe how your proposal is feasible (how did you implement it?).
-    "We implemented a prototype using... which demonstrates the feasibility of our approach by..."
-
-8. Utility
-    - Describe how you demonstrated that your proposal is useful (What existing or new applications does your proposal improve or bring?).
-    "We demonstrated the utility of our proposal through applications such as... which showed improvements in..."
-
-9. Utilisability
-    - Describe how you evaluated that your proposal is usable (how did you evaluate the benefits of
-    your proposal? what did you find compared to previous work?)
-    "We conducted a user study comparing our proposal to existing solutions, finding that participants experienced improved usability in terms of..."
-
-10. Contributions list
-    - Then, list your main contributions (what are your contributions?) in bullet points. Pick from the following types of contributions:
-        - Empirical research (Interview, diary, lab study, crowd-
-        sourced, or field study (Qual or Quant));
-        - Artifact (Input Device, System, Hardware toolkit, Input
-        technique, Envisionment);
-        - Methodological (Method application, innovation, or
-        adaptation, New measures, New instrument);
-        - Theoretical (Thought framework, Design space, Conceptual
-        model, Design criteria, Quantitative model);
-        - Dataset (Test corpus, Benchmark tasks, Corpus creation,
-        Repository, Global dataset);
-        - Survey (Techniques, Emerging topic, Tools, Domain,
-        Technology);
-        - Opinion (Evaluation, Prioritization, Application, Vision,
-        Definition).
-    "
-    Our main contributions are:
-        - A technique for maintaining constant pixel density in shape-changing
-        interfaces by...
-        - A prototype implementation demonstrating the feasibility of
-        our approach...
-        - A technical evaluation assessing the performance of our approach...
-        - Applications demonstrating the utility of our approach...
-        - A user study evaluating the usability of our approach...
-    "
-
-## Examples of Good Introduction Paragraphs from SCI Papers
-
-The number of paragraphs may vary depending on the paper, but they all content most of the elements described above.
-
-### Elevate: A Walkable Pin-Array for Large Shape-Changing Terrains (Je et al., CHI 2024)
-
-**(topic)** Today, the majority of head-mounted displays, even most commercial devices, allow users to explore virtual worlds by simply walking around in their surroundings; this is known as real-walking Virtual Reality (VR). **(importance)** The advantage of real-walking VR as a locomotion modality is that it is immersive as it stimulates the user’s proprioceptive and vestibular senses as users physically move their bodies both in the real and virtual environments. **(problem)** This compelled researchers into tackling a subsequent key challenge that arises in real-walking VR systems: not only should users be able to walk around but also they should be able to feel the terrain beneath their feet (e.g.,[18, 23, 27]).
-
-**(importance again)** In fact, although often taken for granted, walking is a rich somatosensory activity, all the way down from limb movements to the feedback we feel from the soles of our feet. The body is capable of perceiving the slightest variation in inclination, bumps, and holes in the terrain, with the feet serving simultaneously as kinesthetic [23] and tactile [44] sensors. Diferent from the hands, the static and dynamic forces applied to the feet during standing or walking are in the order of hundreds or thousands of Newtons [44], making the experience of "feeling through the feet" a unique yet powerful haptic experience.
-
-**(limitations of existing work)** The search for this elusive haptics for feet, led researchers into engineering haptic devices that can render terrains by physically displacing modular pieces that the user stands on, such as moving
-robot tiles [10], tilting haptic tiles [1, 2, 5], infatable airbags [36 , 40], tilt-adjustable treadmills [24], and pin-arrays [33]. However, these previous shape-changing foors are limited by their tabletop scale [1, 2 , 5] or the coarse resolution of the terrains they can display, due
-to the limited number of actuators [ 2 , 10 , 24 , 33 , 36 , 40] and their low vertical resolution [2, 24, 40].
-
-**(proposal)** To tackle these challenges altogether and contribute to the feld of interactive haptics, we introduce Elevate, **(faisability)** a dynamic and walkable pin array foor on which users can not only experience large variations in shapes but also subtle details of the underlying terrain, as depicted in Figure 1. Our device achieves this by means of 1200 individually controllable pins arranged on a 1.80m × 0.60m platform. Furthermore, each 3cm × 3cm size pin can be actuated to one of ten height levels (resolution: 15mm/level). **(utility)** To illustrate the design space enabled by this one-of-a-kind large-scale haptic foor, we present it in combination with several real-walking VR and standalone applications. **(utilisability)** Lastly, we validated our prototype through a user study in VR, in which participants reported increased realism and enjoyment when experiencing the VR environment via Elevate.
-
-### ChainFORM
-
-**(topic)** As shape changing interfaces being an emerging field in HCI, a lot of actuation techniques have been introduced to provide physical shapes to represent digital data and to embody spatial interactions [9, 4]. **(importance)** Researchers are continually seeking techniques that have a variety of transformational capabilities in different geometries and scales [14, 24]. To extend the sensing and display capability of such shape changing interfaces, extra sensors or cameras and projectors have been installed for detecting human input and displaying information on the active surfaces. **(problem)** However, this strategy poses a challenge for scaling the system, which presents a problem especially for mobile applications. **(importance again)** To push the boundaries of shape-changing interface research, another approach calls for self-contained systems that integrate sensing, actuation and display across different scales, geometries, and transformations.
-
-**(proposal)** We present ChainFORM: a modular integrated hardware system that has a chained, linear form factor (Figure 1). The hardware comprises identical actuated modules connected in series, which allows the user to customize the length and the configuration of devices they construct. The form-factor of line and the modularity expands the possibility of transformation for both shapes and scales. In addition, each module integrates sensing, actuation, and display, enabling a wide array of applications and interactions to be developed with a uniform, easily scalable hardware infrastructure. **(limitations of existing work)** Our approach is a step toward a general platform for custom shape-changing interfaces. Building on the idea and implementation of modular and serpentine robotics[17, 33, 35, 34, 30], we intend to extend their knowledge and technique to enrich interactions with shape-changing interfaces.
-
-In this paper, we **(feasability)** describe the technical implementation of our prototype and **(utility)** present a wide range of applications to demonstrate the modularity and rich input and output capability of our hardware design. **(usability)** We conducted technical evaluations and discuss the capabilities and limitations of our current prototype, with points for future improvement. The contributions of the paper are as follows:
-1. We developed a modular shape changing interface system which has a linear configuration. The module connect together to form an arbitrary linear shape using mechanical joints and electrical communication architecture.
-2. We designed each module of the hardware system to have self-contained sensing, actuation and display system together for rich interaction capability.
-3. We performed technical evaluations of the system.
-4. We implemented a variety of application scenarios for shape changing computer interfaces and actuated prototyping tools.
+(**What problem or gap does this work address?**)ø(**What did we build, study, or propose?**) We present CairnFORM, a shape-changing cylindrical display that physicalizes forecasts of renewable energy availability. CairnFORM aims at creating and encouraging new socially-shared practices by displaying energy data in collective and public spaces, such as public places and workplaces. (**What is the key insight that makes the approach work?**) It is 360˚-readable, and as a dynamic physical ring chart, it can change its cylindrical symmetry with quiet motion. (**What are the main results, with concrete numbers or named findings?**) We conducted two user studies. The first study clearly revealed the attractiveness of CairnFORM in a public place and its usability for a range task and for a compare task. Consequently, this makes CairnFORM useful to analyze renewable energy availability. The second study revealed that a non-constant motion speed is the better visualization stimulus at a workplace.
 
 
-# Related Work
+## Elevate (Je et al., CHI'24)
 
-1. Describe the method used to select the related work.
-1. Question formulation. Define research questions (e.g., How
-to implement pin-based shape-changing interfaces?).
-2. Search strategy. Define review scope and search strings
-(i.e., databases set, years range, keywords list, results count).
-3. Selection process. Define inclusion (e.g., entry describes
-and illustrates a functional prototype) and exclusion (e.g.,
-duplicated entry) criteria.
-4. Strength of evidence. Define what makes a high quality
-paper (e.g., shape-changing capabilities, reproducibility).
-5. Analysis. Extract evidence from the selected papers
-(descriptive statistics, statistics plotting).
-6. Synthesis. Structure evidence in order to draw conclusions
-(tendencies, divergences).
+(**What problem or gap does this work address?**) Current head-mounted displays enable users to explore virtual worlds by simply walking through them (i.e., real-walking VR). This led researchers to create haptic displays that can also simulate different types of elevation shapes. However, existing shape-changing floors are limited by their tabletop scale or the coarse resolution of the terrains they can display due to the limited number of actuators and low vertical resolution. (**What did we build, study, or propose?**) To tackle this challenge, we introduce Elevate, a dynamic and walkable pin-array floor on which users can experience not only large variations in shapes but also the details of the underlying terrain. (**What is the key insight that makes the approach work?**) Our system achieves this by packing 1200 pins arranged on a 1.80 × 0.60m platform, in which each pin can be actuated to one of ten height levels (resolution: 15mm/level). (**What are the main results, with concrete numbers or named findings?**) To demonstrate its applicability, we present our haptic floor combined with four walkable applications and a user study that reported increased realism and enjoyment.
 
-David Moher, Alessandro Liberati, Jennifer Tetzlaff, and
-Douglas G Altman. 2009. Preferred reporting items for
-systematic reviews and meta-analyses: the PRISMA
-statement. Annals of internal medicine 151, 4 (2009),
-264–269.
+## ShyPins (Daniel et al., TEI'25)
 
-# Proposal
+(**What problem or gap does this work address?**) Pin-based shape displays can cause psychological harm by forcefully making tangible controls (dis)appear in contact with users. (**What did we build, study, or propose?**) We present ShyPins, a pin-based shape display regulating pin motion based on proximity to the user’s body to prevent such incidents. (**What is the key insight that makes the approach work?**)ø(**What are the main results, with concrete numbers or named findings?**) A first user study reveals that for system-triggered actuation, gradually decreasing pins’ speed as users get closer is perceived as safer than pausing pins immediately when users are too close. For user-triggered actuation, the perceived safety of both strategies depends on user preferences. However, pausing a pin motion creates an incoherence between the physical artifact and the digital data. Thus, to inform users about paused pins, the safeguard projects pause icons and stop zones onto the pin-based surface. A second study reveals that projecting user-centered stop zones is perceived safer than pin-centered ones. Additionally, pin-based surfaces are perceived as less safe when users approach pins in motion than when pins approach users.
 
-# Implementation
+## MorphSkein (Daniel et al., SIGGRAPH'26)
 
-# Evaluation
+(**What problem or gap does this work address?**) Shape-changing displays typically lose pixel density as surface area expands, limiting their usability. (**What did we build, study, or propose?**) We introduce MorphSkein, a shape-changing after-image display that preserves initial density (1.44 px/cm2) across naturally occurring axisymmetric shapes generated by spinning cables (troposkeins). (**What is the key insight that makes the approach work?**) The system uses a telescopic pole and four LED-strip rewinders on a rotating base. As the strips spin, centrifugal force forms troposkeins, and persistence of vision creates 360°-visible displays, while adjusting pole height and strip lengths changes their shape. As surface area grows, pixel density is preserved vertically by releasing new rows from the rewinders and horizontally by rendering extra columns per revolution with the strips. This keeps comparable density along the central horizontal line of the display, with naturally higher density toward the top and bottom where the troposkein curves inward. (**What are the main results, with concrete numbers or named findings?**) Because the technique relies on a mathematical model assuming ideal troposkein geometry, angular velocity becomes critical: incorrect speeds degrade pixel density accuracy, axisymmetric shape fidelity, or both. Interpolation of experimental data shows that 69.44% of reachable troposkein configurations achieve ⩾90% density accuracy and shape fidelity for at least one operating speed. Remaining cases degrade due to insufficient motor speed or limited MCU speed and LED refresh rate. Limitations and improvements are discussed.
 
-# Applications
+:::
 
-# Discussion/Theoritical Limitations/Technical Improvements
 
-# Conclusion
+
+# 1. Introduction
+
+*Typically 3–4 paragraphs: topic and problem, limitations of existing work, proposal and results, and contributions (often merged into the previous paragraph).*
+
+1. Topic, Problem and Importance
+    - What is the topic and why does it matter?
+    - What is the problem and why does it matter?
+
+2. Limitations of existing work
+    - What has previous work done, and why is it not enough?
+
+3. Proposal and Results
+    - What is our key insight or idea?
+    - How did we evaluate it, and what were the headline results?
+
+4. Contributions
+    - What are the contributions of this paper, stated as claims that can be checked? List them as bullet points, each of one of the following types:
+        - Empirical research (Interview, diary, lab study, crowdsourced, or field study (Qual or Quant));
+        - Artifact (Input Device, System, Hardware toolkit, Input technique, Envisionment);
+        - Methodological (Method application, innovation, or adaptation, New measures, New instrument);
+        - Theoretical (Thought framework, Design space, Conceptual model, Design criteria, Quantitative model);
+        - Dataset (Test corpus, Benchmark tasks, Corpus creation, Repository, Global dataset);
+        - Survey (Techniques, Emerging topic, Tools, Domain, Technology);
+        - Opinion (Evaluation, Prioritization, Application, Vision, Definition).
+    - Example: *"Our main contributions are: (1) a technique for maintaining constant pixel density in shape-changing interfaces by...; (2) a prototype implementation demonstrating the feasibility of our approach...; (3) a technical evaluation assessing the performance of our approach...; (4) applications demonstrating the utility of our approach...; (5) a user study evaluating the usability of our approach..."*
+
+::: {.panel-tabset}
+
+## ChainFORM (Nakagaki et al., UIST'16)
+
+(**What is the topic and why does it matter?**) As shape changing interfaces being an emerging field in HCI, a lot of actuation techniques have been introduced to provide physical shapes to represent digital data and to embody spatial interactions [9, 4]. Researchers are continually seeking techniques that have a variety of transformational capabilities in different geometries and scales [14, 24]. To extend the sensing and display capability of such shape changing interfaces, extra sensors or cameras and projectors have been installed for detecting human input and displaying information on the active surfaces. (**What is the problem and why does it matter?**) However, this strategy poses a challenge for scaling the system, which presents a problem especially for mobile applications. To push the boundaries of shape-changing interface research, another approach calls for self-contained systems that integrate sensing, actuation and display across different scales, geometries, and transformations.
+
+(**What is our key insight or idea?**) We present ChainFORM: a modular integrated hardware system that has a chained, linear form factor (Figure 1). The hardware comprises identical actuated modules connected in series, which allows the user to customize the length and the configuration of devices they construct. The form-factor of line and the modularity expands the possibility of transformation for both shapes and scales. In addition, each module integrates sensing, actuation, and display, enabling a wide array of applications and interactions to be developed with a uniform, easily scalable hardware infrastructure. (**What has previous work done, and why is it not enough?**) Our approach is a step toward a general platform for custom shape-changing interfaces. Building on the idea and implementation of modular and serpentine robotics [17, 33, 35, 34, 30], we intend to extend their knowledge and technique to enrich interactions with shape-changing interfaces.
+
+(**How did we evaluate it, and what were the headline results?**) In this paper, we describe the technical implementation of our prototype and present a wide range of applications to demonstrate the modularity and rich input and output capability of our hardware design. We conducted technical evaluations and discuss the capabilities and limitations of our current prototype, with points for future improvement. (**What are the contributions of this paper, stated as claims that can be checked?**) The contributions of the paper are as follows: (1) We developed a modular shape changing interface system which has a linear configuration. The module connect together to form an arbitrary linear shape using mechanical joints and electrical communication architecture. (2) We designed each module of the hardware system to have self-contained sensing, actuation and display system together for rich interaction capability. (3) We performed technical evaluations of the system. (4) We implemented a variety of application scenarios for shape changing computer interfaces and actuated prototyping tools.
+
+## CairnFORM (Daniel et al., TEI'19)
+
+(**What is the topic and why does it matter?**) Demand-Side Management (DSM) can help to increase the consumption of renewable energy. (**What is the problem and why does it matter?**) However, as energy generation shifts to renewables and microgeneration, the interplay between energy supply and energy demand becomes more complex to manage. Critical problems, such as peak demand, can lead to power outages and make the electrical grid inefficient [10]. These issues are amplified by the fluctuation of renewable energy generation according to weather conditions (e.g., sun, wind, wave, tide) and by the limitations of energy storage capacities [14]. Unless energy storage becomes economically and environmentally reliable to balance energy supply against energy demand [37], we will need to synchronize energy demand with renewable energy availability.
+
+(**What has previous work done, and why is it not enough?**) During the last five years, researchers have designed and studied systems to encourage users in using renewable energy. Most of these systems target households. As suggested by Pierce and Paulos [45], we should also design systems for collective or public spaces, as workplaces, cafes, parks, schools, museums, and urban places. These targeted contexts require adapted displays and visualization elements.
+
+(**What is our key insight or idea?**) In this paper, we present CairnFORM, a shape-changing cylindrical display that can change cylindrical symmetry. We use CairnFORM as a 360˚-readable, dynamic ring chart that physicalizes renewable energy data in public spaces, such as public places and workplaces. (**How did we evaluate it, and what were the headline results?**) The remainder of this paper is organized as follows. In the following section, we present the major requirements that lead to the design of a new kind of display. In Section 3, we discuss some solutions from previous work. Then, in Section 4, we describe our CairnFORM shape-changing interface in detail and propose three possible motion speeds to animate it at workplaces. In Section 5, we describe the two user studies that we conducted in order to evaluate CairnFORM and the motion speeds. Then, in Section 6, we outline the contribution of these studies, for both the domains of energy demand-side management and shape-changing interfaces. In Section 7, we discuss the contributions and the limitations of this work. Finally, we conclude and provide directions for future work. (**What are the contributions of this paper, stated as claims that can be checked?**)ø
+
+## Elevate (Je et al., CHI'24)
+
+(**What is the topic and why does it matter?**) Today, the majority of head-mounted displays, even most commercial devices, allow users to explore virtual worlds by simply walking around in their surroundings; this is known as real-walking Virtual Reality (VR). The advantage of real-walking VR as a locomotion modality is that it is immersive as it stimulates the user’s proprioceptive and vestibular senses as users physically move their bodies both in the real and virtual environments. (**What is the problem and why does it matter?**) This compelled researchers into tackling a subsequent key challenge that arises in real-walking VR systems: not only should users be able to walk around but also they should be able to feel the terrain beneath their feet (e.g., [18, 23, 27]).
+
+In fact, although often taken for granted, walking is a rich somatosensory activity, all the way down from limb movements to the feedback we feel from the soles of our feet. The body is capable of perceiving the slightest variation in inclination, bumps, and holes in the terrain, with the feet serving simultaneously as kinesthetic [23] and tactile [44] sensors. Different from the hands, the static and dynamic forces applied to the feet during standing or walking are in the order of hundreds or thousands of Newtons [44], making the experience of "feeling through the feet" a unique yet powerful haptic experience.
+
+(**What has previous work done, and why is it not enough?**) The search for this elusive haptics for feet, led researchers into engineering haptic devices that can render terrains by physically displacing modular pieces that the user stands on, such as moving robot tiles [10], tilting haptic tiles [1, 2, 5], inflatable airbags [36, 40], tilt-adjustable treadmills [24], and pin-arrays [33]. However, these previous shape-changing floors are limited by their tabletop scale [1, 2, 5] or the coarse resolution of the terrains they can display, due to the limited number of actuators [2, 10, 24, 33, 36, 40] and their low vertical resolution [2, 24, 40].
+
+(**What is our key insight or idea?**) To tackle these challenges altogether and contribute to the field of interactive haptics, we introduce Elevate, a dynamic and walkable pin array floor on which users can not only experience large variations in shapes but also subtle details of the underlying terrain, as depicted in Figure 1. Our device achieves this by means of 1200 individually controllable pins arranged on a 1.80m × 0.60m platform. Furthermore, each 3cm × 3cm size pin can be actuated to one of ten height levels (resolution: 15mm/level). To illustrate the design space enabled by this one-of-a-kind large-scale haptic floor, we present it in combination with several real-walking VR and standalone applications. (**How did we evaluate it, and what were the headline results?**) Lastly, we validated our prototype through a user study in VR, in which participants reported increased realism and enjoyment when experiencing the VR environment via Elevate. (**What are the contributions of this paper, stated as claims that can be checked?**)ø
+
+## ShyPins (Daniel et al., TEI'25)
+
+(**What is the topic and why does it matter?**) Pin-based shape displays are actuated pin arrays creating interactive physical surfaces: both the system and the user can pull and push pins to physically interact with each other [17, 21, 40, 52, 57]. As demonstrated by Follmer et al. [17], these displays have the capability to make tangible controls appear or disappear on demand through pin actuation (buttons [17], dials [52], handles [17], joysticks [40], sliders [52]). (**What is the problem and why does it matter?**) However, safety is a significant challenge to address before allowing end-users to interact with shape-changing interfaces in real-world scenarios [4, 25, 43, 53]. Any program can request a pin-based shape display, lacking proper safeguards, to make a tangible control appear by forcefully pushing pins into the user’s arm or disappear by forcefully pulling pins from the user’s hand. Although pin-based shape displays are designed with power and force limitations to prevent physical harm to the user’s body, the psychological impact of tangible controls forcefully (dis)appearing in contact with users cannot be overlooked. Indeed, incorrect or unexpected physical interaction of actuated devices with humans can evoke negative emotional responses such as distrust, discomfort, stress, fear, anxiety, and surprise, compromising the perceived safety of such devices [2, 48].
+
+(**What has previous work done, and why is it not enough?**) In Robotics, a standard safety measure involves establishing safety speed zones around actuated devices to prevent unintended physical interaction with humans [58–60]. Our proposal extends this concept by implementing safety speed zones around individual pins to prevent the forcible (dis)appearance of tangible controls during user interaction. This ensures that tangible controls only become active when not in close proximity with users and do not cause psychological harm to users. Extensive research has investigated the impact of safety zones on the mental safety of human beings supervising large system-controlled devices such as industrial manipulators [2, 46, 48]. However, it is not clear how safety zones affect the well-being of humans physically interacting with an assembly of small user- or system-controlled devices such as pin-based shape displays. Furthermore, safety zones present a challenge when pausing pin motions, as this can introduce a discrepancy between the physical shape of the display (actual pin height) and the underlying digital data of the application (intended pin height). Solutions such as projecting pause icons and safety zones on the pin-based surface can help notify users about this discrepancy. Prior research has demonstrated that projecting safety zones around a robot effectively communicates reasons for slowdowns or halts [59, 60]. Alternatively, visualizing safety zones around the user’s body parts rather than individual pins presents another approach. However, the effectiveness of one approach over the other in enhancing the perceived safety of pin-based shape displays remains unclear.
+
+(**What is our key insight or idea?**) In this paper, we introduce ShyPins, a 5x6 replica of the actuated pin array of the Emergeables system [40] enabling various tangible controls to (dis)appear dynamically (e.g., buttons, dials, joysticks). The system incorporates a safeguard that regulates pin motion based on their proximity to the user’s body using a motion capture technology. Spatial augmented reality is used to project pause icons and safety zones onto pins that are paused by the safeguard. (**How did we evaluate it, and what were the headline results?**) A first lab study reveals that three speed zones (stop, half speed, full speed) is perceived as safer than two speed zones (stop, full speed) for system-triggered pin motions while the perceived safety of both strategies depends on user preferences for user-triggered pin motions. A second lab study reveals that projecting user-centered stop zones to inform users about paused pins is perceived as safer than pin-centered ones. Lastly, users approaching pins in motion is perceived as less safe than pins approaching a user’s body part. (**What are the contributions of this paper, stated as claims that can be checked?**) Our contributions are: (1) Knowledge transfer from Robotics focusing on ensuring the physical and mental safety of human beings interacting with actuated devices. (2) A comparative evaluation of the perceived safety of pin-based shape displays with varying safety zone numbers. (3) A comparative evaluation of the perceived safety of pin-based shape displays visualizing pin-centered safety zones or, a novel approach, user-centered safety zones.
+
+## MorphSkein (Daniel et al., SIGGRAPH'26)
+
+(**What is the topic and why does it matter?**) Axisymmetric shapes are symmetric around an axis and enable 360°-visible displays that communicate information to all surrounding users. Such displays appear in various forms (e.g., cone [3CINNODisplay 2024], sphere [Machida 2002], cylinder [Yendo et al. 2005]) at different scales (e.g., hand [Priyadarshana et al. 2016], desk [Miyafuji et al. 2017], room [Machida 2002]). (**What is the problem and why does it matter?**) However, fixed geometry limits their versatility across applications and scales. First, each form induces application-specific distortions, such as spherical mapping for planet textures [Machida 2002] or cylindrical mapping for avatar bodies [Bolton et al. 2012]. Second, small systems [Miyafuji et al. 2017; Priyadarshana et al. 2016] cannot present large-scale content, while large systems [Bolton et al. 2012; Machida 2002; Yendo et al., 2005] are too bulky for compact spaces despite supporting small images.
+
+(**What has previous work done, and why is it not enough?**) Shape-changing axisymmetric displays address these limitations, using approaches like projection mapping on inflatable balloons [Toyohara et al. 2018] or LEDs embedded in expandable ring stacks [Daniel and Rivière 2021; Daniel et al. 2019; Lakatods 2012], allowing dynamic adaptation to different forms and scales. However, existing shape-changing systems have static pixel resolution and cannot maintain density as their surface area grows—pixels enlarge like balloons or spread along expanding rings. This causes two main issues: first, enlarged or spaced pixels reduce clarity and sharpness, making text, charts, and images harder to read and increasing user effort and fatigue [Legge et al. 1985; Näsänen and Ojanpää 2003]. Second, without adding pixels, larger displays cannot show more content or higher resolution, limiting their usefulness compared to multiple static displays. Preserving pixel density during transformations is therefore essential for usability.
+
+(**What is our key insight or idea?**) Inspired by troposkeins, we introduce MorphSkein—a shape-changing axisymmetric display that preserves pixel density across varying surface areas via dynamic pixel resolution (Figure 1, left). Unlike prior systems using LED embedding or projection mapping, our prototype leverages afterimage rendering to maintain density across naturally forming axisymmetric shapes traced by a spun cable (troposkeins). The system enables control over the form, scale, transparency, and superimposition of axisymmetric displays (Figure 1, right). It consists of a telescopic pole and four LED strip rewinders mounted on a spinning base (Figure 1, center). As the strips spin, centrifugal force forms troposkeins, and persistence of vision creates 360°-visible displays. Shape control uses two parameters: the telescopic pole adjusts the height of all troposkeins, while each rewinder sets individual lengths. A density of 1.44 px/cm is preserved vertically by releasing new 7 mm-pitch rows from the rewinders for longer troposkeins, while horizontally additional columns are rendered per revolution for wider troposkeins to maintain a 7 mm pitch along the central horizontal line. Away from this line, the troposkein curves inward toward the top and bottom, reducing horizontal pixel pitch below 7 mm and increasing density beyond 1.44 px/cm. (**How did we evaluate it, and what were the headline results?**) Because the technique relies on a mathematical model assuming ideal troposkein geometry, angular velocity becomes critical to maintain pixel density and shape fidelity. We describe the system and evaluate how angular speed affects these metrics. The system supports 16985 display configurations spanning troposkein lengths of 21.7–75.6 cm and heights of 20–50 cm (radii 13.4–44.4 cm). Interpolation from 18 measured configurations shows that 69.44% of all configurations achieve ⩾90% accuracy on both metrics for at least one speed within 150–330 RPM (10–22 Hz refresh rate). These high-performance configurations are concentrated primarily within radii of 21–42.2 cm (68.39% of the range). At smaller radii, shape fidelity degrades due to insufficient motor speed, while at larger radii, pixel density degrades due to insufficient MCU speed and LED refresh rate. Finally, we discuss limitations (user safety and physical interaction, shape variety and stability) and opportunities for improvement (pixel density, frame rate, image size, color depth, pixel alignment, display aperture, and noise). (**What are the contributions of this paper, stated as claims that can be checked?**)ø
+
+:::
+
+# 2. Related Work
+
+- Quickly cite the research areas that our work builds on *(1 paragraph, 4–8 sentences)*
+
+## {One sub-section per research area} *(1 paragraph)*
+
+- Explain what the research area is about, and why it is relevant to this work *(1–2 sentences)*
+- Explain the key prior works in this area, and what they achieved *(1–2 sentences per work)*
+- Explain how our work differs from or extends that prior work *(1–2 sentences per work)*
+- Include a comparison table of prior work, if applicable.
+
+# 3. System
+
+- Remind the reader of what is new or better about the system compared to prior work. *(1 paragraph, 4–8 sentences)*
+- Explain how the system works, what are its key components, and how they work together. *(1 paragraph, 4–8 sentences)*
+
+## Design space / system Capabilities
+
+- Include a figure or table of the design space, if applicable.
+- Explain each dimension of the design space, and how the system enables it. *(1 paragraph, 4–8 sentences)*
+
+## Hardware / software implementation
+
+- Include a figure of the system architecture, if applicable.
+- Explain the hardware and software implementation, and how they work together. *(1 paragraph, 4–8 sentences)*
+
+# 4. Technical Evaluation *(if applicable)*
+
+- Explain why we need a technical evaluation, and what it will show. *(1 paragraph, 4–8 sentences)*
+- Explain if the evaluation is related to previous work, and how it is different. *(1 paragraph, 4–8 sentences)*
+
+## Factors
+
+- Explain the factors of the evaluation (baseline or comparison conditions). *(1 paragraph, 4–8 sentences)*
+
+## Variables
+
+- Explain the response variables of the evaluation *(1 paragraph, 4–8 sentences)*
+- Explain what we measured, and with which instruments for each response variable. *(1 paragraph, 4–8 sentences)*
+
+## Apparatus and Procedure
+
+- Explain the apparatus of the evaluation (positioning, calibration, etc.). *(1 paragraph, 4–8 sentences)*
+- Explain the procedure of the evaluation (training, order, counterbalancing, duration). *(1 paragraph, 4–8 sentences)*
+
+## Results
+
+- Explain the analysis of the data, and which statistical tests were used. *(1 paragraph, 4–8 sentences)*
+- Explain the results of the evaluation, with exact statistics and effect sizes. *(1 paragraph, 4–8 sentences)*
+- Explain which results were unexpected or negative. *(1 paragraph, 4–8 sentences)*
+
+# 5. User Study
+
+- Remind the reader of the research question that the user study addresses. *(1–2 sentences)*
+- List the hypotheses that the study tests. *(1–2 sentences)*
+- Explain why this study method is the right one for these claims based on previous work. *(1–2 sentences)*
+
+## Factors
+
+- Explain the factors of the study (baseline or comparison conditions). *(1 paragraph, 4–8 sentences)*
+
+## Tasks
+
+- Explain the tasks that participants performed. *(1 paragraph, 4–8 sentences)*
+
+## Variables
+
+- Explain the response variables of the study *(1 paragraph, 4–8 sentences)*
+- Explain what we measured, and with which instruments for each response variable. *(1 paragraph, 4–8 sentences)*
+
+## Participants
+
+- Explain who the participants were (number, demographics, expertise, recruitment, compensation). *(1 paragraph, 4–8 sentences)*
+
+## Apparatus and Procedure
+
+- Explain the apparatus of the study (positioning, calibration, etc.). *(1 paragraph, 4–8 sentences)*
+- Explain the procedure of the study (training, order, counterbalancing, duration). *(1 paragraph, 4–8 sentences)*
+
+## Results
+
+- Explain the analysis of the data, and which statistical tests were used. *(1 paragraph, 4–8 sentences)*
+- Explain the results of the study, with exact statistics and effect sizes + quotes from participants. *(1 paragraph, 4–8 sentences)*
+- Comment on results which were unexpected or negative. *(1 paragraph, 4–8 sentences)*
+
+
+# 6. Applications
+
+- Explain the different applications that the system enables, and how they demonstrate the capabilities of the system. *(1–2 sentences)*
+
+## {One sub-section per category of applications}
+
+- Give a concrete usage scenario for this category of applications leveraging the system's capabilities. *(1 paragraph, 4–8 sentences)*
+- Include a figure of the applications, if applicable.
+
+# 7. Discussion
+
+- Summarize the main lessons/takeaways learned from this work in light of the results and applications. *(1–2 sentences)*.
+
+## {One sub-section per takeaway, as applicable}
+
+- Explain the lesson/takeaway, and why it is important. *(1–2 sentences)*
+- Explain how it relates to prior work. *(1–2 sentences)*
+- Explain the implications for future work. *(1–2 sentences)*
+
+# 8. Conclusion
+
+- Remind the reader of the problem we tackled, what we did, and what we found or enabled. *(1–2 sentences)*
+- Remind the reader of the lessons/takeaways learned from this work *(1–2 sentences)*
+
+
+# Appendix: Systematic Literature Review
+
+Describe the method used to select the related work:
+
+1. Question formulation. Define research questions (e.g., How to implement pin-based shape-changing interfaces?).
+2. Search strategy. Define review scope and search strings (i.e., databases set, years range, keywords list, results count).
+3. Selection process. Define inclusion (e.g., entry describes and illustrates a functional prototype) and exclusion (e.g., duplicated entry) criteria.
+4. Strength of evidence. Define what makes a high quality paper (e.g., shape-changing capabilities, reproducibility).
+5. Analysis. Extract evidence from the selected papers (descriptive statistics, statistics plotting).
+6. Synthesis. Structure evidence in order to draw conclusions (tendencies, divergences).
+
+David Moher, Alessandro Liberati, Jennifer Tetzlaff, and Douglas G Altman. 2009. Preferred reporting items for systematic reviews and meta-analyses: the PRISMA statement. Annals of internal medicine 151, 4 (2009), 264–269.
+
+

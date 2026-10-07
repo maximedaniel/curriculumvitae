@@ -2,7 +2,7 @@
 
 #!/bin/bash
 virtual_host="www.maximedaniel.me"
-user_machine="root@82.64.250.105"
+user_machine="home"
 
 
 # duplicate index.qmd to printable.qmd

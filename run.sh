@@ -13,4 +13,4 @@ sed -i 's/en: true/fr: true/' printable_fr.qmd
 
 
 
-quarto preview --no-browser
+quarto preview --no-browser --port 4307

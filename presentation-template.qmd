@@ -1,0 +1,17 @@
+---
+title: "Presentation Template"
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1300px
+      margin-width: 200px
+      gutter-width: 1.5rem
+    include-title: false
+    title-block: false
+---
+
+
+```{=html}
+<iframe class="slide-deck" src="presentation-template-revealjs.html" width="100%" height="500"></iframe>
+```

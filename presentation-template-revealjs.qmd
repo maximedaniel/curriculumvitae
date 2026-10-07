@@ -1,0 +1,99 @@
+---
+title: "HCI Presentation Template"
+subtitle: "Questions to answer in your presentation"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    embed-resources: true
+    css: css/slides.css
+---
+
+## Introduction
+
+- Teaser (image/video)
+- Title
+- Authors (orator presenting in bold)
+- Affiliations
+- Fundings
+
+## Motivation
+
+[Context]{.slide-subtitle}
+
+- What is the context?
+
+## Motivation
+
+[Problem]{.slide-subtitle}
+
+- What is the problem?
+- Why is it important?
+
+## Background
+
+[Previous work]{.slide-subtitle}
+
+- What are the previous works related to this problem? (at least 3 references)
+
+## Background
+
+[Research Gap]{.slide-subtitle}
+
+- What is the gap that previous work fail to close? (a comparison table is recommended)
+
+
+## Proposal
+
+[Concept]{.slide-subtitle}
+
+- What idea do you propose to close the gap? (visuals are recommended)
+
+## Implementation
+
+[Hardware & Software]{.slide-subtitle}
+
+- How did you implement your idea? (hardware, software, algorithms, diagrams, CAD drawings, etc.)
+
+## Technical Evaluation
+
+[Design]{.slide-subtitle}
+
+
+- What is the research question?
+- What are the hypotheses?
+- How did you design your technical evaluation? (factors, variables, apparatus, procedure)
+
+## Technical Evaluation
+
+[Results and Discussion]{.slide-subtitle}
+
+- What are the results of your user study? (descriptive statistics, inferential statistics, figures, tables)
+- What are the implications of your results? (limitations, threats to validity, lessons learned)
+
+
+## User Study
+
+[Design]{.slide-subtitle}
+
+- What is the research question?
+- What are the hypotheses?
+- How did you design your user study? (factors, tasks, variables, participants, apparatus, procedure)
+
+## User Study
+
+[Results and Discussion]{.slide-subtitle}
+
+- What are the results of your user study? (descriptive statistics, inferential statistics, figures, tables)
+- What are the implications of your results? (limitations, threats to validity, lessons learned)
+
+
+## Limitations and Future Work
+
+- What are the limitations of your work?
+- What are the future directions of your work?
+
+## Conclusion
+
+- What are the main contributions of your work?
+- Thank the audience for their attention and ask for questions.

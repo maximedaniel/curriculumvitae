@@ -14,13 +14,15 @@ website:
           - user-scenario.qmd
           - design-methods.qmd
           - paper-writing.qmd
+          - presentation-template.qmd
 
 
 format:
   html:
     theme:
       - cosmo
-    css: css/style.css
+    css:
+      - css/style.css
     toc: true
     include-in-header:
       text: |

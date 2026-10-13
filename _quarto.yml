@@ -2,8 +2,10 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "*.md"
-    - "!CLAUDE.md"
+    - "!notes/"
+    - "!sources/"
+  resources:
+    - "pages/research/slr/**"
 
 filters: ["filters/main.lua"]
 
@@ -11,14 +13,14 @@ website:
   title: "Home"
   navbar:
     left:
-      - research.qmd
+      - pages/research/research.qmd
     right:
       - text: "Misc"
         menu:
-          - user-scenario.qmd
-          - design-methods.qmd
-          - paper-writing.qmd
-          - presentation-template.qmd
+          - pages/teaching/user-scenario.qmd
+          - pages/teaching/design-methods.qmd
+          - pages/teaching/paper-writing.qmd
+          - pages/teaching/presentation-template.qmd
 
 
 format:
@@ -26,17 +28,17 @@ format:
     theme:
       - cosmo
     css:
-      - css/style.css
+      - assets/css/style.css
     toc: true
     include-in-header:
       text: |
         <meta name="google-site-verification" content="MN4fn86K1DpKV0jR0rbbUHYzjk9MwgfsGbGnSNdN4CI">
-        <script type="application/javascript" src="js/jquery-3.7.1.min.js"></script>
+        <script type="application/javascript" src="/assets/js/jquery-3.7.1.min.js"></script>
     include-after-body:
       text: |
-        <script type="application/javascript" src="js/video_embedding.js"></script>
-        <script type="application/javascript" src="js/btn_collapse.js"></script>
-        <script type="application/javascript" src="js/printable.js"></script>
+        <script type="application/javascript" src="/assets/js/video_embedding.js"></script>
+        <script type="application/javascript" src="/assets/js/btn_collapse.js"></script>
+        <script type="application/javascript" src="/assets/js/printable.js"></script>
   # pdf:
   #   toc: true
   #   number-sections: true

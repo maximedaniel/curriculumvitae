@@ -1,4 +1,7 @@
-package.path = package.path .. ';filters/missions.lua;filters/animations.lua;filters/profil.lua;filters/projects.lua;filters/experiences.lua;filters/educations.lua;filters/publications.lua;filters/coordinations.lua;filters/lectures.lua;filters/reviews.lua;filters/theses.lua;filters/supervisions.lua'
+-- Find the modules from the project root, not from the directory of the page.
+local project_root = pandoc.path.directory(quarto.utils.resolve_path("main.lua"))
+project_root = pandoc.path.directory(project_root)
+package.path = package.path .. ';' .. pandoc.path.join({project_root, '?.lua'})
 
 local Profil = require("filters.profil")
 local Projects = require("filters.projects")

@@ -1,0 +1,129 @@
+
+
+
+::: {.profil}
+
+:::
+
+
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+::: {.content-visible when-meta="en"}
+
+# {{< meta experiences.title.en>}}
+
+:::
+
+::: {.content-visible when-meta="fr"}
+
+# {{< meta experiences.title.fr>}}
+
+:::
+
+::: {.experiences}
+
+:::
+
+:::
+
+::: {.g-col-12 .g-col-sm-12 .g-col-md-12 .g-col-lg-6 .g-col-print-6}
+
+::: {.content-visible when-meta="en"}
+
+# {{< meta educations.title.en>}}
+
+:::
+
+::: {.content-visible when-meta="fr"}
+
+# {{< meta educations.title.fr>}}
+
+:::
+
+::: {.educations}
+
+:::
+
+:::
+
+:::
+
+# [{{< meta researchs.title.en>}}]{.content-visible when-meta="en"}[{{< meta researchs.title.fr>}}]{.content-visible when-meta="fr"}
+
+## [{{< meta theses.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta theses.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.theses}
+
+:::
+
+## [{{< meta projects.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta projects.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.projects}
+
+:::
+
+
+## [{{< meta publications.title.en>}}]{.content-visible when-meta="en"}[{{< meta publications.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.publications}
+
+:::
+
+
+## [{{< meta reviews.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta reviews.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.reviews}
+
+:::
+
+
+## [{{< meta supervisions.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta supervisions.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.supervisions}
+
+:::
+
+## [{{< meta animations.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta animations.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.animations}
+
+:::
+
+# [{{< meta teachings.title.en>}}]{.content-visible when-meta="en"}[{{< meta teachings.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+## [{{< meta coordinations.titles.title.en>}}]{.content-visible when-meta="en"}[{{< meta coordinations.titles.title.fr>}}]{.content-visible when-meta="fr"}
+
+::: {.coordinations}
+
+:::
+
+## [{{< meta lectures.title.en>}}]{.content-visible when-meta="en"}[{{< meta lectures.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.lectures}
+
+:::
+
+# [{{< meta others.title.en>}}]{.content-visible when-meta="en"}[{{< meta others.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+## [{{< meta missions.title.en>}}]{.content-visible when-meta="en"}[{{< meta missions.title.fr>}}]{.content-visible when-meta="fr"}
+
+
+::: {.missions}
+
+:::
+
+
+
+<!-- ### References
+
+::: {#refs}
+::: -->

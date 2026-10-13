@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Systematic Literature Review</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Generic SLR report shell. Do not edit for one review: the content comes from data.js
+     (made by .claude/skills/slr/scripts/build-report.js from report-config.json and report-content.html). -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <span class="topbar-title" id="topbar-title"></span>
+    <nav class="topnav" id="topnav" aria-label="Sections"></nav>
+    <button id="theme-toggle" class="btn-ghost" type="button" aria-label="Change the color theme">Theme</button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="hero"></section>
+  <div id="content"></div>
+</main>
+
+<dialog id="study-dialog" aria-labelledby="dlg-title">
+  <form method="dialog" class="dlg-head">
+    <h3 id="dlg-title"></h3>
+    <button class="btn-ghost" value="close" aria-label="Close">✕</button>
+  </form>
+  <div id="dlg-body"></div>
+</dialog>
+<div id="tooltip" class="tooltip" role="tooltip" hidden></div>
+<footer class="foot" id="foot"></footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

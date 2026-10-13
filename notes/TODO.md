@@ -1,1 +1,1 @@
-add "["How to Get Your SIGGRAPH Paper Rejected"](./pdf/kajiya.pdf) somewhere
+add "["How to Get Your SIGGRAPH Paper Rejected"](/assets/pdf/kajiya.pdf) somewhere

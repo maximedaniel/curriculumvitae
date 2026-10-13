@@ -6,7 +6,7 @@ format:
     theme: default
     slide-number: true
     embed-resources: true
-    css: css/slides.css
+    css: ../../assets/css/slides.css
 ---
 
 ## Introduction

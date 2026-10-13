@@ -20,7 +20,7 @@ The procedure has 4 phases:
 
 ## Files
 
-Make a directory `slr/<topic>/` with these files:
+Make a directory `pages/research/slr/<topic>/` with these files:
 
 | File | Content |
 |---|---|

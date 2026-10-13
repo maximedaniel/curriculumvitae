@@ -1,0 +1,228 @@
+---
+name: systematic-literature-review
+description: Do a systematic literature review (SLR) step by step, with the Kitchenham and Charters (2007) guidelines and PRISMA 2020. Use this skill when the user asks for a systematic literature review, a systematic mapping study, a structured survey of the literature, a PRISMA flow diagram, or a protocol, a search string, screening or data extraction for a literature review.
+---
+
+# Systematic literature review
+
+Follow these steps to do a systematic literature review (SLR). The procedure follows the guidelines of Kitchenham and Charters (2007) and the PRISMA 2020 statement.
+
+The procedure has 4 phases:
+
+1. Plan the review.
+2. Do the search and the selection.
+3. Extract and synthesize the data.
+4. Write the report.
+
+## General rules
+
+- Do not invent a reference. Each reference must come from a search result or from a document that you read.
+- Make sure that each reference has a valid DOI or URL. If you cannot find the DOI or the URL, mark the reference as "unverified".
+- Record each decision in a file. Another person must be able to do the review again and get the same result.
+- Record the date of each search, the database, the exact query and the number of results.
+- Stop at each checkpoint (marked **Checkpoint**). Show the result to the user and wait for approval.
+- If you cannot get access to the full text of a paper, record this. Do not guess the content from the title.
+
+## Files
+
+Make a directory `slr/<topic>/` with these files:
+
+| File | Content |
+|---|---|
+| `protocol.md` | The research questions, the search strategy and the criteria |
+| `search-log.csv` | One line for each search: date, database, query, number of results |
+| `records.csv` | One line for each record: ID, title, authors, year, venue, DOI, source, decision, reason |
+| `quality.csv` | The quality score of each included study |
+| `extraction.csv` | The data extracted from each included study |
+| `references.bib` | The BibTeX entries of the included studies |
+| `report.md` | The final report |
+
+## Phase 1: Plan the review
+
+### Step 1.1: Identify the need for the review
+
+1. Ask the user for the topic and the purpose of the review.
+2. Search for existing reviews on the topic.
+3. If a recent review exists, tell the user. Ask if a new review is necessary.
+
+### Step 1.2: Write the research questions
+
+1. Write 1 to 5 research questions (RQ).
+2. Use the PICOC structure to define the scope of each question:
+   - **Population**: the users, the systems or the domain.
+   - **Intervention**: the technique, the method or the tool.
+   - **Comparison**: the alternative to the intervention (if applicable).
+   - **Outcome**: the measured effects.
+   - **Context**: the setting, for example industry, laboratory or education.
+3. Make sure that each question has an answer that the data from the studies can supply.
+
+### Step 1.3: Write the search strategy
+
+1. Select the databases. For computer science and HCI, use these databases:
+   - ACM Digital Library
+   - IEEE Xplore
+   - Scopus
+   - Web of Science
+   - Google Scholar (as a supplement only)
+2. Make a list of the keywords for each PICOC element. Add synonyms, abbreviations and alternative spellings.
+3. Combine the synonyms with `OR`. Combine the PICOC elements with `AND`.
+4. Write the search string for each database. The syntax is different in each database.
+5. Make a list of 3 to 5 known relevant papers (the "test set"). Use this list to validate the search string in Step 2.1.
+6. Define the limits: years of publication, languages and types of publication.
+
+### Step 1.4: Write the selection criteria
+
+1. Write the inclusion criteria (IC). For example:
+   - IC1: The study is a peer-reviewed paper.
+   - IC2: The study gives empirical data about the intervention.
+2. Write the exclusion criteria (EC). For example:
+   - EC1: The paper is not in English.
+   - EC2: The paper is a short paper of fewer than 4 pages, a poster or an abstract.
+   - EC3: The paper is a duplicate or an older version of an included paper.
+3. Make sure that each criterion is clear. Two persons must make the same decision with the same criterion.
+
+### Step 1.5: Write the quality assessment
+
+1. Write 5 to 10 quality questions. For example:
+   - Does the paper state the research aim clearly?
+   - Does the paper describe the method in sufficient detail?
+   - Is the sample size sufficient?
+   - Does the paper discuss the threats to validity?
+2. Give a score to each answer: yes = 1, partially = 0.5, no = 0.
+3. Decide how to use the score. For example, exclude studies with a total score below 50%, or use the score only in the discussion.
+
+### Step 1.6: Write the data extraction form
+
+1. Make a list of the data fields to extract. Include these fields:
+   - the bibliographic data (authors, year, venue)
+   - the type of study
+   - the population and the sample size
+   - the intervention
+   - the measures and the results
+   - the data for each research question.
+2. Write the definition and the permitted values of each field.
+
+### Step 1.7: Write the protocol
+
+1. Put the results of Steps 1.2 to 1.6 into `protocol.md`.
+
+**Checkpoint**: Show the protocol to the user. Do not start Phase 2 before the user approves the protocol.
+
+## Phase 2: Do the search and the selection
+
+### Step 2.1: Do a pilot search
+
+1. Run the search string in each database.
+2. Make sure that the results contain all the papers of the test set.
+3. If a paper of the test set is missing, find the cause. Change the search string and do the pilot search again.
+4. If the number of results is too high to examine, make the search string more specific.
+5. Record each change of the search string in `protocol.md`.
+
+### Step 2.2: Do the search
+
+1. Run the final search string in each database.
+2. Export all the results with their metadata (title, authors, year, venue, abstract, DOI).
+3. Record each search in `search-log.csv`.
+4. Add all the records to `records.csv`. Give a unique ID to each record.
+
+### Step 2.3: Remove the duplicates
+
+1. Find the duplicates with the DOI. If a record has no DOI, compare the title, the year and the first author.
+2. Keep one record for each paper. Mark the other records as "duplicate".
+3. Record the number of duplicates.
+
+### Step 2.4: Do the title and abstract screening
+
+1. Read the title and the abstract of each record.
+2. Apply the inclusion and exclusion criteria.
+3. Give one of these decisions to each record:
+   - "include"
+   - "exclude", with the number of the criterion (for example, EC2)
+   - "uncertain"
+4. Keep the "uncertain" records for Step 2.5.
+5. Record the decision and the reason in `records.csv`.
+
+**Checkpoint**: Select a random sample of 10% of the records (minimum 20 records). Ask the user to check your decisions for this sample. If the user does not agree with more than 10% of the decisions, make the criteria clearer and do Step 2.4 again.
+
+### Step 2.5: Do the full-text screening
+
+1. Get the full text of each record with the decision "include" or "uncertain".
+2. Read the full text. Apply the criteria again.
+3. Give the final decision "include" or "exclude" to each record. Record the criterion for each exclusion.
+4. If you cannot get the full text, mark the record as "not retrieved".
+
+### Step 2.6: Do the snowballing
+
+1. For each included paper, examine the reference list (backward snowballing).
+2. For each included paper, find the papers that cite it (forward snowballing). Use Google Scholar or Scopus.
+3. Apply Steps 2.4 and 2.5 to each new paper.
+4. Do the snowballing again on the new included papers. Stop when you find no new papers.
+5. Record the source of each new paper ("backward" or "forward", with the ID of the initial paper).
+
+### Step 2.7: Make the PRISMA flow diagram
+
+1. Count the records at each stage:
+   - the records from each database
+   - the duplicates removed
+   - the records excluded at the title and abstract screening
+   - the full texts not retrieved
+   - the full texts excluded, with the number for each criterion
+   - the records from the snowballing
+   - the studies included in the review.
+2. Make sure that the numbers are correct. The sum of the excluded records and the included records must be equal to the total number of records.
+
+**Checkpoint**: Show the list of included studies and the PRISMA numbers to the user.
+
+## Phase 3: Extract and synthesize the data
+
+### Step 3.1: Assess the quality
+
+1. Read each included study.
+2. Answer each quality question. Write a short justification for each answer.
+3. Record the scores in `quality.csv`.
+4. Apply the rule from Step 1.5.
+
+### Step 3.2: Extract the data
+
+1. Fill in the extraction form for each included study.
+2. Copy the data exactly from the paper. Record the page or the section of each value.
+3. If the paper does not give a value, write "not reported". Do not estimate the value.
+4. Record the data in `extraction.csv`.
+5. Add the BibTeX entry of each study to `references.bib`.
+
+**Checkpoint**: Ask the user to check the extraction for a sample of 3 to 5 studies.
+
+### Step 3.3: Synthesize the data
+
+1. Select the synthesis method:
+   - If the studies are quantitative and similar, do a meta-analysis.
+   - If the studies are different, do a narrative or thematic synthesis.
+2. For a thematic synthesis, do these steps:
+   1. Give codes to the extracted data.
+   2. Put the codes into themes.
+   3. Make sure that each theme has support from 2 or more studies.
+3. Answer each research question with the synthesized data.
+4. Make tables and figures. For example: the number of studies for each year, for each venue and for each theme.
+5. Identify the gaps in the literature.
+
+## Phase 4: Write the report
+
+### Step 4.1: Write the report
+
+Write `report.md` with these sections:
+
+1. **Introduction**: the context, the need for the review and the research questions.
+2. **Method**: the databases, the search strings, the criteria, the quality assessment and the extraction form. Refer to `protocol.md`.
+3. **Results**: the PRISMA flow diagram, the description of the included studies and the answer to each research question.
+4. **Discussion**: the main findings, the gaps in the literature and the recommendations for future research.
+5. **Threats to validity**: the limits of the search, the selection, the extraction and the synthesis. Tell the reader that an agent did the screening and the extraction, and that the user checked a sample.
+6. **Conclusion**.
+7. **References**.
+
+### Step 4.2: Check the report
+
+1. Check the report against the PRISMA 2020 checklist.
+2. Make sure that each statement in the results has a reference to an included study.
+3. Make sure that each reference in the report is in `references.bib`.
+
+**Checkpoint**: Give the report to the user.

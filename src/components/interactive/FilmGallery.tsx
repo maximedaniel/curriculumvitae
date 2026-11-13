@@ -1,10 +1,10 @@
-import { Children, isValidElement, useState, type KeyboardEvent, type ReactElement, type ReactNode } from "react";
+import { Children, isValidElement, useState, type ReactElement, type ReactNode } from "react";
 
 interface FilmProps {
   title: string;
   year: string;
-  src: string; // poster image
-  gif: string; // animation, loaded only when the reader asks for it
+  src: string; // banner image with several frames of the scene
+  gif: string; // animation, loaded only when the reader clicks the banner
   children: ReactNode; // description
 }
 
@@ -13,85 +13,50 @@ export function Film(_props: FilmProps) {
   return null;
 }
 
-// A gallery of films. The reader picks a film and plays its animation.
-// The GIF files are large, so the page loads a GIF only after a click on the play button.
+// A list of film banners. A click on a banner plays its animation at once, in place of the banner.
+// The GIF files are large, so the page loads a GIF only after a click.
+// Only one animation plays at a time.
 export function FilmGallery({ children }: { children: ReactNode }) {
   const films = Children.toArray(children).filter(
     (c): c is ReactElement<FilmProps> => isValidElement(c) && c.type === Film,
   );
-  const [index, setIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
+  const [playing, setPlaying] = useState<number | null>(null);
   const [loaded, setLoaded] = useState(false);
-  const film = films[index].props;
 
-  const select = (i: number) => {
-    setIndex(i);
-    setPlaying(false);
+  const play = (i: number | null) => {
+    setPlaying(i);
     setLoaded(false);
   };
 
-  const onKeyDown = (e: KeyboardEvent) => {
-    if (e.key === "ArrowRight") select((index + 1) % films.length);
-    else if (e.key === "ArrowLeft") select((index - 1 + films.length) % films.length);
-    else return;
-    e.preventDefault();
-  };
-
   return (
-    <div className="film-gallery" onKeyDown={onKeyDown}>
-      <div className="film-stage">
-        <img src={playing ? film.gif : film.src} alt={`${film.title} (${film.year})`} />
-        {playing && !loaded && <div className="film-loading">Loading the animation…</div>}
-        {playing && (
-          <img className="film-preload" src={film.gif} alt="" onLoad={() => setLoaded(true)} hidden />
-        )}
-        <button
-          type="button"
-          className="film-play"
-          aria-label={playing ? "Stop the animation" : "Play the animation"}
-          onClick={() => {
-            setPlaying((p) => !p);
-            setLoaded(false);
-          }}
-        >
-          <i className={playing ? "bi bi-stop-circle-fill" : "bi bi-play-circle-fill"} />
-          <span>{playing ? "Stop" : "GIF"}</span>
-        </button>
-      </div>
-
-      <div className="film-tabs" role="tablist" aria-label="Films">
-        {films.map((f, i) => (
-          <button
-            key={f.props.title}
-            type="button"
-            role="tab"
-            id={`film-tab-${i}`}
-            aria-selected={i === index}
-            aria-controls={`film-panel-${i}`}
-            tabIndex={i === index ? 0 : -1}
-            className={i === index ? "film-tab active" : "film-tab"}
-            onClick={() => select(i)}
-          >
-            <img src={f.props.src} alt="" loading="lazy" />
-            <span className="film-tab-title">{f.props.title}</span>
-            <span className="film-tab-year">{f.props.year}</span>
-          </button>
-        ))}
-      </div>
-
-      {/* All the descriptions stay in the page. The page hides the ones that the reader did not pick. */}
-      {films.map((f, i) => (
-        <p
-          key={f.props.title}
-          id={`film-panel-${i}`}
-          role="tabpanel"
-          aria-labelledby={`film-tab-${i}`}
-          className="film-description"
-          hidden={i !== index}
-        >
-          {f.props.children}
-        </p>
-      ))}
+    <div className="film-gallery">
+      {films.map((f, i) => {
+        const { title, year, src, gif, children: description } = f.props;
+        const isPlaying = playing === i;
+        return (
+          <figure key={title} className="film-item">
+            <div className="film-media">
+              {isPlaying ? (
+                <>
+                  <img src={gif} alt={`${title} (${year})`} onLoad={() => setLoaded(true)} />
+                  {!loaded && <div className="film-loading">Loading the animation…</div>}
+                  <button type="button" className="film-badge" aria-label="Stop the animation" onClick={() => play(null)}>
+                    <i className="bi bi-stop-circle-fill" /> Stop
+                  </button>
+                </>
+              ) : (
+                <>
+                  <img src={src} alt={`${title} (${year})`} loading="lazy" />
+                  <button type="button" className="film-badge" aria-label={`Play the animation of ${title}`} onClick={() => play(i)}>
+                    <i className="bi bi-play-circle-fill" /> GIF
+                  </button>
+                </>
+              )}
+            </div>
+            <figcaption>{description}</figcaption>
+          </figure>
+        );
+      })}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Field, VennDiagram } from "../interactive/VennDiagram";
 import { ThingsToStuff } from "../interactive/ThingsToStuff";
 import { ImageZones, Zone } from "../interactive/ImageZones";
 import { SubTabs } from "../interactive/SubTabs";
+import { SubZones } from "../interactive/SubZones";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -191,6 +192,7 @@ export const mdxComponents = {
   ImageZones,
   Zone,
   SubTabs,
+  SubZones,
   Ref,
   Cite,
   References,

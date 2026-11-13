@@ -121,5 +121,6 @@ The components in `src/components/interactive/` make the figures of the research
 - `ThingsToStuff`: a slider from large objects to a continuous material.
 - `ImageZones` and `Zone`: an image with zones that the reader can pick.
 - `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
+- `SubZones`: an overview image with zones. Each zone opens its example subfigures. A `<Ref>` to an example opens its zone.
 
 Register each new component in `mdxComponents` in `src/components/mdx/index.tsx`.

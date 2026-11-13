@@ -8,6 +8,7 @@ import { SubZones } from "../interactive/SubZones";
 import { ShapeDemo } from "../interactive/ShapeDemo";
 import { ShyPinsDemo } from "../interactive/ShyPinsDemo";
 import { RingStack } from "../interactive/RingStack";
+import { SubGallery } from "../interactive/SubGallery";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -199,6 +200,7 @@ export const mdxComponents = {
   ShapeDemo,
   ShyPinsDemo,
   RingStack,
+  SubGallery,
   Ref,
   Cite,
   References,

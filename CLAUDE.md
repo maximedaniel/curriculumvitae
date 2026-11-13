@@ -121,6 +121,7 @@ The components in `src/components/interactive/` make the figures of the research
 - `ThingsToStuff`: a slider from large objects to a continuous material.
 - `ImageZones` and `Zone`: an image with zones that the reader can pick. A zone is a column (`x`, `width`) or a polygon (`polygon`).
 - `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
+- `SubGallery`: the `<Sub>` elements of a `<Figure>` as a large view and a row of thumbnails.
 - `SubZones`: an overview image with zones. Each zone opens its example subfigures. A `<Ref>` to an example opens its zone.
 - `ShapeDemo`: a small animation of a shape change, with a slider from before to after. It plays only while it is on the screen.
 - `ShyPinsDemo`: a simplified simulation of the safety strategy of ShyPins. The pointer is the user. The pins slow down or stop near the user.

@@ -119,7 +119,7 @@ The components in `src/components/interactive/` make the figures of the research
 - `FilmGallery` and `Film`: a stage with a GIF and a row of banners.
 - `VennDiagram` and `Field`: a Venn diagram of three circles with an example for each circle.
 - `ThingsToStuff`: a slider from large objects to a continuous material.
-- `ImageZones` and `Zone`: an image with zones that the reader can pick.
+- `ImageZones` and `Zone`: an image with zones that the reader can pick. A zone is a column (`x`, `width`) or a polygon (`polygon`).
 - `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
 - `SubZones`: an overview image with zones. Each zone opens its example subfigures. A `<Ref>` to an example opens its zone.
 - `ShapeDemo`: a small animation of a shape change, with a slider from before to after. It plays only while it is on the screen.

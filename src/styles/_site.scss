@@ -488,3 +488,67 @@ a.q-ref {
     padding: 0.1rem 0;
   }
 }
+
+// Image with zones that the reader can pick (research page).
+.image-zones {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+
+  .zones-image {
+    position: relative;
+    line-height: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    outline: none;
+  }
+
+  .has-selection .zone:not(.selected) {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .zone.selected {
+    box-shadow: inset 0 0 0 3px #2780e3;
+  }
+
+  .zone:focus-visible {
+    box-shadow: inset 0 0 0 3px #2780e3;
+  }
+
+  .zones-hint,
+  .zone-panel {
+    margin: 0.75rem 0 0;
+    min-height: 5.5rem;
+  }
+
+  .zones-hint {
+    color: #6c757d;
+    font-style: italic;
+  }
+
+  .zone-panel {
+    p {
+      margin: 0.25rem 0 0;
+    }
+
+    .zone-label {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+  }
+}

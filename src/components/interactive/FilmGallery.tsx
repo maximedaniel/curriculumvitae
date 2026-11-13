@@ -1,4 +1,4 @@
-import { Children, isValidElement, useState, type KeyboardEvent, type ReactElement, type ReactNode } from "react";
+import { Children, isValidElement, useEffect, useRef, useState, type KeyboardEvent, type ReactElement, type ReactNode } from "react";
 
 interface FilmProps {
   title: string;
@@ -14,16 +14,23 @@ export function Film(_props: FilmProps) {
 }
 
 // A stage, a row of film banners and a description.
-// A click on a film plays its animation at once.
-// The GIF files are large, so the page loads a GIF only after a click.
+// The first film plays when the page opens. A click on a film plays its animation at once.
+// The GIF files are large, so the page loads the GIF of the other films only after a click.
 export function FilmGallery({ children }: { children: ReactNode }) {
   const films = Children.toArray(children).filter(
     (c): c is ReactElement<FilmProps> => isValidElement(c) && c.type === Film,
   );
   const [index, setIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
+  // The first film plays when the page opens.
+  const [playing, setPlaying] = useState(true);
   const [loaded, setLoaded] = useState(false);
+  const gifRef = useRef<HTMLImageElement>(null);
   const film = films[index].props;
+
+  // The GIF can finish loading before the page is hydrated. In this case React misses the load event.
+  useEffect(() => {
+    if (playing && gifRef.current?.complete && gifRef.current.naturalWidth > 0) setLoaded(true);
+  }, [playing, index]);
 
   // Pick a film and play its animation at once.
   const select = (i: number) => {
@@ -43,7 +50,7 @@ export function FilmGallery({ children }: { children: ReactNode }) {
     <div className="film-gallery" onKeyDown={onKeyDown}>
       <div className="film-stage">
         {playing ? (
-          <img className="film-gif" src={film.gif} alt={`${film.title} (${film.year})`} onLoad={() => setLoaded(true)} />
+          <img ref={gifRef} className="film-gif" src={film.gif} alt={`${film.title} (${film.year})`} onLoad={() => setLoaded(true)} />
         ) : (
           <img className="film-placeholder" src={film.src} alt={`${film.title} (${film.year})`} />
         )}

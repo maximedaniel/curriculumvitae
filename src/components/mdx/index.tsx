@@ -1,4 +1,5 @@
 import { smartypantsu } from "smartypants";
+import { Film, FilmGallery } from "../interactive/FilmGallery";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -178,6 +179,8 @@ export const mdxComponents = {
   Sub,
   Caption,
   Picture,
+  FilmGallery,
+  Film,
   Ref,
   Cite,
   References,

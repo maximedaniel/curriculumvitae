@@ -756,3 +756,64 @@ a.q-ref {
     font-style: italic;
   }
 }
+
+// Stack of expandable illuminated rings (research page).
+.ring-stack {
+  max-width: 620px;
+  margin: 1.5rem auto;
+
+  .ring-stack-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .ring-stack-shapes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .ring-stack-tilt {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+
+    input {
+      width: 7rem;
+      accent-color: #2780e3;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    touch-action: none;
+  }
+
+  .ring-handle {
+    cursor: ew-resize;
+    outline: none;
+
+    &:hover,
+    &:focus-visible {
+      stroke: #ffc107;
+    }
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  .ring-stack-note {
+    color: #6c757d;
+    font-style: italic;
+  }
+}

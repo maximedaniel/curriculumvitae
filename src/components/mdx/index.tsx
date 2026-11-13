@@ -1,6 +1,7 @@
 import { smartypantsu } from "smartypants";
 import { Film, FilmGallery } from "../interactive/FilmGallery";
 import { Field, VennDiagram } from "../interactive/VennDiagram";
+import { ThingsToStuff } from "../interactive/ThingsToStuff";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -184,6 +185,7 @@ export const mdxComponents = {
   Film,
   VennDiagram,
   Field,
+  ThingsToStuff,
   Ref,
   Cite,
   References,

@@ -3,6 +3,7 @@ import { Film, FilmGallery } from "../interactive/FilmGallery";
 import { Field, VennDiagram } from "../interactive/VennDiagram";
 import { ThingsToStuff } from "../interactive/ThingsToStuff";
 import { ImageZones, Zone } from "../interactive/ImageZones";
+import { SubTabs } from "../interactive/SubTabs";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -189,6 +190,7 @@ export const mdxComponents = {
   ThingsToStuff,
   ImageZones,
   Zone,
+  SubTabs,
   Ref,
   Cite,
   References,

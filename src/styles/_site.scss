@@ -552,3 +552,63 @@ a.q-ref {
     }
   }
 }
+
+// Subfigures shown as tabs (research page).
+.sub-tabs {
+  max-width: 900px;
+  margin: 0 auto;
+
+  .sub-tab-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem 0.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .sub-tab {
+    padding: 0.25rem 0.75rem;
+    border: 1px solid #dee2e6;
+    border-radius: 2rem;
+    background: #fff;
+    color: #343a40;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+
+    &:hover {
+      background: #f8f9fa;
+    }
+
+    &.active {
+      border-color: #2780e3;
+      background: #2780e3;
+      color: #fff;
+    }
+  }
+
+  .sub-panel {
+    margin: 0;
+    animation: sub-panel-in 0.25s ease;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      margin: 0.5em 0;
+    }
+  }
+}
+
+@keyframes sub-panel-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

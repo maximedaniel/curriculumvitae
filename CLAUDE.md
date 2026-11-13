@@ -111,3 +111,15 @@ To remove the headers and footers, open `about:config` in Firefox. Set the `prin
 
 - `sources/to_integrate/`: This directory contains React `.tsx` components. The build does not use them.
 - `public/pages/research/slr/`: These static pages come from the SLR procedure. Vite copies them without change.
+
+## Interactive components
+
+The components in `src/components/interactive/` make the figures of the research page interactive. Each component keeps all the text in the page and hides the text that the reader did not pick.
+
+- `FilmGallery` and `Film`: a stage with a GIF and a row of banners.
+- `VennDiagram` and `Field`: a Venn diagram of three circles with an example for each circle.
+- `ThingsToStuff`: a slider from large objects to a continuous material.
+- `ImageZones` and `Zone`: an image with zones that the reader can pick.
+- `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
+
+Register each new component in `mdxComponents` in `src/components/mdx/index.tsx`.

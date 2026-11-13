@@ -5,6 +5,7 @@ import { ThingsToStuff } from "../interactive/ThingsToStuff";
 import { ImageZones, Zone } from "../interactive/ImageZones";
 import { SubTabs } from "../interactive/SubTabs";
 import { SubZones } from "../interactive/SubZones";
+import { ShapeDemo } from "../interactive/ShapeDemo";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -193,6 +194,7 @@ export const mdxComponents = {
   Zone,
   SubTabs,
   SubZones,
+  ShapeDemo,
   Ref,
   Cite,
   References,

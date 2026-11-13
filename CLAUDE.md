@@ -122,5 +122,6 @@ The components in `src/components/interactive/` make the figures of the research
 - `ImageZones` and `Zone`: an image with zones that the reader can pick.
 - `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
 - `SubZones`: an overview image with zones. Each zone opens its example subfigures. A `<Ref>` to an example opens its zone.
+- `ShapeDemo`: a small animation of a shape change, with a slider from before to after. It plays only while it is on the screen.
 
 Register each new component in `mdxComponents` in `src/components/mdx/index.tsx`.

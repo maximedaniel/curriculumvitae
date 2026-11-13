@@ -666,3 +666,47 @@ a.q-ref {
     grid-template-columns: 1fr;
   }
 }
+
+// Demo of a shape change in the panel of a zone (research page).
+.image-zones {
+  .zone-body {
+    margin: 0.25rem 0 0;
+  }
+
+  .shape-demo {
+    display: grid;
+    grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .shape-demo-view svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    background: #fafafa;
+  }
+
+  .shape-demo-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+
+    input[type="range"] {
+      flex: 1;
+      min-width: 0;
+      accent-color: #2780e3;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .image-zones .shape-demo {
+    grid-template-columns: 1fr;
+  }
+}

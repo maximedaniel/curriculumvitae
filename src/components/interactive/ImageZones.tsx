@@ -67,7 +67,7 @@ export function ImageZones({
         <div key={z.props.title} id={`zone-panel-${i}`} className="zone-panel" hidden={i !== index}>
           <strong>{z.props.title}</strong>
           {z.props.label && <span className="zone-label"> {z.props.label}</span>}
-          <p>{z.props.children}</p>
+          <div className="zone-body">{z.props.children}</div>
         </div>
       ))}
     </div>

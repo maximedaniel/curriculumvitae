@@ -102,7 +102,7 @@ export function VennDiagram({ children }: { children: ReactNode }) {
             className="venn-panel"
             hidden={i !== index}
           >
-            <img src={f.props.src}alt={f.props.title} />
+            <img src={f.props.src} alt={f.props.title} />
             <p>{f.props.children}</p>
           </div>
         ))}

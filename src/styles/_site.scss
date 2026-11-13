@@ -338,3 +338,63 @@ a.q-ref {
   }
 }
 
+
+// Interactive Venn diagram (research page).
+.venn {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: 1.5rem;
+  align-items: center;
+  text-align: left;
+
+  svg {
+    width: 100%;
+    height: auto;
+    font-family: inherit;
+  }
+
+  .venn-circle {
+    cursor: pointer;
+    outline: none;
+
+    circle {
+      opacity: 0.55;
+      mix-blend-mode: multiply;
+      stroke: transparent;
+      stroke-width: 6;
+      transition: opacity 0.2s, stroke 0.2s;
+    }
+
+    &.selected circle,
+    &:hover circle {
+      opacity: 0.95;
+    }
+
+    &.selected circle {
+      stroke: #343a40;
+    }
+
+    &:focus-visible circle {
+      stroke: #2780e3;
+    }
+  }
+
+  .venn-panel {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 0.5rem 0 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .venn {
+    grid-template-columns: 1fr;
+  }
+}

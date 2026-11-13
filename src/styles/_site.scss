@@ -222,47 +222,45 @@ a.q-ref {
   }
 }
 
-// Interactive banners of films (research page).
+// Interactive gallery of films (research page).
 .film-gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 20px;
-  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
 
-  .film-item {
-    margin: 3.4px 0 0;
-  }
-
-  .film-media {
+  // The stage keeps the ratio of the animations. The page does not move when the animation starts.
+  .film-stage {
     position: relative;
-    line-height: 0;
+    aspect-ratio: 640 / 272;
     background: #000;
+    line-height: 0;
 
     img {
+      position: absolute;
+      inset: 0;
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
+      object-fit: contain;
     }
   }
 
-  .film-badge {
+  .film-play {
     position: absolute;
-    right: 0.5rem;
-    bottom: 0.5rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
-    padding: 0.2rem 0.7rem;
+    gap: 0.4rem;
+    padding: 0.3rem 0.8rem;
     border: 0;
     border-radius: 2rem;
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.5;
     cursor: pointer;
 
     i {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       line-height: 1;
     }
 
@@ -283,15 +281,60 @@ a.q-ref {
     line-height: 1.5;
   }
 
-  figcaption {
-    font-size: 0.9rem;
-    margin: 0.5em 0 7.65px;
+  // The banners are wide, so the row has 3 columns. Each banner is shown in full.
+  .film-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .film-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+    border: 2px solid transparent;
+    background: none;
     text-align: center;
+    cursor: pointer;
+    opacity: 0.65;
+    transition: opacity 0.15s;
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #000;
+    }
+
+    &:hover,
+    &.active {
+      opacity: 1;
+    }
+
+    &.active {
+      border-color: #2780e3;
+    }
+  }
+
+  .film-tab-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 0.25rem 0.15rem 0;
+  }
+
+  .film-tab-year {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    padding-bottom: 0.25rem;
+  }
+
+  .film-description {
+    margin: 0.75rem 0 0;
+    text-align: left;
+    min-height: 3.5rem;
   }
 }
 
-@media (max-width: 767.98px) {
-  .film-gallery {
-    grid-template-columns: 1fr;
-  }
-}

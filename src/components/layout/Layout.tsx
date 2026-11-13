@@ -1,7 +1,8 @@
 import { useState, type ReactNode } from "react";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
+import { Md } from "../ui";
 import { navLeft, navMisc, SITE_TITLE } from "../../site";
-import { pageTitle } from "../../routes";
+import { pageTitle, routes } from "../../routes";
 import { Toc } from "./Toc";
 
 function Navbar() {
@@ -67,12 +68,29 @@ function Navbar() {
   );
 }
 
+function TitleBlock() {
+  const { pathname } = useLocation();
+  const route = routes.find((r) => r.path === pathname);
+  if (!route || route.titleBlock === false) return null;
+  return (
+    <header id="title-block-header" className="quarto-title-block">
+      <h1 className="title">
+        <Md text={route.title} />
+      </h1>
+      {route.subtitle && <Md as="p" className="subtitle lead" text={route.subtitle} />}
+    </header>
+  );
+}
+
 export function Layout({ children }: { children: ReactNode }) {
   return (
     <>
       <Navbar />
       <div className="page-grid">
-        <main className="page-main content">{children}</main>
+        <main className="page-main content">
+          <TitleBlock />
+          {children}
+        </main>
         <Toc />
       </div>
     </>

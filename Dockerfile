@@ -3,7 +3,7 @@ FROM    mhart/alpine-node
 RUN     npm install -g http-server
 
 WORKDIR /site
-ADD     ./_site    /site
+ADD     ./dist /site
 
 # The default port of the application
 EXPOSE  5000

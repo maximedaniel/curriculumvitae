@@ -21,7 +21,13 @@ function yaml(): Plugin {
 }
 
 export default defineConfig({
-  build: { assetsDir: "static" },
+  build: {
+    assetsDir: "static",
+    rollupOptions: {
+      // The slides are a separate page, not a route of the React app.
+      input: { main: "index.html", slides: "pages/teaching/presentation-template-revealjs.html" },
+    },
+  },
   plugins: [
     yaml(),
     {

@@ -3,6 +3,9 @@ $enable-cssgrid: true;
 $grid-gutter-width: 1.5rem;
 $font-size-root: 17px;
 $font-size-base: 1rem;
+$h1-font-size: 2rem;
+$h2-font-size: 1.65rem;
+$h3-font-size: 1.45rem;
 
 @import "bootswatch/dist/cosmo/variables";
 @import "bootstrap/scss/bootstrap";

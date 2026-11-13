@@ -63,7 +63,7 @@ export function Figure({ id, num, cols, layout, children }: FigureProps) {
           {weights.map((w, c) => {
             const sub = subs[index++];
             return (
-              <div className="q-cell" key={c} style={{ flexBasis: `${(w / total) * 100}%` }}>
+              <div className="q-cell" key={c} style={{ flex: `${w / total} 1 0` }}>
                 {sub}
               </div>
             );

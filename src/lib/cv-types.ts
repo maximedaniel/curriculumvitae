@@ -37,6 +37,7 @@ export interface Mission { thumbnail: string; position: L; period: L }
 
 export interface CvData {
   title: string;
+  subtitle: string;
   profil: Profil;
   researchs: { title: L };
   projects: { titles: { title: L; headers: L<string[]> }; items: Project[] };

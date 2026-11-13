@@ -16,12 +16,12 @@ https://cnu27.ls2n.fr/note-pour-les-candidatures-a-la-qualification/
 
 # print cv
 
-- activate "pritnable: true" in _quarto.yml
-- open mozilla firefox
- - open devtools (F12)
- - select fourth icon (print preview)
- - right click on the page -> print preview
- - select "print to pdf"
+- run `pnpm dev`
+- open http://localhost:4307/printable_en.html (or printable_fr.html) in mozilla firefox
+- open devtools (F12)
+- select fourth icon (print preview)
+- right click on the page -> print preview
+- select "print to pdf"
 
 
 # export sans en-tête ni pied de page avec firefox

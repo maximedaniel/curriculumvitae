@@ -14,5 +14,5 @@ const app = (
 );
 
 // The build step fills the page with HTML. Dev mode starts from an empty page.
-if (root.hasChildNodes()) hydrateRoot(root, app);
+if (root.firstElementChild) hydrateRoot(root, app);
 else createRoot(root).render(app);

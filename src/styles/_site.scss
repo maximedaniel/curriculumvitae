@@ -43,12 +43,13 @@ body {
 
 .page-grid {
   display: grid;
-  grid-template-columns: minmax(1rem, 1fr) minmax(0, 1299px) 25px 172px minmax(1rem, 1fr);
+  grid-template-columns: minmax(1rem, 1.13fr) minmax(0, 1299px) 25px 172px minmax(1rem, 1fr);
   column-gap: 0;
 }
 
 .page-main {
   grid-column: 2;
+  margin-top: 17px;
   padding-top: 14px;
   min-width: 0;
 
@@ -109,6 +110,10 @@ body {
 }
 
 main {
+  p {
+    margin-bottom: 0.625rem;
+  }
+
   h1,
   h2 {
     margin-top: 2rem;
@@ -127,12 +132,12 @@ main {
 
 // Figures with a caption and subfigures, as in Quarto.
 figure.q-figure {
-  margin: 1rem 0;
+  margin: 0 0 17px;
   text-align: center;
 
   .q-row {
     display: flex;
-    gap: 0.5rem 1rem;
+    gap: 0 20px;
     align-items: flex-start;
     justify-content: center;
   }
@@ -141,8 +146,16 @@ figure.q-figure {
     min-width: 0;
   }
 
-  .q-cell figure {
-    margin: 0 0 0.5rem;
+  .q-subfigure {
+    margin: 3.4px 0 0;
+
+    img {
+      margin-bottom: 8.5px;
+    }
+
+    figcaption {
+      margin: 0 0 7.65px;
+    }
   }
 
   img {
@@ -150,9 +163,23 @@ figure.q-figure {
     height: auto;
   }
 
+  > img {
+    margin-bottom: 8.5px;
+  }
+
+  > figcaption {
+    font-size: 0.9rem;
+    margin: 14px 0 7.65px;
+  }
+}
+
+figure.q-picture {
+  margin: 0 0 17px;
+  text-align: center;
+
   figcaption {
-    font-size: 0.875rem;
-    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    margin: 0 0 7.65px;
   }
 }
 
@@ -177,4 +204,16 @@ a.q-ref {
 
 .slide-deck {
   border: 1px solid #dee2e6;
+}
+
+.quarto-title-block {
+  margin-bottom: 17px;
+
+  h1.title {
+    margin: 0;
+  }
+
+  .subtitle {
+    margin-top: 0.3125rem;
+  }
 }

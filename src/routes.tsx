@@ -6,12 +6,14 @@ import { mdxComponents } from "./components/mdx";
 export interface RouteDef {
   path: string;
   title: string;
+  subtitle?: string;
+  titleBlock?: boolean;
   element: () => React.ReactElement;
 }
 
 interface MdxModule {
   default: ComponentType<{ components?: Record<string, unknown> }>;
-  frontmatter?: { title?: string };
+  frontmatter?: { title?: string; subtitle?: string; titleBlock?: boolean };
 }
 
 const modules = import.meta.glob<MdxModule>("./content/**/*.mdx", { eager: true });
@@ -23,14 +25,16 @@ const mdxRoutes: RouteDef[] = Object.entries(modules).map(([file, mod]) => {
   return {
     path,
     title: mod.frontmatter?.title ?? path,
+    subtitle: mod.frontmatter?.subtitle,
+    titleBlock: mod.frontmatter?.titleBlock,
     element: () => <Content components={mdxComponents} />,
   };
 });
 
 export const routes: RouteDef[] = [
-  { path: "/", title: cv.title, element: () => <CvPage lang="en" printable={false} /> },
-  { path: "/printable_en.html", title: cv.title, element: () => <CvPage lang="en" printable /> },
-  { path: "/printable_fr.html", title: cv.title, element: () => <CvPage lang="fr" printable /> },
+  { path: "/", title: cv.title, subtitle: cv.subtitle, element: () => <CvPage lang="en" printable={false} /> },
+  { path: "/printable_en.html", title: cv.title, subtitle: cv.subtitle, element: () => <CvPage lang="en" printable /> },
+  { path: "/printable_fr.html", title: cv.title, subtitle: cv.subtitle, element: () => <CvPage lang="fr" printable /> },
   ...mdxRoutes,
 ];
 

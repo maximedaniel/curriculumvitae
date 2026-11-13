@@ -4,120 +4,110 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Scope of the repository
 
-This repository is a Quarto website (`project: type: website`). The website shows the academic CV of Maxime Daniel at www.maximedaniel.me. It also contains standalone pages for teaching and research.
+This repository is a Vite, React, TypeScript and MDX website. The website shows the academic CV of Maxime Daniel at www.maximedaniel.me. It also contains standalone pages for teaching and research.
 
-The repository has no tests and no linters.
+The repository has no tests and no linters. The command `pnpm typecheck` checks the types.
+
+An older version of the site used Quarto and Lua filters. The git tag `quarto-final` marks the last commit of that version.
 
 ## Directory structure
 
 | Directory | Content | Published |
 |---|---|---|
-| root | The CV pages (`index.qmd`, `printable_en.qmd`, `printable_fr.qmd`), `_cv-body.qmd`, the configuration and the scripts | Yes (pages only) |
-| `data/` | `cv.yml`, the CV data | No |
-| `filters/` | The Lua filters | No |
-| `pages/research/` | The research pages, for example `research.qmd` and `state-of-art.qmd` | Yes |
-| `pages/research/slr/` | The reports of the systematic literature reviews | Yes (all files) |
-| `pages/teaching/` | The teaching pages, for example `design-methods.qmd` and `statistics.qmd` | Yes |
-| `assets/` | `img/`, `pdf/`, `css/` and `js/` | Yes (only the files that a page refers to) |
-| `notes/` | The private notes, for example `TODO.md` and `ideas.md` | No |
-| `sources/` | The source files, for example `.pptx` files and the React components | No |
-
-Put a new page in `pages/research/` or `pages/teaching/`. Quarto renders all `.qmd` files, but not the files in `notes/` and `sources/`.
-
-To show a new page in the navbar, add the page to `website.navbar` in `_quarto.yml`. Most pages are in the "Misc" menu.
-
-Obey these rules for paths in a page in `pages/`:
-
-- For a Markdown image or link to an asset, use a path from the project root, for example `/assets/img/x.png`. Quarto changes this path to a relative path.
-- For a raw HTML `src` or `href`, use a path from the site root, for example `/assets/js/x.js`. Quarto does not change this path.
-- For a YAML option such as `bibliography`, `csl` or `css`, use a relative path, for example `../../bibliography.bib`.
-
-In `data/cv.yml`, write the paths relative to the site root without a slash, for example `assets/img/x.jpg`. Only the CV pages use these paths, and these pages are in the root directory.
+| root | The configuration, `index.html`, the scripts and the Docker files | No |
+| `src/` | The source code of the site | Yes (compiled) |
+| `src/data/` | `cv.yml` (the CV data), `cv.ts` (the typed loader) | Yes (compiled) |
+| `src/content/` | The MDX pages (`research/`, `teaching/`) | Yes (compiled) |
+| `src/components/` | The React components (`cv/`, `mdx/`, `layout/`, `ui.tsx`) | Yes (compiled) |
+| `src/styles/` | The SCSS (Bootswatch Cosmo with the Bootstrap CSS grid) | Yes (compiled) |
+| `src/slides/` | The code for the reveal.js slides | Yes (compiled) |
+| `src/bibliography.bib`, `src/sigchi-ext.csl` | The citation data and the citation style | Yes (compiled) |
+| `scripts/` | The remark plugin and the prerender script | No |
+| `public/assets/` | `img/` and `pdf/`, copied as they are | Yes |
+| `public/pages/research/slr/` | The reports of the systematic literature reviews (static HTML) | Yes |
+| `pages/teaching/` | The HTML entry of the reveal.js slides | Yes (compiled) |
+| `notes/` | The private notes | No |
+| `sources/` | The source files, for example `.pptx` files and the React components in `to_integrate/` | No |
 
 ## Rules for text
 
 Write all English text in ASD-STE100 Simplified Technical English. This rule applies to:
 
-- the page content (`.qmd`)
-- the English (`en:`) fields in the CV YAML
 - the comments
 - the commit messages
 - this file.
 
-The French (`fr:`) text is not in the scope of STE.
+The text of the pages (CV data and MDX content) is the content of the CV. Do not rewrite it to STE. The French (`fr:`) text is not in the scope of STE.
 
 Obey these STE rules:
 
 - Use only approved words with their approved meaning. Use technical names and technical verbs from the domain when necessary. One word has one meaning.
-- Use only the simple present, simple past and simple future tenses. Do not use the "-ing" form as a verb. Use the past participle only as an adjective or with "is/are".
+- Use only the simple present, simple past and simple future tenses. Do not use the "-ing" form as a verb.
 - Use the active voice. Use the imperative for instructions.
-- Write procedural sentences of 20 words or fewer and descriptive sentences of 25 words or fewer. Write one instruction or one topic in each sentence.
+- Write procedural sentences of 20 words or fewer and descriptive sentences of 25 words or fewer.
 - Write paragraphs of 6 sentences or fewer.
-- Do not make noun clusters of more than 3 words.
 - Do not omit articles ("the", "a") or demonstratives ("this", "these").
-- Use vertical lists for complex text.
 - Do not use contractions.
 - In a warning or caution, write the instruction first, then the reason.
 
 ## Commands
 
-- `./run.sh`: This script runs `quarto preview --no-browser --port 4307`.
-- `quarto render`: This command builds the site into `_site/`. Git ignores `_site/`.
+- `pnpm dev`: This command starts the Vite dev server on port 4307.
+- `pnpm build`: This command does these steps:
+  1. It checks the types.
+  2. It builds the client into `dist/`.
+  3. It builds the server bundle into `dist-ssr/`.
+  4. It runs `scripts/prerender.mjs`. This script writes one static HTML file for each route.
+- `pnpm typecheck`: This command checks the types only.
 - `./deploy.sh`: This script does these steps:
-  1. It renders the site.
-  2. It puts `_site` and `Dockerfile` into a tar file and copies the tar file to the server with `scp`.
+  1. It builds the site.
+  2. It puts `dist` and `Dockerfile` into a tar file and copies the tar file to the server with `scp`.
   3. It builds and runs the `cv` Docker container again. The container runs the Node `http-server` on port 5000, behind nginx.
 
 After a server reboot, make sure that the container runs. Then run `systemctl restart nginx`.
 
-The scripts are bash scripts. On Windows, run them in Git Bash or WSL.
+The scripts are bash scripts. On Windows, run them in Git Bash or WSL. Git ignores `dist/` and `dist-ssr/`.
 
-## CV architecture: data in YAML, HTML from Lua filters
+## Routes
 
-The CV has three pages. These pages use the same data and the same layout:
+The URLs are the same as the URLs of the Quarto site. Each URL ends with `.html`.
 
-| Page | `lang` | `printable` |
-|---|---|---|
-| `index.qmd` | `en` | `false` |
-| `printable_en.qmd` | `en` | `true` |
-| `printable_fr.qmd` | `fr` | `true` |
+- `src/routes.tsx` makes the routes. The CV routes are `/`, `/printable_en.html` and `/printable_fr.html`.
+- Each file `src/content/<dir>/<name>.mdx` becomes the route `/pages/<dir>/<name>.html`.
+- `scripts/prerender.mjs` writes the HTML of each route in `dist/`. The browser then hydrates the page.
 
-- Each page is a short file. It contains only its flags, a `metadata-files` entry for `data/cv.yml` and an include of `_cv-body.qmd`.
-- `data/cv.yml` contains all the CV data (approximately 3,500 lines). The sections are `profil`, `experiences`, `educations`, `theses`, `projects`, `publications`, `reviews`, `supervisions`, `animations`, `coordinations`, `lectures` and `missions`.
-- Each text field is a bilingual object with `en:` and `fr:` keys.
-- `_cv-body.qmd` is only a layout skeleton. It contains empty fenced divs, for example `::: {.publications}\n:::`. Quarto does not render files with a `_` prefix as pages.
-- `_quarto.yml` registers `filters/main.lua` for all pages. `main.lua` examines the document and finds each empty div with a section class.
-- `main.lua` replaces each of these divs with a `RawBlock("html", ...)`. The function `render(metadata, debug)` in `filters/<section>.lua` makes this block.
-- Each filter module reads its section from the metadata. It selects the language with `metadata.lang`. It builds Bootstrap HTML strings manually.
+To add a page, make a new `.mdx` file in `src/content/research/` or `src/content/teaching/`. Set `title` and, if necessary, `subtitle` in the front matter. To show the page in the navbar, add it to `src/site.ts`.
 
-To add a CV entry, edit `data/cv.yml`.
+## CV architecture: data in YAML, HTML from React components
 
-To add a new section type, do these steps:
+- `src/data/cv.yml` contains all the CV data. Each text field is a bilingual object with `en:` and `fr:` keys. The types are in `src/lib/cv-types.ts`.
+- `src/data/cv.ts` loads the data and changes the quotes and the dashes to typographic characters.
+- `src/pages/CvPage.tsx` is the layout of the CV. It takes the props `lang` and `printable`.
+- Each section has a component in `src/components/cv/`. The component reads the language and the printable flag from `useCv()`.
+- The printable flag changes the output: it shows plain links instead of buttons and it expands the collapsed content.
+- Paths in `cv.yml` are relative to the site root without a slash, for example `assets/img/x.jpg`. The `asset()` function adds the slash.
 
-1. Make the file `filters/<name>.lua`.
-2. In `main.lua`, add a `require("filters.<name>")` statement. `main.lua` finds the modules from the project root.
-3. In `main.lua`, add the class to `render_div_for_class` and to `classes_to_check`.
-4. Add the div to `_cv-body.qmd`.
+To add a CV entry, edit `src/data/cv.yml`. To add a new section type, add a type in `cv-types.ts`, add a component in `src/components/cv/` and add the component to `CvPage.tsx`.
 
-Metadata flags change the HTML output:
+## MDX pages
 
-- `printable: true`: The filters show plain links instead of buttons. They also expand the collapsed content.
-- `lang`, `en` and `fr`: These flags select the language. The headings use `.content-visible when-meta="en|fr"`.
-
-Do not put these flags in `data/cv.yml`. Each page sets its own flags.
+- `vite.config.ts` registers the MDX plugin with `remark-gfm`, `remark-smartypants` and `scripts/remark-quarto.ts`.
+- Use `<Figure id="fig-x">` with `<Sub>` and `<Caption>` for numbered figures. The plugin gives each figure a number and each subfigure a letter.
+- Use `<Ref id="fig-x" />` to refer to a figure.
+- Use `<Cite k="key" />` to cite an entry of `src/bibliography.bib`. Use `<References />` to show the list of the cited entries. The plugin formats the entries with `citation-js` and the CSL style.
+- Use `<Tabs>` and `<Tab title="...">` for tabs. Use `<Picture>` for an image with a caption.
+- For an image in an MDX page, use a path from the site root, for example `/assets/img/x.png`.
 
 ## PDF CV
 
-To make the PDF CV (refer to README):
+To make the PDF CV:
 
-1. Open the printable page in Firefox.
+1. Run `pnpm dev` and open `/printable_en.html` or `/printable_fr.html` in Firefox.
 2. Print the page to PDF.
 
 To remove the headers and footers, open `about:config` in Firefox. Set the `print.print_header*` and `print.print_footer*` keys to empty values.
 
 ## Other files
 
-- `assets/js/`: These scripts run in the browser. `_quarto.yml` adds them to all pages. They contain jQuery, the collapse buttons, the YouTube and video embeds, and the printable toggle. The printable toggle hides the buttons and expands the collapsed content.
-- `bibliography.bib` and `sigchi-ext.csl`: These files supply the citations for the content pages.
-- `assets/pdf/` and `assets/img/`: The YAML fields `pdf:` and `thumbnail:` refer to the files in these directories.
 - `sources/to_integrate/`: This directory contains React `.tsx` components. The build does not use them.
+- `public/pages/research/slr/`: These static pages come from the SLR procedure. Vite copies them without change.

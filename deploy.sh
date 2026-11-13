@@ -7,8 +7,9 @@ user_machine="home"
 
 
 
-echo "Building quarto website..."
-quarto render
+echo "Building the website..."
+pnpm install --frozen-lockfile
+pnpm build
 
 
 echo "Removing remote directory..."
@@ -23,7 +24,7 @@ EOF
 
 echo "Zipping and sending local directory..."
 
-tar -czvf cv.tar.gz _site Dockerfile
+tar -czvf cv.tar.gz dist Dockerfile
 scp cv.tar.gz $user_machine:/root/docker/cv/cv.tar.gz
 rm cv.tar.gz
 

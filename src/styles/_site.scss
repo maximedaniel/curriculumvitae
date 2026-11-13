@@ -1,0 +1,219 @@
+// Page shell: fixed navbar, centered article and a table of contents in the right margin.
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  padding-top: 61px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+
+  .navbar {
+    background-color: #f8f9fa;
+    padding: 0.5rem 1rem;
+    min-height: 61px;
+  }
+
+  .navbar-brand,
+  .nav-link,
+  .navbar-brand:hover,
+  .nav-link:hover {
+    color: #545555;
+  }
+
+  .nav-link:hover,
+  .navbar-brand:hover {
+    color: #2780e3;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: minmax(1rem, 1.13fr) minmax(0, 1299px) 25px 172px minmax(1rem, 1fr);
+  column-gap: 0;
+}
+
+.page-main {
+  grid-column: 2;
+  margin-top: 17px;
+  padding-top: 14px;
+  min-width: 0;
+
+  > :first-child {
+    margin-top: 0;
+  }
+}
+
+.toc-col {
+  grid-column: 4;
+  position: sticky;
+  top: 61px;
+  align-self: start;
+  max-height: calc(100vh - 61px);
+  overflow-y: auto;
+  padding-top: 1.1rem;
+  font-size: 0.875rem;
+
+  h2 {
+    font-size: 0.875rem;
+    margin: 0 0 0.3rem;
+    color: #343a40;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  ul ul {
+    padding-left: 0.6rem;
+  }
+
+  a {
+    display: block;
+    padding: 0.1rem 0 0.1rem 0.6rem;
+    border-left: 1px solid transparent;
+    color: #2761e3;
+    text-decoration: none;
+  }
+
+  a.active {
+    border-left-color: #2761e3;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .page-grid {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .toc-col {
+    display: none;
+  }
+}
+
+main {
+  p {
+    margin-bottom: 0.625rem;
+  }
+
+  h1,
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-top: 1.5rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+// Figures with a caption and subfigures, as in Quarto.
+figure.q-figure {
+  margin: 0 0 17px;
+  text-align: center;
+
+  .q-row {
+    display: flex;
+    gap: 0 20px;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .q-cell {
+    min-width: 0;
+  }
+
+  .q-subfigure {
+    margin: 3.4px 0 0;
+
+    img {
+      margin-bottom: 8.5px;
+    }
+
+    figcaption {
+      margin: 0 0 7.65px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  > img {
+    margin-bottom: 8.5px;
+  }
+
+  > figcaption {
+    font-size: 0.9rem;
+    margin: 14px 0 7.65px;
+  }
+}
+
+figure.q-picture {
+  margin: 0 0 17px;
+  text-align: center;
+
+  figcaption {
+    font-size: 0.9rem;
+    margin: 0 0 7.65px;
+  }
+}
+
+.citation a,
+a.q-ref {
+  text-decoration: none;
+}
+
+.references .csl-entry {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.references .csl-left-margin {
+  min-width: 2.5rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.slide-deck {
+  border: 1px solid #dee2e6;
+}
+
+.quarto-title-block {
+  margin-bottom: 17px;
+
+  h1.title {
+    margin: 0;
+  }
+
+  .subtitle {
+    margin-top: 0.3125rem;
+  }
+}

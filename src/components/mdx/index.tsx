@@ -6,6 +6,7 @@ import { ImageZones, Zone } from "../interactive/ImageZones";
 import { SubTabs } from "../interactive/SubTabs";
 import { SubZones } from "../interactive/SubZones";
 import { ShapeDemo } from "../interactive/ShapeDemo";
+import { ShyPinsDemo } from "../interactive/ShyPinsDemo";
 import { Children, isValidElement, useState, type ComponentProps, type ReactElement, type ReactNode } from "react";
 // ---------- Figures ----------
 
@@ -195,6 +196,7 @@ export const mdxComponents = {
   SubTabs,
   SubZones,
   ShapeDemo,
+  ShyPinsDemo,
   Ref,
   Cite,
   References,

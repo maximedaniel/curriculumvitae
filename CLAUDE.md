@@ -123,5 +123,6 @@ The components in `src/components/interactive/` make the figures of the research
 - `SubTabs`: the `<Sub>` elements of a `<Figure>` as tabs. A `<Ref>` to a subfigure opens its tab.
 - `SubZones`: an overview image with zones. Each zone opens its example subfigures. A `<Ref>` to an example opens its zone.
 - `ShapeDemo`: a small animation of a shape change, with a slider from before to after. It plays only while it is on the screen.
+- `ShyPinsDemo`: a simplified simulation of the safety strategy of ShyPins. The pointer is the user. The pins slow down or stop near the user.
 
 Register each new component in `mdxComponents` in `src/components/mdx/index.tsx`.

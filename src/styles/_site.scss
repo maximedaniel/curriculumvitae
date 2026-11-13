@@ -710,3 +710,49 @@ a.q-ref {
     grid-template-columns: 1fr;
   }
 }
+
+// Simulation of the safety strategy of ShyPins (research page).
+.shypins-demo {
+  max-width: 720px;
+  margin: 1.5rem auto;
+
+  .shypins-modes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .shypins-zones {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+
+    input {
+      width: 7rem;
+      accent-color: #ff7518;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dee2e6;
+    cursor: crosshair;
+  }
+
+  figcaption {
+    font-size: 0.9rem;
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  .shypins-note {
+    color: #6c757d;
+    font-style: italic;
+  }
+}

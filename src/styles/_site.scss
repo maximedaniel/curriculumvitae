@@ -87,14 +87,18 @@ body {
   a {
     display: block;
     padding: 0.1rem 0 0.1rem 0.6rem;
-    border-left: 1px solid transparent;
-    color: #2761e3;
+    border-left: 1px solid #dee2e6;
+    color: #343a40;
     text-decoration: none;
+  }
+
+  a:hover {
+    color: #2761e3;
   }
 
   a.active {
     border-left-color: #2761e3;
-    font-weight: 600;
+    color: #2761e3;
   }
 }
 

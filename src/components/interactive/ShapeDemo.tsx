@@ -56,9 +56,10 @@ function Drawing({ kind, p }: { kind: ShapeKind; p: number }) {
     case "adding":
       return (
         <g fill={GRAY}>
-          <rect x={100 - 22 * p} y={50} width={30} height={100} />
-          <rect x={136} y={50} width={64} height={46} />
-          <rect x={136} y={104} width={64} height={46} opacity={1 - p} />
+          {/* Three parts: apart at p = 0 and merged into one block at p = 1. */}
+          <rect x={100 - 26 * (1 - p)} y={50} width={34} height={100} />
+          <rect x={134 + 12 * (1 - p)} y={50 - 20 * (1 - p)} width={66} height={50} />
+          <rect x={134 + 12 * (1 - p)} y={100 + 20 * (1 - p)} width={66} height={50} />
         </g>
       );
     case "permeability":
